@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+b {
+    font-weight: bold;
+}
+
+.authors {
+    font-size: 22px;
+    color: #050303;
+    text-align: center;
+}
+
+
+.affiliation {
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+}
+.affiliation-number-1 {
+    color: #090b0d;
+}
+
+sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+p {
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+    
+}
+
+.conference {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article_title {
+    max-width: 85%; /* Limit the width */
+    margin: 0 auto;   /* Center the content */
+    text-align: justify;
+}
+
+.content {
+    max-width: 1000px; /* Limit the width */
+    margin: 0 auto;   /* Center the content */
+    text-align: justify;
+}
+
+.section-heading {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+.button-container {
+    display: inline-flex;
+    gap: 10px; /* Space between buttons */
+}
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.button:hover {
+    background-color: #555;
+}
+.button .icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 900px; /* Adjust this value to make the image larger or smaller */
+    height: auto;
+    margin-bottom: 10px; /* Adjust this value to leave space below the image */
+    margin-top: 70px;    /* Adjust this value to leave space above the image */
+}
+.caption {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 70px; /* Adjust this value to leave space below the caption */
+    color: #333;
+}
+
+.bibtex-section {
+    text-align: center;
+}
+.bibtex-code {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    color: #333;
+}
+.bibtex-code code {
+    white-space: pre;
+}
