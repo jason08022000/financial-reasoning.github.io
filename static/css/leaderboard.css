@@ -1,15 +1,16 @@
 table {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 90%;
 }
 
 th {
-    padding: 2px 5px;
+    padding: 2px 2px;
     border: 1px solid black;
 }
 
 td {
-    padding: 2px 5px;
+    padding: 2px 2px;
     border: 1px solid black;
 }
 
@@ -40,7 +41,7 @@ table#results.js-sort-14 tbody tr td:nth-child(15) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: auto;
     margin-top: 1em;

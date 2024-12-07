@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhancing Multimodal Financial Math Reasoning with Reflection Module and Error Log</title>
+    
     <link rel="stylesheet" href="./static/css/bulma.min.css">
     <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -11,21 +12,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="stylesheet" href="./static/css/leaderboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./static/js/fontawesome.all.min.js"></script>
-
     <script src="./static/js/bulma-carousel.min.js"></script>
-
-    <script src="./static/js/bulma-slider.min.js"></script>
-
     <script src="./static/js/explorer-index.js"></script>
-
+    <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/question_card.js"></script>
-
-
     <script src="./static/js/leaderboard_testmini.js"></script>
-
     <script src="data\model_scores.js" defer></script>
 
 
@@ -37,11 +32,11 @@
     </div>
 
     <p class="authors">
-        Shuangyan Deng<sup>0</sup>, Haizhou Peng<sup>0</sup>, Chunhou Liu<sup>0</sup>, Jiachen Xu<sup>0</sup>
+        Shuangyan Deng<sup>1</sup>, Haizhou Peng<sup>1</sup>, Chunhou Liu<sup>0</sup>, Jiachen Xu<sup>0</sup>
     </p>
 
     <p class="affiliation">
-        <sup class="affiliation-number-1">1</sup>University of Auckland, 
+        <sup class="affiliation-number-1"></sup>University of Auckland, 
     </p>
 
     <p class="conference">XXXX Conference</p>
@@ -49,13 +44,20 @@
 
     <div class="button-container">
         <a href="#" class="button">
-            <span class="icon">📄</span> Paper
+            <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+            </span> Paper
         </a>
         <a href="https://github.com/Jennie-Deng/FinMR" class="button">
-            <span class="icon">💻</span> Code
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span> Code
         </a>
         <a href="#" class="button">
-            <span class="icon">📊</span> Dataset
+            <span class="icon">🤗</span> Dataset
+        </a>
+        <a href="#" class="button">
+            <span class="icon">🏆</span> Leaderboard
         </a>
         <a href="#" class="button">
             <span class="icon">🔍</span> Visualize
@@ -73,6 +75,21 @@
 
     </div>
 
+    <section class="section" style="margin-top: -60px;">
+              <div id="results-carousel" class="carousel results-carousel">
+                <div class="box m-5">
+                  <div class="content has-text-centered">
+                    <img src="test1.png" alt="test" width="84%"/>
+                  </div>
+                </div>
+                <div class="box m-5">
+                  <div class="content has-text-centered">
+                    <img src="test2.png" alt="test" width="84%"/>
+                  </div>
+                </div>
+          </div>
+      </section>
+
     <div class="image-container">
         <img src="Pipeline_Image.png" alt="Overview" />
     </div>
@@ -83,14 +100,8 @@
 
 
 
-
-
     <div class="section-heading">
         Our Dataset
-    </div>
-
-    <div class="image-container">
-        <img src="Image.jfif" alt="Overview" />
     </div>
 
     <div class="caption">
@@ -100,22 +111,15 @@
 
     <section class="section">
         <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-full has-text-centered content">
-              <h1 id="leaderboard">Leaderboard</h1>
-              <div class="content">
-                <h2>Accuracy scores on the dataset 
-                </h2>
-                <div id="testmini_leaderboard"></div>
-                </div>
-            </div>
+            <h1>Leaderboard</h1>
+            <h2>Accuracy scores on the dataset</h2>
+            <div id="leaderboard"></div>
         </div>
-    </div>
-</section>    
+    </section>    
 
-    <iframe src="visualizer/explore.html" style="width: 80%;min-height: 100vh; border-radius: 20px;"></iframe>
+    <iframe src="visualizer/explore.html" style="width: 90%;min-height: 100vh; border-radius: 20px;"></iframe>
 
-    <iframe src="visualizer/explore_2.html" style="width: 80%;min-height: 100vh; border-radius: 20px;"></iframe>
+    <iframe src="visualizer/explore_2.html" style="width: 90%;min-height: 100vh; border-radius: 20px;"></iframe>
 
 
 

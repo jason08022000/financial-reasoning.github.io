@@ -100,7 +100,7 @@ function generateTable() {
       }
   
     table += '</table>';
-    document.getElementById('testmini_leaderboard').innerHTML = table; // Assuming you have a div with id 'container' where the table will be placed
+    document.getElementById('leaderboard').innerHTML = table; // Assuming you have a div with id 'container' where the table will be placed
   }
   
   // Call the function when the window loads
