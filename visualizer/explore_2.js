@@ -161,7 +161,7 @@ function create_number(data) {
         explaination = make_explaination(data.Explanation);
 
 
-    html = make_box([question_text, share_image, up_image, options, model_answer, model_reasoning, feedback, answer, explaination]) + "<hr/>";
+    html = make_box([question_text, share_image, up_image, options, answer, model_answer, model_reasoning, feedback, explaination]) + "<hr/>";
 
     return html;
 }
