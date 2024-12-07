@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhancing Multimodal Financial Math Reasoning with Reflection Module and Error Log</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+
+    <script src="./static/js/bulma-carousel.min.js"></script>
+
+    <script src="./static/js/bulma-slider.min.js"></script>
+
+    <script src="./static/js/explorer-index.js"></script>
+
+    <script src="./static/js/question_card.js"></script>
+
+
+    <script src="./static/js/leaderboard_testmini.js"></script>
+
+    <script src="data\model_scores.js" defer></script>
+
+
 </head>
 <body>
 
@@ -58,6 +82,9 @@
     </div>
 
 
+
+
+
     <div class="section-heading">
         Our Dataset
     </div>
@@ -69,6 +96,22 @@
     <div class="caption">
         Our Image 2
     </div>
+
+
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-full has-text-centered content">
+              <h1 id="leaderboard">Leaderboard</h1>
+              <div class="content">
+                <h2>Accuracy scores on the dataset 
+                </h2>
+                <div id="testmini_leaderboard"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
 
     <iframe src="visualizer/explore.html" style="width: 80%;min-height: 100vh; border-radius: 20px;"></iframe>
 
