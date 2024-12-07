@@ -1,10 +1,27 @@
 // Data file
-DATA_FILE = "data_public.js"; // default, answers for development, no answer for test
+DATA_FILE = "error_log.js"; // default, answers for development, no answer for test
 
 // Variables for the filters with the number of questions
 let number_options = [1, 20, 50, 100, 200];  
 let splits = ["All", "train", "test"];    
-let topic = ["All", "Capital Market Expectations", "Fixed Income", "Credit Risk Measurement and Management", "Financial Reporting and Analysis", "Portfolio Management", "Financial Markets and Products", "Equity Investments", "Risk Management and Investment Management", "Alternative Investments", "Corporate Finance", "Asset Allocation", "Equity Portfolio Management", "Economics", "Derivatives", "Liquidity and Treasury Risk Measurement", "Fixed-Income Portfolio Management", "Operational Risk", "Ethicaland Professional Standards", "Foundation of Risk Management", "Valuation and Risk Models", "Quantitative Methods", "Market Risk Measurement and Management", "Derivatives and Currency Management", "Operational Risk and Resiliency"];
+let topic = [
+    "All",
+    "Investment",
+    "Quantitative Methods",
+    "Valuation and Risk Models",
+    "Financial Markets and Products",
+    "Financial Reporting and Analysis",
+    "Portfolio Management",
+    "Fixed Income",
+    "Credit Risk",
+    "Foundation of Risk Management",
+    "Economics",
+    "Operational Risk",
+    "Derivatives",
+    "Market Risk",
+    "Corporate Finance",
+    "Liquidity and Treasury Risk"
+]
 
 // Elements in the Option Panel
 let optbtn = document.getElementsByClassName("optionsbtn")[0];
@@ -110,66 +127,45 @@ function create_col(data) {
 
 // data is an object with the following attr.
 function create_number(data) {
-    let question_text = make_qt(data.pid, data.question_text);
-
-    // if the tables list is not empty, then make the tables
-    let tables = "";
-    if (data.tables.length > 0)
-        tables = make_tables(data.tables);
-
+    let question_text = make_qt(data);
+    
     // if the ground_truth attr is not null, then make the answer
+
     let answer = "";
     if (data.Answer !== null)
-        answer = make_answer(data.answer);
+        answer = make_answer(data.Answer);
 
     let options = "";
     if (data.Options !== null)
-        options = make_options(data.options);
+        options = make_options(data.Options);
+
+    let share_image = "";
+    if (data["Share Image"] !== null) {
+        share_image = make_up_image(data["Share Image"]);
+    }
 
     let up_image = "";
     if (data.Image !== null)
-        up_image = make_up_image(data.up_image);
+        up_image = make_up_image(data.Image);
 
-    let wrong_explaination = "";
-    if (data.wrong_explaination !== null)
-        wrong_explaination = make_wrong_explaination(data.wrong_explaination);
-
-    let correct_explaination = "";
-    if (data.correct_explaination !== null)
-        correct_explaination = make_correct_explaination(data.correct_explaination);
-
-    let feedback = "";
-    if (data.feedback !== null)
-        feedback = make_feedback_section(data.feedback, "Feedback");
-
-    // Combine wrong and correct explanations in a horizontal layout
-    let explanations = make_horizontal_layout(wrong_explaination, correct_explaination);
+    let explaination = "";
+    if (data.Explanation !== null)
+        explaination = make_explaination(data.Explanation);
 
 
-    html = make_box([question_text, up_image, options, tables, answer, explanations, feedback]) + "<hr/>";
+    html = make_box([question_text, share_image, up_image, options, answer, explaination]) + "<hr/>";
 
     return html;
 }
 
-function make_horizontal_layout(leftContent, rightContent) {
-    return `
-        <div class="horizontal-layout" style="display: flex; justify-content: space-between;">
-            <div class="left-section" style="width: 48%;">
-                ${leftContent}
-            </div>
-            <div class="right-section" style="width: 48%;">
-                ${rightContent}
-            </div>
-        </div>
-    `;
-}
-
 // creates a div with question text in it
-function make_qt(pid, question_text) {
+function make_qt(data) {
     let html = "";
     html = `
-            <p><b>Question </b></p>
-            <p class="question-txt">[No.${pid}] ${question_text}</p>
+        <div class="question-container">
+            <p><b>Question</b></p>
+            <p class="question-txt">[No.${data["Question ID"]}] ${data["Question Text"]}</p>
+        </div>
     `;
     return html;
 }
@@ -178,27 +174,28 @@ function make_up_image(image) {
     return `<img src="${image}" class="question-image" style="max-width: 100%; height: auto;" />`;
 }
 
-function make_options(options) {
+function make_options(Options) {
     let optionsHtml = `<p class="options-txt">Options:</p><ul>`;
-    for (const [key, value] of Object.entries(options)) {
-        optionsHtml += `<p>${value}</p>`;
+    for (const [key, value] of Object.entries(Options)) {
+        optionsHtml += `<p>${key} : ${value}</p>`;
     }
     optionsHtml += `</ul>`;
     return optionsHtml;
 }
 
-function make_tables(tables) {
-    let temp = "";
-    for (each of tables) {
-        // convert the '\n' to '<br>'
-        each = each.replace(/\n/g, "<br>");
-        let html = `<p><b>Table </b></p><p class="table-text">${each}</p>`;
-        temp += html;
-    }
-    console.log(temp);
-    return temp;
+function make_explaination(content) {
+    // Replace line breaks with <br/> for HTML rendering
+    console.log(typeof content);
+    const formattedContent = content.replace(/\n/g, '<br/>');
+    
+    return `
+    
+        <div class="feedback-section">
+            <p><b>${"Explaination"}</b></p>
+            <p>${formattedContent}</p>
+        </div>
+    `;
 }
-
 
 
 function make_box(contents, cls = "") {
@@ -212,51 +209,11 @@ function make_box(contents, cls = "") {
 }
 
 
-function make_answer(answer) {
-    let html = `<p><b>Answer </b></p><p class="answer-txt">${answer}</p><hr class="dashed-line" />`;
+function make_answer(Answer) {
+    let html = `<p><b>Answer </b></p><p class="answer-txt">${Answer}</p><hr class="dashed-line" />`;
     return html;
 }
 
-function make_feedback_section(content, title) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-    
-    return `
-    
-        <div class="feedback-section">
-        <hr class="dashed-line" />
-            <p><b>${title}</b></p>
-            <p>${formattedContent}</p>
-            <hr class="dashed-line" />
-        </div>
-    `;
-}
-
-function make_wrong_explaination(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-    
-    return `
-    
-        <div class="feedback-section">
-            <p><b>${"Wrong Explaination"}</b></p>
-            <p>${formattedContent}</p>
-        </div>
-    `;
-}
-
-function make_correct_explaination(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-    
-    return `
-    
-        <div class="feedback-section">
-            <p><b>${"Correct Explaination"}</b></p>
-            <p>${formattedContent}</p>
-        </div>
-    `;
-}
 
 function make_dropdown(label, options, id, default_ind = 0) {
     let html = "";
@@ -325,15 +282,15 @@ async function filter_data() {
             }
         }
 
-        // filter: topic
+        // Filter: topic
         filters.topic = filters.topic.split(" (")[0];
         if (filters.topic !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].topic.toString() !== filters.topic) {
-                    delete res[i];
-                }
+            for (let i = test_data.length - 1; i >= 0; i--) {
+                if (test_data[i]["General Topics"] !== filters.topic) {
+                test_data.splice(i, 1);
             }
         }
+    }
 
         // filter: number
         cnt = filters.number;

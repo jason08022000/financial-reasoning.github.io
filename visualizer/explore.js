@@ -141,6 +141,11 @@ function create_number(data) {
     if (data.Options !== null)
         options = make_options(data.Options);
 
+    let share_image = "";
+    if (data["Share Image"] !== null) {
+        share_image = make_up_image(data["Share Image"]);
+    }
+
     let up_image = "";
     if (data.Image !== null)
         up_image = make_up_image(data.Image);
@@ -150,7 +155,7 @@ function create_number(data) {
         explaination = make_explaination(data.Explanation);
 
 
-    html = make_box([question_text, up_image, options, answer, explaination]) + "<hr/>";
+    html = make_box([question_text, share_image, up_image, options, answer, explaination]) + "<hr/>";
 
     return html;
 }
