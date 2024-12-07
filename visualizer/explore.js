@@ -111,65 +111,31 @@ function create_col(data) {
 // data is an object with the following attr.
 function create_number(data) {
     let question_text = make_qt(data.pid, data.question_text);
-
-    // if the tables list is not empty, then make the tables
-    let tables = "";
-    if (data.tables.length > 0)
-        tables = make_tables(data.tables);
-
+    
     // if the ground_truth attr is not null, then make the answer
+
     let answer = "";
     if (data.Answer !== null)
         answer = make_answer(data.answer);
 
     let options = "";
     if (data.Options !== null)
-        options = make_options(data.options);
+        options = make_options(data.Options);
 
     let up_image = "";
     if (data.Image !== null)
         up_image = make_up_image(data.up_image);
 
-    let wrong_explaination = "";
-    if (data.wrong_explaination !== null)
-        wrong_explaination = make_wrong_explaination(data.wrong_explaination);
-
-    let correct_explaination = "";
-    if (data.correct_explaination !== null)
-        correct_explaination = make_correct_explaination(data.correct_explaination);
-
-    let feedback = "";
-    if (data.feedback !== null)
-        feedback = make_feedback_section(data.feedback, "Feedback");
-
-    // Combine wrong and correct explanations in a horizontal layout
-    let explanations = make_horizontal_layout(wrong_explaination, correct_explaination);
-
-
-    html = make_box([question_text, up_image, options, tables, answer, explanations, feedback]) + "<hr/>";
+    html = make_box([question_text, up_image, options, answer]) + "<hr/>";
 
     return html;
 }
 
-function make_horizontal_layout(leftContent, rightContent) {
-    return `
-        <div class="horizontal-layout" style="display: flex; justify-content: space-between;">
-            <div class="left-section" style="width: 48%;">
-                ${leftContent}
-            </div>
-            <div class="right-section" style="width: 48%;">
-                ${rightContent}
-            </div>
-        </div>
-    `;
-}
-
-// creates a div with question text in it
-function make_qt(pid, question_text) {
+function make_qt(pid, data) {
     let html = "";
     html = `
-            <p><b>Question </b></p>
-            <p class="question-txt">[No.${pid}] ${question_text}</p>
+        <p><b>Question </b></p>
+        <p class="question-txt">[No.${pid}] ${data["Question Text"]}</p>
     `;
     return html;
 }
@@ -178,27 +144,14 @@ function make_up_image(image) {
     return `<img src="${image}" class="question-image" style="max-width: 100%; height: auto;" />`;
 }
 
-function make_options(options) {
+function make_options(Options) {
     let optionsHtml = `<p class="options-txt">Options:</p><ul>`;
-    for (const [key, value] of Object.entries(options)) {
-        optionsHtml += `<p>${value}</p>`;
+    for (const [key, value] of Object.entries(Options)) {
+        optionsHtml += `<p>${key} : ${value}</p>`;
     }
     optionsHtml += `</ul>`;
     return optionsHtml;
 }
-
-function make_tables(tables) {
-    let temp = "";
-    for (each of tables) {
-        // convert the '\n' to '<br>'
-        each = each.replace(/\n/g, "<br>");
-        let html = `<p><b>Table </b></p><p class="table-text">${each}</p>`;
-        temp += html;
-    }
-    console.log(temp);
-    return temp;
-}
-
 
 
 function make_box(contents, cls = "") {
@@ -212,50 +165,9 @@ function make_box(contents, cls = "") {
 }
 
 
-function make_answer(answer) {
-    let html = `<p><b>Answer </b></p><p class="answer-txt">${answer}</p><hr class="dashed-line" />`;
+function make_answer(Answer) {
+    let html = `<p><b>Answer </b></p><p class="answer-txt">${Answer}</p><hr class="dashed-line" />`;
     return html;
-}
-
-function make_feedback_section(content, title) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-    
-    return `
-    
-        <div class="feedback-section">
-        <hr class="dashed-line" />
-            <p><b>${title}</b></p>
-            <p>${formattedContent}</p>
-            <hr class="dashed-line" />
-        </div>
-    `;
-}
-
-function make_wrong_explaination(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-    
-    return `
-    
-        <div class="feedback-section">
-            <p><b>${"Wrong Explaination"}</b></p>
-            <p>${formattedContent}</p>
-        </div>
-    `;
-}
-
-function make_correct_explaination(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-    
-    return `
-    
-        <div class="feedback-section">
-            <p><b>${"Correct Explaination"}</b></p>
-            <p>${formattedContent}</p>
-        </div>
-    `;
 }
 
 function make_dropdown(label, options, id, default_ind = 0) {
@@ -269,24 +181,6 @@ function make_dropdown(label, options, id, default_ind = 0) {
     html = `<label class="dd-label">${label} <select id="${id}" class="opt-dd"> ${html} </select> </label><br/>`;
     return html;
 }
-
-function make_horizontal_layout(leftContent, rightContent) {
-    return `
-        <div class="horizontal-layout" style="display: flex; justify-content: space-between;">
-            <div class="left-section" style="width: 48%;">
-                ${leftContent}
-            </div>
-            
-            <div style="border-left: 2px dashed #fff; height: auto; margin: 0 20px;">
-            </div>
-
-            <div class="right-section" style="width: 48%;">
-                ${rightContent}
-            </div>
-        </div>
-    `;
-}
-
 
 // Main Functions (FIXME: need to be updated)
 async function filter_data() {
@@ -316,10 +210,11 @@ async function filter_data() {
         }
 
         // filter: split
-        filters.split = filters.split.split(" (")[0];
-        if (filters.split !== "All") {
+        // console.log("filters.Datasplit before split:", filters.Datasplit);
+        filters.Datasplit = filters.Datasplit.split(" (")[0];
+        if (filters.Datasplit !== "All") {
             for (let i of Object.keys(res)) {
-                if (res[i].split.toString() !== filters.split) {
+                if (res[i].Datasplit.toString() !== filters.Datasplit) {
                     delete res[i];
                 }
             }
