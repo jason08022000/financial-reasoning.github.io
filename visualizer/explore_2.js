@@ -2,8 +2,7 @@
 DATA_FILE = "error_log.js"; // default, answers for development, no answer for test
 
 // Variables for the filters with the number of questions
-let number_options = [1, 20, 50, 100, 200];  
-let splits = ["All", "train", "test"];    
+let number_options = [1, 20, 50, 100, 200];     
 let topic = [
     "All",
     "Investment",
@@ -33,12 +32,10 @@ let filter_submit = document.getElementById("filter-submit");
 
 // Element Text the Option Panel
 let number_dd = make_dropdown("How many samples?", number_options, "number_dd");
-let split_dd = make_dropdown("Choose a split:", splits, "split_dd");
 let topic_dd = make_dropdown("Choose a topic:", topic, "topic_dd");
 
 // Content in the Option Box
 optboxes[0].innerHTML += number_dd;
-optboxes[0].innerHTML += split_dd;
 optboxes[0].innerHTML += topic_dd;
 
 // Elements in the Content Body
@@ -98,7 +95,6 @@ function closeNav() {
 
 // Function: update the filter values
 function change_filters(e) {
-    filters.split = document.getElementById("split_dd").value;
     filters.number = document.getElementById("number_dd").value;
     filters.topic = document.getElementById("topic_dd").value;
     // console.log(filters);
@@ -131,29 +127,41 @@ function create_number(data) {
     
     // if the ground_truth attr is not null, then make the answer
 
-    let answer = "";
-    if (data.Answer !== null)
-        answer = make_answer(data.Answer);
+    let model_answer = "";
+    if (data["Model Answer"] !== NaN)
+        model_answer = make_model_answer(data["Model Answer"]);
 
     let options = "";
-    if (data.Options !== null)
+    if (data.Options !== NaN)
         options = make_options(data.Options);
 
     let share_image = "";
-    if (data["Share Image"] !== null) {
+    if (data["Share Image"] !== NaN) {
         share_image = make_up_image(data["Share Image"]);
     }
 
     let up_image = "";
-    if (data.Image !== null)
+    if (data.Image !== NaN)
         up_image = make_up_image(data.Image);
 
+    let model_reasoning = "";
+    if (data["Model Reasoning"] !== NaN) 
+        model_reasoning = make_model_reasoning(data["Model Reasoning"]);
+
+    let feedback = "";
+    if (data["Feedback"] !== NaN)
+        feedback = make_feedback(data["Feedback"]);
+
+    let answer = "";
+    if (data["Answer"] !== NaN)
+        answer = make_answer(data["Answer"]);
+
     let explaination = "";
-    if (data.Explanation !== null)
+    if (data.Explanation !== NaN)
         explaination = make_explaination(data.Explanation);
 
 
-    html = make_box([question_text, share_image, up_image, options, answer, explaination]) + "<hr/>";
+    html = make_box([question_text, share_image, up_image, options, model_answer, model_reasoning, feedback, answer, explaination]) + "<hr/>";
 
     return html;
 }
@@ -175,12 +183,40 @@ function make_up_image(image) {
 }
 
 function make_options(Options) {
-    let optionsHtml = `<p class="options-txt">Options:</p><ul>`;
+    let optionsHtml = `<p class="options-txt"><b>Options:</b></p><ul>`;
     for (const [key, value] of Object.entries(Options)) {
         optionsHtml += `<p>${key} : ${value}</p>`;
     }
     optionsHtml += `</ul>`;
     return optionsHtml;
+}
+
+function make_model_reasoning(content) {
+    // Replace line breaks with <br/> for HTML rendering
+    console.log(typeof content);
+    const formattedContent = content.replace(/\n/g, '<br/>');
+    
+    return `
+    
+        <div class="feedback-section">
+            <p><b>${"Model Reasoning"}</b></p>
+            <p>${formattedContent}</p><hr class="dashed-line" />
+        </div>
+    `;
+}
+
+function make_feedback(content) {
+    // Replace line breaks with <br/> for HTML rendering
+    console.log(typeof content);
+    const formattedContent = content.replace(/\n/g, '<br/>');
+    
+    return `
+    
+        <div class="feedback-section">
+            <p><b>${"Feedback"}</b></p>
+            <p>${formattedContent}</p><hr class="dashed-line" />
+        </div>
+    `;
 }
 
 function make_explaination(content) {
@@ -192,7 +228,7 @@ function make_explaination(content) {
     
         <div class="feedback-section">
             <p><b>${"Explaination"}</b></p>
-            <p>${formattedContent}</p>
+            <p>${formattedContent}</p><hr class="dashed-line" />
         </div>
     `;
 }
@@ -211,6 +247,11 @@ function make_box(contents, cls = "") {
 
 function make_answer(Answer) {
     let html = `<p><b>Answer </b></p><p class="answer-txt">${Answer}</p><hr class="dashed-line" />`;
+    return html;
+}
+
+function make_model_answer(Answer) {
+    let html = `<p><b>Model Answer </b></p><p class="answer-txt">${Answer}</p><hr class="dashed-line" />`;
     return html;
 }
 
@@ -270,16 +311,6 @@ async function filter_data() {
         // go over res and add pid to each element
         for (let i of Object.keys(res)) {
             res[i].pid = i;
-        }
-
-        // filter: split
-        filters.split = filters.split.split(" (")[0];
-        if (filters.split !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].split.toString() !== filters.split) {
-                    delete res[i];
-                }
-            }
         }
 
         // Filter: topic

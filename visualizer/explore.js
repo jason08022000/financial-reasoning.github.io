@@ -177,7 +177,7 @@ function make_up_image(image) {
 }
 
 function make_options(Options) {
-    let optionsHtml = `<p class="options-txt">Options:</p><ul>`;
+    let optionsHtml = `<p class="options-txt"><b>Options:</b></p><ul>`;
     for (const [key, value] of Object.entries(Options)) {
         optionsHtml += `<p>${key} : ${value}</p>`;
     }
@@ -187,6 +187,7 @@ function make_options(Options) {
 
 function make_explaination(content) {
     // Replace line breaks with <br/> for HTML rendering
+    console.log(typeof content);
     const formattedContent = content.replace(/\n/g, '<br/>');
     
     return `
