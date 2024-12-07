@@ -2,10 +2,26 @@
 DATA_FILE = "data_public.js"; // default, answers for development, no answer for test
 
 // Variables for the filters with the number of questions
-let number_options = [1, 20, 50, 100, 200];  
+let number_options = [1, 20, 50, 100, 150, 200];  
 let splits = ["All", "train", "test"];    
-let topic = ["All", "Capital Market Expectations", "Fixed Income", "Credit Risk Measurement and Management", "Financial Reporting and Analysis", "Portfolio Management", "Financial Markets and Products", "Equity Investments", "Risk Management and Investment Management", "Alternative Investments", "Corporate Finance", "Asset Allocation", "Equity Portfolio Management", "Economics", "Derivatives", "Liquidity and Treasury Risk Measurement", "Fixed-Income Portfolio Management", "Operational Risk", "Ethicaland Professional Standards", "Foundation of Risk Management", "Valuation and Risk Models", "Quantitative Methods", "Market Risk Measurement and Management", "Derivatives and Currency Management", "Operational Risk and Resiliency"];
-
+let topic = [
+    "All",
+    "Investment",
+    "Quantitative Methods",
+    "Valuation and Risk Models",
+    "Financial Markets and Products",
+    "Financial Reporting and Analysis",
+    "Portfolio Management",
+    "Fixed Income",
+    "Credit Risk",
+    "Foundation of Risk Management",
+    "Economics",
+    "Operational Risk",
+    "Derivatives",
+    "Market Risk",
+    "Corporate Finance",
+    "Liquidity and Treasury Risk"
+]
 // Elements in the Option Panel
 let optbtn = document.getElementsByClassName("optionsbtn")[0];
 let closebtn = document.getElementsByClassName("closebtn")[0];
@@ -110,13 +126,13 @@ function create_col(data) {
 
 // data is an object with the following attr.
 function create_number(data) {
-    let question_text = make_qt(data.pid, data.question_text);
+    let question_text = make_qt(data);
     
     // if the ground_truth attr is not null, then make the answer
 
     let answer = "";
     if (data.Answer !== null)
-        answer = make_answer(data.answer);
+        answer = make_answer(data.Answer);
 
     let options = "";
     if (data.Options !== null)
@@ -124,18 +140,21 @@ function create_number(data) {
 
     let up_image = "";
     if (data.Image !== null)
-        up_image = make_up_image(data.up_image);
+        up_image = make_up_image(data.Image);
 
     html = make_box([question_text, up_image, options, answer]) + "<hr/>";
 
     return html;
 }
 
-function make_qt(pid, data) {
+// creates a div with question text in it
+function make_qt(data) {
     let html = "";
     html = `
-        <p><b>Question </b></p>
-        <p class="question-txt">[No.${pid}] ${data["Question Text"]}</p>
+        <div class="question-container">
+            <p><b>Question</b></p>
+            <p class="question-txt">[No.${data["ID"]}] ${data["Question Text"]}</p>
+        </div>
     `;
     return html;
 }
@@ -209,26 +228,25 @@ async function filter_data() {
             res[i].pid = i;
         }
 
-        // filter: split
-        // console.log("filters.Datasplit before split:", filters.Datasplit);
-        filters.Datasplit = filters.Datasplit.split(" (")[0];
-        if (filters.Datasplit !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].Datasplit.toString() !== filters.Datasplit) {
-                    delete res[i];
+        // Filter: split
+        filters.split = filters.split.split(" (")[0];
+        if (filters.split !== "All") {
+            for (let i = test_data.length - 1; i >= 0; i--) {
+                if (test_data[i]["Datasplit"] !== filters.split) {
+                test_data.splice(i, 1);
                 }
             }
         }
 
-        // filter: topic
+        // Filter: topic
         filters.topic = filters.topic.split(" (")[0];
         if (filters.topic !== "All") {
-            for (let i of Object.keys(res)) {
-                if (res[i].topic.toString() !== filters.topic) {
-                    delete res[i];
-                }
+            for (let i = test_data.length - 1; i >= 0; i--) {
+                if (test_data[i]["General Topics"] !== filters.topic) {
+                test_data.splice(i, 1);
             }
         }
+    }
 
         // filter: number
         cnt = filters.number;
