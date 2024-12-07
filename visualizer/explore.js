@@ -22,6 +22,9 @@ let topic = [
     "Corporate Finance",
     "Liquidity and Treasury Risk"
 ]
+
+
+
 // Elements in the Option Panel
 let optbtn = document.getElementsByClassName("optionsbtn")[0];
 let closebtn = document.getElementsByClassName("closebtn")[0];
@@ -142,7 +145,12 @@ function create_number(data) {
     if (data.Image !== null)
         up_image = make_up_image(data.Image);
 
-    html = make_box([question_text, up_image, options, answer]) + "<hr/>";
+    let explaination = "";
+    if (data.Explanation !== null)
+        explaination = make_explaination(data.Explanation);
+
+
+    html = make_box([question_text, up_image, options, answer, explaination]) + "<hr/>";
 
     return html;
 }
@@ -170,6 +178,19 @@ function make_options(Options) {
     }
     optionsHtml += `</ul>`;
     return optionsHtml;
+}
+
+function make_explaination(content) {
+    // Replace line breaks with <br/> for HTML rendering
+    const formattedContent = content.replace(/\n/g, '<br/>');
+    
+    return `
+    
+        <div class="feedback-section">
+            <p><b>${"Explaination"}</b></p>
+            <p>${formattedContent}</p>
+        </div>
+    `;
 }
 
 
