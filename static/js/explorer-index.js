@@ -45,23 +45,6 @@ $(document).ready(function() {
         });
     }
 
-    // load and display default models
-    let qids = getRandomSubarray(num_output_qs);
-    let [folder , output_data] = read_data('Multimodal Bard');
-    output_data.addEventListener('load', function() {
-        refresh_table(qids);
-    });
-    [folder , output_data] = read_data('CoT GPT4 (Caption+OCR)');
-    output_data.addEventListener('load', function() {
-        refresh_table(qids);
-    });
-    // refresh_table(qids);
-    let dropdown_displays = document.getElementsByClassName('dropdown-display');
-    let refresh_button = document.getElementById('refresh-qids');
-    refresh_button.addEventListener('click', function(event) {
-        qids = getRandomSubarray(num_output_qs);
-        refresh_table(qids);
-    });
 
     // let dropdown_displays = document.getElementsByClassName('dropdown-display');
     let dropdown_contents = document.getElementsByClassName('dropdown-content');
@@ -100,17 +83,6 @@ var cache = {};
 var num_output_qs = 5;
 // var 
 
-// dynamically links a js data file
-function read_data(model_name) {
-    console.log('loading data for ' + model_name);
-    let folder = model_output_folder_list[model_name];
-    // dynamically link the js file
-    let script = document.createElement('script');
-    script.src = './data/results/' + folder + '/data.js';
-    document.body.appendChild(script);
-    return [folder, script];
-
-}
 
 function getRandomSubarray(size, arr=null) {
     if (arr == null) {

@@ -109,6 +109,8 @@ function create_page(d) {
     }
     reflow(body);
     console.log("reflowed");
+    renderKaTeX(); // Call to render KaTeX
+    console.log("Reflowed and rendered KaTeX");
 }
 
 function create_col(data) {
@@ -193,14 +195,13 @@ function make_options(Options) {
 
 function make_model_reasoning(content) {
     // Replace line breaks with <br/> for HTML rendering
-    console.log(typeof content);
     const formattedContent = content.replace(/\n/g, '<br/>');
-    
+
     return `
-    
         <div class="feedback-section">
-            <p><b>${"Model Reasoning"}</b></p>
-            <p>${formattedContent}</p><hr class="dashed-line" />
+            <p><b>Model Reasoning</b></p>
+            <p class="model-reasoning">${formattedContent}</p>
+            <hr class="dashed-line" />
         </div>
     `;
 }
@@ -342,4 +343,15 @@ async function filter_data() {
 // force the browser to reflow
 function reflow(elt) {
     elt.offsetHeight;
+}
+
+function renderKaTeX() {
+    if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+            ]
+        });
+    }
 }
