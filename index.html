@@ -23,6 +23,17 @@
     <script src="./static/js/leaderboard_testmini.js"></script>
     <script src="data\model_scores.js" defer></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false }
+                ]
+            });">
+    </script>
+
 
 </head>
 <body>
@@ -56,11 +67,11 @@
         <a href="#" class="button">
             <span class="icon">🤗</span> Dataset
         </a>
-        <a href="#" class="button">
+        <a href="file:///C:/Users/xujiachen/Desktop/Website/index.html#leaderboard" class="button">
             <span class="icon">🏆</span> Leaderboard
         </a>
-        <a href="#" class="button">
-            <span class="icon">🔍</span> Visualize
+        <a href="file:///C:/Users/xujiachen/Desktop/Website/index.html#visualizer" class="button">
+            <span class="icon">🔍</span> Visualization
         </a>
     </div>
 
@@ -71,8 +82,7 @@
 
     <div class="content">
         <p>
-            The growing complexity of financial mathematics demands robust educational tools that can enhance learners' problem-solving and reasoning skills. In this context, multimodal learning, which integrates various modes of information such as text, visuals, and interactive elements, has gained significant attention. However, learners often struggle with self-reflection and tracking their errors, which are critical for improving their understanding and performance. This paper introduces an innovative approach that integrates a reflection module and an error log system into multimodal financial math education, aiming to enhance students’ reasoning skills by encouraging deeper self-assessment and targeted correction of mistakes.
-        </p>
+            Recent advancements in Large Language Models (LLMs) and Large Multimodal Models (LMMs) have paved the way for complex reasoning tasks across various domains. However, while LLMs and LMMs have demonstrated strong performance in general benchmarks, their capabilities remain underexplored in the specialized, knowledge-intensive realm of financial reasoning. To address this gap, we introduce FinMR, a novel multimodal dataset specifically designed for financial reasoning tasks. FinMR encompasses 3,200 expertly crafted questions—1,049 involving financial math and 2,151 probing financial expertise—each paired with both textual and visual data. We conduct extensive evaluations on both open-source and closed-source models using Zero-Shot and Few-Shot Chain-of-Thought (CoT) strategies, revealing that LMMs consistently outperform their purely text-based counterparts. Our results demonstrate that (1) multimodal inputs significantly enhance reasoning capabilities, though image recognition remains a critical bottleneck; (2) Few-Shot CoT surpasses Zero-Shot CoT, benefiting from a dynamic database of AI-driven negative examples; and (3) financial math reasoning is notably more challenging, with performance lagging by approximately 10% compared to financial expertise tasks. FinMR thus serves as a benchmark and resource for future research, guiding the development of advanced techniques and methodologies needed to tackle the unique challenges of complex, numerically intensive financial reasoning.        </p>
     </div>
 
     <div class="section-heading">
@@ -132,7 +142,7 @@
         </div>
     </section>    
 
-    <iframe src="visualizer/explore.html" style="width: 90%;min-height: 100vh; border-radius: 20px; margin-bottom: 40px;"></iframe>
+    <iframe id="visualizer" src="visualizer/explore.html" style="width: 90%;min-height: 100vh; border-radius: 20px; margin-bottom: 40px;"></iframe>
 
     <iframe src="visualizer/explore_2.html" style="width: 90%;min-height: 100vh; border-radius: 20px; margin-bottom: 40px;"></iframe>
 

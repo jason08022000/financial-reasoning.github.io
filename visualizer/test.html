@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaTeX Custom Delimiters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.18/contrib/auto-render.min.js"
+            onload="renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false }
+                ]
+            });">
+    </script>
+</head>
+<body>
+
+<h2>Effective Annual Rate (EAR) Calculation</h2>
+
+<p>
+The effective annual rate (EAR) is calculated as follows:
+</p>
+
+<p>
+$$\text{EAR} = (1 + \text{Periodic interest rate})^n - 1$$
+</p>
+
+<p>
+$$\text{EAR} = (1 + 0.03/365)^{365} - 1$$
+</p>
+
+<p>
+$$\text{EAR} = (1.03045) - 1 = 0.030453 \approx 3.0453\%$$
+</p>
+
+<p>
+Solving for $N$ on a financial calculator results in (where FV is future value and PV is present value):
+</p>
+
+</body>
+</html>

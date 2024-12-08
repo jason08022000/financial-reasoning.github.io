@@ -173,7 +173,7 @@ function make_qt(data) {
 }
 
 function make_up_image(image) {
-    return `<img src="${image}" class="question-image" style="max-width: 100%; height: auto;" />`;
+    return `<img src="${image}" class="question-image" style="max-width: 60%; height: auto;" />`;
 }
 
 function make_options(Options) {

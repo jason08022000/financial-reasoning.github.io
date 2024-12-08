@@ -238,7 +238,7 @@ function make_box(contents, cls = "") {
     if (contents.join("").length === 0) return "";
     let html = `
         <div class="box ${cls}"> 
-            ${contents.join(" ")}
+            <p>${contents.join(" ")}</p>
         </div>
     `;
     return html;

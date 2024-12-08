@@ -166,3 +166,11 @@ function generate_row(qid, model_names) {
     </div>`;
     return html;
 }
+
+function navigateToLeaderboard() {
+    window.location.href = "#leaderboard"; // Assuming the section has an id="leaderboard"
+}
+
+function navigateToVisualizer() {
+    window.location.href = "#visualizer"; // Assuming the section has an id="visualiser"
+}
