@@ -104,6 +104,7 @@ p {
 .button-container {
     display: inline-flex;
     gap: 10px; /* Space between buttons */
+    margin-top: 25px;
 }
 .button {
     display: flex;
