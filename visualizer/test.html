@@ -19,25 +19,42 @@
 
 <h2>Effective Annual Rate (EAR) Calculation</h2>
 
-<p>
-The effective annual rate (EAR) is calculated as follows:
-</p>
-
-<p>
-$$\text{EAR} = (1 + \text{Periodic interest rate})^n - 1$$
-</p>
-
-<p>
-$$\text{EAR} = (1 + 0.03/365)^{365} - 1$$
-</p>
-
-<p>
-$$\text{EAR} = (1.03045) - 1 = 0.030453 \approx 3.0453\%$$
-</p>
-
-<p>
-Solving for $N$ on a financial calculator results in (where FV is future value and PV is present value):
-</p>
+<h2>
+    ### Given Data
+    - Spot rate (INR/GBP): 79.5093
+    - GBP LIBOR: 5.43%
+    - INR LIBOR: 7.52%
+    - Number of days: 360
+    
+    ### Calculation
+    1. **Interest Rate Adjustment**:
+    $
+    \text{Forward Rate Adjustment} = \left(\frac{1 + 0.0543}{1 + 0.0752}\right) - 1
+    $
+    
+    2. **Calculation**:
+    $
+    \frac{1.0543}{1.0752} \approx 0.9806
+    $
+    $
+    0.9806 - 1 = -0.0194
+    $
+    
+    3. **Annualization**:
+    Since it's already for 360 days, no further adjustment is needed.
+    
+    4. **Convert to Percentage**:
+    $
+    -0.0194 \times 100 = -1.94\%
+    $
+    
+    5. **Interpretation**:
+    A negative value indicates a forward discount.
+    
+    Therefore, the forward premium/discount for the 360-day INR/GBP is approximately $-1.94\%$. The closest option is $-1.546\%$.
+    
+    Therefore, the correct option is 【A】.
+</h2>
 
 </body>
 </html>
