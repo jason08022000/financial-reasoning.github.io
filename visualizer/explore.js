@@ -115,6 +115,8 @@ function create_page(d) {
     }
     reflow(body);
     console.log("reflowed");
+    renderKaTeX(); // Call to render KaTeX
+    console.log("Reflowed and rendered KaTeX");
 }
 
 function create_col(data) {
@@ -294,4 +296,15 @@ async function filter_data() {
 // force the browser to reflow
 function reflow(elt) {
     elt.offsetHeight;
+}
+
+function renderKaTeX() {
+    if (typeof renderMathInElement === 'function') {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '$', right: '$', display: false },
+            ]
+        });
+    }
 }

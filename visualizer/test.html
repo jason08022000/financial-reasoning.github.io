@@ -56,7 +56,10 @@
     Therefore, the correct option is 【A】.
 </h2>
 
-<p>$$\n2.25 + 22 = S - Ke^{-rt} = 42 - 44 \times 0.9048 = \$2.19\n$$</p>
+<p>The current value of the 6 $\times$ 9 FRA is calculated as \n\n$$\nV_g(0, h, m)=\left\{\\frac{FRA(g,h-g,m)-FRA(0,h,m)t_m}{[1+D_g(h-m-g)]^{t_h-m-g}}\\right\\}\n$$\n\nThe 6 $\times$ 9 FRA expires six months after initiation. The bank entered into the FRA 90 days ago; thus, the FRA will expire in 90 days. To value the FRA, the first step is to compute the new FRA rate, which is the rate on Day 90 of an FRA that expires in 90 days in which the underlying is the 90-day Libor, or 
+    FRA (90,90,90):\n\n$$\nFRA(g,h-g,m) = \left\{[1+L_g(h-g + m)t_{h-g+m}]-1\\right\\} / t_m\n$$\n\n$$\nFRA(90,90,90) = \{ [1+L_{90}(180-90+90)(180/360)]-1\} /(90/360)\n$$\n\n$$\n= \{ [1+L_{90}(180-90)(90/360)]-1\} /(90/360)\n$$\n\n$$\nFRA(90,90,90) = \left\{[1+L_{90}(180/360)]/[1+L_{90}(90)(90/360)]-1\\right\\}/(90/360)\n$$\n\nExhibit 7 indicates that L90 (180) = 0.95% and L90 (90) = 0.90%, so\n\n$$\nFRA (90, 90, 90) = \n$$ \n$$\n([1 + 0.0095(180/360) / [1 + 0.0090(90/360)] - 1) / (90/360) \n$$\n$$\nFRA (90, 90, 90) = ([(1.00475/1.00225) - 1] (4) = 0.0025 or 0.9978\n$$\n\nTherefore, given the FRA rate at initiation of 0.70% and notional principal of $20 million from Exhibit 1, the current value of the forward contract is calculated as\n\n$$\nV_g= \{\$ 20,000,000 [(0.9978 - 0.0070)(90/360)]/[ 
+    1+0.0095 (180/360)] V90 (0, 180,90). = \\$ 14, 887.75/ 1.00475 = \$ 14,817.37. \n$$
+</p>
 
 
 </body>
