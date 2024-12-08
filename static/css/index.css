@@ -131,6 +131,34 @@ p {
     margin-bottom: 10px; /* Adjust this value to leave space below the image */
     margin-top: 70px;    /* Adjust this value to leave space above the image */
 }
+
+.image-container-dataset-big-one img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 1250px; /* Adjust this value to make the image larger or smaller */
+    height: auto;
+    margin-bottom: 10px; /* Adjust this value to leave space below the image */
+    margin-top: 70px;    /* Adjust this value to leave space above the image */
+}
+
+.image-container-dataset img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 600px; /* Adjust this value to make the image larger or smaller */
+    height: auto;
+    margin-bottom: 10px; /* Adjust this value to leave space below the image */
+    margin-top: 70px;    /* Adjust this value to leave space above the image */
+}
+
+
+
+
 .caption {
     font-size: 20px;
     margin-top: 10px;
