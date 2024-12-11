@@ -61358,7 +61358,7 @@ test_data = [
             "C": "make a new market."
         },
         "Answer": "C",
-        "Explanation": " This order is said to make a new market. The new buy order is at\n￥123.40, which is better than the current best bid of ￥123.35. Therefore, the buy order is\nmaking a new market. Had the new order been at ￥123.35, it would be said to make the market.\nBecause the new buy limit order is at a price less than the best offer of ￥123.80, it will not\nimmediately execute and is not taking the market. \n $ \\begin{array}{|c|c|c|}\n\\hline\n\\text{Bid Size} & \\text{Limit Price (¥)} & \\text{Offer Size} \\\n\\hline\n3 & 122.80 & \\\n8 & 123.00 & \\\n4 & 123.35 & \\\n & 123.80 & 7 \\\n & 124.10 & 6 \\\n & 124.50 & 7 \\\n\\hline\n\\end{array}\n$",
+        "Explanation": " This order is said to make a new market. The new buy order is at\n￥123.40, which is better than the current best bid of ￥123.35. Therefore, the buy order is\nmaking a new market. Had the new order been at ￥123.35, it would be said to make the market.\nBecause the new buy limit order is at a price less than the best offer of ￥123.80, it will not\nimmediately execute and is not taking the market. \n $$ \\begin{array}{|c|c|c|} \\hline \\text{Bid Size} & \\text{Limit Price (¥)} & \\text{Offer Size} \\\\ \\hline 3 & 122.80 & \\\\ 8 & 123.00 & \\\\ 4 & 123.35 & \\\\ & 123.80 & 7 \\\\ & 124.10 & 6 \\\\ & 124.50 & 7 \\\\ \\hline \\end{array} $$",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
