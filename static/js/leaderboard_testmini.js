@@ -6,40 +6,32 @@ function generateTable() {
             <td class="js-sort-number"><strong>#</strong></td>
             <td class="js-sort"><strong>Model</strong></td>
             <td class="js-sort"><strong>Method</strong></td>
-            <td class="js-sort"><strong>Source</strong></td>
-            <td class="js-sort"><strong>Date</strong></td>
-            <td class="js-sort-number"><strong><u>ALL</u></strong></td>
-            <td class="js-sort-number"><strong>FQA</strong></td>
-            <td class="js-sort-number"><strong>GPS</strong></td>
-            <td class="js-sort-number"><strong>MWP</strong></td>
-            <td class="js-sort-number"><strong>TQA</strong></td>
-            <td class="js-sort-number"><strong>VQA</strong></td>
-            <td class="js-sort-number"><strong>ALG</strong></td>
-            <td class="js-sort-number"><strong>ARI</strong></td>
-            <td class="js-sort-number"><strong>GEO</strong></td>
-            <td class="js-sort-number"><strong>LOG</strong></td>
-            <td class="js-sort-number"><strong>NUM</strong></td>
-            <td class="js-sort-number"><strong>SCI</strong></td>
-            <td class="js-sort-number"><strong>STA</strong></td>
+            <td class="js-sort-number"><strong><u>Overall</u></strong></td>
+            <td class="js-sort-number"><strong>Math</strong></td>
+            <td class="js-sort-number"><strong>Expertise</strong></td>
+            <td class="js-sort-number"><strong>Inv</strong></td>
+            <td class="js-sort-number"><strong>QM</strong></td>
+            <td class="js-sort-number"><strong>VRM</strong></td>
+            <td class="js-sort-number"><strong>FMP</strong></td>
+            <td class="js-sort-number"><strong>FRA</strong></td>
+            <td class="js-sort-number"><strong>PM</strong></td>
+            <td class="js-sort-number"><strong>FI</strong></td>
+            <td class="js-sort-number"><strong>FRM</strong></td>
+            <td class="js-sort-number"><strong>CR</strong></td>
+            <td class="js-sort-number"><strong>ECO</strong></td>
+            <td class="js-sort-number"><strong>OR</strong></td>
+            <td class="js-sort-number"><strong>Der</strong></td>
+            <td class="js-sort-number"><strong>MR</strong></td>
+            <td class="js-sort-number"><strong>CF</strong></td>
+            <td class="js-sort-number"><strong>LTR</strong></td>
         </tr>`;
   
         // sort data to make sure the best model is on top
-        first_row = '-' // "Human Performance*"
+        first_row = '1' 
         console.log(data);
   
         // get all keys in data
         var keys = Object.keys(data);
-  
-        // remove "Human Performance*" from keys
-        var index = keys.indexOf(first_row);
-        if (index > -1) {
-          keys.splice(index, 1);
-        }
-  
-        // add "Human Performance*" to the top of keys
-        keys.unshift(first_row);
-  
-        console.log(keys);
   
         // for (var key in data) {
         for (var i=0; i<keys.length; i++) {
@@ -55,46 +47,52 @@ function generateTable() {
           if (top_ranks.includes(key)) {
             table += `<td><b class="best-score-text">${entry.Model}</b></td>`;
             table += `<td>${entry.Method}</td>`;
-            table += `<td><a href="${entry.Source}" class="ext-link" style="font-size: 16px;">Link</a></td>`;
-            table += `<td>${entry.Date}</td>`;
-            table += `<td><b class="best-score-text">${entry.ALL.toFixed(1).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
+            table += `<td><b class="best-score-text">${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
           }
           else {
             table += `<td><b>${entry.Model}</b></td>`;
             table += `<td>${entry.Method}</td>`;
-            table += `<td><a href="${entry.Source}" class="ext-link" style="font-size: 16px;">Link</a></td>`;
-            table += `<td>${entry.Date}</td>`;
-            table += `<td><b>${entry.ALL.toFixed(1).toString()}</b></td>`; // .toFixed(1): round to 1 decimal place
+            table += `<td><b>${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
           }          
   
           // if entry.FQA is a number
           if (!isNaN(entry.FQA)) {
-            table += `<td>${entry.FQA.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.GPS.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.MWP.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.TQA.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.VQA.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.ALG.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.ARI.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.GEO.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.LOG.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.NUM.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.SCI.toFixed(1).toString()}</td>`;
-            table += `<td>${entry.STA.toFixed(1).toString()}</td>`;
+            table += `<td>${entry.Math.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.Expertise.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.Inv.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.QM.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.VRM.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.FMP.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.FRA.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.PM.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.FI.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.FRM.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.CR.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.ECO.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.OR.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.Der.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.MR.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.CF.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.LTR.toFixed(2).toString()}</td>`;
           }
           else {
-          table += `<td>${entry.FQA.toString()}</td>`;
-          table += `<td>${entry.GPS.toString()}</td>`;
-          table += `<td>${entry.MWP.toString()}</td>`;
-          table += `<td>${entry.TQA.toString()}</td>`;
-          table += `<td>${entry.VQA.toString()}</td>`;
-          table += `<td>${entry.ALG.toString()}</td>`;
-          table += `<td>${entry.ARI.toString()}</td>`;
-          table += `<td>${entry.GEO.toString()}</td>`;
-          table += `<td>${entry.LOG.toString()}</td>`;
-          table += `<td>${entry.NUM.toString()}</td>`;
-          table += `<td>${entry.SCI.toString()}</td>`;
-          table += `<td>${entry.STA.toString()}</td>`;
+            table += `<td>${entry.Math.toString()}</td>`;
+            table += `<td>${entry.Expertise.toString()}</td>`;
+            table += `<td>${entry.Inv.toString()}</td>`;
+            table += `<td>${entry.QM.toString()}</td>`;
+            table += `<td>${entry.VRM.toString()}</td>`;
+            table += `<td>${entry.FMP.toString()}</td>`;
+            table += `<td>${entry.FRA.toString()}</td>`;
+            table += `<td>${entry.PM.toString()}</td>`;
+            table += `<td>${entry.FI.toString()}</td>`;
+            table += `<td>${entry.FRM.toString()}</td>`;
+            table += `<td>${entry.CR.toString()}</td>`;
+            table += `<td>${entry.ECO.toString()}</td>`;
+            table += `<td>${entry.OR.toString()}</td>`;
+            table += `<td>${entry.Der.toString()}</td>`;
+            table += `<td>${entry.MR.toString()}</td>`;
+            table += `<td>${entry.CF.toString()}</td>`;
+            table += `<td>${entry.LTR.toString()}</td>`;
           }
           table += '</tr>';
       }
