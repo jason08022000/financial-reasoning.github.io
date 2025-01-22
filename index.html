@@ -42,16 +42,6 @@
         <h1>FinMR: A Novel Knowledge-Intensive Multimodal Reasoning Benchmark in Financial Domains</h1>
     </div>
 
-    <p class="authors">
-        
-    </p>
-
-    <p class="affiliation">
-        <sup class="affiliation-number-1"></sup>
-    </p>
-
-    <p class="conference"></p>
-
 
     <div class="button-container">
         <a href="#" class="button">
@@ -67,10 +57,10 @@
         <a href="https://huggingface.co/datasets/aminous1/FinMR" class="button">
             <span class="icon">🤗</span> Dataset
         </a>
-        <a href="https://jason08022000.github.io/financial-reasoning.github.io/#leaderboard" class="button">
+        <a href="https://anonymous.4open.science/w/financial-reasoning-4A3B/#leaderboard" class="button">
             <span class="icon">🏆</span> Leaderboard
         </a>
-        <a href="https://jason08022000.github.io/financial-reasoning.github.io/#visualizer" class="button">
+        <a href="https://anonymous.4open.science/w/financial-reasoning-4A3B/#visualizer" class="button">
             <span class="icon">🔍</span> Visualization
         </a>
     </div>
@@ -81,8 +71,7 @@
 
 
     <div class="content">
-        <p>
-            Recent advancements in Large Language Models (LLMs) and Large Multimodal Models (LMMs) have paved the way for complex reasoning tasks across various domains. However, while LLMs and LMMs have demonstrated strong performance in general benchmarks, their capabilities remain underexplored in the specialized, knowledge-intensive realm of financial reasoning. To address this gap, we introduce FinMR, a novel multimodal dataset specifically designed for financial reasoning tasks. FinMR encompasses 3,200 expertly crafted questions—1,049 involving financial math and 2,151 probing financial expertise—each paired with both textual and visual data. We conduct extensive evaluations on both open-source and closed-source models using Zero-Shot and Few-Shot Chain-of-Thought (CoT) strategies, revealing that LMMs consistently outperform their purely text-based counterparts. Our results demonstrate that (1) multimodal inputs significantly enhance reasoning capabilities, though image recognition remains a critical bottleneck; (2) Few-Shot CoT surpasses Zero-Shot CoT, benefiting from a dynamic database of AI-driven negative examples; and (3) financial math reasoning is notably more challenging, with performance lagging by approximately 10% compared to financial expertise tasks. FinMR thus serves as a benchmark and resource for future research, guiding the development of advanced techniques and methodologies needed to tackle the unique challenges of complex, numerically intensive financial reasoning.        </p>
+        <p>We introduce <strong>FinMR</strong>, a novel multimodal benchmark designed to evaluate the reasoning capabilities of multimodal LLMs in financial problem-solving. Compared with prior works, this study features four key advancements. First, <strong>FinMR</strong> consists of 3200 college-level question-answer pairs—1049 involving financial math and 2151 probing financial expertise—each integrating textual and visual content, images ranging from financial tables to stock price trends. In particular, all answers have expert-annotated explanations, facilitating the analysis of reasoning errors and model underperformance. Second, to enhance financial reasoning in MLLMs, we propose Error Feedback Learning (<strong>EFL</strong>) by retrieving similar negative examples and error feedback for iterative self-improvement. Third, to enhance financial reasoning in MLLMs, we evaluate open-source and closed-source LLMs and MLLMs using Chain-of-Thought (CoT) and <strong>EFL</strong> strategies, demonstrating that MLLMs outperform standard LLMs, with <strong>EFL</strong> proving more effective than CoT. Finally, further error analysis highlights three primary challenges: image recognition failures, question misunderstanding, and incorrect formula adoption. By addressing these challenges, <strong>FinMR</strong> not only serves as a benchmark for future research but also provides a foundation for developing more advanced techniques to enhance financial reasoning capabilities.</p>
     </div>
 
     <div class="section-heading">
