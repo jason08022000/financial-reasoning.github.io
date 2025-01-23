@@ -176,7 +176,7 @@ score_table = {
       "LTR": 60.87
     },
     "9": {
-      "Model": "LLaVa-NEXT",
+      "Model": "LlaVa-NEXT",
       "Method": "EFL",
       "Overall": 28.28,
       "Math": 26.87,
