@@ -55,8 +55,8 @@ function generateTable() {
             table += `<td><b>${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
           }          
   
-          // if entry.FQA is a number
-          if (!isNaN(entry.FQA)) {
+          // if entry.Math is a number
+          if (!isNaN(entry.Math)) {
             table += `<td>${entry.Math.toFixed(2).toString()}</td>`;
             table += `<td>${entry.Expertise.toFixed(2).toString()}</td>`;
             table += `<td>${entry.Inv.toFixed(2).toString()}</td>`;
