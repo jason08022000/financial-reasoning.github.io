@@ -188,17 +188,12 @@ function make_options(Options) {
 }
 
 function make_explaination(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    console.log(typeof content);
-    const formattedContent = content.replace(/\n/g, '<br/>');
+    // Replace line breaks with Markdown line breaks
+    const formattedContent = content.replace(/\n/g, '  \n');
     
     return `
-    
-        <div class="feedback-section">
-            <p><b>${"Explaination"}</b></p>
-            <p>${formattedContent}</p>
-        </div>
-    `;
+${formattedContent}
+`;
 }
 
 
