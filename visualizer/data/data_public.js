@@ -53219,7 +53219,7 @@ test_data = [
             "D": " 8.40%"
         },
         "Answer": "A",
-        "Explanation": "$$P(X = 20) = \\frac{e^{-\\lambda} \\lambda^x}{x!} = 0.0559 = 5.59\\% where \\lambda = 16 because there are 2 calls per hour and 8 hours in a day, thus \\lambda = 2 \\times 8 = 16. $$",
+        "Explanation": "$$P(X = 20) = \\frac{e^{-\\lambda} \\lambda^x}{x!} = 0.0559 = 5.59\\%$$ where $$\\lambda = 16$$ because there are 2 calls per hour and 8 hours in a day, thus $$\\lambda = 2 \\times 8 = 16 $$",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -53336,13 +53336,13 @@ test_data = [
         "ID": 2541,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider a stock with an initial price of $100. Its price one year from now is given by $$S = 100 e^r$$, where the rate of return $$r$$ is normally distributed with a mean of 0.1 and a standard deviation of 0.2. With 95% confidence, after rounding, $$S$$ will be between:",
+        "Question Text": "Consider a stock with an initial price of $\\$100$. Its price one year from now is given by $S = 100 e^r$, where the rate of return $r$ is normally distributed with a mean of 0.1 and a standard deviation of 0.2. With 95% confidence, after rounding, $S$ will be between:",
         "Image": "images/image_add/2541.png",
         "Options": {
-            "A": " $67.57 and $147.99",
-            "B": " $70.80 and $149.20",
-            "C": " $74.68 and $163.56",
-            "D": " $102.18 and $119.53"
+            "A": " $\\$67.57$ and $\\$147.99$",
+            "B": " $\\$70.80$ and $\\$149.20$",
+            "C": " $\\$74.68$ and $\\$163.56$",
+            "D": " $\\$102.18$ and $\\$119.53$"
         },
         "Answer": "C",
         "Explanation": " The 95% confidence interval for r is $-0.292$ to $0.492$: $ r=0.1-(0.2 \\times 1.96)=-0.2920 $ or $ r=0.1 \\ (0.2 \\times 1.96)=0.4920 $ The 95% confidence interval for S is $74.68$ to $163.56$: \n$$ s = 100 \\times e^{-0.292} = 74.68 \\quad \\text{or} \\quad s = 100 \\times e^{0.4922} = 163.56 $$",
@@ -53483,7 +53483,7 @@ test_data = [
         "ID": 2549,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An analyst is studying a stock that is currently trading at $35. The analyst estimates that there is a 33% probability that the stock will trade at $50 after one year, a 20% probability that the stock will trade at $42, and a 47% probability that the stock will trade at $20. What is the volatility of this stock return?",
+        "Question Text": "An analyst is studying a stock that is currently trading at $\\$35$. The analyst estimates that there is a 33% probability that the stock will trade at $\\$50$ after one year, a 20% probability that the stock will trade at $\\$42$, and a 47% probability that the stock will trade at $\\$20$. What is the volatility of this stock return?",
         "Image": "images/image_add/2549.png",
         "Options": {
             "A": " 13%",
@@ -53765,7 +53765,7 @@ test_data = [
             "D": " 99.99%"
         },
         "Answer": "C",
-        "Explanation": "p[X=0] + p[X=1] + p[X=2] = 35.85% + 37.74% + 18.87% \n p[X=0] + p[X=1] + p[X=2] = 35.85% + 37.74% + 18.87%",
+        "Explanation": "p[X=0] + p[X=1] + p[X=2] = 35.85% + 37.74% + 18.87%",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -53807,7 +53807,7 @@ test_data = [
             "D": " 11 quarters"
         },
         "Answer": "B",
-        "Explanation": "$12 \\times 58\\% = 7 \\text{ quarters}$. The expected value would be the number of periods (12) multiplied by the probability of success (58\\%).",
+        "Explanation": "$12 \\times 58\\% = 7 \\text{ quarters}$. The expected value would be the number of periods (12) multiplied by the probability of success (58\%).",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -54239,7 +54239,7 @@ test_data = [
         "ID": 2585,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An analyst observes that the closing prices of a stock during a week are $33, $43, $45, $48, $46. On the corresponding days the S&P 500 closed at 1150, 1125, 1140, 1160, and 1170. Based on this data the covariance of the stock with the market is CLOSEST to:",
+        "Question Text": "An analyst observes that the closing prices of a stock during a week are $33$, $43$, $45$, $48$, $46$. On the corresponding days the S&P 500 closed at 1150, 1125, 1140, 1160, and 1170. Based on this data the covariance of the stock with the market is CLOSEST to:",
         "Image": "images/image_add/2585.png",
         "Options": {
             "A": " 15.8",
@@ -54248,7 +54248,7 @@ test_data = [
             "D": " 54.4"
         },
         "Answer": "B",
-        "Explanation": "\n\nMean stock price = $(33 + 43 + 45 + 48 + 46)/5 = 43$ \nMean S\\&P level = $(1150 + 1125 + 1140 + 1160 + 1170)/5 = 1149$ \nCovariance between the stock and S\\&P\n$$ = [(33 - 43) \\times (1150 - 1149) + (43 - 43) \\times (1125 - 1149) + (45 - 43) \\times (1140 - 1149) $$ $$ +(48 - 43) \\times (1160 - 1149) + (46 - 43) \\times (1170 - 1149)]/4 = 22.5 $$\n\n",
+        "Explanation": "\n\nMean stock price = $(33 + 43 + 45 + 48 + 46)/5 = 43$ \nMean S\\&P level = $(1150 + 1125 + 1140 + 1160 + 1170)/5 = 1149$ \nCovariance between the stock and S\&P\n$$ = [(33 - 43) \\times (1150 - 1149) + (43 - 43) \\times (1125 - 1149) + (45 - 43) \\times (1140 - 1149) $$ $$ +(48 - 43) \\times (1160 - 1149) + (46 - 43) \\times (1170 - 1149)]/4 = 22.5 $$\n\n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -54479,7 +54479,7 @@ test_data = [
             "D": " It cannot be determined with this information"
         },
         "Answer": "A",
-        "Explanation": "\nBecause $ 20.0\\% \\times 35.0\\% $ does not equal $ 6.0\\% $. Independence requires that $ \\Pr(X) \\times \\Pr(Y) = P(X \\cap Y) $ for all cells. These variables are almost uncorrelated: their correlation $ \\rho = -0.08758 $. \nSee below three examples that illustrate the three key probability concepts: joint, unconditional, and conditional:\n\n|      |      | $ Y $      |             |             | |------|------|--------------|-------------|-------------|\n|      |      | 1            | 3           | 5           |\n| $ X $    | 1    | 6%           | 8%          | 6%          | 20% | |      | 2    | 20%          | 20%         | 15%         | 55% |\n|      | 3    | 9%           | 12%         | 4%          | 25% |\n|      |      | 35%          | 40%         | 25%         | 100% |\n\n- Joint Probability $ \\Pr(X = 1 \\cap Y = 3) = 8\\% $ - Unconditional Probability $ \\Pr(X = 2) = 20\\% + 20\\% + 15\\% = 55\\% $ - Conditional Probability $ \\Pr(Y = 5 | X = 3) = 4\\% / 25\\% = 16\\% $",
+        "Explanation": "\nBecause $ 20.0\\% \\times 35.0\\% $ does not equal $ 6.0\\% $. Independence requires that $ \\Pr(X) \\times \\Pr(Y) = P(X \\cap Y) $ for all cells. These variables are almost uncorrelated: their correlation $ \\rho = -0.08758 $. \nSee below three examples that illustrate the three key probability concepts: joint, unconditional, and conditional:\n\n    $$\\begin{array}{|c|c|c|c|c|c|} \\hline & & \\mathbf{Y} & & & \\\\ \\hline & & 1 & 3 & 5 & \\\\ \\hline \\mathbf{X} & 1 & 6\\% & 8\\% & 6\\% & 20\\% \\\\ & 2 & 20\\% & 20\\% & 15\\% & 55\\% \\\\ & 3 & 9\\% & 12\\% & 4\\% & 25\\% \\\\ \\hline & & 35\\% & 40\\% & 25\\% & 100\\% \\\\ \\hline \\end{array}$$        \n\n- Joint Probability $ \\Pr(X = 1 \\cap Y = 3) = 8\\% $ - Unconditional Probability $ \\Pr(X = 2) = 20\\% + 20\\% + 15\\% = 55\\% $ - Conditional Probability $ \\Pr(Y = 5 | X = 3) = 4\\% / 25\\% = 16\\% $",
         "General Topics": "Quantitative Methods",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -54596,7 +54596,7 @@ test_data = [
         "ID": 2602,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume today's stock price $S$ is $100, the daily log (continuously compounded) return has a mean of 0.0 and standard deviation of 0.10 (10%), and tomorrow's stock price is lognormally distributed. What is the approximate probability that tomorrow's stock price will exceed $117.94?",
+        "Question Text": "Assume today's stock price $S$ is $\\$100$, the daily log (continuously compounded) return has a mean of 0.0 and standard deviation of 0.10 (10%), and tomorrow's stock price is lognormally distributed. What is the approximate probability that tomorrow's stock price will exceed $\\$117.94$?",
         "Image": "images/image_add/2602.png",
         "Options": {
             "A": " about 1%",
@@ -54680,7 +54680,7 @@ test_data = [
         "ID": 2606,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A portfolio has a mean value of $60 million and a daily standard deviation of $8 million. Assuming that the portfolio values are normally distributed, the lowest value that the portfolio will fall to over the next five days and within 99% probability is:",
+        "Question Text": "A portfolio has a mean value of $60$ million and a daily standard deviation of $8$ million. Assuming that the portfolio values are normally distributed, the lowest value that the portfolio will fall to over the next five days and within 99% probability is:",
         "Image": "images/image_add/2606.png",
         "Options": {
             "A": " $4.5 million",
@@ -54722,7 +54722,7 @@ test_data = [
         "ID": 2608,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "You want to test at the 0.05 level of significance that the mean price of luxury cars is greater than $80,000. A random sample of 50 cars has a mean price of $88,000. The population standard deviation is $15,000. What is the alternative hypothesis?",
+        "Question Text": "You want to test at the 0.05 level of significance that the mean price of luxury cars is greater than $\\$80,000$. A random sample of 50 cars has a mean price of $\\$88,000$. The population standard deviation is $\\$15,000$. What is the alternative hypothesis?",
         "Image": "images/image_add/2608.png",
         "Options": {
             "A": " The population mean is greater than $80,000.",
@@ -54731,7 +54731,7 @@ test_data = [
             "D": " The population mean is equal to $80,000."
         },
         "Answer": "A",
-        "Explanation": "The alternate hypothesis is the statement which will be accepted if the null hypothesis is proven wrong. Therefore, we make whatever we are trying to test as the alternative hypothesis—in this case, the mean price of luxury cars is greater than $80,000, and the null hypothesis is the opposite (the mean price of luxury cars is less than or equal to $80,000). ",
+        "Explanation": "The alternate hypothesis is the statement which will be accepted if the null hypothesis is proven wrong. Therefore, we make whatever we are trying to test as the alternative hypothesis—in this case, the mean price of luxury cars is greater than $\\$80,000$, and the null hypothesis is the opposite (the mean price of luxury cars is less than or equal to $\\$80,000$). ",
         "General Topics": "Quantitative Methods",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -55129,7 +55129,7 @@ test_data = [
             "D": " 0.4"
         },
         "Answer": "C",
-        "Explanation": "\nThe following table provides the ranking of pairs with respect to X.\n\n| Year | X     | Y     | X Rank | Y Rank |\n|------|-------|-------|--------|--------|\n| 2013 | -20.0%| 40.0% | 1      | 5      |\n| 2012 | -10.0%| 20.0% | 2      | 4      |\n| 2010 | 5.0%  | -10.0%| 3      | 1      |\n| 2014 | 30.0% | 15.0% | 4      | 3      |\n| 2011 | 50.0% | -5.0% | 5      | 2      |\n\nThere are two concordant pairs and eight discordant pairs shown as follows:\n\nConcordant Pairs: {(3,1), (4,3)}\n\nDiscordant Pairs: {(1,5), (2,4)}; {(1,5), (3,1)}; {(1,5), (4,3)}; {(1,5), (5,2)}; {(2,4), (3,1)}; {(2,4), (4,3)}; {(2,4), (5,2)}; {(4,3), (5,2)}\n\nThus, the Kendall τ correlation coefficient is -0.2\n\n$$ \\tau = \\frac{n_c - n_d}{n(n - 1)/2} $$",
+        "Explanation": "\nThe following table provides the ranking of pairs with respect to X.\n\n $$\\begin{array}{|c|c|c|c|c|} \\hline \\text{Year} & \\text{X} & \\text{Y} & \\text{X Rank} & \\text{Y Rank} \\\\ \\hline 2013 & -20.0\\% & 40.0\\% & 1 & 5 \\\\ 2012 & -10.0\\% & 20.0\\% & 2 & 4 \\\\ 2010 & 5.0\\% & -10.0\\% & 3 & 1 \\\\ 2014 & 30.0\\% & 15.0\\% & 4 & 3 \\\\ 2011 & 50.0\\% & -5.0\\% & 5 & 2 \\\\ \\hline \\end{array}$$        \n\nThere are two concordant pairs and eight discordant pairs shown as follows:\n\nConcordant Pairs: {(3,1), (4,3)}\n\nDiscordant Pairs: {(1,5), (2,4)}; {(1,5), (3,1)}; {(1,5), (4,3)}; {(1,5), (5,2)}; {(2,4), (3,1)}; {(2,4), (4,3)}; {(2,4), (5,2)}; {(4,3), (5,2)}\n\nThus, the Kendall τ correlation coefficient is -0.2\n\n$$ \\tau = \\frac{n_c - n_d}{n(n - 1)/2} $$",
         "General Topics": "Quantitative Methods",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -55213,7 +55213,7 @@ test_data = [
             "D": " 15.87%"
         },
         "Answer": "A",
-        "Explanation": "\n\nGiven that the daily standard deviation is $4.27$ million, \n$$ \\sigma_{7-days} = 4.27 \\times \\sqrt{7} = 11.29 $$ \nUsing this standard deviation, the level of $40 million is $(40-75)/11.29 = -3.1$ standard deviations from the mean value. Given that the returns are normally distributed the probability of value falling more than $-3.1$ standard deviations from the mean value is $0.1\\%$ (since $100\\%$ of the probability falls between $\\pm3.1$ standard deviations of the mean).",
+        "Explanation": "\n\nGiven that the daily standard deviation is $4.27$ million, \n$$ \\sigma_{7-days} = 4.27 \\times \\sqrt{7} = 11.29 $$ \nUsing this standard deviation, the level of $\\$40$ million is $(40-75)/11.29 = -3.1$ standard deviations from the mean value. Given that the returns are normally distributed the probability of value falling more than $-3.1$ standard deviations from the mean value is $0.1\\%$ (since $100\\%$ of the probability falls between $\\pm3.1$ standard deviations of the mean).",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -55435,7 +55435,7 @@ test_data = [
         "ID": 2642,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Based on a sample size of 100 and sample mean of $30, you estimate a 95% confidence interval for the mean weekly soft drink expenditures of students at a local college. Your estimate of the confidence interval is $26.77 to $33.23. Since you knew the standard deviation beforehand, your confidence interval was based on a standard deviation closest to:",
+        "Question Text": "Based on a sample size of 100 and sample mean of $30$, you estimate a 95% confidence interval for the mean weekly soft drink expenditures of students at a local college. Your estimate of the confidence interval is $26.77$ to $33.23$. Since you knew the standard deviation beforehand, your confidence interval was based on a standard deviation closest to:",
         "Image": "images/image_add/2642.png",
         "Options": {
             "A": " 1.65",
@@ -55612,7 +55612,7 @@ test_data = [
             "D": " 0.7"
         },
         "Answer": "A",
-        "Explanation": "\nThe following table illustrates the calculations used to determine the sum of squared ranking deviations:\n\n$ \\begin{array}{cccccc}\n\\text{Year} & \\text{X} & \\text{Y} & \\text{X Rank} & \\text{Y Rank} & d_i & d_i2\\\n2013 & -20.0\\% & 40.0\\% & 1 & 5 & -4 & 16\\\n2012 & -10.0\\% & 20.0\\% & 2 & 4 & -2 & 4\\\n2010 & 5.0\\% & -10.0\\% & 3 & 1 & 2 & 4\\\n2014 & 30.0\\% & 15.0\\% & 4 & 3 & 1 & 1\\\n2011 & 50.0\\% & -5.0\\% & 5 & 2 & 3 & 9\\\n& & & & & \\text{Sum} & 34 \\\n\\end{array}\n$\n\nThus, the Spearman rank correlation coefficient is $-0.7$: \n$$ \\rho_s = 1 - \\frac{6 \\times \\sum_{i=1}^n d_i^2}{n(n^2-1)} = 1 - \\frac{6 \\times 34}{5 \\times (25-1)} = -0.7 $$",
+        "Explanation": "\nThe following table illustrates the calculations used to determine the sum of squared ranking deviations:\n\n $$ \\begin{array}{|c|c|c|c|c|c|}\\text{Year} & \\text{X} & \\text{Y} & \\text{X Rank} & \\text{Y Rank} & d_i & d_i^2\\\\2013 & -20.0\\% & 40.0\\% & 1 & 5 & -4 & 16\\\\2012 & -10.0\\% & 20.0\\% & 2 & 4 & -2 & 4\\\\2010 & 5.0\\% & -10.0\\% & 3 & 1 & 2 & 4\\\\2014 & 30.0\\% & 15.0\\% & 4 & 3 & 1 & 1\\\\2011 & 50.0\\% & -5.0\\% & 5 & 2 & 3 & 9\\\\& & & & & \\text{Sum} & 34 \\\\\\end{array}$$\n\nThus, the Spearman rank correlation coefficient is $-0.7$: \n$$ \\rho_s = 1 - \\frac{6 \\times \\sum_{i=1}^n d_i^2}{n(n^2-1)} = 1 - \\frac{6 \\times 34}{5 \\times (25-1)} = -0.7 $$",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -65473,7 +65473,7 @@ test_data = [
             "C": "€227,573."
         },
         "Answer": "B",
-        "Explanation": "\n\n| **Year** | **Cash Flow (€)** | **Formula** (CF × (1 + r)<sup>t</sup>) | **PV at Year 0** |\n|----------|--------------------|----------------------------------------|------------------|\n| 1        | 100,000            | 100,000 × (1.12)<sup>−1</sup>          | 89,285.71        |\n| 2        | 150,000            | 150,000 × (1.12)<sup>−2</sup>          | 119,579.08       |\n| 5        | −10,000            | −10,000 × (1.12)<sup>−5</sup>          | −5,674.27        |\n| **Total**|                    |                                        | **203,190.52**   |\n",
+        "Explanation": "\n\n    $$\\begin{array}{|c|c|c|c|} \\hline \\text{Year} & \\text{Cash Flow (€)} & \\text{Formula}~(CF \\times (1 + r)^t) & \\text{PV at Year 0} \\\\ \\hline 1 & 100,000 & 100,000 \\times (1.12)^{-1} & 89,285.71 \\\\ 2 & 150,000 & 150,000 \\times (1.12)^{-2} & 119,579.08 \\\\ 5 & -10,000 & -10,000 \\times (1.12)^{-5} & -5,674.27 \\\\ \\text{Total} & & & \\textbf{203,190.52} \\\\ \\hline \\end{array}$$        \n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -65593,7 +65593,7 @@ test_data = [
             "C": "0.583."
         },
         "Answer": "C",
-        "Explanation": "The cumulative relative frequency of a bin identifies the fraction of observations that are less than the upper limit of the given bin. It is determined by summing the relative frequencies from the lowest bin up to and including the given bin. The following exhibit shows the relative frequencies for all the bins of the data from the previous exhibit:\n\n| Lower Limit (%) | Upper Limit (%) | Absolute Frequency | Relative Frequency | Cumulative Relative Frequency |\n|-----------------|-----------------|--------------------|--------------------|-------------------------------|\n| -9.19 ≤         | < -5.45         | 1                 | 0.083             | 0.083                         |\n| -5.45 ≤         | < -1.71         | 2                 | 0.167             | 0.250                         |\n| -1.71 ≤         | < 2.03          | 4                 | 0.333             | 0.583                         |\n| 2.03 ≤          | < 5.77          | 3                 | 0.250             | 0.833                         |\n| 5.77 ≤          | ≥ 9.51          | 2                 | 0.167             | 1.000                         |\n\nThe bin $-1.71\\% \\leq x < 2.03\\%$ has a cumulative relative frequency of 0.583.",
+        "Explanation": "The cumulative relative frequency of a bin identifies the fraction of observations that are less than the upper limit of the given bin. It is determined by summing the relative frequencies from the lowest bin up to and including the given bin. The following exhibit shows the relative frequencies for all the bins of the data from the previous exhibit:\n\n    $$\\begin{array}{|c|c|c|c|c|}\\hline \\text{Lower Limit (\\%)} & \\text{Upper Limit (\\%)} & \\text{Absolute Frequency} & \\text{Relative Frequency} & \\text{Cumulative Relative Frequency} \\\\ \\hline -9.19 \\leq & < -5.45 & 1 & 0.083 & 0.083 \\\\ -5.45 \\leq & < -1.71 & 2 & 0.167 & 0.250 \\\\ -1.71 \\leq & < 2.03 & 4 & 0.333 & 0.583 \\\\ 2.03 \\leq & < 5.77 & 3 & 0.250 & 0.833 \\\\ 5.77 \\leq & \\geq 9.51 & 2 & 0.167 & 1.000 \\\\ \\hline \\end{array}$$        \n\nThe bin $-1.71\\% \\leq x < 2.03\\%$ has a cumulative relative frequency of 0.583.",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -65773,7 +65773,7 @@ test_data = [
             "C": "5 to 1."
         },
         "Answer": "A",
-        "Explanation": "Given odds for E of a to b, the implied probability of E = a/(a +\nb). Stated in terms of odds a to b with a = 1, b = 5, the probability of E = 1/(1 + 5) = 1/6 =\n0.167. This result confirms that a probability of 0.167 for beating sales is odds of 1 to 5. ：\nA正确。这里要求的是exceeding sales的odds for",
+        "Explanation": "Given odds for E of a to b, the implied probability of E = a/(a +\nb). Stated in terms of odds a to b with a = 1, b = 5, the probability of E = 1/(1 + 5) = 1/6 =\n0.167. This result confirms that a probability of 0.167 for beating sales is odds of 1 to 5. ：\nA is correct",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -65973,7 +65973,7 @@ test_data = [
             "C": "$68,201."
         },
         "Answer": "B",
-        "Explanation": " First, find the present value (PV) of an ordinary annuity in Year 17\nthat represents the tuition costs:\nThen, find the PV of the annuity in today’s dollars (where FV is future value):\n\n $$ \\$50,000 \\left[ \\frac{1 - \\frac{1}{(1 + 0.06)^4}}{0.06} \\right] $$ \n= \\$50,000 × 3.4651\n\n= \\$173,255.28. \n$$ PV_0 = \\frac{FV}{(1 + 0.06)^{17}} $$ \n$$ PV_0 = \\frac{\\$173,255.28}{(1 + 0.06)^{17}} $$ \n$$ PV_0 \\approx \\$64,340.85 \\approx \\$64,341. $$",
+        "Explanation": " First, find the present value (PV) of an ordinary annuity in Year 17\nthat represents the tuition costs:\nThen, find the PV of the annuity in today’s dollars (where FV is future value):\n\n $$ \\$50,000 \\left[ \\frac{1 - \\frac{1}{(1 + 0.06)^4}}{0.06} \\right] $$ \n $$ = \\$50,000 × 3.4651\n\n= \\$173,255.28. \n$$ $$PV_0 = \\frac{FV}{(1 + 0.06)^{17}} $$ \n$$ PV_0 = \\frac{\\$173,255.28}{(1 + 0.06)^{17}} $$ \n$$ PV_0 \\approx \\$64,340.85 \\approx \\$64,341. $$",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -66013,7 +66013,7 @@ test_data = [
             "C": "$81,600."
         },
         "Answer": "B",
-        "Explanation": "If Scenario 1 occurs, the expected recovery is 60% ($50,000)40% ($30,000) = $42,000, and if Scenario 2 occurs, the expected recovery is 90% ($80,000)10%($60,000) = $78,000. Weighting by the probability of each scenario, the expected recovery is 40%($42,000)60%($78,000) = $63,600. Alternatively, first calculating the probability of each amount occurring, the expected recovery is\n(40%)(60%)($50,000)(40%)(40%)($30,000)(60%)(90%)($80,000)(60%)(10%)($60,000) = $63,600.",
+        "Explanation": "If Scenario 1 occurs, the expected recovery is 60% ($\\$50,000$) + 40% ($\\$30,000$) = $\\$42,000$, and if Scenario 2 occurs, the expected recovery is 90% ($\\$80,000$) + 10%($\\$60,000$) = $\\$78,000$. Weighting by the probability of each scenario, the expected recovery is 40%($\\$42,000$) + 60%($\\$78,000$) = $\\$63,600$. Alternatively, first calculating the probability of each amount occurring, the expected recovery is\n (40%)(60%)($\\$50,000$) + (40%)(40%)($\\$30,000$) + (60%)(90%)($\\$80,000$) + (60%)(10%)($\\$60,000$) = $\\$63,600$.",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -66233,7 +66233,7 @@ test_data = [
             "C": "$28,873."
         },
         "Answer": "B",
-        "Explanation": " The PV in Year 5 of a $50,000 lump sum paid in Year 20 is $27,763.23\n(where FV is future value):\n",
+        "Explanation": " The PV in Year 5 of a $\\$50,000$ lump sum paid in Year 20 is $\\$27,763.23$\n(where FV is future value):\n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -66293,7 +66293,7 @@ test_data = [
             "C": "$32.40 million."
         },
         "Answer": "A",
-        "Explanation": " The analyst must first calculate expected sales as 0.05 × $70 + 0.70 × $40 + 0.25 × $25 = $3.50 million + $28.00 million + $6.25 million = $37.75 million. After calculating expected sales, we can calculate the variance of sales:\nThe standard deviation of sales is thus σ = ($96.18)^1/2 = $9.81 million. \n $$ \\sigma^2 (\\text{Sales}) $$ \n$$ = P(\\$70)[\\$70 - E(\\text{Sales})]^2 + P(\\$40)[\\$40 - E(\\text{Sales})]^2 + P(\\$25)[\\$25 - E(\\text{Sales})]^2 $$ \n$$ = 0.05(\\$70 - 37.75)^2 + 0.70(\\$40 - 37.75)^2 + 0.25(\\$25 - 37.75)^2 $$ \n$$ = \\$52.00 \\text{ million} + \\$3.54 \\text{ million} + \\$40.64 \\text{ million} = \\$96.18 \\text{ million}. $$",
+        "Explanation": " The analyst must first calculate expected sales as 0.05 × $\\$70$ + 0.70 × $\\$40$ + 0.25 × $\\$25$ = $\\$3.50$ million + $\\$28.00$ million + $\\$6.25$ million = $\\$37.75$ million. After calculating expected sales, we can calculate the variance of sales:\nThe standard deviation of sales is thus σ = ($\\$96.18$)^1/2 = $\\$9.81$ million. \n $$ \\sigma^2 (\\text{Sales}) = P(\\$70)[\\$70 - E(\\text{Sales})]^2 + P(\\$40)[\\$40 - E(\\text{Sales})]^2 + P(\\$25)[\\$25 - E(\\text{Sales})]^2 $$ \n$$ = 0.05(\\$70 - 37.75)^2 + 0.70(\\$40 - 37.75)^2 + 0.25(\\$25 - 37.75)^2 $$ \n$$ = \\$52.00 \\text{ million} + \\$3.54 \\text{ million} + \\$40.64 \\text{ million} = \\$96.18 \\text{ million}$$",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -66533,7 +66533,7 @@ test_data = [
             "C": "cross-sectional data."
         },
         "Answer": "A",
-        "Explanation": " Panel data consist of observations through time on one or more\nvariables for multiple observational units. A two-dimensional rectangular array, or data table,\nwould be suitable here as it is comprised of columns to hold the variable（　） for the\nobservational units and rows to hold the observations through time. B is incorrect because a\none-dimensional (not a two-dimensional rectangular) array would be most suitable for organizing\na collection of data of the same data type, such as the time-series data from a single\nvariable. C is incorrect because a one-dimensional (not a two-dimensional rectangular) array\nwould be most suitable for organizing a collection of data of the same data type, such as the\nsame variable for multiple observational units at a given point in time (cross-sectional data).\n",
+        "Explanation": " Panel data consist of observations through time on one or more\nvariables for multiple observational units. A two-dimensional rectangular array, or data table,\nwould be suitable here as it is comprised of columns to hold the variable for the\nobservational units and rows to hold the observations through time. B is incorrect because a\none-dimensional (not a two-dimensional rectangular) array would be most suitable for organizing\na collection of data of the same data type, such as the time-series data from a single\nvariable. C is incorrect because a one-dimensional (not a two-dimensional rectangular) array\nwould be most suitable for organizing a collection of data of the same data type, such as the\nsame variable for multiple observational units at a given point in time (cross-sectional data).\n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -66565,7 +66565,7 @@ test_data = [
         "ID": 3170,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "At a 5% interest rate per year compounded annually, the present value (PV) of a 10-year\nordinary annuity with annual payments of $2,000 is $15,443.47. The PV of a 10-year annuity due\nwith the same interest rate and payments is closest to:",
+        "Question Text": "At a 5% interest rate per year compounded annually, the present value (PV) of a 10-year\nordinary annuity with annual payments of $\\$2,000$ is $\\$15,443.47$. The PV of a 10-year annuity due\nwith the same interest rate and payments is closest to:",
         "Image": "images/image_add/3170.png",
         "Options": {
             "A": "$14,708.",
@@ -66573,7 +66573,7 @@ test_data = [
             "C": "$17,443."
         },
         "Answer": "B",
-        "Explanation": " The present value of a 10-year annuity (A) due with payments of\n$2,000 at a 5% discount rate is calculated as follows: \n$PV = A \\left[ \\frac{1 - \\frac{1}{(1 + r)^N}}{r} \\right] + 2,000$ \n$PV = 2,000 \\left[ \\frac{1 - \\frac{1}{(1 + 0.05)^9}}{0.05} \\right] + 2,000$ \n$PV = 16,215.64$ \nAlternatively, the PV of a 10-year annuity due is simply the PV of the ordinary annuity\nmultiplied by 1.05:\n\n$PV = 15,443.47 \\times 1.05\n$ $PV = 16,215.64$\n",
+        "Explanation": " The present value of a 10-year annuity (A) due with payments of\n$\\$2,000$ at a 5% discount rate is calculated as follows: \n$PV = A \\left[ \\frac{1 - \\frac{1}{(1 + r)^N}}{r} \\right] + 2,000$ \n$PV = 2,000 \\left[ \\frac{1 - \\frac{1}{(1 + 0.05)^9}}{0.05} \\right] + 2,000$ \n$PV = 16,215.64$ \nAlternatively, the PV of a 10-year annuity due is simply the PV of the ordinary annuity\nmultiplied by 1.05:\n\n$PV = 15,443.47 \\times 1.05\n$ $PV = 16,215.64$\n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -66993,7 +66993,7 @@ test_data = [
             "C": "$31,677"
         },
         "Answer": "B",
-        "Explanation": " To solve for the future value of unequal cash flows, compute the\nfuture value of each payment as of Year 4 at the semiannual rate of 2%, and then sum the\nindividual future values, as follows:\n\n$ \\begin{array}{cccc}\n\\text{Year} & \\text{End of Year Deposits (\\$)} & \\text{Factor} & \\text{Future Value (\\$)} \\ \\hline\n1 & 4,000 & (1.02)^6 & 4,504.65 \\\n2 & 8,000 & (1.02)^4 & 8,659.46 \\\n3 & 7,000 & (1.02)^2 & 7,282.80 \\\n4 & 10,000 & (1.02)^0 & 10,000.00 \\\n\\hline\n& \\text{Sum =} & & 30,446.91\n\\end{array}\n$",
+        "Explanation": " To solve for the future value of unequal cash flows, compute the\nfuture value of each payment as of Year 4 at the semiannual rate of 2%, and then sum the\nindividual future values, as follows:\n\n$ \\begin{array}{cccc}\\text{Year} & \\text{End of Year Deposits (\\$)} & \\text{Factor} & \\text{Future Value (\\$)} \\\\ \\hline1 & 4,000 & (1.02)^6 & 4,504.65 \\\\2 & 8,000 & (1.02)^4 & 8,659.46 \\\\3 & 7,000 & (1.02)^2 & 7,282.80 \\\\4 & 10,000 & (1.02)^0 & 10,000.00 \\\\\\hline\n& \\text{Sum =} & & 30,446.91\\end{array}$",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -67353,7 +67353,7 @@ test_data = [
             "C": "3 2249."
         },
         "Answer": "A",
-        "Explanation": "To derive the standard error of the forecast (s<sub>f</sub>), we first have to\ncalculate the variation of RDR. Then, we have the all the pieces to calculate s<sub>f:</sub>\n\n#### Exhibit 9: Details of Calculation of Slope of NPM Regressed on RDR\n\n| **Company** | **NPM (Yᵢ) (%)** | **RDR (Xᵢ) (%)** | **Yᵢ − Ȳ** | **Xᵢ − X̄** | **(Yᵢ − Ȳ)²** | **(Xᵢ − X̄)²** | **(Yᵢ − Ȳ)(Xᵢ − X̄)** |\n|-------------|------------------|------------------|-------------|-------------|----------------|----------------|---------------------|\n| 1           | 4                | 8                | -2.8        | 0.5         | 7.5625         | 0.25           | -1.375              |\n| 2           | 5                | 10               | -1.8        | 2.5         | 3.0625         | 6.25           | -4.375              |\n| 3           | 10               | 6                | 3.3         | -1.5        | 10.5625        | 2.25           | -4.875              |\n| 4           | 9                | 5                | 2.3         | -2.5        | 5.0625         | 6.25           | -5.625              |\n| 5           | 5                | 7                | -1.8        | -0.5        | 3.0625         | 0.25           | 0.875               |\n| 6           | 6                | 9                | -0.8        | 1.5         | 0.5625         | 2.25           | -1.125              |\n| 7           | 12               | 5                | 5.3         | -2.5        | 27.5625        | 6.25           | -13.125             |\n| 8           | 3                | 10               | -3.8        | 2.5         | 14.0625        | 6.25           | -9.375              |\n| **Sum**     | 54.0             | 60.0             | 0.0         | 0.0         | 71.5000        | 30.00          | -39.0               |\n| **Average** | 6.75             | 7.5              |             |             |                |                |                     |\n\n\n$ \\sum_{i=1}^{n} (X_i - \\bar{X})^2 = 4.285714 \\times 7 = 30.\n$\n\n$ s_f = 1.8618987 \\sqrt{1 + \\frac{1}{8} + \\frac{(5 - 7.5)^2}{30}} = 2.1499.\n$\n",
+        "Explanation": "To derive the standard error of the forecast (s<sub>f</sub>), we first have to\ncalculate the variation of RDR. Then, we have the all the pieces to calculate s<sub>f:</sub>\n\n#### Exhibit 9: Details of Calculation of Slope of NPM Regressed on RDR\n\n     $$\\begin{array}{|c|c|c|c|c|c|c|c|}\\hline \\text{Company} & \\text{NPM (Yi) (\\%)} & \\text{RDR (Xi) (\\%)} & Y_i - \\bar{Y} & X_i - \\bar{X} & (Y_ - \\bar{Y})^2 & (Xi - \\bar{X})^2 & (Yi - \\bar{Y})(Xi - \\bar{X}) \\\\ \\hline 1 & 4 & 8 & -2.8 & 0.5 & 7.5625 & 0.25 & -1.375 \\\\ 2 & 5 & 10 & -1.8 & 2.5 & 3.0625 & 6.25 & -4.375 \\\\ 3 & 10 & 6 & 3.3 & -1.5 & 10.5625 & 2.25 & -4.875 \\\\ 4 & 9 & 5 & 2.3 & -2.5 & 5.0625 & 6.25 & -5.625 \\\\ 5 & 5 & 7 & -1.8 & -0.5 & 3.0625 & 0.25 & 0.875 \\\\ 6 & 6 & 9 & -0.8 & 1.5 & 0.5625 & 2.25 & -1.125 \\\\ 7 & 12 & 5 & 5.3 & -2.5 & 27.5625 & 6.25 & -13.125 \\\\ 8 & 3 & 10 & -3.8 & 2.5 & 14.0625 & 6.25 & -9.375 \\\\ \\text{Sum} & 54.0 & 60.0 & 0.0 & 0.0 & 71.5000 & 30.00 & -39.0 \\\\ \\text{Average} & 6.75 & 7.5 & & & & & \\\\ \\hline \\end{array}$$        \n\n\n$ \\sum_{i=1}^{n} (X_i - \\bar{X})^2 = 4.285714 \\times 7 = 30.\n$\n\n$ s_f = 1.8618987 \\sqrt{1 + \\frac{1}{8} + \\frac{(5 - 7.5)^2}{30}} = 2.1499.\n$\n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -67605,7 +67605,7 @@ test_data = [
         "ID": 3222,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A call option on a stock index is valued using a three-step binomial tree with an up move\nthat equals 1.05 and a down move that equals 0.95. The current level of the index is $190, and\nthe option exercise price is $200. If the option value is positive when the stock price exceeds\nthe exercise price at expiration and $0 otherwise, the number of terminal nodes with a positive\npayoff is:",
+        "Question Text": "A call option on a stock index is valued using a three-step binomial tree with an up move\nthat equals 1.05 and a down move that equals 0.95. The current level of the index is $\\$190$, and\nthe option exercise price is $\\$200$. If the option value is positive when the stock price exceeds\nthe exercise price at expiration and $\\$0$ otherwise, the number of terminal nodes with a positive\npayoff is:",
         "Image": "images/level1_shu_liang_images/109u.png",
         "Options": {
             "A": "one.",
@@ -67613,12 +67613,12 @@ test_data = [
             "C": "three."
         },
         "Answer": "A",
-        "Explanation": " Only the top node value of $219.9488 exceeds $200.\n",
+        "Explanation": " Only the top node value of $\\$219.9488$ exceeds $\\$200$.\n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
         "shared_description": "",
-        "description": "The image is a binomial tree diagram representing potential future prices of a stock or asset. It starts with an initial price of $190.0000. Each node splits into two branches, showing possible upward or downward price movements.\n\n1. The first level has two prices: $199.5000 (up) and $180.5000 (down).\n2. The second level from $199.5000 splits into $209.4750 (up) and $189.5250 (down).\n3. From $180.5000, it splits into $189.5250 (up) and $171.4750 (down).\n4. The third level from $209.4750 splits into $219.9488 (up) and $199.0013 (down).\n5. From $189.5250, it splits into $199.0013 (up) and $180.0488 (down).\n6. From $171.4750, it splits into $180.0488 (up) and $162.9013 (down).\n\nEach branch represents a potential future price based on an assumed volatility and time step.",
+        "description": "The image is a binomial tree diagram representing potential future prices of a stock or asset. It starts with an initial price of $\\$190.0000$. Each node splits into two branches, showing possible upward or downward price movements.\n\n1. The first level has two prices: $\\$199.5000$ (up) and $\\$180.5000$ (down).\n2. The second level from $\\$199.5000$ splits into $\\$209.4750$ (up) and $\\$189.5250$ (down).\n3. From $\\$180.5000$, it splits into $\\$189.5250$ (up) and $\\$171.4750$ (down).\n4. The third level from $\\$209.4750$ splits into $\\$219.9488$ (up) and $\\$199.0013$ (down).\n5. From $\\$189.5250$, it splits into $\\$199.0013$ (up) and $\\$180.0488$ (down).\n6. From $\\$171.4750$, it splits into $\\$180.0488$ (up) and $\\$162.9013$ (down).\n\nEach branch represents a potential future price based on an assumed volatility and time step.",
         "Datasplit": "test"
     },
     {
@@ -67765,7 +67765,7 @@ test_data = [
         "ID": 3230,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A stock is priced at $100.00 and follows a one-period binomial process with an up move that\nequals 1.05 and a down move that equals 0.97. If 1 million Bernoulli trials are conducted, and\nthe average terminal stock price is $102.00, the probability of an up move （　） is closest\nto:",
+        "Question Text": "A stock is priced at $\\$100.00$ and follows a one-period binomial process with an up move that\nequals 1.05 and a down move that equals 0.97. If 1 million Bernoulli trials are conducted, and\nthe average terminal stock price is $\\$102.00$, the probability of an up move is closest\nto:",
         "Image": "images/image_add/3230.png",
         "Options": {
             "A": "0.375.",
@@ -67773,7 +67773,7 @@ test_data = [
             "C": "0.625."
         },
         "Answer": "C",
-        "Explanation": "The probability of an up move （　） can be found by solving the\nequation: （　）uS ＋ (1 – p)dS = （　）105 ＋ (1 – p)97 = 102. Solving for p gives 8p = 5,\nso that p = 0.625. ",
+        "Explanation": "The probability of an up move can be found by solving the\nequation: uS ＋ (1 – p)dS = 105 ＋ (1 – p)97 = 102. Solving for p gives 8p = 5,\nso that p = 0.625. ",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -67885,7 +67885,7 @@ test_data = [
         "ID": 3236,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "On 1 January 2004, the value of an investor's portfolio is $89,000. The investor plans to\ndonate $6,000 to charity organization and pay $2,000 to his insurance account on 31 December\n2004, but meanwhile he does not want the year-end portfolio value to be below $89,000. If the\nexpected return on the existing portfolio is 12% with a variance of 0.0125, the safety-first\nratio that would be used to evaluate the portfolio based on Roy's criterion is closest to:",
+        "Question Text": "On 1 January 2004, the value of an investor's portfolio is $\\$89,000$. The investor plans to\ndonate $\\$6,000$ to charity organization and pay $\\$2,000$ to his insurance account on 31 December\n2004, but meanwhile he does not want the year-end portfolio value to be below $\\$89,000$. If the\nexpected return on the existing portfolio is 12% with a variance of 0.0125, the safety-first\nratio that would be used to evaluate the portfolio based on Roy's criterion is closest to:",
         "Image": "images/image_add/3236.png",
         "Options": {
             "A": "0.269.",
@@ -68285,7 +68285,7 @@ test_data = [
         "ID": 3256,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Investor believes that the mean price of houses in the area is greater than $135,000. A\nrandom sample of 25 houses in the area has a mean price of $139,750. The population standard\ndeviation is $24,000, and he wants to conduct a hypothesis test at a 1% level of significance.\nThe value of the calculated test statistic is closest to:",
+        "Question Text": "Investor believes that the mean price of houses in the area is greater than $\\$135,000$. A\nrandom sample of 25 houses in the area has a mean price of $\\$139,750$. The population standard\ndeviation is $\\$24,000$, and he wants to conduct a hypothesis test at a 1% level of significance.\nThe value of the calculated test statistic is closest to:",
         "Image": "images/image_add/3256.png",
         "Options": {
             "A": "0.67.",
