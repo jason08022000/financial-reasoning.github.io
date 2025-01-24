@@ -1,9 +1,9 @@
 // Data file
-DATA_FILE = "data_public.js"; // default, answers for development, no answer for test
+DATA_FILE = "data_public.js";
 
 // Variables for the filters with the number of questions
 let number_options = [1, 20, 50, 100, 150, 200,10000];  
-let splits = ["All", "development (2560)", "test (640)"];    
+let splits = ["All", "train (2560)", "test (640)"];    
 let topic = [
     "All",
     "Investment",
@@ -145,7 +145,7 @@ function create_number(data) {
 
     let share_image = "";
     if (data["Share Image"] !== null) {
-        share_image = make_up_image(data["Share Image"]);
+        share_image = make_share_image(data["Share Image"]);
     }
 
     let up_image = "";
@@ -176,6 +176,15 @@ function make_qt(data) {
 
 function make_up_image(image) {
     return `<img src="${image}" class="question-image" style="max-width: 60%; height: auto;" />`;
+}
+
+function make_share_image(images) {
+     // Check if images is an array
+     if (Array.isArray(images)) {
+        return images.map(image => `<img src="${image}" class="question-image" style="max-width: 60%; height: auto;" />`).join('');
+    }
+    // If it's a single image (not an array), return the single image
+    return `<img src="${images}" class="question-image" style="max-width: 60%; height: auto;" />`;
 }
 
 function make_options(Options) {

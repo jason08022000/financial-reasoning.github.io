@@ -14220,7 +14220,7 @@ test_data = [
             "C": "$364."
         },
         "Answer": "B",
-        "Explanation": "FCFE = NI + NCC – FCInv – WCInv + Net borrowing. In this case:NI=$485 millionNCC=Depreciation expense = $270 millionFCInv = Net purchase of fixed assets = Increase\nin gross fixed assets = 4,275 – 3,752=$523 millionWCInv = Increase in accounts receivable+Increase in inventory – Increase in accounts payable – Increase in accrued\nliabilities=(770 – 711)+(846 – 780) – (476 – 443)-(149 – 114)= $57 millionNet borrowing\n=Increase in notes payable + Increase in long–term debt=(465 – 450)+(1,575 – 1,515)=$75 millionFCFE = 485+270 – 523 – 57+75 = $250millionAn alternative calculation isFCFE = FCFF –\nInt(1 – Tax rate) + Net borrowingFCFE = 307.6 – 195(1 – 0.32) + (15 +60) = $250 million",
+        "Explanation": "FCFE = NI + NCC – FCInv – WCInv + Net borrowing. In this case:NI=$\\$485$ millionNCC=Depreciation expense = $\\$270$ millionFCInv = Net purchase of fixed assets = Increase\nin gross fixed assets = 4,275 – 3,752=$\\$523$ millionWCInv = Increase in accounts receivable+Increase in inventory – Increase in accounts payable – Increase in accrued\nliabilities=(770 – 711)+(846 – 780) – (476 – 443)-(149 – 114)= $\\$57$ millionNet borrowing\n=Increase in notes payable + Increase in long–term debt=(465 – 450)+(1,575 – 1,515)=$\\$75$ millionFCFE = 485+270 – 523 – 57+75 = $\\$250$ million An alternative calculation is FCFE = FCFF –\nInt(1 – Tax rate) + Net borrowingFCFE = 307.6 – 195(1 – 0.32) + (15 +60) = $\\$250$ million",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -14358,7 +14358,7 @@ test_data = [
             "C": "69.1%."
         },
         "Answer": "C",
-        "Explanation": "The calculation of Archway’s gross profit margin for 2020, which reflects the industry-wide 8% inflation on cost of goods sold (COGS), is calculated as follows:\n\n| Revenue growth | 1.85% |\n| --- | --- |\n| Cost of goods sold increase | 4.76% |\n| Forecasted revenue (Base revenue = 100) | 101.85 |\n| Forecasted COGS (Base COGS = 30) | 31.43 |\n| Forecasted gross profit | 70.42 |\n| Forecasted gross profit margin | 69.14% |\n\nRevenue growth = (1 + Price increase for revenue) × (1 + Volume growth) - 1\n\nRevenue growth = (1.05) × (0.97) - 1 = 1.85%\n\nCOGS increase = (1 + Price increase for COGS) × (1 + Volume growth) - 1\n\nCOGS increase = (1.08) × (0.97) - 1 = 4.76%\n\nForecasted revenue = Base revenue × Revenue growth increase\n\nForecasted revenue = 100 × 1.0185 = 101.85\n\nForecasted COGS = Base COGS × COGS increase\n\nForecasted COGS = 30 × 1.0476 = 31.43\n\nForecasted gross profit = Forecasted revenue - Forecasted COGS\n\nForecasted gross profit = 101.85 - 31.43 = 70.42\n\nForecasted gross profit margin = Forecasted gross profit / Forecasted revenue\n\nForecasted gross profit margin = 70.42 / 101.85 = 69.14%\n",
+        "Explanation": "The calculation of Archway’s gross profit margin for 2020, which reflects the industry-wide 8% inflation on cost of goods sold (COGS), is calculated as follows:\n\n $$ \\begin{array}{|c|c|} \\hline \\text{Revenue growth} & 1.85\\% \\\\ \\text{Cost of goods sold increase} & 4.76\\% \\\\ \\text{Forecasted revenue (Base revenue = 100)} & 101.85 \\\\ \\text{Forecasted COGS (Base COGS = 30)} & 31.43 \\\\ \\text{Forecasted gross profit} & 70.42 \\\\ \\text{Forecasted gross profit margin} & 69.14\\% \\\\ \\hline \\end{array} $$ \n\nRevenue growth = (1 + Price increase for revenue) × (1 + Volume growth) - 1\n\nRevenue growth = (1.05) × (0.97) - 1 = 1.85%\n\nCOGS increase = (1 + Price increase for COGS) × (1 + Volume growth) - 1\n\nCOGS increase = (1.08) × (0.97) - 1 = 4.76%\n\nForecasted revenue = Base revenue × Revenue growth increase\n\nForecasted revenue = 100 × 1.0185 = 101.85\n\nForecasted COGS = Base COGS × COGS increase\n\nForecasted COGS = 30 × 1.0476 = 31.43\n\nForecasted gross profit = Forecasted revenue - Forecasted COGS\n\nForecasted gross profit = 101.85 - 31.43 = 70.42\n\nForecasted gross profit margin = Forecasted gross profit / Forecasted revenue\n\nForecasted gross profit margin = 70.42 / 101.85 = 69.14%\n",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -14450,7 +14450,7 @@ test_data = [
             "C": "Transaction 3"
         },
         "Answer": "C",
-        "Explanation": "The applicable non-cash adjustments to net income in arriving at FCFE are as follows:\n\n| Non-Cash Item                            | Adjustment to Net Income | Amount (millions) |\n|------------------------------------------|--------------------------|-------------------|\n| Transaction 1: Loss on sale of equipment | Added back               | +900              |\n| Transaction 2: Impairment of intangibles | Added back               | +400              |\n| Transaction 3: Reversal of restructuring charge | Subtracted       | -300              |\n\nIn the case of Transaction 1, a loss reduces net income and thus must be added back in arriving at FCFE. Similarly, an impairment of intangibles (Transaction 2) reduces net income and thus must be added back in arriving at FCFE. Transaction 3 (reversal of a restructuring charge) would increase net income and thus must be subtracted in arriving at FCFE.",
+        "Explanation": "The applicable non-cash adjustments to net income in arriving at FCFE are as follows:\n\n $$\\begin{array}{|c|c|c|} \\hline \\text{Non-Cash Item} & \\text{Adjustment to Net Income} & \\text{Amount (millions)} \\\\ \\hline \\text{Transaction 1: Loss on sale of equipment} & \\text{Added back} & +900 \\\\ \\text{Transaction 2: Impairment of intangibles} & \\text{Added back} & +400 \\\\ \\text{Transaction 3: Reversal of restructuring charge} & \\text{Subtracted} & -300 \\\\ \\hline \\end{array}$$        \n\nIn the case of Transaction 1, a loss reduces net income and thus must be added back in arriving at FCFE. Similarly, an impairment of intangibles (Transaction 2) reduces net income and thus must be added back in arriving at FCFE. Transaction 3 (reversal of a restructuring charge) would increase net income and thus must be subtracted in arriving at FCFE.",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -14473,7 +14473,7 @@ test_data = [
             "C": "$7,126 million."
         },
         "Answer": "C",
-        "Explanation": "FCFE for Company A for the most recent year is calculated as follows:\n\n$$ \\begin{array}{lr} \\text{Net income} & \\$4,844 \\\n\\text{Plus: Net non-cash charges} & 1,500 \\\n\\text{Less: Investment in working capital} & 122 \\\n\\text{Plus: Proceeds from sale of fixed capital} & 2,379 \\\n\\text{Less: Net borrowing repayment} & 1,475 \\\n\\hline\n\\text{FCFE (millions)} & \\$7,126 \\ \\end{array}\n$$ \nNet non-cash charges are found by adding depreciation to other non-cash expenses: $500 \\text{ million} + \\$1,000 \\text{ million} = \\$1,500 \\text{ million}$. Investment in working capital is calculated by netting the increase in accounts receivable, the decrease in accounts payable, and the increase in other current liabilities: $- \\$452 \\text{ million} - \\$210 \\text{ million} + \\$540 \\text{ million} = - \\$122 \\text{ million}$ (outflow). Net borrowing repayment is calculated by netting the increase in notes payable and the decrease in long-term debt: $25 \\text{ million} - \\$1,500 \\text{ million} = - \\$1,475 \\text{ million}$ (outflow).",
+        "Explanation": "FCFE for Company A for the most recent year is calculated as follows:\n\n$$ \\begin{array}{lr} \\text{Net income} & \\$4,844 \\\\ \\text{Plus: Net non-cash charges} & 1,500 \\\\ \\text{Less: Investment in working capital} & 122 \\\\ \\text{Plus: Proceeds from sale of fixed capital} & 2,379 \\\\ \\text{Less: Net borrowing repayment} & 1,475 \\\\ \\hline\\\\ \\text{FCFE (millions)} & \\$7,126 \\\\ \\end{array}$$ \nNet non-cash charges are found by adding depreciation to other non-cash expenses: $\\$500$ $\\text{ million}$ + $\\$1,000$ $\\text{ million}$ = $\\$1,500$ $\\text{ million}$. Investment in working capital is calculated by netting the increase in accounts receivable, the decrease in accounts payable, and the increase in other current liabilities: - $\\$452$ $\\text{ million}$ - $\\$210$ $\\text{ million}$ + $\\$540$ $\\text{ million}$ = - $\\$122$ $\\text{ million}$ (outflow). Net borrowing repayment is calculated by netting the increase in notes payable and the decrease in long-term debt: $\\$25$ $\\text{ million}$ - $\\$1,500$ $\\text{ million}$ = - $\\$1,475$ $\\text{ million}$ (outflow).",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -14496,8 +14496,8 @@ test_data = [
             "C": "higher than the intrinsic value if actual FCFE were used."
         },
         "Answer": "A",
-        "Explanation": "FCFE is significantly higher than net income for Company B: Net income = $1,212 million. FCFE for Company B is calculated as: \n|                       |         |\n|-----------------------|---------|\n| Net income            | $1,212  |\n| Plus: Net non-cash charges   | 288     |\n| Less: Investment in WC       | 236     |\n| Less: Investment in fixed assets          | 1,000   |\n| Plus: Net borrowing          | 2,000   |\n| **FCFE (millions)**          | **$2,264**  | \nInvestment in working capital is calculated by adding the increase in accounts receivable, the increase in inventories, the increase in accounts payable, and the increase in other current liabilities:\n$-150 \\text{ million} - 200 \\text{ million} + 100 \\text{ million} + 14 \\text{ million} = -236 \\text{ million}.$  Net borrowing is calculated by adding the increase in notes payable to the decrease in long-term debt: $3,000 \\text{ million} - 1,000 \\text{ million} = 2,000 \\text{ million}$. Therefore, using net income of $1,212 million as a proxy for FCFE ($2,264 million) for Company B would result in a much lower valuation estimate than if actual FCFE were used.\n",
-        "General Topics": "Investment",
+        "Explanation": "FCFE is significantly higher than net income for Company B: Net income = $\\$1,212$ million. FCFE for Company B is calculated as: \n$$\\begin{array}{|c|c|} \\hline \\text{Description} & \\text{Amount (millions)} \\\\ \\hline \\text{Net income} & 1,212 \\\\ \\text{Plus: Net non-cash charges} & 288 \\\\ \\text{Less: Investment in WC} & 236 \\\\ \\text{Less: Investment in fixed assets} & 1,000 \\\\ \\text{Plus: Net borrowing} & 2,000 \\\\ \\text{FCFE (millions)} & \\text{2,264} \\\\ \\hline \\end{array}$$        \nInvestment in working capital is calculated by adding the increase in accounts receivable, the increase in inventories, the increase in accounts payable, and the increase in other current liabilities:\n$\\$-150$ $\\text{ million}$ - 200 $\\text{ million}$ + 100 $\\text{ million}$ + 14 $\\text{ million}$ = -236 $\\text{ million}$. Net borrowing is calculated by adding the increase in notes payable to the decrease in long-term debt: $\\$3,000$ $\\text{ million}$ - 1,000 $\\text{ million}$ = 2,000 $\\text{ million}$. Therefore, using net income of $\\$1,212$ million as a proxy for FCFE ($\\$2,264$ million) for Company B would result in a much lower valuation estimate than if actual FCFE were used.\n",
+        "General Topics": "Investments",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
         "shared_description": "**Exhibit 1: Statements of Cash Flow**\n\n**Header:**\nStatements of Cash Flow, Most Recent Fiscal Year End (Amounts in Millions of Dollars)\n\n**Columns:** \n- Company A\n- Company B\n- Company C\n\n**Cash Flow from Operating Activities:**\n- **Net Income**\n  - Company A: 4,844\n  - Company B: 1,212\n  - Company C: 15,409\n\n**Adjustments:**\n- **Depreciation**\n  - Company A: 500\n  - Company B: 288\n  - Company C: 3,746\n- **Other noncash expenses**\n  - Company A: 1,000\n  - Company B: (blank)\n  - Company C: (blank)\n\n**Changes in working capital:**\n- **(Increase) Decrease accounts receivable**\n  - Company A: (452)\n  - Company B: (150)\n  - Company C: (536)\n- **(Increase) Decrease inventories**\n  - Company A: (blank)\n  - Company B: (200)\n  - Company C: (803)\n- **Increase (Decrease) accounts payable**\n  - Company A: (210)\n  - Company B: 100\n  - Company C: (3)\n- **Increase (Decrease) other current liabilities**\n  - Company A: 540\n  - Company B: 14\n  - Company C: 350\n\n**Net cash from operating activities:**\n- Company A: 6,222\n- Company B: 1,264\n- Company C: 18,163\n\n**Cash Flow from Investing Activities:**\n- **(Purchase) Sale of fixed assets**\n  - Company A: 2,379\n  - Company B: (1,000)\n  - Company C: (3,463)\n\n**Net cash from investing activities:**\n- Company A: 2,379\n- Company B: (1,000)\n- Company C: (3,463)\n\n**Cash Flow from Financing Activities:**\n- **Increase (Decrease) notes payable**\n  - Company A: 25\n  - Company B: 3000\n  - Company C: 1,238\n- **Increase (Decrease) long-term debt**\n  - Company A: (1,500)\n  - Company B: (1,000)\n  - Company C:",
@@ -15146,7 +15146,7 @@ test_data = [
             "D": "63.64%"
         },
         "Answer": "C",
-        "Explanation": "The component VaR factors in both the marginal VaR and the asset value.For Asset A:\n0.05687×$7,000,000 = $398,090For Asset B: 0.17741×$4,000,000 = $709,640Asset A’s percent of contribution to VaR is A's component VaR as a percent of total VaR:$398,090/($398,090 $709,640)\n= 35.94%",
+        "Explanation": "The component VaR factors in both the marginal VaR and the asset value.For Asset A:\n0.05687 × $\\$7,000,000$ = $\\$398,090$ For Asset B: 0.17741 × $\\$4,000,000$ = $\\$709,640$ Asset A’s percent of contribution to VaR is A's component VaR as a percent of total VaR:$\\$398,090$/($\\$398,090$ + $\\$709,640$)\n= 35.94%",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -15179,7 +15179,7 @@ test_data = [
         "ID": 721,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume you purchase a share of stock for $50 at time t = 0 and another share at $65 at time\nt = 1, and at the end of year 1 and year 2, the stock paid a $2.00 dividend. Also at the end of\nyear 2, you sold both shares for $70 each. The time-weighted rate of return on the investment\nis:",
+        "Question Text": "Assume you purchase a share of stock for $\\$50$ at time t = 0 and another share at $\\$65$ at time\nt = 1, and at the end of year 1 and year 2, the stock paid a $\\$2.00$ dividend. Also at the end of\nyear 2, you sold both shares for $\\$70$ each. The time-weighted rate of return on the investment\nis:",
         "Image": "images/image_add/721.png",
         "Options": {
             "A": "18.04%",
@@ -15242,7 +15242,7 @@ test_data = [
         "ID": 724,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume you purchase a share of stock for $50 at time t = 0 and another share at $65 at time\nt = 1, and at the end of year 1 and year 2, the stock paid a $2.00 dividend. Also at the end of\nyear 2, you sold both shares for $70 each. The dollar-weighted rate of return on the investment\nis:",
+        "Question Text": "Assume you purchase a share of stock for $\\$50$ at time t = 0 and another share at $\\$65$ at time\nt = 1, and at the end of year 1 and year 2, the stock paid a $\\$2.00$ dividend. Also at the end of\nyear 2, you sold both shares for $\\$70$ each. The dollar-weighted rate of return on the investment\nis:",
         "Image": "images/image_add/724.png",
         "Options": {
             "A": "10.77%",
@@ -15335,7 +15335,7 @@ test_data = [
             "D": "The portfolio underperforms the benchmark primarily because of the contribution of security"
         },
         "Answer": "A",
-        "Explanation": "```markdown\n| Asset Class   | Portfolio Weight | Benchmark Weight | Active/Excess Weight | Benchmark Performance | Contribution |\n|--------------|------------------|------------------|----------------------|-----------------------|--------------|\n| Equity       | 40%              | 20%              | 20%                  | 8.00%                 | 0.016        |\n| Fixed Income | 55%              | 50%              | 5%                   | 4.00%                 | 0.002        |\n| Cash         | 5%               | 30%              | -25%                 | 2.00%                 | -0.005       |\n| **Total**    |                  |                  |                      |                       | 0.013        |\n\nContribution of Selection to Performance\n\n| Asset Class   | Portfolio Performance | Benchmark | Portfolio Weight | Excess Performance | Contribution |\n|--------------|-----------------------|-----------|------------------|--------------------|--------------|\n| Equity       | 6%                    | 8%        | 40%              | -2%                | -0.008       |\n| Fixed Income | 5%                    | 4%        | 55%              | 1%                 | 0.0055       |\n| Cash         | 3%                    | 2%        | 5%               | 1%                 | 0.0005       |\n| **Total**    |                       |           |                  |                    | -0.002       |\n```",
+        "Explanation": "$$\\begin{array}{|c|c|c|c|c|c|} \\hline \\text{Asset Class} & \\text{Portfolio Weight} & \\text{Benchmark Weight} & \\text{Active/Excess Weight} & \\text{Benchmark Performance} & \\text{Contribution} \\\\ \\hline \\text{Equity} & 40\\% & 20\\% & 20\\% & 8.00\\% & 0.016 \\\\ \\text{Fixed Income} & 55\\% & 50\\% & 5\\% & 4.00\\% & 0.002 \\\\ \\text{Cash} & 5\\% & 30\\% & -25\\% & 2.00\\% & -0.005 \\\\ \\textbf{Total} & & & & & 0.013 \\\\ \\hline \\end{array}$$  $$\\text{Contribution of Selection to Performance:}$$  $$\\begin{array}{|c|c|c|c|c|c|} \\hline \\text{Asset Class} & \\text{Portfolio Performance} & \\text{Benchmark} & \\text{Portfolio Weight} & \\text{Excess Performance} & \\text{Contribution} \\\\ \\hline \\text{Equity} & 6\\% & 8\\% & 40\\% & -2\\% & -0.008 \\\\ \\text{Fixed Income} & 5\\% & 4\\% & 55\\% & 1\\% & 0.0055 \\\\ \\text{Cash} & 3\\% & 2\\% & 5\\% & 1\\% & 0.0005 \\\\ \\textbf{Total} & & & & & -0.002 \\\\ \\hline \\end{array}$$",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -16460,7 +16460,7 @@ test_data = [
         "ID": 782,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Melvin Brown manages a long portfolio of debt and equity investments for an insurance\ncompany and has been trying to implement a new risk management program based on estimating and\nreporting the daily value at risk (VAR) for each manager’s portfolio. Brown is writing a\nreport to gain support for his proposal. If Brown determines that daily VAR (10%) for his\nportfolio is equal to $20,000, which of the following statements should he include in his\nreport? I. Computationally, delta-normal VAR is more complex than standard deviation but easier\nto interpret from a risk management perspective. II. VAR was developed specifically for the\npurpose of measuring the economic capital required to protect bank portfolios against losses.\nIII. The risk of losing more than $20,000 in Brown’s portfolio value in any given week is 10%.\nIV. Portfolio diversification is fully accounted for using the VAR methodology.",
+        "Question Text": "Melvin Brown manages a long portfolio of debt and equity investments for an insurance\ncompany and has been trying to implement a new risk management program based on estimating and\nreporting the daily value at risk (VAR) for each manager’s portfolio. Brown is writing a\nreport to gain support for his proposal. If Brown determines that daily VAR (10%) for his\nportfolio is equal to $\\$20$,000, which of the following statements should he include in his\nreport? I. Computationally, delta-normal VAR is more complex than standard deviation but easier\nto interpret from a risk management perspective. II. VAR was developed specifically for the\npurpose of measuring the economic capital required to protect bank portfolios against losses.\nIII. The risk of losing more than $\\$20,000$ in Brown’s portfolio value in any given week is 10%.\nIV. Portfolio diversification is fully accounted for using the VAR methodology.",
         "Image": "images/image_add/782.png",
         "Options": {
             "A": "I, III, and IV.",
@@ -16641,7 +16641,7 @@ test_data = [
         "ID": 791,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A hedge fund has the following fee structure: Annual management fee based on year-end AUM 2%\nIncentive fee 20% Hurdle rate before incentive fee collection starts 4% Current high-water mark\n$610 million The fund has a value of $583.1 million at the beginning of the year. After one\nyear, it has a value of $642 million before fees. The net return to an investor for this year\nis closest to:",
+        "Question Text": "A hedge fund has the following fee structure: Annual management fee based on year-end AUM 2%\nIncentive fee 20% Hurdle rate before incentive fee collection starts 4% Current high-water mark\n$\\$610$ million The fund has a value of0 $\\$583.1$ million at the beginning of the year. After one\nyear, it has a value of $\\$642$ million before fees. The net return to an investor for this year\nis closest to:",
         "Image": "images/image_add/791.png",
         "Options": {
             "A": "6.72%.",
@@ -16649,7 +16649,7 @@ test_data = [
             "C": "7.64%."
         },
         "Answer": "C",
-        "Explanation": " The management fee for the year is$642 × 0.02 = $12.84 million. Because the ending value exceeds the high-water mark, the hedge fund can collect an incentive\nfee. The incentive fee is{$642 – [$610 × (1＋ 0.04)]} × 0.20 = $1.52 million. The net return to the investor for the year is[($642 – $12.84 – $1.52)/$583.1] – 1 = 7.64%. ： C是正确的。 本年度的管理费为： $642 × 0.02 = $12.84 million. ",
+        "Explanation": " The management fee for the year is $\\$642$ × 0.02 = $\\$12.84$ million. Because the ending value exceeds the high-water mark, the hedge fund can collect an incentive\nfee. The incentive fee is{$\\$642$ – [$\\$610$ × (1＋ 0.04)]} × 0.20 = $\\$1.52$ million. The net return to the investor for the year is[($\\$642$ – $\\$12.84$ – $\\$1.52$)/$\\$583.1$] – 1 = 7.64%. ： C是正确的。 本年度的管理费为： $\\$642$ × 0.02 = $\\$12.84$ million. ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -17249,7 +17249,7 @@ test_data = [
             "C": "12.80%."
         },
         "Answer": "B",
-        "Explanation": " The net investor return is 12.54%, calculated as:End of year capital\n= $250 million × 1.16 = $290 million Management fee = $290 million × 2% = $5.8 million Hurdle amount = 8% of $250 million = $20 million Incentive fee = ($290 - $250 - $20 - $5.8) million × 20% = $2.84 millionTotal fees to United Capital =($5.8$2.84)million = $8.64 millionInvestor net return: ($290 - $250 - $8.64) / $250 = 12.54% ",
+        "Explanation": " The net investor return is 12.54%, calculated as:End of year capital\n= $\\$250$ million × 1.16 = $\\$290$ million Management fee = $\\$290$ million × 2% = $\\$5.8$ million Hurdle amount = 8% of $\\$250$ million = $\\$20$ million Incentive fee = ($\\$290$ - $\\$250$ - $\\$20$ - $\\$5.8$) million × 20% = $\\$2.84$ millionTotal fees to United Capital =($\\$5.8$ + $\\$2.84$) million = $\\$8.64$ millionInvestor net return: ($\\$290$ - $\\$250$ - $\\$8.64$) / $\\$250$ = 12.54% ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -17301,7 +17301,7 @@ test_data = [
         "ID": 824,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The following information applies to Rotunda Advisors, a hedge fund: $288 million in assets\nunder management (AUM) as of prior year-end 2% management fee (based on year-end AUM) 20%\nincentive fee calculated: net of management fee using a 5% soft hurdle rate using a high-water\nmark (high-water mark is $357 million) Current year fund return is 25% The total fee earned by\nRotunda in the current year is closest to:",
+        "Question Text": "The following information applies to Rotunda Advisors, a hedge fund: $\\$288$ million in assets\nunder management (AUM) as of prior year-end 2% management fee (based on year-end AUM) 20%\nincentive fee calculated: net of management fee using a 5% soft hurdle rate using a high-water\nmark (high-water mark is $\\$357$ million) Current year fund return is 25% The total fee earned by\nRotunda in the current year is closest to:",
         "Image": "images/image_add/824.png",
         "Options": {
             "A": "$7.20 million.",
@@ -17309,7 +17309,7 @@ test_data = [
             "C": "$21.60 million."
         },
         "Answer": "A",
-        "Explanation": " Rotunda earns a management fee of $7.20 million but does not earn an incentive fee because the year-end fund value net of management fee does not exceed the high-\nwater mark of $357 million. End-of-year AUM = Prior year-end AUM × (1 Fund return) = $288 million × 1.25 = $360 million. $360 million × 2% = $7.20 million management fee. $360 million – $7.2 million = $352.8 million AUM net of management fee. The year-end AUM net of fees does not exceed the $357 million high-water mark. Therefore, no incentive fee is earned. ",
+        "Explanation": " Rotunda earns a management fee of $\\$7.20$ million but does not earn an incentive fee because the year-end fund value net of management fee does not exceed the high-\nwater mark of $\\$357$ million. End-of-year AUM = Prior year-end AUM × (1 Fund return) = $\\$288$ million × 1.25 = $\\$360$ million. $\\$360$ million × 2% = $\\$7.20$ million management fee. $\\$360$ million – $\\$7.2$ million = $\\$352.8$ million AUM net of management fee. The year-end AUM net of fees does not exceed the $\\$357$ million high-water mark. Therefore, no incentive fee is earned. ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -30543,7 +30543,7 @@ test_data = [
             "D": "Asset D"
         },
         "Answer": "C",
-        "Explanation": "| Asset | Portfolio Weight | Expected Return | Beta to the Index | Beta to the Portfolio | Correct Treynor | Incorrect Treynor |\n|-------|------------------|-----------------|--------------------|-----------------------|------------------|-------------------|\n| A     | 1.2%             | 12%             | 1.2                | 0.90                  | 0.083            | 0.111             |\n| B     | 0.8%             | 10%             | 0.7                | 0.90                  | 0.114            | 0.089             |\n| C     | 0.75%            | 10%             | 0.6                | 0.85                  | 0.133            | 0.094             |\n| D     | 0.35%            | 8%              | 0.3                | 1.10                  | 0.200            | 0.055             |",
+        "Explanation": "$$\\begin{array}{|c|c|c|c|c|c|c|} \\hline \\text{Asset} & \\text{Portfolio Weight} & \\text{Expected Return} & \\text{Beta to the Index} & \\text{Beta to the Portfolio} & \\text{Correct Treynor} & \\text{Incorrect Treynor} \\\\ \\hline \\text{A} & 1.2\\% & 12\\% & 1.2 & 0.90 & 0.083 & 0.111 \\\\ \\text{B} & 0.8\\% & 10\\% & 0.7 & 0.90 & 0.114 & 0.089 \\\\ \\text{C} & 0.75\\% & 10\\% & 0.6 & 0.85 & 0.133 & 0.094 \\\\ \\text{D} & 0.35\\% & 8\\% & 0.3 & 1.10 & 0.200 & 0.055 \\\\ \\hline \\end{array}$$        ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -30723,7 +30723,7 @@ test_data = [
         "ID": 1477,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Given the following information, what is the percent of contribution to VAR from Asset A?\nThere are two assets in a portfolio: A and B.  Asset A marginal VAR:   0.05687  Asset A\nvalue: $7,000,000  Asset B marginal VAR:   0.17741  Asset B value: $4,000,000",
+        "Question Text": "Given the following information, what is the percent of contribution to VAR from Asset A?\nThere are two assets in a portfolio: A and B.  Asset A marginal VAR:   0.05687  Asset A\nvalue: $\\$7,000,000$  Asset B marginal VAR:   0.17741  Asset B value: $\\$4,000,000$",
         "Image": "images/image_add/1477.png",
         "Options": {
             "A": "64.06%",
@@ -30765,7 +30765,7 @@ test_data = [
         "ID": 1479,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The AT&T pension fund has 68%, or about $13 billion invested in equities. Assume a normal\ndistribution and volatility of 15% per annum. The fund measures absolute risk with a 95%, one-\nyear VAR, which gives $3.2 billion. The pension plan wants to allocate this risk to two equity\nmanagers, each with the same VAR budget. Given that the correlation between managers is 0.5,\nthe VAR budget for each should be",
+        "Question Text": "The AT&T pension fund has 68%, or about $\\$13$ billion invested in equities. Assume a normal\ndistribution and volatility of 15% per annum. The fund measures absolute risk with a 95%, one-\nyear VAR, which gives $\\$3.2$ billion. The pension plan wants to allocate this risk to two equity\nmanagers, each with the same VAR budget. Given that the correlation between managers is 0.5,\nthe VAR budget for each should be",
         "Image": "images/image_add/1479.png",
         "Options": {
             "A": "$3.2 billion",
@@ -30786,7 +30786,7 @@ test_data = [
         "ID": 1480,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "SkyLine Airways has a defined benefit pension scheme with assets of $165 million and\nliability of $150 million. The annual growth of the liabilities is expected to be 4.5% with\n2.4% volatility. The annual return on the pension assets has an expected value of 7.8% with 12%\nvolatility. The correlation between asset return and liability growth is 0.35. What is the 95%\nsurplus at risk for SkyLine?",
+        "Question Text": "SkyLine Airways has a defined benefit pension scheme with assets of $\\$165$ million and\nliability of $\\$150$ million. The annual growth of the liabilities is expected to be 4.5% with\n2.4% volatility. The annual return on the pension assets has an expected value of 7.8% with 12%\nvolatility. The correlation between asset return and liability growth is 0.35. What is the 95%\nsurplus at risk for SkyLine?",
         "Image": "images/image_add/1480.png",
         "Options": {
             "A": "$24.97million",
@@ -30828,7 +30828,7 @@ test_data = [
         "ID": 1482,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The Peyton Formika Fund is a global macro asset allocation hedge fund designed to provide\nlow correlations with U.S. assets. Dominic James is a fund of hedge funds manager that is\nanalyzing the Peyton Formika Fund for signs of style drift. James makes note of the following\nfindings about the fund: I. The R2 of the fund versus the global macro peer group has changed\nfrom 0.72 to 0.78 over the past 12 months. II. Due to outstanding returns, assets in the fund\nhave increased from $70 million to $430 million over the past 12 months. III. The fund made a\nmajor shift in allocation by moving 40 percent of its holdings from Eastern European equities\nto Asian equities. IV. After a recent trip to India, the fund manager gained confidence in his\nexisting Indian equity holdings and levered his existing 5% weighting in India only by a 10 to\n1 ratio. Which of James’ findings are indicators that the Peyton Formika Fund is at risk for\nstyle drift?",
+        "Question Text": "The Peyton Formika Fund is a global macro asset allocation hedge fund designed to provide\nlow correlations with U.S. assets. Dominic James is a fund of hedge funds manager that is\nanalyzing the Peyton Formika Fund for signs of style drift. James makes note of the following\nfindings about the fund: I. The R2 of the fund versus the global macro peer group has changed\nfrom 0.72 to 0.78 over the past 12 months. II. Due to outstanding returns, assets in the fund\nhave increased from $\\$70$ million to $\\$430$ million over the past 12 months. III. The fund made a\nmajor shift in allocation by moving 40 percent of its holdings from Eastern European equities\nto Asian equities. IV. After a recent trip to India, the fund manager gained confidence in his\nexisting Indian equity holdings and levered his existing 5% weighting in India only by a 10 to\n1 ratio. Which of James’ findings are indicators that the Peyton Formika Fund is at risk for\nstyle drift?",
         "Image": "images/image_add/1482.png",
         "Options": {
             "A": "II and IV only",
@@ -30915,10 +30915,10 @@ test_data = [
         "Question Text": "Glenn Funds uses the information ratio (IR) as a performance measure. The firm compares\nportfolio managers based on their IRs and uses this information to help determine performance\ncompensation. Which of the following statements does not represent a strength of the IR in\nterms of its usefulness in comparing asset managers?  The information ratio:",
         "Image": "images/image_add/1486.png",
         "Options": {
-            "A": "can be applied\\nto industries as well as individual asset and portfolio returns.",
-            "B": "B.is easy to\\nunderstand when used to compare a manager's performance to the performance of\na\\npe",
-            "C": "C.uses the\\nportfolio's forecasted tracking error in the calculation, making it a\nforward\\nlookin",
-            "D": "makes it easy\\nfor senior supervisors to rank order managers based on their generated"
+            "A": "can be applied\nto industries as well as individual asset and portfolio returns.",
+            "B": "B.is easy to\nunderstand when used to compare a manager's performance to the performance of\na\npe",
+            "C": "C.uses the\nportfolio's forecasted tracking error in the calculation, making it a\nforward\nlookin",
+            "D": "makes it easy\nfor senior supervisors to rank order managers based on their generated"
         },
         "Answer": "C",
         "Explanation": "Strengthsof the Sharpe and information ratios are (1) easy to use as measures of\nrelativeperformance compared to a benchmark or peer group; (2) easy to determine if amanager\nhas generated sufficient excess returns in relation to the amount ofrisk taken; and (3) easy to\napply to industrial sectors and countries. Weaknessesinclude (1) insufficient data to perform\nthe calculation and (2) the use ofrealized risk (instead of potential risk) may result in\noverstated performancecalculations. The Sharpe and information ratios use historical data\n(notforecasted tracking errors) and thus are not forward looking.    ",
@@ -31143,7 +31143,7 @@ test_data = [
         "ID": 1497,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The Westover Fund is a portfolio consisting of 42% fixed-income investments and 58% equity\ninvestments. The manager of the Westover Fund recently estimated that the annual VaR (5%),\nassuming a 250-day year, for the entire portfolio was $1,367,000 based on the portfolio's\nmarket value of $12,428,000 and a correlation coefficient between stocks and bonds of zero. If\nthe annual loss in the equity position is only expected to exceed $1,153,000 five percent of\nthe time, then the daily expected loss in the bond position that will be exceeded five percent\nof the time is closest to:",
+        "Question Text": "The Westover Fund is a portfolio consisting of 42% fixed-income investments and 58% equity\ninvestments. The manager of the Westover Fund recently estimated that the annual VaR (5%),\nassuming a 250-day year, for the entire portfolio was $\\$1,367,000$ based on the portfolio's\nmarket value of $\\$12,428,000$ and a correlation coefficient between stocks and bonds of zero. If\nthe annual loss in the equity position is only expected to exceed $\\$1,153,000$ five percent of\nthe time, then the daily expected loss in the bond position that will be exceeded five percent\nof the time is closest to:",
         "Image": "images/image_add/1497.png",
         "Options": {
             "A": "46445",
@@ -31206,7 +31206,7 @@ test_data = [
         "ID": 1500,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Brenden Hemme, a portfolio manager with Quantum Funds, is constructing an equally weighted,\ntwo-asset portfolio. Asset returns are normally distributed. Hemme would like to limit the\nportfolio VaR to $45 million at the 95% confidence level. He will invest $200 million in each\nasset. Given the following information, determine which two-asset portfolio allows Hemme to\nremain within the proposed risk budget.",
+        "Question Text": "Brenden Hemme, a portfolio manager with Quantum Funds, is constructing an equally weighted,\ntwo-asset portfolio. Asset returns are normally distributed. Hemme would like to limit the\nportfolio VaR to $\\$45$ million at the 95% confidence level. He will invest $\\$200$ million in each\nasset. Given the following information, determine which two-asset portfolio allows Hemme to\nremain within the proposed risk budget.",
         "Image": "images/RiskManagementandInvestmentManagement2_images/38u.png",
         "Options": {
             "A": "Portfolio AB.",
@@ -43085,7 +43085,7 @@ test_data = [
             "C": "$30.36."
         },
         "Answer": "B",
-        "Explanation": "Baldwin’s FFO per share in 2019 was $1.89, and the resulting share price was $21.73. First, calculate FFO per share in 2019, and then apply the year-end P/FFO multiple of\n11.5x.\nFFO = accounting net earnings, excluding: (a) depreciation charges on real estate, (b) deferred\ntax charges, and (c) gains or losses from sales of property and debt restructuring.\n2019 accounting net income: $142,187 2019 depreciation charges: $90,409\n2019 deferred tax charges: N/A\n2019 gains on sale of properties (other income): $2,162 2019 shares outstanding = 121,944\n2019 year-end price/FFO = 11.5x\n2019 Baldwin’s FFO per share = ($142,187 + $90,409 – $2,162)/121,944 shares = $1.89. At the given 2019 year-end price/FFO multiple of 11.5x, this results in a share price for Baldwin of\n$1.89 × 11.5 = $21.73.",
+        "Explanation": "Baldwin’s FFO per share in 2019 was $\\$1.89$, and the resulting share price was $\\$21.73$. First, calculate FFO per share in 2019, and then apply the year-end P/FFO multiple of\n11.5x.\nFFO = accounting net earnings, excluding: (a) depreciation charges on real estate, (b) deferred\ntax charges, and (c) gains or losses from sales of property and debt restructuring.\n2019 accounting net income: $\\$142,187$ 2019 depreciation charges: $\\$90,409$\n2019 deferred tax charges: N/A\n2019 gains on sale of properties (other income): $\\$2,162$ 2019 shares outstanding = 121,944\n2019 year-end price/FFO = 11.5x\n2019 Baldwin’s FFO per share = ($\\$142,187$ + $\\$90,409$ – $\\$2,162$)/121,944 shares = $\\$1.89$. At the given 2019 year-end price/FFO multiple of 11.5x, this results in a share price for Baldwin of\n$\\$1.89$ × 11.5 = $\\$21.73$.",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43108,7 +43108,7 @@ test_data = [
             "C": "$28.83."
         },
         "Answer": "C",
-        "Explanation": "|                          | Step One | Step Two         |\n|--------------------------|----------|------------------|\n|                          | Year 1   | Year 2   | Year 3 |\n| Dividends per share:      | $1.00$   | $1.06$   | $1.11$ | | 1.Value of stock at end of Year 2: |          | $31.80$ / $32.86$  |          | | Discount rate: 8.50%      |          |          |          |\n| 2.Net present value of all dividends: | $28.83$  |          |          | \n1. Calculated as $1.11/(0.085 - 0.05) = 31.80$ 2. Calculated as: $1.00/(1.085) + 32.86/(1.085)^2 = 28.83$",
+        "Explanation": "      $$ \\begin{array}{|c|c|c|c|} \\hline & \\text{Step One} & \\text{Step Two} & \\\\ \\hline & \\text{Year 1} & \\text{Year 2} & \\text{Year 3} \\\\ \\hline \\text{Dividends per share:} & 1.00 & 1.06 & 1.11 \\\\ \\hline \\text{1. Value of stock at end of Year 2:} & & 31.80 / 32.86 & \\\\ \\hline \\text{Discount rate:} & & & 8.50\\% \\\\ \\hline \\text{2. Net present value of all dividends:} & 28.83 & & \\\\ \\hline \\end{array}$$        \n1. Calculated as $\\$1.11$/(0.085 - 0.05) = $\\$31.80$ \n 2. Calculated as: $\\$1.00$/(1.085) + 32.86/(1.085)^2 = $\\$28.83$",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43317,7 +43317,7 @@ test_data = [
             "C": "The terminal value at the end of year 5 in the income approach is $53,632,650."
         },
         "Answer": "C",
-        "Explanation": "The terminal value using the income approach is $53,632,650 (= Year 6 NOI/terminal cap rate = $3,217,959 / 0.06). The value of the property using the cost approach is $61,000,000 (= Land Value + Building Replacement Cost – Total Depreciation = $7,000,000 + $59,000,000 – $5,000,000). The adjusted sales price per square foot for Sales Comp B is $462 psf (= $395 ×\n1.17).",
+        "Explanation": "The terminal value using the income approach is $\\$53,632,650$ (= Year 6 NOI/terminal cap rate = $\\$3,217,959$ / 0.06). The value of the property using the cost approach is $\\$61,000,000$ (= Land Value + Building Replacement Cost – Total Depreciation = $\\$7,000,000$ + $\\$59,000,000$ – $\\$5,000,000$). The adjusted sales price per square foot for Sales Comp B is $\\$462$ psf (= $\\$395$ ×\n1.17).",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43365,7 +43365,7 @@ test_data = [
             "C": "$55,150,300."
         },
         "Answer": "B",
-        "Explanation": "The value of Property 1 using the discounted cash flow method is $49,750,931, or $49,750,900 rounded, calculated as follows: \n|                       |                | Discount period | Discounted value*   |\n|-----------------------|----------------|-----------------|---------------------|\n| Year 1 NOI            | $2,775,840     | 1               | $2,588,196          | | Year 2 NOI            | $2,859,119     | 2               | $2,485,637          | | Year 3 NOI            | $2,944,889     | 3               | $2,387,135          | | Year 4 NOI            | $3,033,235     | 4               | $2,292,540          | | Year 5 NOI            | $3,124,232     | 5               | $2,201,693          | | Terminal Value**      | $53,632,650    | 5               | $37,795,731         | | Property #1 DCF value |                |                 | $49,750,932         |\n\n* Discount rate = 7.25%\n\n** The terminal value = Year 6 NOI/terminal cap rate = $3,217,959 / 0.06 = $53,632,650",
+        "Explanation": "The value of Property 1 using the discounted cash flow method is $49,750,931, or $49,750,900 rounded, calculated as follows: \n $$\\begin{array}{|c|c|c|c|} \\hline & & \\text{Discount period} & \\text{Discounted value*} \\\\ \\hline \\text{Year 1 NOI} & 2,775,840 & 1 & 2,588,196 \\\\ \\text{Year 2 NOI} & 2,859,119 & 2 & 2,485,637 \\\\ \\text{Year 3 NOI} & 2,944,889 & 3 & 2,387,135 \\\\ \\text{Year 4 NOI} & 3,033,235 & 4 & 2,292,540 \\\\ \\text{Year 5 NOI} & 3,124,232 & 5 & 2,201,693 \\\\ \\text{Terminal Value**} & 53,632,650 & 5 & 37,795,731 \\\\ \\text{Property \\#1 DCF value} & & & 49,750,932 \\\\ \\hline \\end{array} $$     \n\n* Discount rate = 7.25%\n\n** The terminal value = Year 6 NOI/terminal cap rate = $3,217,959 / 0.06 = $53,632,650",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43389,7 +43389,7 @@ test_data = [
             "C": "higher."
         },
         "Answer": "C",
-        "Explanation": "The direct capitalization method estimate of value for Property #1 is $52,873,143 (= Year 1 NOI/Going-in Cap Rate = $2,775,840/0.0525), which is greater than the estimated DCF value of $49,750,932. Value of Property #1 under the discounted cash flow method can be calculated from the following table: \n|                       |                | Discount period | Discounted value*   |\n|-----------------------|----------------|-----------------|---------------------|\n| Year 1 NOI            | $2,775,840     | 1               | $2,588,196          | | Year 2 NOI            | $2,859,119     | 2               | $2,485,637          | | Year 3 NOI            | $2,944,889     | 3               | $2,387,135          | | Year 4 NOI            | $3,033,235     | 4               | $2,292,540          | | Year 5 NOI            | $3,124,232     | 5               | $2,201,693          | | Terminal Value**      | $53,632,650    | 5               | $37,795,731         | | Property #1 DCF value |                |                 | $49,750,932         |\n\n* Discount rate = 7.25%\n\n** The terminal value = Year 6 NOI/terminal cap rate = $3,217,959 / 0.06 = $53,632,650",
+        "Explanation": "The direct capitalization method estimate of value for Property #1 is $\\$52,873,143$ (= Year 1 NOI/Going-in Cap Rate = $\\$2$,775,840/0.0525), which is greater than the estimated DCF value of $\\$49,750,932$. Value of Property #1 under the discounted cash flow method can be calculated from the following table: \n $$\\begin{array}{|c|c|c|c|} \\hline & & \\text{Discount period} & \\text{Discounted value*} \\\\ \\hline \\text{Year 1 NOI} & 2,775,840 & 1 & 2,588,196 \\\\ \\text{Year 2 NOI} & 2,859,119 & 2 & 2,485,637 \\\\ \\text{Year 3 NOI} & 2,944,889 & 3 & 2,387,135 \\\\ \\text{Year 4 NOI} & 3,033,235 & 4 & 2,292,540 \\\\ \\text{Year 5 NOI} & 3,124,232 & 5 & 2,201,693 \\\\ \\text{Terminal Value**} & 53,632,650 & 5 & 37,795,731 \\\\ \\text{Property \\#1 DCF value} & & & 49,750,932 \\\\ \\hline \\end{array}$$        \n\n* Discount rate = 7.25%\n\n** The terminal value = Year 6 NOI/terminal cap rate = $\\$3,217,959$ / 0.06 = $\\$53,632,650$",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43413,7 +43413,7 @@ test_data = [
             "C": "44,500,000."
         },
         "Answer": "C",
-        "Explanation": "The estimate of the value of Property #1 using the sales comparison approach is:\n\n|                  | Unadjusted psf | Adjusted psf               |\n|------------------|----------------|----------------------------|\n| Sales Comp 1     | $415           | $394 (= $415 \\times 0.95)$ | | Sales Comp 2     | $395           | $462 (= $395 \\times 1.17)$ | | Sales Comp 3     | $400           | $480 (= $400 \\times 1.20)$ | | **Average**      | $403           | $445                       | \nEstimated Value of Property #1 = $44,500,000 = $445 psf \\times 100,000 sf$",
+        "Explanation": "The estimate of the value of Property #1 using the sales comparison approach is:\n\n$$\\begin{array}{|c|c|c|} \\hline & \\text{Unadjusted psf} & \\text{Adjusted psf} \\\\ \\hline \\text{Sales Comp 1} & 415 & 394 (= 415 \\times 0.95) \\\\ \\text{Sales Comp 2} & 395 & 462 (= 395 \\times 1.17) \\\\ \\text{Sales Comp 3} & 400 & 480 (= 400 \\times 1.20) \\\\ \\hline \\textbf{Average} & 403 & 445 \\\\ \\hline \\end{array}$$        \nEstimated Value of Property \#1 = $\\$44,500,000$ = $\\$445$ x $100,000$ ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43485,7 +43485,7 @@ test_data = [
             "C": "$45 million."
         },
         "Answer": "A",
-        "Explanation": "The maximum amount of debt that an investor can obtain on commercial real estate is\nusually limited by either the ratio of the loan to the appraised value of the property (loan to\nvalue or LTV) or the debt service coverage ratio (DSCR) depending on which measure results in\nthe lowest loan amount. The maximum LTV is 75% of the appraised value of $48,000,000 or $36,000,000. The loan amount based on the minimum DSCR would be $32,183,652 determined as follows:Maximum debt service = Year 1 NOI/DSCR = $2,775,840/1.5 = $1,850,560 Loan amount (interest only loan) = maximum debt service/mortgage rate = $1,850,560/0.0575 = $32,183,652 (rounded to $32,000,000).",
+        "Explanation": "The maximum amount of debt that an investor can obtain on commercial real estate is\nusually limited by either the ratio of the loan to the appraised value of the property (loan to\nvalue or LTV) or the debt service coverage ratio (DSCR) depending on which measure results in\nthe lowest loan amount. The maximum LTV is 75% of the appraised value of $\\$48,000,000$ or $\\$36,000,000$. The loan amount based on the minimum DSCR would be $\\$32,183,652$ determined as follows:Maximum debt service = Year 1 NOI/DSCR = $\\$2,775,840$/1.5 = $\\$1,850,560$ Loan amount (interest only loan) = maximum debt service/mortgage rate = $\\$1,850,560$/0.0575 = $\\$32,183,652$ (rounded to $\\$32,000,000$).",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43653,7 +43653,7 @@ test_data = [
             "C": "Gasoline"
         },
         "Answer": "C",
-        "Explanation": "When the near-term (i.e., closer to expiration) futures contract price is higher\nthan the longer-term futures contract price, the futures market for the commodity is in\nbackwardation. Because gasoline is the only one of the three futures markets in Exhibit 2 in\nwhich the near-term futures contract price ($1.2701) is higher than the longer-term contract price ($1.0307), the gasoline futures market is the only one in backwardation.",
+        "Explanation": "When the near-term (i.e., closer to expiration) futures contract price is higher\nthan the longer-term futures contract price, the futures market for the commodity is in\nbackwardation. Because gasoline is the only one of the three futures markets in Exhibit 2 in\nwhich the near-term futures contract price ($\\$1.2701$) is higher than the longer-term contract price ($\\$1.0307$), the gasoline futures market is the only one in backwardation.",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43749,7 +43749,7 @@ test_data = [
             "C": "receive a payment of $1,971,173.60."
         },
         "Answer": "A",
-        "Explanation": "The total return swap involves a monthly cash settlement (reset) based on the\nperformance of the underlying reference asset (S&P GSCI) given a notional amount of $25 million. If the level of the index increases between the two valuation dates (in this case, May\nand June), the long position (the swap buyer) receives payment. If the level of the index\ndecreases between the two valuation dates, the swap seller receives payment.\nThe return on the reference index for the month of June is [(2,525.21 - 2,582.23)/2,582.23],\nwhich is equivalent to -2.2082%. Therefore, the swap buyer (long position) must pay the swap\nseller a cash settlement for the month of June. The June payment calculation is equal to\n$25,000,000 × -2.2082%, or -$552,042.23.",
+        "Explanation": "The total return swap involves a monthly cash settlement (reset) based on the\nperformance of the underlying reference asset (S&P GSCI) given a notional amount of $\\$25$ million. If the level of the index increases between the two valuation dates (in this case, May\nand June), the long position (the swap buyer) receives payment. If the level of the index\ndecreases between the two valuation dates, the swap seller receives payment.\nThe return on the reference index for the month of June is [(2,525.21 - 2,582.23)/2,582.23],\nwhich is equivalent to -2.2082%. Therefore, the swap buyer (long position) must pay the swap\nseller a cash settlement for the month of June. The June payment calculation is equal to\n $\\$25,000,000$ × -2.2082%, or -$\\$552,042.23$.",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43793,7 +43793,7 @@ test_data = [
             "C": "basis for the near-term Brent crude oil futures contract is $0.05 per barrel."
         },
         "Answer": "B",
-        "Explanation": "The Brent crude oil futures market is in a state of backwardation. Commodity\nfutures markets are in a state of backwardation when the spot price is greater than the price\nof near-term (i.e., nearest-to-expiration) futures contracts and, correspondingly, the price of\nnear-term futures contracts is greater than that of longer-term contracts. The calendar spread\nis the difference between the near-term futures contract price and the longer-term futures\ncontract price, which is $73.64 – $73.59 = $0.05. The basis for the near-term Brent crude oil futures contract is the difference between the spot price and the near-term futures price:\n$77.56 – $73.59 = $3.97.",
+        "Explanation": "The Brent crude oil futures market is in a state of backwardation. Commodity\nfutures markets are in a state of backwardation when the spot price is greater than the price\nof near-term (i.e., nearest-to-expiration) futures contracts and, correspondingly, the price of\nnear-term futures contracts is greater than that of longer-term contracts. The calendar spread\nis the difference between the near-term futures contract price and the longer-term futures\ncontract price, which is $\\$73.64$ – $\\$73.59$ = $\\$0.05$. The basis for the near-term Brent crude oil futures contract is the difference between the spot price and the near-term futures price:\n$\\$77.56$ – $\\$73.59$ = $\\$3.97$.",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43947,7 +43947,7 @@ test_data = [
             "C": "2.98x."
         },
         "Answer": "B",
-        "Explanation": "The investment exit value is \\$15 million. The expected payoff to JRR is calculated as (all amounts in millions):Expected exit value: \\$15.00Debt remaining at exit: ($6.0 - $2.8) =$3.20Preference shares: [$3.60 x (1.15) 6] =$8.33Common equity: ($15 exit -$3.2 debt - $8.33 preference) =$3.47Initial investment: $3.6 (preference) + 0.9 x $0.4 (common) = $3.96Proceeds at exit: $8.33 (preference) + 0.9 x $3.47 (common) = $11.45Multiple of expected proceeds to invested funds: $11.45 exit value/$3.96 initial investment = 2.89x",
+        "Explanation": "The investment exit value is $\\$15$ million. The expected payoff to JRR is calculated as (all amounts in millions):Expected exit value: $\\$15.00$ Debt remaining at exit: ($\\$6.0$ - $\\$2.8$) = $\\$3.20$ Preference shares: [$\\$3.60$ x (1.15) 6] =$\\$8.33$ Common equity: ($\\$15$ exit - $\\$3.2$ debt - $\\$8.33$ preference) = $\\$3.47$ Initial investment: $\\$3.6$ (preference) + 0.9 x $\\$0.4$ (common) = $\\$3.96$ Proceeds at exit: $\\$8.33$ (preference) + 0.9 x $3.47 (common) = $\\$11.45$ Multiple of expected proceeds to invested funds: $\\$11.45$ exit value/$\\$3.96$ initial investment = 2.89x",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43969,7 +43969,7 @@ test_data = [
             "C": "$10 million."
         },
         "Answer": "B",
-        "Explanation": "The distribution waterfall for the Venture Holdings fund follows the deal-by-deal\nmethod. The investment generated a profit of $10 million, and with carried interest of 20%, the general partner would receive $2 million ($10 million x 20%), leaving $8 million for the\nlimited partners.",
+        "Explanation": "The distribution waterfall for the Venture Holdings fund follows the deal-by-deal\nmethod. The investment generated a profit of $\\$10$ million, and with carried interest of 20%, the general partner would receive $\\$2$ million ($\\$10$ million x 20%), leaving $\\$8$ million for the\nlimited partners.",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -43991,7 +43991,7 @@ test_data = [
             "C": "1.63x."
         },
         "Answer": "C",
-        "Explanation": "Total value to paid-in capital (TVPI) represents the fund’s distributed value and\nundistributed value as a proportion of the cumulative invested capital. TVPI is the sum of\ndistributed to paid-in capital (DPI) and residual value to paid-in capital (RVPI):DPI\n=Cumulative distributions/ Cumulative invested capital =$28million/$98million=0.29xRVPI= NAV (after distributions)/Cumulative invested capital=$131.42 million/ $98million=1.34xTVPI = DPI+\nRVPI=1.63x",
+        "Explanation": "Total value to paid-in capital (TVPI) represents the fund’s distributed value and\nundistributed value as a proportion of the cumulative invested capital. TVPI is the sum of\ndistributed to paid-in capital (DPI) and residual value to paid-in capital (RVPI):DPI\n=Cumulative distributions/ Cumulative invested capital = $\\$28$ million/ $\\$98$ million=0.29xRVPI= NAV (after distributions)/Cumulative invested capital = $\\$131.42$ million/ $\\$98$ million=1.34xTVPI = DPI+\nRVPI=1.63x",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -44104,7 +44104,7 @@ test_data = [
             "C": "3 million."
         },
         "Answer": "B",
-        "Explanation": "On a cumulative basis for three years, the fund earns $10 million, of which $2 million goes to the GP. The $2 million earned by the GP corresponds to 20 percent of the\ndifference between total three-year proceeds and three-year invested capital, or 0.2[(25 + 35 +\n65) - (20 + 45 + 50)].",
+        "Explanation": "On a cumulative basis for three years, the fund earns $\\$10$ million, of which $\\$2$ million goes to the GP. The $\\$2$ million earned by the GP corresponds to 20 percent of the\ndifference between total three-year proceeds and three-year invested capital, or 0.2[(25 + 35 +\n65) - (20 + 45 + 50)].",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -60410,7 +60410,7 @@ test_data = [
         "ID": 2867,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The Standard & Poor’s Depositary Receipts (SPDRs) is an exchange-traded fund in the United\nStates that is designed to track the S&P 500 stock market index. The latest price of a share of\nSPDRs is $290. A trader has just bought call options on shares of SPDRs for a premium of $3 per\nshare. The call options expire in six months and have an exercise price of $305 per share. On\nthe expiration date, the trader will exercise the call options (ignore any transaction costs)\nif and only if the shares of SPDRs are trading:",
+        "Question Text": "The Standard & Poor’s Depositary Receipts (SPDRs) is an exchange-traded fund in the United\nStates that is designed to track the S&P 500 stock market index. The latest price of a share of\nSPDRs is $\\$290$. A trader has just bought call options on shares of SPDRs for a premium of $3 per\nshare. The call options expire in six months and have an exercise price of $\\$305$ per share. On\nthe expiration date, the trader will exercise the call options (ignore any transaction costs)\nif and only if the shares of SPDRs are trading:",
         "Image": "images/image_add/2867.png",
         "Options": {
             "A": "below $305 per share.",
@@ -60418,7 +60418,7 @@ test_data = [
             "C": "above $308 per share."
         },
         "Answer": "B",
-        "Explanation": "The holder of the call option will exercise the call options if\nthe price is above the exercise price of $305 per share. Note that if the stock price is above $305 but less than $308, the option would be exercised even though the net result for the option buyer after considering the premium is a loss. For example, if the stock price is $307,\nthe option buyer would exercise the option to make $2 = $307 – $305 per share, resulting in a loss of $1 = $3 – $2 after considering the premium. It is better to exercise and have a loss of only $1, however, rather than not exercise and lose the entire $3 premium.",
+        "Explanation": "The holder of the call option will exercise the call options if\nthe price is above the exercise price of $\\$305$ per share. Note that if the stock price is above $\\$305$ but less than $\\$308$, the option would be exercised even though the net result for the option buyer after considering the premium is a loss. For example, if the stock price is $\\$307$,\nthe option buyer would exercise the option to make $\\$2$ = $\\$307$ – $\\$305$ per share, resulting in a loss of $\\$1$ = $\\$3$ – $\\$2$ after considering the premium. It is better to exercise and have a loss of only $\\$1$, however, rather than not exercise and lose the entire $\\$3$ premium.",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -60538,7 +60538,7 @@ test_data = [
             "C": "–10.23%."
         },
         "Answer": "B",
-        "Explanation": " \n\n\nThe total return of the market-capitalization-weighted index is\ncalculated below:\n\n| **Security** | **Beginning of Period Value (¥)** | **End of Period Value (¥)** | **Total Dividends (¥)** | **Total Return (%)** |\n|--------------|-----------------------------------|-----------------------------|-------------------------|----------------------|\n| MNO          | 12,500,000                        | 13,500,000                  | 500,000                 | 12.00                |\n| QRS          | 26,250,000                        | 18,750,000                  | 1,125,000               | -24.29               |\n| XYZ          | 15,000,000                        | 16,000,000                  | 1,000,000               | 13.33                |\n| **Total**    | 53,750,000                        | 48,250,000                  | 2,625,000               | -5.35                |\n\nThe total return rate calculation needs to include the periodic income. The beginning and ending market values of MNO, ORS, and XYZ, as well as the dividends during the period, are summed separately. The formula is: (Ending Value - Beginning Value + Dividends) / Beginning Value = (48250000 - 53750000 + 2625000) / 53750000 = -5.35%.",
+        "Explanation": " \n\n\nThe total return of the market-capitalization-weighted index is\ncalculated below:\n\n $$ \\begin{array}{|c|c|c|c|c|} \\hline \\text{Security} & \\text{Beginning of Period Value (¥)} & \\text{End of Period Value (¥)} & \\text{Total Dividends (¥)} & \\text{Total Return (\\%)} \\\\ \\hline \\text{MNO} & 12,500,000 & 13,500,000 & 500,000 & 12.00 \\\\ \\text{QRS} & 26,250,000 & 18,750,000 & 1,125,000 & -24.29 \\\\ \\text{XYZ} & 15,000,000 & 16,000,000 & 1,000,000 & 13.33 \\\\ \\hline \\text{Total} & 53,750,000 & 48,250,000 & 2,625,000 & -5.35 \\\\ \\hline \\end{array}$$\n\nThe total return rate calculation needs to include the periodic income. The beginning and ending market values of MNO, ORS, and XYZ, as well as the dividends during the period, are summed separately. The formula is: (Ending Value - Beginning Value + Dividends) / Beginning Value = (48250000 - 53750000 + 2625000) / 53750000 = -5.35%.",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -60718,7 +60718,7 @@ test_data = [
             "C": "Unlimited."
         },
         "Answer": "B",
-        "Explanation": "The maximum possible loss is $1,300. If the stock price crosses $50, the stop buy order will become valid and will get executed at a maximum limit\nprice of $55. The maximum loss per share is $13 = $55 – $42, or $1,300 for 100 shares. ",
+        "Explanation": "The maximum possible loss is $\\$1,300$. If the stock price crosses $\\$50$, the stop buy order will become valid and will get executed at a maximum limit\nprice of $\\$55$. The maximum loss per share is $\\$13$ = $\\$55$ – $\\$42$, or $\\$1,300$ for 100 shares. ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -60830,7 +60830,7 @@ test_data = [
         "ID": 2888,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An investor purchased 5,000 stocks at 57 dollars on margin. The initial margin he deposited\nto his broker is 40%. The broker will make a margin call when the margin account is less than\n25%. The price that will cause a margin call is closest to:\n | Bid Size | Limit Price (€) | Offer Size |\n|----------|-----------------|------------|\n| 5        | 9.73            |            |\n| 12       | 9.81            |            |\n| 4        | 9.84            |            |\n| 6        | 9.95            |            |\n|          | 10.02           | 5          |\n|          | 10.10           | 12         |\n|          | 10.14           | 8          |",
+        "Question Text": "An investor purchased 5,000 stocks at 57 dollars on margin. The initial margin he deposited\nto his broker is 40%. The broker will make a margin call when the margin account is less than\n25%. The price that will cause a margin call is closest to:\n $$\\begin{array}{|c|c|c|} \\hline \\text{Bid Size} & \\text{Limit Price (€)} & \\text{Offer Size} \\\\ \\hline 5 & 9.73 & \\\\ 12 & 9.81 & \\\\ 4 & 9.84 & \\\\ 6 & 9.95 & \\\\ & 10.02 & 5 \\\\ & 10.10 & 12 \\\\ & 10.14 & 8 \\\\ \\hline \\end{array}$$",
         "Image": "images/image_add/2888.png",
         "Options": {
             "A": "30.0.",
@@ -60870,7 +60870,7 @@ test_data = [
         "ID": 2890,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A German company that exports machinery is expecting to receive $10 million in three months.\nThe firm converts all its foreign currency receipts into euros. The chief financial officer of\nthe company wishes to lock in a minimum fixed rate for converting the $10 million to euro but\nalso wants to keep the flexibility to use the future spot rate if it is favorable. What hedging\ntransaction is most likely to achieve this objective?",
+        "Question Text": "A German company that exports machinery is expecting to receive $\\$10$ million in three months.\nThe firm converts all its foreign currency receipts into euros. The chief financial officer of\nthe company wishes to lock in a minimum fixed rate for converting the $\\$10$ million to euro but\nalso wants to keep the flexibility to use the future spot rate if it is favorable. What hedging\ntransaction is most likely to achieve this objective?",
         "Image": "images/image_add/2890.png",
         "Options": {
             "A": "Selling dollars forward.",
@@ -60978,7 +60978,7 @@ test_data = [
             "C": "–13.9%."
         },
         "Answer": "B",
-        "Explanation": "The price return of the price-weighted index is calculated as the percentage change in the index price: \n\n$ \\text{Price Return} = \\frac{(\\text{Ending Price} - \\text{Beginning Price})}{\\text{Beginning Price}} = \\frac{(68 - 75)}{75} = -9.33\\%.\n$\n\nTherefore, option B is correct. \n\nHere is the data in the table format:\n\n$ \\begin{array}{|c|c|c|}\n\\hline\n\\text{Security} & \\text{Beginning of Period Price (£)} & \\text{End of Period Price (£)} \\\n\\hline\n\\text{ABC} & 25.00 & 27.00 \\\n\\text{DEF} & 35.00 & 25.00 \\\n\\text{GHI} & 15.00 & 16.00 \\\n\\hline\n\\text{TOTAL} & 75.00 & 68.00 \\\n\\hline\n\\end{array}\n$",
+        "Explanation": "The price return of the price-weighted index is calculated as the percentage change in the index price: \n\n$ \\text{Price Return} = \\frac{(\\text{Ending Price} - \\text{Beginning Price})}{\\text{Beginning Price}} = \\frac{(68 - 75)}{75} = -9.33\\%.\n$\n\nTherefore, option B is correct. \n\nHere is the data in the table format:\n\n    $$ \\begin{array}{|c|c|c|} \\hline \\text{Security} & \\text{Beginning of Period Price (£)} & \\text{End of Period Price (£)} \\\\ \\hline \\text{ABC} & 25.00 & 27.00 \\\\ \\text{DEF} & 35.00 & 25.00 \\\\ \\text{GHI} & 15.00 & 16.00 \\\\ \\hline \\text{TOTAL} & 75.00 & 68.00 \\\\ \\hline \\end{array} $$",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -61018,7 +61018,7 @@ test_data = [
             "C": "7.1%."
         },
         "Answer": "C",
-        "Explanation": "With an equal-weighted index, the same amount is invested in\neach security. Assuming $1,000 is invested in each of the three stocks, the index value is $3,000 at the beginning of the period and the following number of shares is purchased for each\nstock: Security A: 50 shares Security B: 20 shares Security C: 38.46 shares. Using the prices\nat the beginning of the period for each security, the index value at the end of the period is\n$3,213.8: ($22 × 50)＋($48 × 20) ＋($30 × 38.46). The price return is $3,213.8/$3,000 – 1 =\n7.1%.",
+        "Explanation": "With an equal-weighted index, the same amount is invested in\neach security. Assuming $\\$1,000$ is invested in each of the three stocks, the index value is $\\$3,000$ at the beginning of the period and the following number of shares is purchased for each\nstock: Security A: 50 shares Security B: 20 shares Security C: 38.46 shares. Using the prices\nat the beginning of the period for each security, the index value at the end of the period is\n$\\$3,213.8$: ($\\$22$ × 50)＋($\\$48$ × 20) ＋($\\$30$ × 38.46). The price return is $\\$3,213.8$/$\\$3,000$ – 1 =\n7.1%.",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -61150,7 +61150,7 @@ test_data = [
         "ID": 2904,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A trader has purchased 200 shares of a non-dividend-paying firm on margin at a price of $50\nper share. The leverage ratio is 2.5. Six months later, the trader sells these shares at $60\nper share. Ignoring the interest paid on the borrowed amount and the transaction costs, what\nwas the return to the trader during the six-month period?",
+        "Question Text": "A trader has purchased 200 shares of a non-dividend-paying firm on margin at a price of $\\$50$\nper share. The leverage ratio is 2.5. Six months later, the trader sells these shares at $\\$60$\nper share. Ignoring the interest paid on the borrowed amount and the transaction costs, what\nwas the return to the trader during the six-month period?",
         "Image": "images/image_add/2904.png",
         "Options": {
             "A": "20 percent.",
@@ -61610,7 +61610,7 @@ test_data = [
         "ID": 2927,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Jason Williams purchased 500 shares of a company at $32 per share. The stock was bought on\n75 percent margin. One month later, Williams had to pay interest on the amount borrowed at a\nrate of 2 percent per month. At that time, Williams received a dividend of $0.50 per share.\nImmediately after that he sold the shares at $28 per share. He paid commissions of $10 on the\npurchase and $10 on the sale of the stock. What was the rate of return on this investment for\nthe one-month period?",
+        "Question Text": "Jason Williams purchased 500 shares of a company at $\\$32$ per share. The stock was bought on\n75 percent margin. One month later, Williams had to pay interest on the amount borrowed at a\nrate of 2 percent per month. At that time, Williams received a dividend of $\\$0.50$ per share.\nImmediately after that he sold the shares at $28 per share. He paid commissions of $\\$10$ on the\npurchase and $\\$10$ on the sale of the stock. What was the rate of return on this investment for\nthe one-month period?",
         "Image": "images/image_add/2927.png",
         "Options": {
             "A": "–12.5 percent.",
@@ -61618,7 +61618,7 @@ test_data = [
             "C": "–50.1 percent."
         },
         "Answer": "B",
-        "Explanation": " The return is –15.4 percent. Total cost of the purchase = $16,000 = 500 × $32 Equity invested = $12,000 = 0.75 × $16,000 Amount borrowed = $4,000 = 16,000 – 12,000 Interest paid at month end = $80 = 0.02 × $4,000 Dividend received at month end = $250 = 500 × $0.50 Proceeds on stock sale = $14,000 = 500 × $28 Total commissions paid = $20 = $10＋$10 Net gain/loss = –$1,850 = –16,000 – 80＋250 ＋14,000 – 20 Initial investment including commission on purchase =$12,010 Return = –15.4% =–$1,850/$12,010 ",
+        "Explanation": " The return is –15.4 percent. Total cost of the purchase = $\\$16,000$ = 500 × $\\$32$ Equity invested = $\\$12,000$ = 0.75 × $\\$16,000$ Amount borrowed = $\\$4,000$ = 16,000 – 12,000 Interest paid at month end = $\\$80$ = 0.02 × $\\$4,000$ Dividend received at month end = $\\$250$ = 500 × $\\$0.50$ Proceeds on stock sale = $\\$14,000$ = 500 × $\\$28$ Total commissions paid = $\\$20$ = $\\$10$＋$\\$10$ Net gain/loss = –$\\$1,850$ = –16,000 – 80＋250 ＋14,000 – 20 Initial investment including commission on purchase = $\\$12,010$ Return = –15.4% =–$\\$1,850$/$\\$12,010$ ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -62098,7 +62098,7 @@ test_data = [
             "C": "Alpha has the higher trailing P/E multiple and higher current estimated P/E multiple."
         },
         "Answer": "B",
-        "Explanation": "  P/E = Current price/EPS, and Estimated P/E = Current\nprice/Estimated EPS. Alpha P/E = $57.32/$3.82 = 15.01 Alpha estimated P/E = $57.32/4.75 = 12.07 Delta P/E = $18.93/$1.35 = 14.02 Delta estimated P/E = $18.93/$1.40 = 13.52 ",
+        "Explanation": "  P/E = Current price/EPS, and Estimated P/E = Current\nprice/Estimated EPS. Alpha P/E = $\\$57.32$/$\\$3.82$ = 15.01 Alpha estimated P/E = $\\$57.32$/4.75 = 12.07 Delta P/E = $\\$18.93$/$\\$1.35$ = 14.02 Delta estimated P/E = $\\$18.93$/$\\$1.40$ = 13.52 ",
         "General Topics": "Investment",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -63338,7 +63338,7 @@ test_data = [
             "C": "Pioneer Trust."
         },
         "Answer": "C",
-        "Explanation": "  Relative to the others, Pioneer Trust has the lowest P/E\nmultiple and the P/B multiple is tied for the lowest with Prime Bank. Given the law of one\nprice, similar companies should trade at similar P/B and P/E levels. Thus, based on the\ninformation presented, Pioneer is most likely to be undervalued. \n\n|        | **First Bank** | **Prime Bank** | **Pioneer Trust** |\n|--------|----------------|----------------|-------------------|\n| **P/B**| 1.10           | 0.60           | 0.60              |\n| **P/E**| 8.40           | 11.10          | 8.30              |",
+        "Explanation": "  Relative to the others, Pioneer Trust has the lowest P/E\nmultiple and the P/B multiple is tied for the lowest with Prime Bank. Given the law of one\nprice, similar companies should trade at similar P/B and P/E levels. Thus, based on the\ninformation presented, Pioneer is most likely to be undervalued. \n\n$$\\begin{array}{|c|c|c|c|} \\hline & \\text{First Bank} & \\text{Prime Bank} & \\text{Pioneer Trust} \\\\ \\hline \\text{P/B} & 1.10 & 0.60 & 0.60 \\\\ \\text{P/E} & 8.40 & 11.10 & 8.30 \\\\ \\hline \\end{array}$$        ",
         "General Topics": "Investment",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73544,7 +73544,7 @@ test_data = [
         "ID": 3507,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A bank has $500 million in assets with a modified duration of 7 and $400 million in\nliabilities with a modified duration of 5. Accounting only for duration effects, the impact of\na 50-basis-point parallel upward shift in the yield curve on the bank’s equity value is\nclosest to a:",
+        "Question Text": "A bank has $\\$500$ million in assets with a modified duration of 7 and $\\$400$ million in\nliabilities with a modified duration of 5. Accounting only for duration effects, the impact of\na 50-basis-point parallel upward shift in the yield curve on the bank’s equity value is\nclosest to a:",
         "Image": "images/image_add/3507.png",
         "Options": {
             "A": "$7.5 million decrease",
