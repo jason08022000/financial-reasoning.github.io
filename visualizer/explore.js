@@ -21,7 +21,7 @@ let topic = [
     "Market Risk",
     "Corporate Finance",
     "Liquidity and Treasury Risk",
-    "Quantitative Methodsg"
+    "Valuation and Risk Modelsd"
 ]
 
 

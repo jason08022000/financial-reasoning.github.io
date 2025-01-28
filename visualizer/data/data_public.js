@@ -48641,7 +48641,7 @@ test_data = [
             "D": "1.8439"
         },
         "Answer": "A",
-        "Explanation": "This question focuses on the calculation of Macaulay duration and the conversion between Macaulay duration and modified duration.\n\n$ \\begin{array}{|c|c|c|c|c|}\n\\hline\nT & \\text{Cash flow} & PV & \\omega & \\omega T \\\n\\hline\n1 & 50 & \\frac{50}{1.06} = 47.1698 & \\frac{47.1698}{981.6661} = 4.8051\\% & 0.0481 \\\n\\hline\n2 & 1050 & \\frac{1050}{1.06^2} = 934.4963 & \\frac{934.4963}{981.6661} = 95.1949\\% & 1.9039 \\\n\\hline\n\\text{Total} & & 981.6661 & & \\\n\\hline\n\\end{array}\n$\n\nCalculating Macaulay Duration:\n\n$ \\text{Mac. Dur} = 1.9520\n$\n\nConverting to Modified Duration:\n\n$ \\text{Mod. Dur} = \\frac{\\text{Mac. Dur}}{1 + \\frac{r}{m}} = \\frac{1.9520}{1.06} = 1.8415\n$\n\nTherefore, option A is correct.",
+        "Explanation": "This question focuses on the calculation of Macaulay duration and the conversion between Macaulay duration and modified duration.\n\n    $$\\begin{array}{|c|c|c|c|c|}\\hline T & \\text{Cash flow} & PV & \\omega & \\omega T \\\\ \hline 1 & 50 & \\frac{50}{1.06} = 47.1698 & \\frac{47.1698}{981.6661} = 4.8051\\% & 0.0481 \\\\ \\hline 2 & 1050 & \\frac{1050}{1.06^2} = 934.4963 & \\frac{934.4963}{981.6661} = 95.1949\\% & 1.9039 \\\\ \\hline \\text{Total} & & 981.6661 & & \\\\ \ \\hline \\end{array}$$        \n\nCalculating Macaulay Duration:\n\n$ \\text{Mac. Dur} = 1.9520\n$\n\nConverting to Modified Duration:\n\n$ \\text{Mod. Dur} = \\frac{\\text{Mac. Dur}}{1 + \\frac{r}{m}} = \\frac{1.9520}{1.06} = 1.8415\n$\n\nTherefore, option A is correct.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -48662,7 +48662,7 @@ test_data = [
             "D": "3,883"
         },
         "Answer": "D",
-        "Explanation": "This question focuses on the conversion between Macaulay duration, modified duration, dollar duration, and DV01.\n\n$ \\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\n & a & b & c=b & d=\\frac{c}{1+\\frac{6\\%}{2}} & e=d \\times a & f=\\frac{e}{10,000} \\\n\\hline\n\\text{Bond} & \\text{Value (USD)} & \\text{Maturity} & \\text{Mac. Dur.} & \\text{Mod. Dur} & \\text{D. Dur} & \\text{DV01} \\\n\\hline\n\\text{Bond A} & 2,000,000 & 5 & 5 & 4.8544 & 9,708,800 & 970.88 \\\n\\hline\n\\text{Bond B} & 3,000,000 & 10 & 10 & 9.7087 & 29,126,100 & 2,912.61 \\\n\\hline\n\\text{Portfolio} & 5,000,000 & & & & & 3,883.49 \\\n\\hline\n\\end{array}\n$\n\nBond A and Bond B are zero-coupon bonds, and their Macaulay duration equals their maturity (Mac. Dur = Maturity).\n\nBoth Bond A and Bond B compound semi-annually, and their modified durations can be calculated using the Macaulay duration and the interest rate. (Mod. Dur = Mac. Dur / (1 + 3%)).\n\nDollar duration equals modified duration multiplied by market value. (D. Dur = Mod. Dur \\times Value).\n\nDV01 equals dollar duration divided by 10,000. (DV01 = D. Dur / 10,000).\n\nThe DV01 of the portfolio equals the sum of the DV01 of Bond A and Bond B, which is $ 970.88 + 2,912.61 = 3,883.49 $.\n\nTherefore, option D is correct.",
+        "Explanation": "This question focuses on the conversion between Macaulay duration, modified duration, dollar duration, and DV01.\n\n   $$ \\begin{array}{|c|c|c|c|c|c|c|c|}\\hline & a & b & c=b & d=\\frac{c}{1+\\frac{6\\%}{2}} & e=d \\times a & f=\\frac{e}{10,000} \\\\\\hline\\text{Bond} & \\text{Value (USD)} & \\text{Maturity} & \\text{Mac. Dur.} & \\text{Mod. Dur} & \\text{D. Dur} & \\text{DV01} \\\\ \\hline\\text{Bond A} & 2,000,000 & 5 & 5 & 4.8544 & 9,708,800 & 970.88 \\\\ \\hline\\text{Bond B} & 3,000,000 & 10 & 10 & 9.7087 & 29,126,100 & 2,912.61 \\\\ \\hline\\text{Portfolio} & 5,000,000 & & & & & 3,883.49 \\\\ \\hline\\end{array}$$ \n\nBond A and Bond B are zero-coupon bonds, and their Macaulay duration equals their maturity (Mac. Dur = Maturity).\n\nBoth Bond A and Bond B compound semi-annually, and their modified durations can be calculated using the Macaulay duration and the interest rate. (Mod. Dur = Mac. Dur / (1 + 3%)).\n\nDollar duration equals modified duration multiplied by market value. (D. Dur = Mod. Dur \\times Value).\n\nDV01 equals dollar duration divided by 10,000. (DV01 = D. Dur / 10,000).\n\nThe DV01 of the portfolio equals the sum of the DV01 of Bond A and Bond B, which is $ 970.88 + 2,912.61 = 3,883.49 $.\n\nTherefore, option D is correct.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -48674,7 +48674,7 @@ test_data = [
         "ID": 2319,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Jerry, FRM, attended a lecture about fixed income securities a few weeks ago and took some\nnotes in the lecture. When going over these notes today, he finds some writing mistakes due to\nabsent-mindedness.I. A bond with higher coupon frequencyhas a lower duration.II. Assuming other\nfactors remain unchnged, a higher coupon rate will decrease the duration of the bond.III.\nHigher YTM indicates higher duration.Which of the note（　） above is/are false?",
+        "Question Text": "Jerry, FRM, attended a lecture about fixed income securities a few weeks ago and took some\nnotes in the lecture. When going over these notes today, he finds some writing mistakes due to\nabsent-mindedness.I. A bond with higher coupon frequencyhas a lower duration.II. Assuming other\nfactors remain unchnged, a higher coupon rate will decrease the duration of the bond.III.\nHigher YTM indicates higher duration.Which of the note above is/are false?",
         "Image": "images/image_add/2319.png",
         "Options": {
             "A": "I, II, III",
@@ -48683,7 +48683,7 @@ test_data = [
             "D": "II, III"
         },
         "Answer": "B",
-        "Explanation": "This question focuses on the relationship between bond duration and influencing factors. The relationship can be summarized in the following table:\n\n$ \\begin{array}{|c|c|c|c|}\n\\hline\n& \\text{YTM (Yield to Maturity)} & \\text{Coupon Rate} & \\text{Coupon Frequency} \\\n\\hline\n\\text{Duration} & \\text{Negative Correlation} & \\text{Negative Correlation} & \\text{Negative Correlation} \\\n\\hline\n\\end{array}\n$\n\nTherefore, only III is correct, making option B correct.",
+        "Explanation": "This question focuses on the relationship between bond duration and influencing factors. The relationship can be summarized in the following table:\n\n $$ \\begin{array}{|c|c|c|c|}\\hline\\\\& \\text{YTM (Yield to Maturity)} & \\text{Coupon Rate} & \\text{Coupon Frequency} \\\\ \\hline\\text{Duration} & \\text{Negative Correlation} & \\text{Negative Correlation} & \\text{Negative Correlation} \\\\ \\hline\\end{array}$$\n\nTherefore, only III is correct, making option B correct.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -48704,7 +48704,7 @@ test_data = [
             "D": "2-4-5-1-3"
         },
         "Answer": "A",
-        "Explanation": "This question focuses on ranking bond durations based on the relationships between duration and influencing factors.\n\n1) The 9-year bond (Bond 5) has the longest duration because its maturity time is the latest among all comparable bonds.\n\n2) Bonds 1 and 2 differ only in their coupon payment frequency. Bond 2 pays interest semiannually, which results in a shorter duration compared to Bond 1.\n\n3) Bonds 3 and 4 differ only in yield. Since Bond 4 has a lower yield, the present value of its future cash flows has a higher weight, resulting in a longer duration compared to Bond 3.\n\n4) Bond 3 has a single coupon, and its duration is equal to its maturity time, making it the longest among all comparable bonds.\n\nThus, the ranking of bond durations from shortest to longest is: 5-2-1-4-3. Therefore, option A is correct.\n\nThe relationship between bond duration and influencing factors can be summarized in the following table:\n\n$ \\begin{array}{|c|c|c|c|c|}\n\\hline\n& \\text{YTM (Yield to Maturity)} & \\text{Coupon Rate} & \\text{Coupon Frequency} & \\text{T (Time to Maturity)} \\\n\\hline\n\\text{Duration} & \\text{Negative Correlation} & \\text{Negative Correlation} & \\text{Negative Correlation} & \\text{Positive Correlation} \\\n\\hline\n\\end{array}\n$\n",
+        "Explanation": "This question focuses on ranking bond durations based on the relationships between duration and influencing factors.\n\n1) The 9-year bond (Bond 5) has the longest duration because its maturity time is the latest among all comparable bonds.\n\n2) Bonds 1 and 2 differ only in their coupon payment frequency. Bond 2 pays interest semiannually, which results in a shorter duration compared to Bond 1.\n\n3) Bonds 3 and 4 differ only in yield. Since Bond 4 has a lower yield, the present value of its future cash flows has a higher weight, resulting in a longer duration compared to Bond 3.\n\n4) Bond 3 has a single coupon, and its duration is equal to its maturity time, making it the longest among all comparable bonds.\n\nThus, the ranking of bond durations from shortest to longest is: 5-2-1-4-3. Therefore, option A is correct.\n\nThe relationship between bond duration and influencing factors can be summarized in the following table:\n\n $$ \\begin{array}{|c|c|c|c|c|}\\hline & \\text{YTM (Yield to Maturity)} & \\text{Coupon Rate} & \\text{Coupon Frequency} & \\text{T (Time to Maturity)} \\\\ \\hline \\text{Duration} & \\text{Negative Correlation} & \\text{Negative Correlation} & \\text{Negative Correlation} & \\text{Positive Correlation} \\\\ \\hline\\end{array}$$\n",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -48725,7 +48725,7 @@ test_data = [
             "D": "All of the above statements"
         },
         "Answer": "D",
-        "Explanation": "This question focuses on the difference between DVDZ and effective duration.\n\nDVDZ represents the change in bond yield by one basis point, which leads to a change in the bond's price. Effective duration, on the other hand, measures the percentage change in the bond's price. This is the biggest difference between them.\n\nFor Statement I, when the position of the portfolio increases, the DVDZ of the portfolio measures dollar duration and increases proportionally with the portfolio position. However, effective duration measures the percentage change in bond price and does not change with the portfolio position. Therefore, this statement is incorrect, consistent with the topic.\n\nFor Statement II, bond investors are generally more interested in government bonds. Since a large percentage change can easily enhance bond investor returns, effective duration will be more useful than DV01. Thus, this statement is incorrect, consistent with the topic.\n\nFor Statement III, if the DVDZ of the portfolio that the investor wants to hedge is $250$, and the hedging tool is a 5-year bond, with a market value of $1 million, the DVDZ of that security is $150$. To hedge the portfolio's DVDZ, the number of bonds needed for the hedge would be: \n$$ \\frac{250}{150} \\times 1 \\text{ million}, $$ \nthus the value of the bonds used for hedging would be:\n\n$$ \\frac{250}{150} \\times 1 \\text{ million}. $$\n\nTherefore, this statement is incorrect, consistent with the topic.\n\nIn summary, all statements are incorrect, consistent with the topic. Therefore, the correct option is D.",
+        "Explanation": "This question focuses on the difference between DVDZ and effective duration.\n\nDVDZ represents the change in bond yield by one basis point, which leads to a change in the bond's price. Effective duration, on the other hand, measures the percentage change in the bond's price. This is the biggest difference between them.\n\nFor Statement I, when the position of the portfolio increases, the DVDZ of the portfolio measures dollar duration and increases proportionally with the portfolio position. However, effective duration measures the percentage change in bond price and does not change with the portfolio position. Therefore, this statement is incorrect, consistent with the topic.\n\nFor Statement II, bond investors are generally more interested in government bonds. Since a large percentage change can easily enhance bond investor returns, effective duration will be more useful than DV01. Thus, this statement is incorrect, consistent with the topic.\n\nFor Statement III, if the DVDZ of the portfolio that the investor wants to hedge is $250$, and the hedging tool is a 5-year bond, with a market value of $\\$1$ million, the DVDZ of that security is $150$. To hedge the portfolio's DVDZ, the number of bonds needed for the hedge would be: \n$$ \\frac{250}{150} \\times 1 \\text{ million}, $$ \nthus the value of the bonds used for hedging would be:\n\n$$ \\frac{250}{150} \\times 1 \\text{ million}. $$\n\nTherefore, this statement is incorrect, consistent with the topic.\n\nIn summary, all statements are incorrect, consistent with the topic. Therefore, the correct option is D.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -48746,7 +48746,7 @@ test_data = [
             "D": "-9.6%"
         },
         "Answer": "A",
-        "Explanation": "This question focuses on the impact of a 100 basis point decline in interest rates on the percentage change in the price of a portfolio. \n\nFirst, the relationship between interest rate changes and price changes is inverse. When interest rates fall, prices rise, which eliminates options C and D. \n\nNext, this question examines scenarios involving significant interest rate changes, requiring consideration of both duration and convexity effects. \n\nFinally, the question studies the situation of a portfolio where the modified duration and modified convexity of the portfolio are the weighted averages of the modified durations and modified convexities of its components, with weights based on market value. \n\nThe total market value of the portfolio is $50 million, with bonds A, B, and C representing 10%, 40%, and 50% of the portfolio, respectively.  \nThus, the portfolio's modified duration is calculated as follows:\n\n$$ \\text{Modified Duration} = 4 \\times 10\\% + 8 \\times 40\\% + 12 \\times 50\\% = 9.6 $$ \nThe portfolio's modified convexity is calculated as follows:\n\n$$ \\text{Modified Convexity} = 23 \\times 10\\% + 77 \\times 40\\% + 168 \\times 50\\% = 117.1 $$ \nNow, with a 100 basis point decrease in yield, or 0.01, the approximate percentage change in the portfolio's price is:\n\n$$ \\Delta \\%P \\approx -\\text{ModDur} \\times \\Delta y + \\frac{1}{2} \\times \\text{Convexity} \\times (\\Delta y)^2 $$ \n$$ = -9.6 \\times (-0.01) + \\frac{1}{2} \\times 117.1 \\times (-0.01)^2 = 10.2\\% $$\n\nTherefore, option A is correct.",
+        "Explanation": "This question focuses on the impact of a 100 basis point decline in interest rates on the percentage change in the price of a portfolio. \n\nFirst, the relationship between interest rate changes and price changes is inverse. When interest rates fall, prices rise, which eliminates options C and D. \n\nNext, this question examines scenarios involving significant interest rate changes, requiring consideration of both duration and convexity effects. \n\nFinally, the question studies the situation of a portfolio where the modified duration and modified convexity of the portfolio are the weighted averages of the modified durations and modified convexities of its components, with weights based on market value. \n\nThe total market value of the portfolio is $\\$50$ million, with bonds A, B, and C representing 10%, 40%, and 50% of the portfolio, respectively.  \nThus, the portfolio's modified duration is calculated as follows:\n\n$$ \\text{Modified Duration} = 4 \\times 10\\% + 8 \\times 40\\% + 12 \\times 50\\% = 9.6 $$ \nThe portfolio's modified convexity is calculated as follows:\n\n$$ \\text{Modified Convexity} = 23 \\times 10\\% + 77 \\times 40\\% + 168 \\times 50\\% = 117.1 $$ \nNow, with a 100 basis point decrease in yield, or 0.01, the approximate percentage change in the portfolio's price is:\n\n$$ \\Delta \\%P \\approx -\\text{ModDur} \\times \\Delta y + \\frac{1}{2} \\times \\text{Convexity} \\times (\\Delta y)^2 $$ \n$$ = -9.6 \\times (-0.01) + \\frac{1}{2} \\times 117.1 \\times (-0.01)^2 = 10.2\\% $$\n\nTherefore, option A is correct.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -49040,7 +49040,7 @@ test_data = [
             "D": "100 contracts"
         },
         "Answer": "A",
-        "Explanation": "This question focuses on using Eurodollar futures to hedge against interest rate risk.\n\nNick and Daisy are concerned about fluctuations in interest rates over the coming period, and they decide to hedge using Eurodollar futures. The underlying asset is a six-month currency market instrument valued at $20 million (typically a zero-coupon bond), so the duration equals the settlement duration. According to the approximation $1 + \\text{interest rate} \\approx \\text{Modified Duration}$, its duration is approximately equal to its maturity, which is 0.5 years. \nUsing the duration formula, $\\Delta P = \\text{ModDur} \\times P \\times \\Delta y$, we can deduce that assuming an interest rate change of one basis point (0.0001), the value change of this currency market instrument is: \n$\n\\Delta P = 20,000,000 \\times 0.5 \\times 0.0001 = 1,000\n$ \nGiven the characteristics of Eurodollar futures, a one basis point change in interest rates results in a $25 change in the value of the Eurodollar futures. Therefore, to hedge this currency market instrument, the number of Eurodollar futures needed is:\n\n$ \\frac{1,000}{25} = 40\n$\n\nThus, the correct answer is **Option A**.",
+        "Explanation": "This question focuses on using Eurodollar futures to hedge against interest rate risk.\n\nNick and Daisy are concerned about fluctuations in interest rates over the coming period, and they decide to hedge using Eurodollar futures. The underlying asset is a six-month currency market instrument valued at $\\$20$ million (typically a zero-coupon bond), so the duration equals the settlement duration. According to the approximation $\\$1$ + $\\text{interest rate} \\approx \\text{Modified Duration}$, its duration is approximately equal to its maturity, which is 0.5 years. \nUsing the duration formula, $\\Delta P = \\text{ModDur} \\times P \\times \\Delta y$, we can deduce that assuming an interest rate change of one basis point (0.0001), the value change of this currency market instrument is: \n$\n\\Delta P = 20,000,000 \\times 0.5 \\times 0.0001 = 1,000\n$ \n    Given the characteristics of Eurodollar futures, a one basis point change in interest rates results in a $\\$25$ change in the value of the Eurodollar futures. Therefore, to hedge this currency market instrument, the number of Eurodollar futures needed is:\n\n$$ \\frac{1,000}{25} = 40$$\n\nThus, the correct answer is **Option A**.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -49076,10 +49076,10 @@ test_data = [
         "Question Text": "For any portfolio P, let VaR (P, λ, t)denote its VaR, and ES (P, λ, t)denote its ES, with\nconfidence level λ over a horizon of t days. Which of the following relationships is always\ntrue?",
         "Image": "images/image_add/2338.png",
         "Options": {
-            "A": "ES (P, \\u03bb, t) \\u2264 VaR (P, \\u03bb, t)",
-            "B": "VaR (P1 + P2, \\u03bb, t) \\u2264 VaR (P1, \\u03bb, t) + VaR (P2, \\u03bb, t)",
-            "C": "ES (3\\u00d7P, \\u03bb, t) = 3\\u00d7ES (P, \\u03bb, t)",
-            "D": "VaR (3\\u00d7P, \\u03bb, t) = 9\\u00d7VaR (P, \\u03bb, t)"
+            "A": "ES (P, \u03bb, t) \\u2264 VaR (P, \u03bb, t)",
+            "B": "VaR (P1 + P2, \u03bb, t) \u2264 VaR (P1, \u03bb, t) + VaR (P2, \u03bb, t)",
+            "C": "ES (3\u00d7P, \u03bb, t) = 3\u00d7ES (P, \u03bb, t)",
+            "D": "VaR (3\u00d7P, \u03bb, t) = 9\u00d7VaR (P, \u03bb, t)"
         },
         "Answer": "C",
         "Explanation": "The focus of this question is on the criteria for coherent risk measures. A coherent risk measure must satisfy the following four conditions:\n\n- **Monotonicity**: The risk of a better-quality asset should not be greater than that of a worse-quality asset.\n- **Subadditivity**: The risk of a portfolio should not exceed the sum of the risks of its components.\n- **Homogeneity**: The risk of a position that is scaled up proportionally should equal the original position's risk scaled up by the same proportion.\n- **Translational Invariance**: The risk of the total position after adding cash or other risk-free assets should decrease compared to the original position's risk, by exactly the amount of cash or risk-free assets added.\n\nValue at Risk (VaR) is not a coherent risk measure because it does not satisfy the subadditivity condition, thus options B and D are incorrect. Expected Shortfall (ES), which is the expected value of tail losses, does meet the criteria for a coherent risk measure, making option C correct and option A incorrect.",
@@ -49103,7 +49103,7 @@ test_data = [
             "D": "ninety, more."
         },
         "Answer": "C",
-        "Explanation": "The focus of this question is on the definition of Value at Risk (VaR). A VaR of $5,000 at a 90% confidence level indicates that there is a 90% probability that losses will be less than $5,000, which means that in a given period (e.g., 10 days), losses will be below $5,000 on 9 of those days. This is equivalent to saying that on 1 day out of 10, the losses will exceed $5,000. Therefore, the correct answer is C.",
+        "Explanation": "The focus of this question is on the definition of Value at Risk (VaR). A VaR of $\\$5,000$ at a 90% confidence level indicates that there is a 90% probability that losses will be less than $\\$5,000$, which means that in a given period (e.g., 10 days), losses will be below $\\$5,000$ on 9 of those days. This is equivalent to saying that on 1 day out of 10, the losses will exceed $\\$5,000$. Therefore, the correct answer is C.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -49124,7 +49124,7 @@ test_data = [
             "D": "USD 15.04 million"
         },
         "Answer": "B",
-        "Explanation": "The focus of this question is on the calculation of Value at Risk (VaR). Based on historical data of 400 observations, the VaR is determined by selecting the 1% quantile corresponding to the losses. By starting from the highest loss and selecting the fourth loss value, we find that this corresponds to the daily VaR of -1.82%. By multiplying this percentage by the portfolio value of $800 million, the dollar amount of VaR is calculated to be $14.56 million. Therefore, the correct answer is option B.",
+        "Explanation": "The focus of this question is on the calculation of Value at Risk (VaR). Based on historical data of 400 observations, the VaR is determined by selecting the 1% quantile corresponding to the losses. By starting from the highest loss and selecting the fourth loss value, we find that this corresponds to the daily VaR of -1.82%. By multiplying this percentage by the portfolio value of $\\$800$ million, the dollar amount of VaR is calculated to be $\\$14.56$ million. Therefore, the correct answer is option B.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -49145,7 +49145,7 @@ test_data = [
             "D": "USD 25 million"
         },
         "Answer": "B",
-        "Explanation": "The focus of this question is on the calculation of Value at Risk (VaR). After updating with four new extreme losses and sorting them from largest to smallest, we obtain the following losses: -25%, -9.5%, -7.8%, -6.3%, -4.7%, -4.1%. The VaR value corresponding to the 95% confidence level indicates that we should choose the 5% quantile, which is the fifth number, -4.7%, as the VaR. To calculate the dollar amount of VaR, we multiply -4.7% by the total value of $100 million, resulting in a VaR of $4.7 million.",
+        "Explanation": "The focus of this question is on the calculation of Value at Risk (VaR). After updating with four new extreme losses and sorting them from largest to smallest, we obtain the following losses: -25%, -9.5%, -7.8%, -6.3%, -4.7%, -4.1%. The VaR value corresponding to the 95% confidence level indicates that we should choose the 5% quantile, which is the fifth number, -4.7%, as the VaR. To calculate the dollar amount of VaR, we multiply -4.7% by the total value of $\\$100$ million, resulting in a VaR of $\\$4.7$ million.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -68213,7 +68213,7 @@ test_data = [
             "C": "8.95%"
         },
         "Answer": "A",
-        "Explanation": " The continuously compounded return of an asset over a period is\nequal to the natural log of period’s change. In this case: ln(120/112) = 6.90% \n\n| **Date**     | **Closing Price (€)** |\n|--------------|-----------------------|\n| 1 August     | 112                   |\n| 8 August     | 160                   |\n| 15 August    | 120                   |\n",
+        "Explanation": " The continuously compounded return of an asset over a period is\nequal to the natural log of period’s change. In this case: ln(120/112) = 6.90% \n\n $$\\begin{array}{|c|c|} \\hline \\text{Date} & \\text{Closing Price (€)} \\\\ \\hline 1 \, \\text{August} & 112 \\\\ 8 \, \\text{August} & 160 \\\\ 15 \, \\text{August} & 120 \\\\ \\hline \\end{array}$$ \n",
         "General Topics": "Quantitative Methods",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -69458,7 +69458,7 @@ test_data = [
             "D": " USD 104.18"
         },
         "Answer": "D",
-        "Explanation": "\n\nThe solution is to replicate the 1-year 8% bond using the other two treasury bonds.\n\n|       | Price  | Cash Flow (t = 0.5) | Cash Flow (t = 1) | Replicating Weight |\n|-------|--------|---------------------|--------------------|--------------------|\n| Bond 1| 96.12  | 0                   | 100                | 0.2                |\n| Bond 2| 106.20 | 5                   | 105                | 0.8                |\n| Bond 3|        | 4                   | 104                |                    |\n\nTherefore, the price of the 8% bond should be 0.2 × 96.12 + 0.8 × 106.20 = 104.184",
+        "Explanation": "\n\nThe solution is to replicate the 1-year 8% bond using the other two treasury bonds.\n\n$$\\begin{array}{|c|c|c|c|c|} \\hline & \\text{Price} & \\text{Cash Flow (t = 0.5)} & \\text{Cash Flow (t = 1)} & \\text{Replicating Weight} \\\\ \\hline \\text{Bond 1} & 96.12 & 0 & 100 & 0.2 \\\\ \\text{Bond 2} & 106.20 & 5 & 105 & 0.8 \\\\ \\text{Bond 3} & & 4 & 104 & \\\\ \\hline \\end{array}$$\n\nTherefore, the price of the 8% bond should be 0.2 × 96.12 + 0.8 × 106.20 = 104.184",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -69479,7 +69479,7 @@ test_data = [
             "D": "$10,726.83"
         },
         "Answer": "D",
-        "Explanation": "We first need the invoice price. We can price the bond as of the last coupon date: PV (at 2/15/2014) = -PV(2.0%, 7, 325, 10000) = $10,809.00,with the calculator: n = 7, I/Y = 2, PMT = 325, FV = 10000 --> CPT PV = $10,809.00Note, from 2/15/14 to 8/15/17 is 3.5 years or 7.0 semesters.Then we can compound this forward to settlement date, with the given yield, such that:Invoice (aka, Full) Price = PV(at 7/1/2014) = $10,809.00 × (1+4%/2) ^ (136/181) = $10,971.03.Finally, we extract the bond's quoted price:As AI = $10,000 × 6.5%/2 × 136/181 = $244.20,Quoted Price = Invoice Price - AI = $10,971.03 - $244.20 = $10,726.83.这",
+        "Explanation": "We first need the invoice price. We can price the bond as of the last coupon date: PV (at 2/15/2014) = -PV(2.0%, 7, 325, 10000) = $\\$10,809.00$,with the calculator: n = 7, I/Y = 2, PMT = 325, FV = 10000 --> CPT PV = $\\$10,809.00$ Note, from 2/15/14 to 8/15/17 is 3.5 years or 7.0 semesters.Then we can compound this forward to settlement date, with the given yield, such that:Invoice (aka, Full) Price = PV(at 7/1/2014) = $\\$10,809.00$ × (1+4%/2) ^ (136/181) = $\\$10,971.03$.Finally, we extract the bond's quoted price:As AI = $\\$10,000$ × 6.5%/2 × 136/181 = $\\$244.20$,Quoted Price = Invoice Price - AI = $\\$10,971.03$ - $\\$244.20$ = $\\$10,726.83$.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -69836,7 +69836,7 @@ test_data = [
             "D": " 4.11%"
         },
         "Answer": "C",
-        "Explanation": "3.84% (or more exactly 3.83718%) is the gross realized return, which includes one reinvested (at 4.0%) coupon.At the time of purchase, when the bond's price was $93.40, its yield was = RATE(10×2,100×0.030/2,-93.40,100)×2 ~= 3.80%. After one year, if the yield is unchanged, then we only need to re-price with a shorter maturity such that the price is PV(0.0380/2,9×2,100×0.030/2,100) = $93.954. Notice how the bond pulled to par. The gross realizes return includes the interim coupon compounded for six months at 4.0% and, therefore is given by[$93.954 ＋$1.50＋ $1.50×(1 0.040/2)－93.40]/93.40= 3.8372%. ",
+        "Explanation": "3.84% (or more exactly 3.83718%) is the gross realized return, which includes one reinvested (at 4.0%) coupon.At the time of purchase, when the bond's price was $\\$93.40$, its yield was = RATE(10×2,100×0.030/2,-93.40,100)×2 ~= 3.80%. After one year, if the yield is unchanged, then we only need to re-price with a shorter maturity such that the price is PV(0.0380/2,9×2,100×0.030/2,100) = $\\$93.954$. Notice how the bond pulled to par. The gross realizes return includes the interim coupon compounded for six months at 4.0% and, therefore is given by$$[\\$93.954 ＋\\$1.50＋ \\$1.50×(1 0.040/2)－93.40]/93.40= 3.8372% $$ ",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -69899,7 +69899,7 @@ test_data = [
             "D": " $1,033.00"
         },
         "Answer": "D",
-        "Explanation": "$$ The solution follows: Price = \\$25 \\times 0.990 + \\$25 \\times 0.970 + \\$1,025 \\times 0.960 = \\$1,033.$$",
+        "Explanation": " The solution follows: $$ Price = \\$25 \\times 0.990 + \\$25 \\times 0.970 + \\$1,025 \\times 0.960 = \\$1,033.$$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -69920,7 +69920,7 @@ test_data = [
             "D": " $103.95"
         },
         "Answer": "D",
-        "Explanation": "PV (0.5 year cash flow) = $3/(1＋1%/2)^(0.5×2) = $2.99PV (1.0 year cash flow) = $3/(1＋2%/2)^(1.0×2) = $2.94PV (1.5 year cash flow) = $3/(1＋3%/2)^(1.5×2) = $2.87PV (2.0 year cash flow) = $103/(1＋4%/2)^(2.0×2) = $95.16Sum of PV of cash flows = $103.951",
+        "Explanation": "PV (0.5 year cash flow) = $\\$3$/(1＋1%/2)^(0.5×2) = $\\$2.99$   PV (1.0 year cash flow) = $\\$3$/(1＋2%/2)^(1.0×2) = $\\$2.94$          PV (1.5 year cash flow) = $\\$3$/(1＋3%/2)^(1.5×2) = $\\$2.87$  PV (2.0 year cash flow) = $\\$103$/(1＋4%/2)^(2.0×2) = $\\$95.16$                      Sum of PV of cash flows = $\\$103.951$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -70100,7 +70100,7 @@ test_data = [
         "ID": 3343,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Peter is given the opportunity to pay $100.00 in exchange for his choice of one of the following annuities: I. The first annuity pays $2.00 per month ($24.00 per annum) over the next five years when the discount rate is 12.0% per annum with monthly compound frequency. II. The second annuity pays $18.00 per year over the next ten years when the discount rate is 12.0% per annum with annual compound frequency. Both annuities pay in arrears; that is, respectively, at the end of each month and at the end of each year. Assuming Peter’s discount rate is 12.0% with a flat curve (i.e., insensitive to maturity) and fully reflects his risk preferences, which of the following statements is TRUE?",
+        "Question Text": "Peter is given the opportunity to pay $\\$100.00$ in exchange for his choice of one of the following annuities: I. The first annuity pays $\\$2.00$ per month ($\\$24.00$ per annum) over the next five years when the discount rate is 12.0% per annum with monthly compound frequency. II. The second annuity pays $\\$18.00$ per year over the next ten years when the discount rate is 12.0% per annum with annual compound frequency. Both annuities pay in arrears; that is, respectively, at the end of each month and at the end of each year. Assuming Peter’s discount rate is 12.0% with a flat curve (i.e., insensitive to maturity) and fully reflects his risk preferences, which of the following statements is TRUE?",
         "Image": "images/image_add/3343.png",
         "Options": {
             "A": " Neither is worth the cost (the present value of both is below $100.00)",
@@ -70109,7 +70109,7 @@ test_data = [
             "D": " Both are worth the cost (the present value of both is above $100.00)"
         },
         "Answer": "C",
-        "Explanation": "The present value (PV) of a stream of $1.00 payments over an annuity of (T) periods is given by A(T) = I/y × [1 − 1/(1+y/k)^(k×T)]. Therefore, the PV of the monthly annuity is equal to 1/0.120 × [1 − 1/(1+0.120/12)^(12×5)] × $24.00 = $89.10, and the PV of the annual annuity is equal to 1/0.120 × [1 − 1/(1+0.120/1)^(1×10)] × $18.00 = $101.704.",
+        "Explanation": "The present value (PV) of a stream of $\\$1.00$ payments over an annuity of (T) periods is given by A(T) = I/y × [1 − 1/(1+y/k)^(k×T)]. Therefore, the PV of the monthly annuity is equal to 1/0.120 × [1 − 1/(1+0.120/12)^(12×5)] × $\\$24.00$ = $\\$89.10$, and the PV of the annual annuity is equal to 1/0.120 × [1 − 1/(1+0.120/1)^(1×10)] × $\\$18.00$ = $\\$101.704$.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -70214,7 +70214,7 @@ test_data = [
             "D": " 0.9823"
         },
         "Answer": "A",
-        "Explanation": "To obtain the d(1.0) discount factor, first solve for d(0.5). In the equation below, the price for Bond A is equated to its terminal cash flow in six months, which is the principal plus the semiannual coupon of $3.00. 101.182 = 103.00 × d(0.5), d(0.5) = 0.9823. Next use the price and cash flows of Bond B to calculate the d(1.0) discount factor. The cash flow in one year is the principal plus the semiannual coupon of $6.00 and is discounted by d(0.5) and d(1.0). 102.341 = 6.00 × d(0.5) + 106.00 × d(1.0), which gives d(1.0) = 0.9099.",
+        "Explanation": "To obtain the d(1.0) discount factor, first solve for d(0.5). In the equation below, the price for Bond A is equated to its terminal cash flow in six months, which is the principal plus the semiannual coupon of $\\$3.00$. 101.182 = 103.00 × d(0.5), d(0.5) = 0.9823. Next use the price and cash flows of Bond B to calculate the d(1.0) discount factor. The cash flow in one year is the principal plus the semiannual coupon of $\\$6.00$ and is discounted by d(0.5) and d(1.0). 102.341 = 6.00 × d(0.5) + 106.00 × d(1.0), which gives d(1.0) = 0.9099.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -70268,7 +70268,7 @@ test_data = [
         "ID": 3351,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The price of a three-year zero coupon government bond is $94.23 and the price of a similar five-year bond is $82.99. Under annual compounding, what is the two-year implied forward rate from year three to year five, F(3,5)?",
+        "Question Text": "The price of a three-year zero coupon government bond is $\\$94.23$ and the price of a similar five-year bond is $\\$82.99$. Under annual compounding, what is the two-year implied forward rate from year three to year five, F(3,5)?",
         "Image": "images/image_add/3351.png",
         "Options": {
             "A": " 3.67%",
@@ -70277,7 +70277,7 @@ test_data = [
             "D": " 6.56%"
         },
         "Answer": "D",
-        "Explanation": "Note that prices are a function of spot rates: P(3) = F/[1+s(3)]^3 and P(5) = F/[1+s(5)]^5. The no-arbitrage expectation is: [1+f(3,5)]^2 = [1+s(5)]^5 / [1+s(3)]^3, and taking square root of both sides: f(3,5) = SQRT([1+s(5)]^5 / [1+s(3)]^3) - 1. Substituting price in: f(3,5) = SQRT(P(3)/P(5)) - 1. In this case, f(3,5) = SQRT(94.23 / 82.99) - 1 = 6.56%.",
+        "Explanation": "Note that prices are a function of spot rates: $P(3) = F/[1+s(3)]^3$ and $P(5) = F/[1+s(5)]^5$. The no-arbitrage expectation is: $[1+f(3,5)]^2 = [1+s(5)]^5 / [1+s(3)]^3$, and taking square root of both sides: $f(3,5) = SQRT([1+s(5)]^5 / [1+s(3)]^3) - 1$. Substituting price in: $f(3,5) = SQRT(P(3)/P(5)) - 1$. In this case, $f(3,5) = SQRT(94.23 / 82.99) - 1 = 6.56%$.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -70394,7 +70394,7 @@ test_data = [
         "ID": 3357,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume the reference term structure, which happens to be the theoretical Treasury spot rate curve, is flat at a semiannually compounded rate of 1.30% per annum. A $100 par bond with a 20-year maturity pays a 4 3/8 coupon (4.375% coupon rate) and has a current price of $95.82. Which is nearest to the bond's spread with semi-annual compounding; a.k.a., bond-equivalent basis?",
+        "Question Text": "Assume the reference term structure, which happens to be the theoretical Treasury spot rate curve, is flat at a semiannually compounded rate of 1.30% per annum. A $\\$100$ par bond with a 20-year maturity pays a 4 3/8 coupon (4.375% coupon rate) and has a current price of $\\$95.82$. Which is nearest to the bond's spread with semi-annual compounding; a.k.a., bond-equivalent basis?",
         "Image": "images/image_add/3357.png",
         "Options": {
             "A": " 1.74%",
@@ -70457,7 +70457,7 @@ test_data = [
         "ID": 3360,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Analyst Patricia is analyzing the following four bonds: Bond A is a $100.00 face value bond with 7.0 years to maturity that pays a monthly coupon at a rate of 6.0% per annum and offers a yield of 5.0% per annum (with monthly compound frequency) Bond B is a $100.00 face value bond with 10.0 years to maturity that pays a semi-annual coupon at a rate of 4.0% per annum and offers a yield of 5.0% per annum (with semiannual compound frequency) Bond C is a $100.00 face value bond with 10.0 years to maturity that pays an annual coupon at a rate of 7.0% per annum and offers a yield of 6.0% per annum (with annual compound frequency) Bond D is a $1,000.00 face value zero-coupon bond with 30.0 years to maturity that offers a",
+        "Question Text": "Analyst Patricia is analyzing the following four bonds: Bond A is a $\\$100.00$ face value bond with 7.0 years to maturity that pays a monthly coupon at a rate of 6.0% per annum and offers a yield of 5.0% per annum (with monthly compound frequency) Bond B is a $\\$100.00$ face value bond with 10.0 years to maturity that pays a semi-annual coupon at a rate of 4.0% per annum and offers a yield of 5.0% per annum (with semiannual compound frequency) Bond C is a $\\$100.00$ face value bond with 10.0 years to maturity that pays an annual coupon at a rate of 7.0% per annum and offers a yield of 6.0% per annum (with annual compound frequency) Bond D is a $\\$1,000.00$ face value zero-coupon bond with 30.0 years to maturity that offers a",
         "Image": "images/image_add/3360.png",
         "Options": {
             "A": "Bond A is the cheapest and Bond D is the most expensive",
@@ -70466,7 +70466,7 @@ test_data = [
             "D": "Bond D is the cheapest and Bond B is the most expensive"
         },
         "Answer": "B",
-        "Explanation": "Bond B is the cheapest (at $92.21) and Bond C is the most expensive (at $107.36). The following are the theoretical prices:Bond A: 7×12 = 84 N, 5/12 = 0.4167 I/Y, 0.06×100/12 = 0.50 PMT, 100 FV and CPT PV [+/-] = $105.90Bond B: 10×2 = 20 N, 5/2 = 2.5 I/Y, 0.04×100/2 = 2.0 PMT, 100 FV and CPT PV [+/-] = $92.21Bond C: 10×1 = 10 N, 6/1 = 6.0 I/Y, 0.07×100/1 = 7.0 PMT, 100 FV and CPT PV [+/-] = $107.36Bond D: 30×2 = 60 N, 8/2 = 4.0 I/Y, 0 PMT, 100 FV and CPT PV [+/-] = $95.06",
+        "Explanation": "Bond B is the cheapest (at $\\$92.21$) and Bond C is the most expensive (at $\\$107.36$). The following are the theoretical prices:Bond A: 7×12 = 84 N, 5/12 = 0.4167 I/Y, 0.06×100/12 = 0.50 PMT, 100 FV and CPT PV [+/-] = $\\$105.90$ Bond B: 10×2 = 20 N, 5/2 = 2.5 I/Y, 0.04×100/2 = 2.0 PMT, 100 FV and CPT PV [+/-] = $\\$92.21$ Bond C: 10×1 = 10 N, 6/1 = 6.0 I/Y, 0.07×100/1 = 7.0 PMT, 100 FV and CPT PV [+/-] = $\\$107.36$ Bond D: 30×2 = 60 N, 8/2 = 4.0 I/Y, 0 PMT, 100 FV and CPT PV [+/-] = $\\$95.06$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -72944,7 +72944,7 @@ test_data = [
             "D": "Cheap at six months, fair at one year, and rich at 1.5 years."
         },
         "Answer": "C",
-        "Explanation": "The model (\"predicted\") price is the discounted present value = $2.75 × d(0.5) + $2.75 × d(2) + $102.75 × d(3) = 99.81. As the market price ($101.75) is greater than than the predicted price ($99.81), the bond is trading rich.If market price > model (predicted) price,\nbond is \"trading rich\".If market price ＜ model (predicted) price, bond is \"trading cheap\". In\nregard to (D), this is meaningless.",
+        "Explanation": "The model (\"predicted\") price is the discounted present value = $\\$2.75$ × d(0.5) + $\\$2.75$ × d(2) + $\\$102.75$ × d(3) = 99.81. As the market price ($\\$101.75$) is greater than than the predicted price ($\\$99.81$), the bond is trading rich.If market price > model (predicted) price,\nbond is \"trading rich\".If market price ＜ model (predicted) price, bond is \"trading cheap\". In\nregard to (D), this is meaningless.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73082,7 +73082,7 @@ test_data = [
         "ID": 3485,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An investor buys a US Treasury 4s of May 31, 2023 at a price of $922.05 for settlement on\nJune 1st, 2013. The yield on this 10-year bond is 5.00% as, per the TI BA II+ calculator, N =\n20, I/Y = 2.50, FV = 1000, PMT = 20 returns a present value of about $922.05. Over the\nsubsequent one-year period, the bond pays a $20.00 coupon on November 30th and another $20.00\ncoupon on May 31st. The November coupon is reinvested at a semiannually compounded rate of\n2.00%. If the bond's yield remains perfectly flat at 5.00%, which is nearest to the bond's\ngross realized return over the one year period?",
+        "Question Text": "An investor buys a US Treasury 4s of May 31, 2023 at a price of $\\$922.05$ for settlement on\nJune 1st, 2013. The yield on this 10-year bond is 5.00% as, per the TI BA II+ calculator, N =\n20, I/Y = 2.50, FV = 1000, PMT = 20 returns a present value of about $\\$922.05$. Over the\nsubsequent one-year period, the bond pays a $\\$20.00$ coupon on November 30th and another $\\$20.00$\ncoupon on May 31st. The November coupon is reinvested at a semiannually compounded rate of\n2.00%. If the bond's yield remains perfectly flat at 5.00%, which is nearest to the bond's\ngross realized return over the one year period?",
         "Image": "images/image_add/3485.png",
         "Options": {
             "A": "4.88%",
@@ -73166,7 +73166,7 @@ test_data = [
         "ID": 3489,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "For a June 1st settlement, an investor finances the entire purchase of a bond with a price\nof $115.00 at a semiannually compounded borrowing rate of 0.60%. Six months later, on November\n30th, the 3 1/8 bond pays a $1.56250 coupon (i.e., $3.125/2 = $1.56250) and its price has\n\"pulled to par\" by dropping to $114.00. Which is nearest to the six-month net realized return?",
+        "Question Text": "For a June 1st settlement, an investor finances the entire purchase of a bond with a price\nof $\\$115.00$ at a semiannually compounded borrowing rate of 0.60%. Six months later, on November\n30th, the 3 1/8 bond pays a $\\$1.56250$ coupon (i.e., $\\$3.125$/2 = $\\$1.56250$) and its price has\n\"pulled to par\" by dropping to $\\$114.00$. Which is nearest to the six-month net realized return?",
         "Image": "images/image_add/3489.png",
         "Options": {
             "A": "-0.87%",
@@ -73217,7 +73217,7 @@ test_data = [
             "D": "$0.227"
         },
         "Answer": "A",
-        "Explanation": "Macaulay duration = 10 years, such that modified duration = 10/(1 8%/2) =\n9.615385.Price of bond = $45.6387; DV01 = modified duration × Price /10,000 = 9.615385 × $45.6387 / 10000 = $0.043883Alternatively, we can re-price the bond @ yield = 7.99%, such that DV01 = $45.6826 - $45.6387 = $0.043906. Macaulay duration = 10 years modified duration =10/(1 (8%)/2)=9.615385. Price of bond = $45.6387; DV01 = modified duration × Price /10,000 =\n9.615385 ×$45.6387 / 10000 = $0.043883 ",
+        "Explanation": "Macaulay duration = 10 years, such that modified duration = 10/(1 8%/2) =\n9.615385.Price of bond = $\\$45.6387$; DV01 = modified duration × Price /10,000 = 9.615385 × $\\$45.6387$ / 10000 = $\\$0.043883$ Alternatively, we can re-price the bond @ yield = 7.99%, such that DV01 = $\\$45.6826$ - $\\$45.6387$ = $\\$0.043906$. Macaulay duration = 10 years modified duration =10/(1 (8%)/2)=9.615385. Price of bond = $\\$45.6387$; DV01 = modified duration × Price /10,000 =\n9.615385 × $\\$45.6387$ / 10000 = $\\$0.043883$ ",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73259,7 +73259,7 @@ test_data = [
             "D": "$0.12"
         },
         "Answer": "C",
-        "Explanation": "If we re-price the bond under a one bps drop,N = 60, I/Y = 6.99/2 = 3.495, PMT = 1,\nFV = 100, and CPT PV = $37.7002Then the DV01 is the (absolute value) in change in price associated with the one bps drop: 37.70 - 37.64 = $0.062",
+        "Explanation": "If we re-price the bond under a one bps drop,N = 60, I/Y = 6.99/2 = 3.495, PMT = 1,\nFV = 100, and CPT PV = $\\$37.7002%Then the DV01 is the (absolute value) in change in price associated with the one bps drop: 37.70 - 37.64 = $\\$0.062$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73292,7 +73292,7 @@ test_data = [
         "ID": 3495,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A portfolio has the following composition: I Bond portfolio A: price $90,000, modified\nduration 2.5, long position in 8 bonds II Bond portfolio B: price $110,000, modified duration\n3, short position in 6 bonds III Bond portfolio C: price $120,000, modified duration 3.3, long\nposition in 12 bonds Interest rates are 10%.If the rates rise by 25 basis points, then the bond\nportfolio value will:",
+        "Question Text": "A portfolio has the following composition: I Bond portfolio A: price $\\$90,000$, modified\nduration 2.5, long position in 8 bonds II Bond portfolio B: price $\\$110,000$, modified duration\n3, short position in 6 bonds III Bond portfolio C: price $\\$120,000$, modified duration 3.3, long\nposition in 12 bonds Interest rates are 10%.If the rates rise by 25 basis points, then the bond\nportfolio value will:",
         "Image": "images/image_add/3495.png",
         "Options": {
             "A": "decrease by $11,430",
@@ -73301,7 +73301,7 @@ test_data = [
             "D": "decrease by $23,463"
         },
         "Answer": "A",
-        "Explanation": "\n\n|      | $ V $    | $ \\omega $ | $ \\omega D^* $ |\n|------|------------|--------------|------------------|\n| A    | 720000     | 48%          | 1.2             |\n| B    | -660000    | -44%         | -1.32           |\n| C    | 1440000    | 96%          | 3.17            |\n| Total| 1500000    |              | 3.048           |\n \n△P = -3.048 × 1500000 × 0.0025 =-11430 ",
+        "Explanation": "\n\n    $$\\begin{array}{|c|c|c|c|}\\hline & V & \\omega & \\omega D^* \\\\ \\hline A & 720000 & 48\\% & 1.2 \\\\ B & -660000 & -44\\% & -1.32 \\\\ C & 1440000 & 96\\% & 3.17 \\\\ \\text{Total} & 1500000 & & 3.048 \\\\ \\hline \\end{array}$$        \n \n△P = -3.048 × 1500000 × 0.0025 =-11430 ",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73313,7 +73313,7 @@ test_data = [
         "ID": 3496,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A $100 bond with 7.0 years to maturity has a 4.0% per annum coupon rate that is paid semi-\nannually. What is the effective convexity of the bond when the yield is 4.0% such that the\nbond's price is $100 (if coupon rate equals yield, bond prices at par)?",
+        "Question Text": "A $\\$100$ bond with 7.0 years to maturity has a 4.0% per annum coupon rate that is paid semi-\nannually. What is the effective convexity of the bond when the yield is 4.0% such that the\nbond's price is $\\$100$ (if coupon rate equals yield, bond prices at par)?",
         "Image": "images/image_add/3496.png",
         "Options": {
             "A": "42.60",
@@ -73322,7 +73322,7 @@ test_data = [
             "D": "856.80"
         },
         "Answer": "A",
-        "Explanation": "If we use a shock of 10 bps (per example, we can also use 1 bps, but the answer\nonly differs by 0.000222, and is still 42.60):P[@ 3.9%] is given by: 14 = N, 1.95 = I/Y, 2 =\nPMT, 100 = FV; CPT PV, /- = 100.607448 (STO 1 for retrieval)P[@ 4.1%] is given by: 14 = N, 2.05\n= I/Y, 2 = PMT, 100 = FV; CPT PV, /- = 99.396812 (STO 2 for retrieval)Please note that after\nyour price the bond at 3.9%, you only need to re-enter \"2.05 = I/Y\" and re-compute as the other\ninputs are unchanged!Dollar convexity = (99.396812＋100.607448 - 2 × 100) / 0.001^2 =\n4,260.And convexity (C) = (P[yield @ 4.1%] ＋P[yield @ 3.9%] - 2×$100)/(10 bps)^2 × 1/P = dollar convexity×1/P = 4,260/$100 = 42.60",
+        "Explanation": "If we use a shock of 10 bps (per example, we can also use 1 bps, but the answer\nonly differs by 0.000222, and is still 42.60):P[@ 3.9%] is given by: 14 = N, 1.95 = I/Y, 2 =\nPMT, 100 = FV; CPT PV, /- = 100.607448 (STO 1 for retrieval)P[@ 4.1%] is given by: 14 = N, 2.05\n= I/Y, 2 = PMT, 100 = FV; CPT PV, /- = 99.396812 (STO 2 for retrieval)Please note that after\nyour price the bond at 3.9%, you only need to re-enter \"2.05 = I/Y\" and re-compute as the other\ninputs are unchanged!Dollar convexity = (99.396812＋100.607448 - 2 × 100) / 0.001^2 =\n4,260.And convexity (C) = (P[yield @ 4.1%] ＋P[yield @ 3.9%] - 2 × $\\$100$)/(10 bps)^2 × 1/P = dollar convexity×1/P = 4,260 / $\\$100$ = 42.60",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73355,7 +73355,7 @@ test_data = [
         "ID": 3498,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A market maker sells (writes) $50 million face value of call options on underlying bonds\nwhen the interest rate is 4.0%. At this 4.0% rate level, the DV01 (dollar value of an '01) of\nthe option, per 100 face value, is $0.030. At this 4.0% rate level, the DV01 (per 100 face\nvalue) of the underlying bond is $0.070. What is the market maker's hedge transaction?",
+        "Question Text": "A market maker sells (writes) $\\$50$ million face value of call options on underlying bonds\nwhen the interest rate is 4.0%. At this 4.0% rate level, the DV01 (dollar value of an '01) of\nthe option, per 100 face value, is $\\$0.030$. At this 4.0% rate level, the DV01 (per 100 face\nvalue) of the underlying bond is $\\$0.070$. What is the market maker's hedge transaction?",
         "Image": "images/image_add/3498.png",
         "Options": {
             "A": "Short $50.0 million face amount of underling bonds",
@@ -73364,7 +73364,7 @@ test_data = [
             "D": "Long $50.0 million face amount of underlying bonds"
         },
         "Answer": "C",
-        "Explanation": "F = $50 million × 0.030/0.070 = $21.429 million face amount of underlying bond.F(B)=-F(A)×DV01(A)/DV01(B); in this case, F(B) = -(-50) × 0.030/0.070 = + 21.429\nindicates LONG (+) bonds.As the market maker will lose on the call options, if rates decrease,\nthe market maker should purchase (go long) the underlying bonds, which will gain as rates\ndecrease to offset.If the market maker goes long $21.429 the underlyling bonds, they key is\nthat the market maker is neutral with respect to dollar duration:On the written options:\n0.030/100 × 50 million = 0.0150 = a loss of $15,000 per each basis point decline; hedged by:On the long bonds: 0.070/100 × 21.429 million = 0.0150 = a gain of $15,000 per each basis point\ndecline.",
+        "Explanation": "F = $\\$50$ million × 0.030/0.070 = $\\$21.429$ million face amount of underlying bond.F(B)=-F(A)×DV01(A)/DV01(B); in this case, F(B) = -(-50) × 0.030/0.070 = + 21.429\nindicates LONG (+) bonds.As the market maker will lose on the call options, if rates decrease,\nthe market maker should purchase (go long) the underlying bonds, which will gain as rates\ndecrease to offset.If the market maker goes long $\\$21.429$ the underlyling bonds, they key is\nthat the market maker is neutral with respect to dollar duration:On the written options:\n0.030/100 × 50 million = 0.0150 = a loss of $\\$15,000$ per each basis point decline; hedged by:On the long bonds: 0.070/100 × 21.429 million = 0.0150 = a gain of $\\$15,000$ per each basis point\ndecline.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73532,7 +73532,7 @@ test_data = [
             "D": "+ 13.670%"
         },
         "Answer": "D",
-        "Explanation": "At 5.9%, bond price = $77.8624At 6.0%, bond price = $76.8852At 6.1%, bond price = $75.9245(tip: don't re-key all the TVM inputs, only re-key the I/Y and re-compute the\nprice)Effective duration = -1/P×(P[ 10 bps] - P[-10 bps])/(2×10 bps) = 12.6027.Effective\nconvexity = 1/P×(P[ 10 bps] ＋P[-10 bps]-2×P[0])/(10 bps)^2 = 213.37.Estimated change in bond\nprice (given -1.0% yield change) = -D×(-1.0%) 0.5×C×(-1.0%)^2 = 12.6027%＋1.067% =\n13.6695%.This estimates a bond price of $87.3951 @ 5.0% yield, compared to an actual price of $87.4486.",
+        "Explanation": "At 5.9%, bond price = $\\$77.8624$ At 6.0%, bond price = $\\$76.8852$ At 6.1%, bond price = $\\$75.9245$(tip: don't re-key all the TVM inputs, only re-key the I/Y and re-compute the\nprice)Effective duration = -1/P×(P[ 10 bps] - P[-10 bps])/(2×10 bps) = 12.6027.Effective\nconvexity = 1/P×(P[ 10 bps] ＋P[-10 bps]-2×P[0])/(10 bps)^2 = 213.37.Estimated change in bond\nprice (given -1.0% yield change) = -D×(-1.0%) 0.5×C×(-1.0%)^2 = 12.6027%＋1.067% =\n13.6695%.This estimates a bond price of $\\$87.3951$ @ 5.0% yield, compared to an actual price of $\\$87.4486$.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73826,7 +73826,7 @@ test_data = [
             "D": "1.76 years"
         },
         "Answer": "B",
-        "Explanation": "Here is the data from the table:\n\n| Year | CF   | PV     | $ \\omega $ | $ \\omega T $ |\n|------|------|--------|--------------|----------------|\n| 1    | 60   | 55.56  | 5.76%        | 0.06          |\n| 2    | 1060 | 908.78 | 94.24%       | 1.88          |\n| Total|      | 964.34 |              | 1.94          |Year CF PV ω ωT 1 60 55.56 5.76% 0.06 2 1060 908.78 94.24% 1.88 Total 964.34 1.94\n",
+        "Explanation": "Here is the data from the table:\n\n$$\\begin{array}{|c|c|c|c|c|} \\hline \\text{Year} & \\text{CF} & \\text{PV} & \\omega & \\omega T \\\\ \\hline 1 & 60 & 55.56 & 5.76\\% & 0.06 \\\\ 2 & 1060 & 908.78 & 94.24\\% & 1.88 \\\\ \\text{Total} & & 964.34 & & 1.94 \\\\ \\hline \\end{array}$$ \n\n",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73838,7 +73838,7 @@ test_data = [
         "ID": 3521,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume you own a security with a 2-year key rate exposure of $4.78, and you would like to\nhedge your position with a security that has a corresponding 2-year key rate exposure of 0.67\nper $100 of face value. What amount of face value would be used to hedge the 2-year exposure?",
+        "Question Text": "Assume you own a security with a 2-year key rate exposure of $\\$4.78$, and you would like to\nhedge your position with a security that has a corresponding 2-year key rate exposure of 0.67\nper $\\$100$ of face value. What amount of face value would be used to hedge the 2-year exposure?",
         "Image": "images/image_add/3521.png",
         "Options": {
             "A": "$478",
@@ -73847,7 +73847,7 @@ test_data = [
             "D": "$670"
         },
         "Answer": "C",
-        "Explanation": "0.67/100 × F = $4.78,F = $713.430.67/100 × F = $4.78,F = $713.43",
+        "Explanation": "0.67/100 × F = $\\$4.78$,F = $\\$713.43$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -73922,7 +73922,7 @@ test_data = [
         "ID": 3525,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider a 9-year bond with a semi-annual 10.0% coupon that has a current price of $119.780\nand a yield of 7.000%. If the yield drops to 6.850%, the bond's price increases to $120.900. If\nthis is the case, then which of the following is nearest to the bond's dollar value of '01\n(DV01)?",
+        "Question Text": "Consider a 9-year bond with a semi-annual 10.0% coupon that has a current price of $\\$119.780$\nand a yield of 7.000%. If the yield drops to 6.850%, the bond's price increases to $\\$120.900$. If\nthis is the case, then which of the following is nearest to the bond's dollar value of '01\n(DV01)?",
         "Image": "images/image_add/3525.png",
         "Options": {
             "A": "-0.0121",
@@ -73931,7 +73931,7 @@ test_data = [
             "D": "1.1200"
         },
         "Answer": "C",
-        "Explanation": "DV01 = 0.0747. The price change is $120.900 - $119.780 = $1.120 given a 15 basis point drop in the yield, which is $1.120/15 = 0.0746667 per basis point. Note that strictly\n(technically) the DV01 is the price change associated with a decrease of one basis point. This\nwill be almost identical the price change associated with an increase of one basis point, but\nit won't be exactly the same.DV01 = 0.0747。 ",
+        "Explanation": "DV01 = 0.0747. The price change is $\\$120.900$ - $\\$119.780$ = $\\$1.120$ given a 15 basis point drop in the yield, which is $\\$1.120$/15 = 0.0746667 per basis point. Note that strictly\n(technically) the DV01 is the price change associated with a decrease of one basis point. This\nwill be almost identical the price change associated with an increase of one basis point, but\nit won't be exactly the same.DV01 = 0.0747。 ",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74006,7 +74006,7 @@ test_data = [
         "ID": 3529,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A market maker sells (writes) $100 million face value of call options on underlying bonds\nwhen the interest rate is 4.0%. The price of the call options is $3.0 million and their\n(modified) duration is 80.0 years. At the same 4.0% rate, as the underlying bonds pay a 4.0%\ncoupon, the price of the underlying happens to equal $100 par with a duration of 7.0 years.\nWhat is the market maker's hedge transaction?",
+        "Question Text": "A market maker sells (writes) $\\$100$ million face value of call options on underlying bonds\nwhen the interest rate is 4.0%. The price of the call options is $\\$3.0$ million and their\n(modified) duration is 80.0 years. At the same 4.0% rate, as the underlying bonds pay a 4.0%\ncoupon, the price of the underlying happens to equal $\\$100$ par with a duration of 7.0 years.\nWhat is the market maker's hedge transaction?",
         "Image": "images/image_add/3529.png",
         "Options": {
             "A": "Short $12.9 million of underlying bond",
@@ -74015,7 +74015,7 @@ test_data = [
             "D": "Long $34.3 million of underlying bond"
         },
         "Answer": "D",
-        "Explanation": "The DV01 of the written call options, DV01 = P×D/10000 = 3 million×80/10000 =\n$24,000 or $240 per 100 face.To hedge, the market marker should buy P = DV01×10,000/D = 240 × 10,000 / 7 = $342,857 per 100 face or $34.285 million in the underlying bond.",
+        "Explanation": "The DV01 of the written call options, DV01 = P×D/10000 = 3 million×80/10000 =\n$\\$24,000$ or $\\$240$ per 100 face.To hedge, the market marker should buy P = DV01×10,000/D = 240 × 10,000 / 7 = $\\$342,857$ per 100 face or $\\$34.285$ million in the underlying bond.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74162,7 +74162,7 @@ test_data = [
             "D": "Cannot answer because face value is not given"
         },
         "Answer": "B",
-        "Explanation": "In this case, the initial price = -PV(0.1100/2,15×2,100×0.06125/2,100) = $64.574, and if the yield shock is ＋/- 50 bps, then:Price(yield 0.0050) = -\nPV(0.1150/2,15×2,100×0.06125/2,100) = $61.996, andPrice(yield - 0.0050) = -\nPV(0.1050/2,15×2,100×0.06125/2,100) = $67.310.In regard to false (D), please note that the\nconvexity will be unchanged if we (consistently) change the face value to any amount. Further,\nwhile the convexity will vary very slightly as we alter the shock value, it is approximately\n98.0 years for shock values below 1.0%. ",
+        "Explanation": "In this case, the initial price = -PV(0.1100/2,15×2,100×0.06125/2,100) = $\\$64.574$, and if the yield shock is ＋/- 50 bps, then:Price(yield 0.0050) = -\nPV(0.1150/2,15×2,100×0.06125/2,100) = $\\$61.996$, and Price(yield - 0.0050) = -\nPV(0.1050/2,15×2,100×0.06125/2,100) = $\\$67.310$.In regard to false (D), please note that the\nconvexity will be unchanged if we (consistently) change the face value to any amount. Further,\nwhile the convexity will vary very slightly as we alter the shock value, it is approximately\n98.0 years for shock values below 1.0%. ",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74246,7 +74246,7 @@ test_data = [
             "D": "Large and positive"
         },
         "Answer": "D",
-        "Explanation": "As the maturity decreases, the position gamma of ATM options tends to increase\n(decrease) for long (short) options. Short call options and short put options both have\nnegative position gamma. Therefore, portfolio of entirely short positions in generally near-\nterm, ATM options will tend to have a large and negative position\ngamma.rf=theta+rS_0×delta+1/2 σ^2 〖S_0〗^2×gammabut if delta = 0 (delta neutral),\nthen:theta+1/2 σ^2 〖S_0〗^2×gamma=+constant, such that:If delta-neutral, then, the theta\nwill tend to be large and positive.",
+        "Explanation": "As the maturity decreases, the position gamma of ATM options tends to increase\n(decrease) for long (short) options. Short call options and short put options both have\nnegative position gamma. Therefore, portfolio of entirely short positions in generally near-\nterm, ATM options will tend to have a large and negative position\ngamma_rf=theta+rS_0×delta+1/2 σ^2 〖S_0〗^2×gammabut if delta = 0 (delta neutral),\nthen:theta+1/2 σ^2 〖S_0〗^2×gamma=+constant, such that:If delta-neutral, then, the theta\nwill tend to be large and positive.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74258,7 +74258,7 @@ test_data = [
         "ID": 3541,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An equity options trader is short a call option of a stock with strike at $104. The\nmaturity of the option is within half an hour and the current price is $103.75. Which of the\nfollowing Greeks poses the highest risk to his position?",
+        "Question Text": "An equity options trader is short a call option of a stock with strike at $\\$104$. The\nmaturity of the option is within half an hour and the current price is $\\$103.75$. Which of the\nfollowing Greeks poses the highest risk to his position?",
         "Image": "images/image_add/3541.png",
         "Options": {
             "A": "Delta",
@@ -74342,7 +74342,7 @@ test_data = [
         "ID": 3545,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The spot price of oil is $80.00 per barrel with a volatility of 26% per annum. The risk-\nfree rate is 5.0% per annum. What is the delta of a one-year futures contract when the one-year\nfutures price is $90.00 per barrel?",
+        "Question Text": "The spot price of oil is $\\$80.00$ per barrel with a volatility of 26% per annum. The risk-\nfree rate is 5.0% per annum. What is the delta of a one-year futures contract when the one-year\nfutures price is $\\$90.00$ per barrel?",
         "Image": "images/image_add/3545.png",
         "Options": {
             "A": "0.951",
@@ -74498,7 +74498,7 @@ test_data = [
             "D": "The desk has substantial short-expiry long call positions and substantial long-expiry short"
         },
         "Answer": "D",
-        "Explanation": "The portfolio account shows a net long Gamma, short Vega, which means Gamma>, 0,\nVega<0. For Gamma, the shorter the duration, the larger the Gamma, the longer the duration, the\nsmaller the Gamma, It might be easier to put in Numbers. So the short term gamma is equal to 7,\nand the long term gamma is equal to 3. For Vega, the longer the term, the greater the Vega.\nHere, make the short term Vega=4, and the long term Vega=6; Long corresponds to “+”, and\nShort to “-”. To meet the requirements of the title, see the following table:\nThe data from the table is as follows:\n\n|             | Gamma | Vega |\n|-------------|-------|------|\n| long-expiry |  -3   |  -6  |\n| short-expiry|   7   |   4  |\n| net         |  +4   |  -2  |\n\nSo，the desk has substantial short-expiry long call positions and substantial long-expiry short\ncall positions.",
+        "Explanation": "The portfolio account shows a net long Gamma, short Vega, which means Gamma>, 0,\nVega<0. For Gamma, the shorter the duration, the larger the Gamma, the longer the duration, the\nsmaller the Gamma, It might be easier to put in Numbers. So the short term gamma is equal to 7,\nand the long term gamma is equal to 3. For Vega, the longer the term, the greater the Vega.\nHere, make the short term Vega=4, and the long term Vega=6; Long corresponds to “+”, and\nShort to “-”. To meet the requirements of the title, see the following table:\nThe data from the table is as follows:\n\n    $$\\begin{array}{|c|c|c|} \\hline & \\text{Gamma} & \\text{Vega} \\\\ \\hline \\text{long-expiry} & -3 & -6 \\\\ \\text{short-expiry} & 7 & 4 \\\\ \\text{net} & +4 & -2 \\\\ \\hline \\end{array}$$        \n\nSo，the desk has substantial short-expiry long call positions and substantial long-expiry short\ncall positions.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74531,7 +74531,7 @@ test_data = [
         "ID": 3554,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A company's stock price is $100.00 and 50.0 million shares are outstanding, so that its\nequity market capitalization is $5.0 billion. The company is considering granting 2.0 million\nat-the-money employee stock options (ESOs) because it has been advised that a grant equal to\n4.0% of the outstanding is competitive. The ESOs have a 10 year maturity, and for analytical\nconvenience we assume there are no vesting restrictions (an unrealistic assumption). Option\nexercises will be handled by issuing more shares. The stock price volatility is 26.0% per\nannum. The 10-year risk-free rate is 4.0%. The company has no plans to pay dividends. Which is\nnearest to the total cost of the warrant issue?",
+        "Question Text": "A company's stock price is $\\$100.00$ and 50.0 million shares are outstanding, so that its\nequity market capitalization is $\\$5.0$ billion. The company is considering granting 2.0 million\nat-the-money employee stock options (ESOs) because it has been advised that a grant equal to\n4.0% of the outstanding is competitive. The ESOs have a 10 year maturity, and for analytical\nconvenience we assume there are no vesting restrictions (an unrealistic assumption). Option\nexercises will be handled by issuing more shares. The stock price volatility is 26.0% per\nannum. The 10-year risk-free rate is 4.0%. The company has no plans to pay dividends. Which is\nnearest to the total cost of the warrant issue?",
         "Image": "images/image_add/3554.png",
         "Options": {
             "A": "$31.2 million",
@@ -74540,7 +74540,7 @@ test_data = [
             "D": "$109.7 million"
         },
         "Answer": "C",
-        "Explanation": "The BSM price of the option is $46.00, such that the cost to the company per option is 50.0/(50.0 + 2.0) × $46.0 = $44.2308, and the total cost is about $44.2308 × 2.0 million = $88.46 million. Note that If the market perceives no benefit from the warrant issue, the\nreduced market cap is about $4.912 billion and a per-share reduction of stock price of about $1.77; i.e., new share price of about $98.23.",
+        "Explanation": "The BSM price of the option is $\\$46.00$, such that the cost to the company per option is 50.0/(50.0 + 2.0) × $\\$46.0$ = $\\$44.2308$, and the total cost is about $\\$44.2308$ × 2.0 million = $\\$88.46$ million. Note that If the market perceives no benefit from the warrant issue, the\nreduced market cap is about $\\$4.912$ billion and a per-share reduction of stock price of about $\\$1.77$; i.e., new share price of about $\\$98.23$.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74552,7 +74552,7 @@ test_data = [
         "ID": 3555,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider the following call option which is re-priced after a mild + 3.0% shock to its\nvolatility. In both cases, the stock = strike = $50 (i.e., at an-the-money call option), the\nrisk-free rate is 2.0% and the maturity is one year: When volatility is 30.0%, the option price\nis $6.41 When volatility increases to 33.0%, the option price is $6.99 Which is nearest to the\noption's vega?",
+        "Question Text": "Consider the following call option which is re-priced after a mild + 3.0% shock to its\nvolatility. In both cases, the stock = strike = $\\$50$ (i.e., at an-the-money call option), the\nrisk-free rate is 2.0% and the maturity is one year: When volatility is 30.0%, the option price\nis $\\$6.41$ When volatility increases to 33.0%, the option price is $6.99 Which is nearest to the\noption's vega?",
         "Image": "images/image_add/3555.png",
         "Options": {
             "A": "0.19",
@@ -74582,7 +74582,7 @@ test_data = [
             "D": "1.0408"
         },
         "Answer": "C",
-        "Explanation": "Delta =e^((r-q)T)= 1.0202Delta =e^((r-q)T)= 1.0202",
+        "Explanation": "Delta =e^((r-q)T)= 1.0202",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74678,7 +74678,7 @@ test_data = [
         "ID": 3561,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The risk-free rate is 3.0% per annum while the price of a non-dividend-paying stock is\n$120.00. For a European call option with a strike price of $100.00 and one year maturity, the\nBlack-Scholes-Merton (BSM) option pricing model returns $27.50 for the value of this in-the-\nmoney call; i.e., S(0) = $120.00, K = $100.00, σ = 30%, T = 1.0 year, and r = 3.0% informs\nprice of (c) = $27.50. The risk-neutral probability that the option will be exercised\n(equivalently, that it will expire in-the-money), N(d2), is 71.0%. Which is nearest to the\noption's delta?",
+        "Question Text": "The risk-free rate is 3.0% per annum while the price of a non-dividend-paying stock is\n$\\$120.00$. For a European call option with a strike price of $\\$100.00$ and one year maturity, the\nBlack-Scholes-Merton (BSM) option pricing model returns $\\$27.50$ for the value of this in-the-\nmoney call; i.e., S(0) = $\\$120.00$, K = $\\$100.00$, σ = 30%, T = 1.0 year, and r = 3.0% informs\nprice of (c) = $\\$27.50$. The risk-neutral probability that the option will be exercised\n(equivalently, that it will expire in-the-money), N(d2), is 71.0%. Which is nearest to the\noption's delta?",
         "Image": "images/image_add/3561.png",
         "Options": {
             "A": "0.559",
@@ -74687,7 +74687,7 @@ test_data = [
             "D": "0.803"
         },
         "Answer": "D",
-        "Explanation": "Because call=S_0 N(d_1 )-Ke^(-rT) N(d_2 ) N(d_1 )=0.8033 call=S_0 N(d_1\n)－Ke^(－rT) N(d_2 ) N(d_1 )=0.8033",
+        "Explanation": "Because call = $S_0 N(d_1 )-Ke^(-rT) N(d_2 ) N(d_1 )=0.8033$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74741,7 +74741,7 @@ test_data = [
         "ID": 3564,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume 250 trading days in the year. When the underlying stock has a volatility of 50.0%\nper annum and the risk-free rate is 4.0%, an at-the-money (ATM) European call option, with a\nstrike price of $100.00 and a maturity of 125 trading days (0.5 years), has a price of $14.90\nand a theta of -15.50 per year. Which is a good approximation of the option's price in ten (10)\ndays, if no other variables change?",
+        "Question Text": "Assume 250 trading days in the year. When the underlying stock has a volatility of 50.0%\nper annum and the risk-free rate is 4.0%, an at-the-money (ATM) European call option, with a\nstrike price of $\\$100.00$ and a maturity of 125 trading days (0.5 years), has a price of $\\$14.90$\nand a theta of -15.50 per year. Which is a good approximation of the option's price in ten (10)\ndays, if no other variables change?",
         "Image": "images/image_add/3564.png",
         "Options": {
             "A": "$12.74",
@@ -74750,7 +74750,7 @@ test_data = [
             "D": "$15.15"
         },
         "Answer": "C",
-        "Explanation": "$14.90 - ($15.50×10/250) = $14.28 (actual price is $14.2725)",
+        "Explanation": "$\\$14.90$ - ($\\$15.50$×10/250) = $\\$14.28$ (actual price is $\\$14.2725$)",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -74888,7 +74888,7 @@ test_data = [
         "ID": 3571,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A stock currently trades at $10. At the end of three months, the stock will either be $11\nor $9. The continuously compounded risk-free rate of interest is 3.5% per year. The value of a\n3-month European call option with a strike price of $10 is closest to:",
+        "Question Text": "A stock currently trades at $\\$10$. At the end of three months, the stock will either be $\\$11$\nor $\\$9$. The continuously compounded risk-free rate of interest is 3.5% per year. The value of a\n3-month European call option with a strike price of $\\$10$ is closest to:",
         "Image": "images/image_add/3571.png",
         "Options": {
             "A": "$0.11",
@@ -74993,7 +74993,7 @@ test_data = [
         "ID": 3576,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A six-month European put option on a non-dividend-paying stock has a strike price of $100\nwhen the current stock price is $100. The risk free rate is 4%. N(d1) = 0.57 and N(d2) = 0.48.\nWhat is the Black-Scholes price of the put option?",
+        "Question Text": "A six-month European put option on a non-dividend-paying stock has a strike price of $\\$100$\nwhen the current stock price is $\\$100$. The risk free rate is 4%. N(d1) = 0.57 and N(d2) = 0.48.\nWhat is the Black-Scholes price of the put option?",
         "Image": "images/image_add/3576.png",
         "Options": {
             "A": "-$9.95",
@@ -75002,7 +75002,7 @@ test_data = [
             "D": "$8.33"
         },
         "Answer": "C",
-        "Explanation": "N(-d_1)=1-N(d_1)=1-0.57=0.43;N(-d_2)=1-N(d_2)=1-0.48=0.52.put=Ke^(-rT) N(-d_2)-S_0\nN(-d_1 )= $7.97N(－d_1)=1－N(d_1)=1－0.57=0.43;N(－d_2)=1－N(d_2)=1－0.48=0.52.put=Ke^(－rT) N(－d_2)－S_0 N(－d_1 )= $7.97",
+        "Explanation": "$$N(-d_1)=1-N(d_1)=1-0.57=0.43$$ $$N(-d_2)=1-N(d_2)=1-0.48=0.52$$ $$put=Ke^(-rT) N(-d_2)-S_0$$\n$$N(-d_1 )= \\$7.97$$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -75245,7 +75245,7 @@ test_data = [
         "ID": 3588,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A trader has an American put option with strike price of $50. The underlying asset is stock\nwith a spot price of $40. Using an one-step binomial tree to evaluate the option. Suppose the\nstock price will go up or down by $8 in 6 month, the risk-free rate is 6.2%, what is the value\nof this American put?",
+        "Question Text": "A trader has an American put option with strike price of $\\$50$. The underlying asset is stock\nwith a spot price of $\\$40$. Using an one-step binomial tree to evaluate the option. Suppose the\nstock price will go up or down by $8 in 6 month, the risk-free rate is 6.2%, what is the value\nof this American put?",
         "Image": "images/image_add/3588.png",
         "Options": {
             "A": "USD 8.19",
@@ -75308,7 +75308,7 @@ test_data = [
         "ID": 3591,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The current price of a stock is $10, and it is known that at the end of three (3) months\nthe stock's price will be either $13 or $7. The risk-free rate is 4% per annum. What is the\nimplied no arbitrage price of a three-month (T = 0.25) European call option on the stock with a\nstrike price of $10? (Note: this does not include an assumption about the stock's volatility).",
+        "Question Text": "The current price of a stock is $\\$10$, and it is known that at the end of three (3) months\nthe stock's price will be either $\\$13$ or $\\$7$. The risk-free rate is 4% per annum. What is the\nimplied no arbitrage price of a three-month (T = 0.25) European call option on the stock with a\nstrike price of $\\$10$? (Note: this does not include an assumption about the stock's volatility).",
         "Image": "images/image_add/3591.png",
         "Options": {
             "A": "$0.97",
@@ -75371,7 +75371,7 @@ test_data = [
         "ID": 3594,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The spot EUR/USD exchange rate is $1.30 (i.e., USD 1.30 per 1 EUR) with a volatility of 30%\nper annum. The USD riskless rate is 4% per annum and the EUR riskless rate is 3% per annum.\nWhat is the delta of a one-year call option on the Euro with a strike price of EUR/USD $1.36?",
+        "Question Text": "The spot EUR/USD exchange rate is $\\$1.30$ (i.e., USD 1.30 per 1 EUR) with a volatility of 30%\nper annum. The USD riskless rate is 4% per annum and the EUR riskless rate is 3% per annum.\nWhat is the delta of a one-year call option on the Euro with a strike price of EUR/USD $\\$1.36$?",
         "Image": "images/image_add/3594.png",
         "Options": {
             "A": "0.4980",
@@ -75569,7 +75569,7 @@ test_data = [
             "D": "Gain of $4,385.00"
         },
         "Answer": "A",
-        "Explanation": "\nA vega of 33.50 implies that the value of the option will increase by $33.50 for each one-unit increase in volatility, where one unit is 100% (this is a linear approximation only!). Therefore, a 5.0% increase in volatility implies a change of $5.0\\% \\times 33.5 = 1.6750$ dollars. However, given that Patricia has a short position in 100 contracts, her estimated loss is $5\\% \\times 33.50 \\times -10,000 = -16,750$ dollars.",
+        "Explanation": "\nA vega of 33.50 implies that the value of the option will increase by $\\$33.50$ for each one-unit increase in volatility, where one unit is 100% (this is a linear approximation only!). Therefore, a 5.0% increase in volatility implies a change of $5.0\\% \\times 33.5 = 1.6750$ dollars. However, given that Patricia has a short position in 100 contracts, her estimated loss is $5\\% \\times 33.50 \\times -10,000 = -16,750$ dollars.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -75581,7 +75581,7 @@ test_data = [
         "ID": 3604,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A one-year European call option has a strike price of $10. The risk-free rate is 4% per\nannum. What is an estimate of the call price if the stock is $30; i.e., significantly in-the-\nmoney?",
+        "Question Text": "A one-year European call option has a strike price of $\\$10$. The risk-free rate is 4% per\nannum. What is an estimate of the call price if the stock is $\\$30$; i.e., significantly in-the-\nmoney?",
         "Image": "images/image_add/3604.png",
         "Options": {
             "A": "$18.80",
@@ -75590,7 +75590,7 @@ test_data = [
             "D": "$21.22"
         },
         "Answer": "C",
-        "Explanation": "As the stock price becomes large relative to the strike price, N(d_1) and N(d_2)\napproach 1.0; in this case, they are 1.000 and 0.9999.In which case, call=S_0 N(d_1 )-Ke^(-rT)\nN(d_2 ) is approximated by: c = S- K×exp(-rT).In this case,c = 30-10e^(-4%×1)=$20.3921 (the precise value is $20.3922).Please note that, also, as the volatility (sigma) approaches zero,\nthe Black-Scholes similarly approaches the minimum value: S_0-Ke^(-rT).",
+        "Explanation": "As the stock price becomes large relative to the strike price, $N(d_1)$ and $N(d_2)$\napproach 1.0; in this case, they are 1.000 and 0.9999.In which case, call=$S_0 N(d_1 )-Ke^(-rT)\nN(d_2 )$ is approximated by: $c = S- K×exp(-rT)$.In this case,$c = 30-10e^(-4%×1)$=$\\$20.3921$ (the precise value is $\\$20.3922$).Please note that, also, as the volatility approaches zero,\nthe Black-Scholes similarly approaches the minimum value: $S_0-Ke^(-rT)$.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -75821,7 +75821,7 @@ test_data = [
             "D": "$25.25"
         },
         "Answer": "B",
-        "Explanation": "A two-step binomial has six nodes; the lower price occurs at S(0)×d×d, in the\nlower right. d = exp[-volatility × SQRT(time_step)] = exp[-22% ×SQRT(1)] = 0.8025;The lowest\nnode = $30×exp(-22%)^2 = $19.321",
+        "Explanation": "A two-step binomial has six nodes; the lower price occurs at S(0)×d×d, in the\nlower right. d = exp[-volatility × SQRT(time_step)] = exp[-22% ×SQRT(1)] = 0.8025;The lowest\nnode = $\\$30$ × exp(-22%)^2 = $\\$19.321$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -75938,7 +75938,7 @@ test_data = [
         "ID": 3621,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The current price of a stock is $25. A call option is available with a $20 strike price\nthat expires in three months. If the underlying stock exhibits an annual standard deviation of\n25%, the current risk-free rate is 4.5%, N(d1) = 0.9737, and N(d2) = 0.9652, the Black-Scholes-\nMerton value of the call is closest to:",
+        "Question Text": "The current price of a stock is $\\$25$. A call option is available with a $\\$20$ 4strike price\nthat expires in three months. If the underlying stock exhibits an annual standard deviation of\n25%, the current risk-free rate is 4.5%, N(d1) = 0.9737, and N(d2) = 0.9652, the Black-Scholes-\nMerton value of the call is closest to:",
         "Image": "images/image_add/3621.png",
         "Options": {
             "A": "$4.39",
@@ -75968,7 +75968,7 @@ test_data = [
             "D": "$9.07"
         },
         "Answer": "B",
-        "Explanation": "change in option price = 0.06×18.5= +$1.11, such that new estimated option price = $3.52 + $1.11 = $4.63",
+        "Explanation": "change in option price = 0.06×18.5= $+\\$1.11$, such that new estimated option price = $\\$3.52 + \\$1.11 = \\$4.63$",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -76001,7 +76001,7 @@ test_data = [
         "ID": 3624,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider the following about a European call option with one year maturity and strike price\nof $100.00 while the stock's volatility is 30.0% per annum and the risk-free rate is 2.0%: When\nthe stock price is $100.00, the option's delta is 0.5860 When the stock price increases by\n$1.00 to $101.00, the option's delta increases to 0.5990 Which is the BEST estimate of the\noption's gamma when the stock price is $100?",
+        "Question Text": "Consider the following about a European call option with one year maturity and strike price\nof $\\$100.00$ while the stock's volatility is 30.0% per annum and the risk-free rate is 2.0%: When\nthe stock price is $\\$100.00$, the option's delta is 0.5860 When the stock price increases by\n$\\$1.00$ to $\\$101.00$, the option's delta increases to 0.5990 Which is the BEST estimate of the\noption's gamma when the stock price is $\\$100$?",
         "Image": "images/image_add/3624.png",
         "Options": {
             "A": "0.0130",
@@ -76274,7 +76274,7 @@ test_data = [
         "ID": 3637,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider a stock portfolio consisting of two stocks with normally distributed returns. The\njoint distribution of daily returns is constant over time and there is no serial correlation.\nStock Epsilon has a market value of $100,000 with an annualized volatility of 22%. Stock Omega\nhas a market value of $175,000 with an annualized volatility of 27%. Calculate the 95%\nconfidence interval 1-day VaR of the portfolio. Assume a correlation coefficient of 0.3. Round\nto the nearest dollar assuming 252 business days in a year. The daily expected return is\nassumed to be zero.",
+        "Question Text": "Consider a stock portfolio consisting of two stocks with normally distributed returns. The\njoint distribution of daily returns is constant over time and there is no serial correlation.\nStock Epsilon has a market value of $\\$100,000$ with an annualized volatility of 22%. Stock Omega\nhas a market value of $\\$175,000$ with an annualized volatility of 27%. Calculate the 95%\nconfidence interval 1-day VaR of the portfolio. Assume a correlation coefficient of 0.3. Round\nto the nearest dollar assuming 252 business days in a year. The daily expected return is\nassumed to be zero.",
         "Image": "images/image_add/3637.png",
         "Options": {
             "A": "$3,641",
@@ -77165,7 +77165,7 @@ test_data = [
             "D": "With probability 95%, the company will not experience a loss greater than $95 million in one"
         },
         "Answer": "C",
-        "Explanation": "A one-week 95% VaR of $1 million means that the company will suffer losses of more than $1 million in a single week 5% of the time.",
+        "Explanation": "A one-week 95% VaR of $\\$1$ million means that the company will suffer losses of more than $\\$1$ million in a single week 5% of the time.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -77249,7 +77249,7 @@ test_data = [
             "D": "VaR was developed in order to more closely represent the economic capital necessary to ensure"
         },
         "Answer": "C",
-        "Explanation": "VaR(X%) is defined as the dollar or percentage loss in portfolio value that will be\nexceeded only X% of the time. VaR(10%)=$0 indicates that there is a 10% probability that on any given day the dollar loss will be greater than $0. Alternatively, we can say there is a 90%\nprobability that on any given day the dollar gain will be greater than $0. VaR was developed by\ncommercial banks to provide a more accurate measure of their economic capital requirements,\ntaking into account the effects of diversification.",
+        "Explanation": "VaR(X%) is defined as the dollar or percentage loss in portfolio value that will be\nexceeded only X% of the time. VaR(10%)=$\\$0$ indicates that there is a 10% probability that on any given day the dollar loss will be greater than $\\$0$. Alternatively, we can say there is a 90%\nprobability that on any given day the dollar gain will be greater than $\\$0$. VaR was developed by\ncommercial banks to provide a more accurate measure of their economic capital requirements,\ntaking into account the effects of diversification.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -77648,7 +77648,7 @@ test_data = [
             "D": "The bank expects to lose more than $100 million only once every 2.74 years."
         },
         "Answer": "B",
-        "Explanation": "Given a $10 million, 1-day, 99% VaR, the bank should expect to lose at least $10\nmillion during 1% of the business days in the year, or once in every 100 business days.",
+        "Explanation": "Given a $\\$10$ million, 1-day, 99% VaR, the bank should expect to lose at least $\\$10$\nmillion during 1% of the business days in the year, or once in every 100 business days.",
         "General Topics": "Valuation and Risk Models",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
