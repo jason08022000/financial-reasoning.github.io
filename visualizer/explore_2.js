@@ -2,7 +2,7 @@
 DATA_FILE = "error_log.js"; // default, answers for development, no answer for test
 
 // Variables for the filters with the number of questions
-let number_options = [1, 20, 50, 100, 200];     
+let number_options = [1 ,5 ,10 ,10000];     
 let topic = [
     "All",
     "Investment",
@@ -139,7 +139,7 @@ function create_number(data) {
 
     let share_image = "";
     if (data["Share Image"] !== NaN) {
-        share_image = make_up_image(data["Share Image"]);
+        share_image = make_share_image(data["Share Image"]);
     }
 
     let up_image = "";
@@ -158,12 +158,12 @@ function create_number(data) {
     if (data["Answer"] !== NaN)
         answer = make_answer(data["Answer"]);
 
-    let explaination = "";
+    let explanation = `Explanation:<br><br> NaN<br><hr class="dashed-line" />`;
     if (data.Explanation !== NaN)
-        explaination = make_explaination(data.Explanation);
+        explanation = make_explanation(data.Explanation);
 
 
-    html = make_box([question_text, share_image, up_image, options, answer, model_answer, model_reasoning, feedback, explaination]) + "<hr/>";
+    html = make_box([question_text, share_image, up_image, options, answer, model_answer, model_reasoning, feedback, explanation]) + "<hr/>";
 
     return html;
 }
@@ -184,6 +184,15 @@ function make_up_image(image) {
     return `<img src="${image}" class="question-image" style="max-width: 60%; height: auto;" />`;
 }
 
+function make_share_image(images) {
+    // Check if images is an array
+    if (Array.isArray(images)) {
+       return images.map(image => `<img src="${image}" class="question-image" style="max-width: 60%; height: auto;" />`).join('');
+   }
+   // If it's a single image (not an array), return the single image
+   return `<img src="${images}" class="question-image" style="max-width: 60%; height: auto;" />`;
+}
+
 function make_options(Options) {
     let optionsHtml = `<p class="options-txt"><b>Options:</b></p><ul>`;
     for (const [key, value] of Object.entries(Options)) {
@@ -194,44 +203,34 @@ function make_options(Options) {
 }
 
 function make_model_reasoning(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    const formattedContent = content.replace(/\n/g, '<br/>');
-
-    return `
-        <div class="feedback-section">
-            <p><b>Model Reasoning</b></p>
-            <p class="model-reasoning">${formattedContent}</p>
-            <hr class="dashed-line" />
-        </div>
-    `;
+    // Replace line breaks with Markdown line breaks
+    const formattedContent = content.replace(/\n/g, '  \n');
+    
+    return `Model Reasoning:<br><br>
+    ${formattedContent}<br>
+    <hr class="dashed-line" />`;
 }
 
 function make_feedback(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    console.log(typeof content);
-    const formattedContent = content.replace(/\n/g, '<br/>');
+    // Replace line breaks with Markdown line breaks
+    const formattedContent = content.replace(/\n/g, '  \n');
     
-    return `
-    
-        <div class="feedback-section">
-            <p><b>${"Feedback"}</b></p>
-            <p>${formattedContent}</p><hr class="dashed-line" />
-        </div>
-    `;
+    return `Feedback:<br><br>
+    ${formattedContent}<br>
+    <hr class="dashed-line" />`;
 }
 
-function make_explaination(content) {
-    // Replace line breaks with <br/> for HTML rendering
-    console.log(typeof content);
-    const formattedContent = content.replace(/\n/g, '<br/>');
+function make_explanation(content) {
+    if (typeof content !== 'string') {
+        console.error('Content is not a string:', content);
+        return;
+    }
+    // Replace line breaks with Markdown line breaks
+    const formattedContent = content.replace(/\n/g, '  \n');
     
-    return `
-    
-        <div class="feedback-section">
-            <p><b>${"Explaination"}</b></p>
-            <p>${formattedContent}</p><hr class="dashed-line" />
-        </div>
-    `;
+    return `Explanation:<br><br>
+    ${formattedContent}<br>
+    <hr class="dashed-line" />`;
 }
 
 

@@ -152,12 +152,12 @@ function create_number(data) {
     if (data.Image !== null)
         up_image = make_up_image(data.Image);
 
-    let explaination = "";
+    let explanation = "";
     if (data.Explanation !== null)
-        explaination = make_explaination(data.Explanation);
+        explanation = make_explanation(data.Explanation);
 
 
-    html = make_box([question_text, share_image, up_image, options, answer, explaination]) + "<hr/>";
+    html = make_box([question_text, share_image, up_image, options, answer, explanation]) + "<hr/>";
 
     return html;
 }
@@ -196,13 +196,13 @@ function make_options(Options) {
     return optionsHtml;
 }
 
-function make_explaination(content) {
+function make_explanation(content) {
     // Replace line breaks with Markdown line breaks
     const formattedContent = content.replace(/\n/g, '  \n');
     
-    return `
-${formattedContent}
-`;
+    return `Explanation:<br><br>
+    ${formattedContent}<br>
+    <hr class="dashed-line" />`;
 }
 
 
