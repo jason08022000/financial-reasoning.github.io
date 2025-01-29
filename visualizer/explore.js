@@ -20,7 +20,8 @@ let topic = [
     "Derivatives",
     "Market Risk",
     "Corporate Finance",
-    "Liquidity and Treasury Risk"
+    "Liquidity and Treasury Risk",
+    "Financial Markets and Productsd"
 ]
 
 

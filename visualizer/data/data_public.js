@@ -12897,13 +12897,12 @@ test_data = [
         "ID": 616,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "It is currently August 2010, and the spot price of soybeans is $5.05/bushel. Storage costs\nfor soybeans on a continuously compounded basis are $0.45/bushel annually. The appropriate\ncontinuously compounded interest rate is 8%. If a soybean farmer has just finished harvesting\nhis crop but would like to sell half of the crop in February 2011 and half in May 2011 by going\nshort futures contracts, which of the following statements is most accurate? The farmer should\nstore his crop only if the:",
+        "Question Text": "It is currently August 2010, and the spot price of soybeans is $\\$5.05$/bushel. Storage costs\nfor soybeans on a continuously compounded basis are $\\$0.45$/bushel annually. The appropriate\ncontinuously compounded interest rate is 8%. If a soybean farmer has just finished harvesting\nhis crop but would like to sell half of the crop in February 2011 and half in May 2011 by going\nshort futures contracts, which of the following statements is most accurate? The farmer should\nstore his crop only if the:",
         "Image": "images/image_add/616.png",
         "Options": {
-            "A": "February futures contract price is more than $5.50/bushel and the May futures contract price\nis more than $5.73/bushel.",
-            "B": "February futures contract price is more than $5.73/bushel and the May futures contract price\nis more than $5.50/bushel.",
-            "C": "?February futures contract price is less than $5.73/bushel and the May futures contract price\nis less than $5.50/bushel.",
-            "D": "?February futures contract price is less than $5.50/bushel and the May futures contract price"
+            "A": "February futures contract price is more than $\\$5.50$/bushel and the May futures contract price\nis more than $\\$5.73$/bushel.",
+            "B": "February futures contract price is more than $\\$5.73$/bushel and the May futures contract price\nis more than $\\$5.50$/bushel.",
+            "C": "February futures contract price is less than $\\$5.73$/bushel and the May futures contract price\nis less than $\\$5.50$/bushel.",
         },
         "Answer": "D",
         "Explanation": "Here's the translation:\n\n$$ u = 0.45 $$ \n$$ 8.91\\% = \\frac{5.05}{5.05} $$ \n\"The fair price of the February 2011 futures contract is:\n\n$$ F = 5.05 \\times (e^{(8.91\\%)} \\times 0.5) = 5.50 $$ \nThe fair price of the May 2011 futures contract is:\n\n$$ F = 5.05 \\times (e^{(8.91\\%)} \\times 0.75) = 5.73 $$\n\nTherefore, when the market price of the February 2011 futures contract is below 5.50 per bushel, and the market price of the May 2011 futures contract is below 5.73 per bushel, soybean producers will store soybeans and avoid taking a loss on the forward contract. Thus, option D is correct",
@@ -12960,7 +12959,7 @@ test_data = [
         "ID": 619,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A 1-year American put option with an exercise price of $40 will be worth $16.00 at maturity\nwith a probability of 0.25 and $0.00 with a probability of 0.75. The current stock price is\n$36. The continuous discount rate is 5%. The optimal strategy is to:",
+        "Question Text": "A 1-year American put option with an exercise price of $\\$40$ will be worth $\\$16.00$ at maturity\nwith a probability of 0.25 and $\\$0.00$ with a probability of 0.75. The current stock price is\n$\\$36$. The continuous discount rate is 5%. The optimal strategy is to:",
         "Image": "images/image_add/619.png",
         "Options": {
             "A": "Exercise the option because the option is in-the-money.",
@@ -13065,16 +13064,15 @@ test_data = [
         "ID": 624,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "William Wang, FRM, entered into the long position of two wheat futures contracts matured on\nJune. Each contract is 15,000 pounds of wheat. The current futures price is 150 cents per\npound. The initial margin was about $5,000 for each contract and the maintenance margin was\n$3,500 for each contract. Based on the information above, what price changes will lead to the\nmargin call and under what circumstances can $2000 be withdrawn from the margin account by\ninvestors?",
+        "Question Text": "William Wang, FRM, entered into the long position of two wheat futures contracts matured on\nJune. Each contract is 15,000 pounds of wheat. The current futures price is 150 cents per\npound. The initial margin was about $\\$5,000$ for each contract and the maintenance margin was\n$\\$3,500$ for each contract. Based on the information above, what price changes will lead to the\nmargin call and under what circumstances can $\\$2000$ be withdrawn from the margin account by\ninvestors?",
         "Image": "images/image_add/624.png",
         "Options": {
             "A": "When the futures price is below 140 cents/pound, investors will receive margin call; when the\nfutures price rises to 156.67 cents/pound, investors can withdraw $2000 margin.",
             "B": "When the futures price is above 160 cents/pound, investors will receive margin call; when the\nfutures price declines to 143.33 cents/pound, investors can withdraw $2000 margin.",
-            "C": "When the futures price is below 130 cents/pound, investors will receive margin call; when the\nfutures price rises to 163.33 cents/pound, investors can withdraw $2000 margin.",
-            "D": "When the futures price is above 170 cents/pound, investors will receive margin call; when the"
+            "C": "When the futures price is below 130 cents/pound, investors will receive margin call; when the\nfutures price rises to 163.33 cents/pound, investors can withdraw $2000 margin."
         },
         "Answer": "A",
-        "Explanation": "Here's the translation:\n\n\"This question considers the calculation of futures margin.\n\nThe buyer of a futures contract incurs losses when the futures price declines and gains when the futures price rises. If the funds in the margin account fall below the maintenance margin level, a margin call will be issued. Assuming a margin call is issued when the futures price reaches $X$, we have: \n$$ (150 - X) \\times \\frac{15,000}{100} \\times 2 = (5,000 - 3,500) \\times 2 $$ \nSolving for $ X $, we find $ X = 140 $, meaning that a margin call will be issued when the futures price drops below 140 cents/pound. \nWhen the futures contract allows for withdrawal of profits, assuming the futures price is $ Y $ and the profit on the contract is $2,000, we have: \n$$ \\frac{(Y - 150)}{100} \\times 15,000 \\times 2 = 2,000 $$ \nSolving for $ Y $, we find $ Y = 156.67 $, meaning that when the futures price reaches 156.67 cents/pound, $2,000 can be withdrawn from the margin account. Therefore, option A is correct",
+        "Explanation": "Here's the translation:\n\n\"This question considers the calculation of futures margin.\n\nThe buyer of a futures contract incurs losses when the futures price declines and gains when the futures price rises. If the funds in the margin account fall below the maintenance margin level, a margin call will be issued. Assuming a margin call is issued when the futures price reaches $X$, we have: \n$$ (150 - X) \\times \\frac{15,000}{100} \\times 2 = (5,000 - 3,500) \\times 2 $$ \nSolving for $ X $, we find $ X = 140 $, meaning that a margin call will be issued when the futures price drops below 140 cents/pound. \nWhen the futures contract allows for withdrawal of profits, assuming the futures price is $ Y $ and the profit on the contract is $\\$2,000$, we have: \n$$ \\frac{(Y - 150)}{100} \\times 15,000 \\times 2 = 2,000 $$ \nSolving for $ Y $, we find $ Y = 156.67 $, meaning that when the futures price reaches 156.67 cents/pound, $2,000 can be withdrawn from the margin account. Therefore, option A is correct",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -13359,7 +13357,7 @@ test_data = [
         "ID": 638,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "What is the price of a three month European put option on a non-dividend-paying stock with a\nstrike price of $50 when the current stock price is $50, the risk-free interest rate is 10% per\nannum, and the volatility is 30% per annum? The table for N(x) is shown below:",
+        "Question Text": "What is the price of a three month European put option on a non-dividend-paying stock with a\nstrike price of $\\$50$ when the current stock price is $\\$50$, the risk-free interest rate is 10% per\nannum, and the volatility is 30% per annum? The table for N(x) is shown below:",
         "Image": "images/FinancialMarketsandProducts2_images/37u.png",
         "Options": {
             "A": "$2.37",
@@ -13527,7 +13525,7 @@ test_data = [
         "ID": 646,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Tom is currently in a long position in a futures contract. The current futures contract\nprice is $35. He expects asset prices to rise rapidly in the future and reach the resistance\nlevel of $45 and then may fall. Which order could automatically help Tom get the most profit?",
+        "Question Text": "Tom is currently in a long position in a futures contract. The current futures contract\nprice is $\\$35$. He expects asset prices to rise rapidly in the future and reach the resistance\nlevel of $\\$45$ and then may fall. Which order could automatically help Tom get the most profit?",
         "Image": "images/image_add/646.png",
         "Options": {
             "A": "Sell market order",
@@ -13536,7 +13534,7 @@ test_data = [
             "D": "Stop-and-limit sell order which stop price is $35 and limit price is $30"
         },
         "Answer": "B",
-        "Explanation": "Here's the translation:\n\n\"This question examines the order types in futures trading. A trigger order becomes a market order when the asset reaches a specified price or a more favorable price, used to limit profits. When the stock price reaches $45, the order becomes a market order to sell, allowing the trader to realize maximum gains as anticipated. Therefore, option B is correct. \nFor option A, a market order is an instruction to buy or sell at the best available market price as quickly as possible. If a sell market order is set, it will sell quickly at market price, which may not secure the anticipated profit. Thus, this option is incorrect.\n\nFor option C, a stop-loss order becomes a market order when the asset reaches a specified price or a less favorable price, used to limit losses. If the current stock price is $35 and a sell stop order is set at $35, once the stock price rises above $35, the order will not execute. Therefore, this option is incorrect. \nFor option D, a stop-limit order becomes a limit order when the asset reaches a specified price or a less favorable price, used to lock in a trading price range. When the stop price is set at $35 and the limit price at $30, it means that selling will start when the market price falls below $35, but the selling price must be above $30. Thus, this statement is incorrect.\n\nRegarding Statement 2, as the delivery period approaches, futures prices converge to spot prices, and futures prices increase as the time to expiration increases in a market known as a normal market. Therefore, this statement is incorrect.\n\nThus, both Statement 1 and Statement 2 are incorrect, making option D the correct answer",
+        "Explanation": "Here's the translation:\n\n\"This question examines the order types in futures trading. A trigger order becomes a market order when the asset reaches a specified price or a more favorable price, used to limit profits. When the stock price reaches $\\$45$, the order becomes a market order to sell, allowing the trader to realize maximum gains as anticipated. Therefore, option B is correct. \nFor option A, a market order is an instruction to buy or sell at the best available market price as quickly as possible. If a sell market order is set, it will sell quickly at market price, which may not secure the anticipated profit. Thus, this option is incorrect.\n\nFor option C, a stop-loss order becomes a market order when the asset reaches a specified price or a less favorable price, used to limit losses. If the current stock price is $\\$35$ and a sell stop order is set at $\\$35$, once the stock price rises above $\\$35$, the order will not execute. Therefore, this option is incorrect. \nFor option D, a stop-limit order becomes a limit order when the asset reaches a specified price or a less favorable price, used to lock in a trading price range. When the stop price is set at $\\$35$ and the limit price at $\\$30$, it means that selling will start when the market price falls below $\\$35$, but the selling price must be above $\\$30$. Thus, this statement is incorrect.\n\nRegarding Statement 2, as the delivery period approaches, futures prices converge to spot prices, and futures prices increase as the time to expiration increases in a market known as a normal market. Therefore, this statement is incorrect.\n\nThus, both Statement 1 and Statement 2 are incorrect, making option D the correct answer",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -13716,7 +13714,7 @@ test_data = [
         "ID": 655,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Jack bought a call option expiring on December 2021 on XYZ stock with an exercise price of\n$10 for a$2 premium, and the other is a put option on December 2021 on XYZ stock with an\nexercise price of $8 and for a$1 premium. Please identify this option strategy and calculate\nbreakeven point（　）.",
+        "Question Text": "Jack bought a call option expiring on December 2021 on XYZ stock with an exercise price of\n$\\$10$ for a $\\$2$ premium, and the other is a put option on December 2021 on XYZ stock with an\nexercise price of $\\$8$ and for a $\\$1$ premium. Please identify this option strategy and calculate\nbreakeven point（　）.",
         "Image": "images/image_add/655.png",
         "Options": {
             "A": "Long strangle, breakeven points are $13 and $5",
@@ -34040,7 +34038,7 @@ test_data = [
         "ID": 1634,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Suppose a bond’s quoted price is 105 7/32 and the accrued interest is $23.54. If the bond\nhas a par value of $1,000, what is the bond’s flat price?",
+        "Question Text": "Suppose a bond’s quoted price is 105 7/32 and the accrued interest is $\\$23.54$. If the bond\nhas a par value of $\\$1,000$, what is the bond’s flat price?",
         "Image": "images/image_add/1634.png",
         "Options": {
             "A": "$1,000.00",
@@ -34061,7 +34059,7 @@ test_data = [
         "ID": 1635,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Austin Traynor is considering buying a $1,000 face value, semi-annual coupon bond with a\nquoted price of 104.75 and accrued interest since the last coupon of $33.50. If Bob pays the\ndirty price, how much will the seller receive at the settlement date?",
+        "Question Text": "Austin Traynor is considering buying a $\\$1,000$ face value, semi-annual coupon bond with a\nquoted price of 104.75 and accrued interest since the last coupon of $\\$33.50$. If Bob pays the\ndirty price, how much will the seller receive at the settlement date?",
         "Image": "images/image_add/1635.png",
         "Options": {
             "A": "$1,014.00",
@@ -34313,7 +34311,7 @@ test_data = [
         "ID": 1647,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A trader buys one wheat contract (underlying = 5,000 bushels) at a price of $3.05 per\nbushel. The initial margin on the contract is $4,500 and the maintenance margin is $3,750. At\nwhat price will the trader receive a maintenance margin call?",
+        "Question Text": "A trader buys one wheat contract (underlying = 5,000 bushels) at a price of $\\$3.05$ per\nbushel. The initial margin on the contract is $\\$4,500$ and the maintenance margin is $\\$3,750$. At\nwhat price will the trader receive a maintenance margin call?",
         "Image": "images/image_add/1647.png",
         "Options": {
             "A": "$2.30",
@@ -34322,7 +34320,7 @@ test_data = [
             "D": "$3.80"
         },
         "Answer": "B",
-        "Explanation": "The trader would have to post a margin of $4,500 at the outset and would receive a margin call if the value of this margin fell to $3,750. Assuming price will decline to PD, the\ntrader receive a maintenance margin call, so 3.05 - PD = (4500 - 3750)/5000, PD = $2.9.",
+        "Explanation": "The trader would have to post a margin of $\\$4,500$ at the outset and would receive a margin call if the value of this margin fell to $\\$3,750$. Assuming price will decline to PD, the\ntrader receive a maintenance margin call, so 3.05 - PD = (4500 - 3750)/5000, PD = $\\$2.9$.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -34397,7 +34395,7 @@ test_data = [
         "ID": 1651,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume a bond's quoted price is 105.22 and the accrued interest is $3.54. The bond has a par\nvalue of $100. What is the bond's clean price?",
+        "Question Text": "Assume a bond's quoted price is 105.22 and the accrued interest is $\\$3.54$. The bond has a par\nvalue of $\\$100$. What is the bond's clean price?",
         "Image": "images/image_add/1651.png",
         "Options": {
             "A": "$100.00.",
@@ -34460,7 +34458,7 @@ test_data = [
         "ID": 1654,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "On a single day the price of a corporate bond with a modified duration of 4.52 years drops\nfrom $87.20 to $85.65. If the benchmark yield increases by 10 basis points during the day,\nwhich is nearest to the approximate change in the bond's credit spread?",
+        "Question Text": "On a single day the price of a corporate bond with a modified duration of 4.52 years drops\nfrom $\\$87.20$ to $\\$85.65$. If the benchmark yield increases by 10 basis points during the day,\nwhich is nearest to the approximate change in the bond's credit spread?",
         "Image": "images/image_add/1654.png",
         "Options": {
             "A": "Increase of 29 bps",
@@ -34523,7 +34521,7 @@ test_data = [
         "ID": 1657,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A bond portfolio has the following compositions: Portfolio A: price $90,000, modified\nduration 2.5, long position in 8 bonds; Portfolio B: price $110,000, modified duration 3, short\nposition in 6 bonds; Portfolio C: price $120,000, modified duration 3.3, long position in 12\nbonds; All interest rates are 10%. If the rates rise by 25 bps, then the bond portfolio value\nwill",
+        "Question Text": "A bond portfolio has the following compositions: Portfolio A: price $\\$90,000$, modified\nduration 2.5, long position in 8 bonds; Portfolio B: price $\\$110,000$, modified duration 3, short\nposition in 6 bonds; Portfolio C: price $\\$120,000$, modified duration 3.3, long position in 12\nbonds; All interest rates are 10%. If the rates rise by 25 bps, then the bond portfolio value\nwill",
         "Image": "images/image_add/1657.png",
         "Options": {
             "A": "Decrease by $11,430",
@@ -34532,7 +34530,7 @@ test_data = [
             "D": "Decrease by $23,463"
         },
         "Answer": "A",
-        "Explanation": "△P = -3.048 × 1500000 × 0.0025 = -11430\n\n|      | $ V $    | $ \\omega $ | $ \\omega D^* $ |\n|------|------------|--------------|------------------|\n| A    | 720000     | 48%          | 1.2             |\n| B    | -660000    | -44%         | -1.32           |\n| C    | 1440000    | 96%          | 3.17            |\n| Total| 1500000    |              | 3.048           |",
+        "Explanation": "△P = -3.048 × 1500000 × 0.0025 = -11430\n\n    $$ \\begin{array}{|c|c|c|c|} \\hline & V & \\omega & \\omega D^* \\\\ \\hline A & 720000 & 48\\% & 1.2 \\\\ B & -660000 & -44\\% & -1.32 \\\\ C & 1440000 & 96\\% & 3.17 \\\\ \\text{Total} & 1500000 & & 3.048 \\\\ \\hline \\end{array} $$   ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -34796,7 +34794,7 @@ test_data = [
         "ID": 1670,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The price of a $100 par zero-coupon bond with four (4) years to maturity is $88.00. The\nprice of a $100 par zero-coupon bond with five (5) years to maturity is $82.00. Under\ncontinuous compounding, what is the implied forward rate, r(4.0, 5.0)?",
+        "Question Text": "The price of a $\\$100$ par zero-coupon bond with four (4) years to maturity is $\\$88.00$. The\nprice of a $\\$100$ par zero-coupon bond with five (5) years to maturity is $\\$82.00$. Under\ncontinuous compounding, what is the implied forward rate, r(4.0, 5.0)?",
         "Image": "images/image_add/1670.png",
         "Options": {
             "A": "4.06%",
@@ -34889,7 +34887,7 @@ test_data = [
             "D": "$1,256.38"
         },
         "Answer": "B",
-        "Explanation": "The 30/360 accrued interest = $1,000 × 8%/2 × 32/180 = $7.11;This bond settles on 2/3/2011, but we can retrieve its full (dirty) price on 1/1/2011 which is a round 3.0 years\nuntil maturity: N = 6; I/Y = 2.5; PMT = 40; FV = 1000, and CPT PV = $1,082.6219; i.e., the\nprice on 1/1/2011;The dirty (full) price on the settlement date\n=$1,082.6219×1.025^(32/180)=$1,087.38",
+        "Explanation": "The 30/360 accrued interest = $\\$1,000 × 8%/2 × 32/180 = \\$7.11$;This bond settles on 2/3/2011, but we can retrieve its full (dirty) price on 1/1/2011 which is a round 3.0 years\nuntil maturity: N = 6; I/Y = 2.5; PMT = 40; FV = 1000, and CPT PV = $\\$1,082.6219$; i.e., the\nprice on 1/1/2011;The dirty (full) price on the settlement date\n$=\\$1,082.6219×1.025^(32/180)=\\$1,087.38$",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -34922,7 +34920,7 @@ test_data = [
         "ID": 1676,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An annuity pays $10 every year for 100 years and currently costs $100. The YTM is closest\nto:",
+        "Question Text": "An annuity pays $\\$10$ every year for 100 years and currently costs $\\$100$. The YTM is closest\nto:",
         "Image": "images/image_add/1676.png",
         "Options": {
             "A": "5%",
@@ -34952,7 +34950,7 @@ test_data = [
             "D": "2.915 years"
         },
         "Answer": "B",
-        "Explanation": "\n| Year | CF  | PV    | $ \\omega $ | $ \\omega T $ |\n|------|-----|-------|--------------|----------------|\n| 0.5  | 3   | 2.94  | 2.86%        | 0.0143        |\n| 1    | 3   | 2.88  | 2.80%        | 0.028         |\n| 1.5  | 103 | 97.06 | 94.34%       | 1.4151        |\n| Total|      | 102.88 |              | 1.4574        |",
+        "Explanation": "\n$ \\begin{array}{|c|c|c|c|c|} \\hline \\text{Year} & \\text{CF} & \\text{PV} & \\omega & \\omega T \\\\ \\hline 0.5 & 3 & 2.94 & 2.86\\% & 0.0143 \\\\ 1 & 3 & 2.88 & 2.80\\% & 0.028 \\\\ 1.5 & 103 & 97.06 & 94.34\\% & 1.4151 \\\\ \\text{Total} &  & 102.88 &  & 1.4574 \\\\ \\hline \\end{array} $       ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -34985,7 +34983,7 @@ test_data = [
         "ID": 1679,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A US corporate bond that matures on October 1st, 2017 with a par value of $100.00 pays a\nsemi-annual coupon with a coupon rate of 9.0% per annum. It pays coupons on April and October\n1st and it offers a yield to maturity (yield) of 4.0% per annum. If it settles on September 1st\n2015, which is nearest to the bond's flat (aka, quoted or clean) price?",
+        "Question Text": "A US corporate bond that matures on October 1st, 2017 with a par value of $\\$100.00$ pays a\nsemi-annual coupon with a coupon rate of 9.0% per annum. It pays coupons on April and October\n1st and it offers a yield to maturity (yield) of 4.0% per annum. If it settles on September 1st\n2015, which is nearest to the bond's flat (aka, quoted or clean) price?",
         "Image": "images/image_add/1679.png",
         "Options": {
             "A": "$109. 89",
@@ -34994,7 +34992,7 @@ test_data = [
             "D": "$115.53"
         },
         "Answer": "A",
-        "Explanation": "On the April 1st, 2015, the bond's price = $111.78365 (I/Y =4/2, N=5, PMT = $4.5, FV = $100).As a US corporate bond, it has a 30/360 day count convention with 150 days since\nlast coupon. This bond's full price on the settlement date = $111.78365×1.02^((150/180))= $113.64363. The bond's flat price =$113.64363－($4.50×150/80)=$109.89363.",
+        "Explanation": "On the April 1st, 2015, the bond's price = $\\$111.78365 (I/Y =4/2, N=5, PMT = \\$4.5, FV = \\$100)$.As a US corporate bond, it has a 30/360 day count convention with 150 days since\nlast coupon. This bond's full price on the settlement date = $\\$111.78365×1.02^((150/180))= \\$113.64363$. The bond's flat price = $\\$113.64363－(\\$4.50×150/80)=\\$109.89363$.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35015,7 +35013,7 @@ test_data = [
             "D": "3.25%"
         },
         "Answer": "C",
-        "Explanation": "\n\n| Maturity (Years) | Strip Price | Spot Rate | Forward Rate |\n|------------------|-------------|-----------|--------------|\n| 0.5              | 99.2556     | 1.50%     | 1.50%        |\n| 1.0              | 98.2240     | 1.80%     | 2.10%        |\n| 1.5              | 96.7713     | 2.20%     | ?            |\n| 2.0              | 95.1524     | ?         | 3.40%        |\n\n$ \\left( 1 + \\frac{1.8\\%}{2} \\right)^2 \\times \\left( 1 + \\frac{F}{2} \\right)^1 = \\left( 1 + \\frac{2.2\\%}{2} \\right)^3 \\Rightarrow F = 3\\%\n$",
+        "Explanation": "\n\n$ \\begin{array}{|c|c|c|c|} \\hline \\text{Maturity (Years)} & \\text{Strip Price} & \\text{Spot Rate} & \\text{Forward Rate} \\\\ \\hline 0.5 & 99.2556 & 1.50\\% & 1.50\\% \\\\ 1.0 & 98.2240 & 1.80\\% & 2.10\\% \\\\ 1.5 & 96.7713 & 2.20\\% & ? \\\\ 2.0 & 95.1524 & ? & 3.40\\% \\\\ \\hline \\end{array} $        \n\n$$ \\left( 1 + \\frac{1.8\\%}{2} \\right)^2 \\times \\left( 1 + \\frac{F}{2} \\right)^1 = \\left( 1 + \\frac{2.2\\%}{2} \\right)^3 \\Rightarrow F = 3\\%\n$$",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35078,7 +35076,7 @@ test_data = [
             "D": "Short three contracts for a gain of $7,500"
         },
         "Answer": "D",
-        "Explanation": "As each contract is for $1,000,000 and the borrower wants to hedge against an increase in the LIBOR, the company should short three contracts. (an increase in the interest\nrate implies a decrease in the quoted price such that the short position gains on an increase\nin the interest rate). As each contract, by design, gains/losses $25 per basis point, a 100\nbasis point increase implies $2,500 per contract, or $7,500 for three contracts. ",
+        "Explanation": "As each contract is for $\\$1,000,000$ and the borrower wants to hedge against an increase in the LIBOR, the company should short three contracts. (an increase in the interest\nrate implies a decrease in the quoted price such that the short position gains on an increase\nin the interest rate). As each contract, by design, gains/losses $\\$25$ per basis point, a 100\nbasis point increase implies $\\$2,500$ per contract, or $\\$7,500$ for three contracts. ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35090,7 +35088,7 @@ test_data = [
         "ID": 1684,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Hanwha Investment is underwriting a 30-year zero coupon corporate bond issue with a face\nvalue of $50 million and a current market value of $2,676,776 (a yield of 5% per 6-month\nperiod)，The modified duration on the zero coupon corporate bond is 28.57; The firm must hold\nthe bonds for a few days before issuing them to the public, which exposes them to interest rate\nrisk. Hanwha Investment wishes to hedge its position by using T-Bond futures contracts. The\nmodified duration on the T-Bond futures is 9.41，The current T-Bond futures price is $90.80 per\n$100 par value, and the T-Bond contract will be settled using a 20-year, 8% coupon bond paying\ninterest semiannually. The contract is due to expire in a few days, so the T-Bond price and the\nT-Bond futures price are virtually identical. Assume that the yield curve is flat and that the\ncorporate bond will continue to yield 0.5% more that T-Bond per 6-month period, even if the\ngeneral level of market rates should change. What hedge ratio should Hanhwa Investment use to\nhedge its bond holdings against possible interest rate fluctuations over the next few days?",
+        "Question Text": "Hanwha Investment is underwriting a 30-year zero coupon corporate bond issue with a face\nvalue of $\\$50$ million and a current market value of $\\$2,676,776$ (a yield of 5% per 6-month\nperiod)，The modified duration on the zero coupon corporate bond is 28.57; The firm must hold\nthe bonds for a few days before issuing them to the public, which exposes them to interest rate\nrisk. Hanwha Investment wishes to hedge its position by using T-Bond futures contracts. The\nmodified duration on the T-Bond futures is 9.41，The current T-Bond futures price is $\\$90.80$ per\n$\\$100$ par value, and the T-Bond contract will be settled using a 20-year, 8% coupon bond paying\ninterest semiannually. The contract is due to expire in a few days, so the T-Bond price and the\nT-Bond futures price are virtually identical. Assume that the yield curve is flat and that the\ncorporate bond will continue to yield 0.5% more that T-Bond per 6-month period, even if the\ngeneral level of market rates should change. What hedge ratio should Hanhwa Investment use to\nhedge its bond holdings against possible interest rate fluctuations over the next few days?",
         "Image": "images/image_add/1684.png",
         "Options": {
             "A": "72 contracts held short to hedge",
@@ -35216,7 +35214,7 @@ test_data = [
         "ID": 1690,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A trader executes a $200 million 5-year pay fixed swap with one client (duration 4.36) and a\n$100 million 10-year receive fixed swap with another client (duration 7.66) shortly afterwards.\nAssuming that the 5-year rate is 4.75% and 10-year rate is 5.15% and that all contracts are\ntransacted at par, how can the trader hedge his net delta position?",
+        "Question Text": "A trader executes a $\\$200$ million 5-year pay fixed swap with one client (duration 4.36) and a\n$\\$100$ million 10-year receive fixed swap with another client (duration 7.66) shortly afterwards.\nAssuming that the 5-year rate is 4.75% and 10-year rate is 5.15% and that all contracts are\ntransacted at par, how can the trader hedge his net delta position?",
         "Image": "images/image_add/1690.png",
         "Options": {
             "A": "Sell 424 Eurodollar future contracts",
@@ -35246,7 +35244,7 @@ test_data = [
             "D": "LIBOR increased by 80 basis point for a gain (to the long position) of $2,000."
         },
         "Answer": "B",
-        "Explanation": "LIBOR increased from 2.0% (100-98) to 2.8% (100-97.2). The long position loses here\nas the contract price decrease from 98.00 to 97.20; The loss to the long is $25 per basis point; in this case,- 80 bps×25=loss of $2,000",
+        "Explanation": "LIBOR increased from 2.0% (100-98) to 2.8% (100-97.2). The long position loses here\nas the contract price decrease from 98.00 to 97.20; The loss to the long is $\\$25$ per basis point; in this case,- 80 bps×25=loss of $\\$2,000$",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35351,7 +35349,7 @@ test_data = [
             "D": "make a payment of $37,500"
         },
         "Answer": "D",
-        "Explanation": "Payoff = $5,000,000×(0.02-0.05)×3/12=-37,500. The negative sign means the investor will make a payment of $37,500.",
+        "Explanation": "$Payoff = \\$5,000,000×(0.02-0.05)×3/12=-37,500$. The negative sign means the investor will make a payment of $\\$37,500$.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35741,7 +35739,7 @@ test_data = [
         "ID": 1715,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The current price of Commodity X in the spot market is $42.47. Forward contracts for delivery of Commodity X in one year are trading at a price of $43.11. If the current continuously compounded annual risk-free interest rate is 7.0%, calculate the implicit lease rate for Commodity X. Holding the calculated implicit lease rate constant, would the forward market for Commodity X be in backwardation or contango if the continuously compounded annual risk-free rate immediately fell to 5.0%?",
+        "Question Text": "The current price of Commodity X in the spot market is $\\$42.47$. Forward contracts for delivery of Commodity X in one year are trading at a price of $\\$43.11$. If the current continuously compounded annual risk-free interest rate is 7.0%, calculate the implicit lease rate for Commodity X. Holding the calculated implicit lease rate constant, would the forward market for Commodity X be in backwardation or contango if the continuously compounded annual risk-free rate immediately fell to 5.0%?",
         "Image": "images/image_add/1715.png",
         "Options": {
             "A": " The implicit lease rate is 1.49%. Holding this rate constant, the forward market would be in contango if the continuously compounded annual risk-free rate immediately fell to 5.0%.",
@@ -35762,7 +35760,7 @@ test_data = [
         "ID": 1716,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "To utilize the cash position of assets under management, a portfolio manager enters into a\nlong futures position on the S&P 500 index with a multiplier of 250. The cash position is $15\nmillion with the current futures value of 1000, which requires the manager to long 60\ncontracts. If the current initial margin is $12500 per contract, and the current maintenance\nmargin is $10000 per contract, what variation margin does the portfolio manager have to advance\nif the futures contract value falls to $995 at the end of the first day of the position being\nplaced?",
+        "Question Text": "To utilize the cash position of assets under management, a portfolio manager enters into a\nlong futures position on the S&P 500 index with a multiplier of 250. The cash position is $\\$15$\nmillion with the current futures value of 1000, which requires the manager to long 60\ncontracts. If the current initial margin is $\\$12500$ per contract, and the current maintenance\nmargin is $\\$10000$ per contract, what variation margin does the portfolio manager have to advance\nif the futures contract value falls to $\\$995$ at the end of the first day of the position being\nplaced?",
         "Image": "images/image_add/1716.png",
         "Options": {
             "A": "$30,000",
@@ -35771,7 +35769,7 @@ test_data = [
             "D": "$75,000"
         },
         "Answer": "B",
-        "Explanation": "Step 1: Initial margin $12,500 × 60 = $750,000; Maintenance margin$10,000 × 60 = $600,000Step 2: The first day lose = (1,000 – 995) × 250 × 60 = $75,000,So the first day value = $750,000 – $75,000 = $675,000>$600,000It will not require a variation margin to bring\nthe position to the proper margin level. ",
+        "Explanation": "Step 1: Initial margin $\\$12,500 × 60 = \\$750,000$; Maintenance margin $\\$10,000 × 60 = \\$600,000$ Step 2: The first day lose = $(1,000 – 995) × 250 × 60 = $ $\\$75,000$, So the first day value = $\\$750,000 – \\$75,000 = \\$675,000 > \\$600,000$ It will not require a variation margin to bring\nthe position to the proper margin level. ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35783,16 +35781,16 @@ test_data = [
         "ID": 1717,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "It is currently August 2010, and the spot price of soybeans is $5.05/bushel. Storage costs\nfor soybeans on a continuously compounded basis are $0.45/bushel annually. The appropriate\ncontinuously compounded interest rate is 8%. If a soybean farmer has just finished harvesting\nhis crop but would like to sell half of the crop in February 2011 and half in May 2011 by going\nshort futures contracts, which of the following statements is most accurate? The farmer should\nstore his crop only if the:",
+        "Question Text": "It is currently August 2010, and the spot price of soybeans is $\\$5.05$/bushel. Storage costs\nfor soybeans on a continuously compounded basis are $\\$0.45$/bushel annually. The appropriate\ncontinuously compounded interest rate is 8%. If a soybean farmer has just finished harvesting\nhis crop but would like to sell half of the crop in February 2011 and half in May 2011 by going\nshort futures contracts, which of the following statements is most accurate? The farmer should\nstore his crop only if the:",
         "Image": "images/image_add/1717.png",
         "Options": {
-            "A": "February futures contract price is at least $5.48/bushel and the May futures contract price\nis at least $5.70/bushel.",
-            "B": "February futures contract price is at least $5.48/bushel and the May futures contract price\nis at least $5.73/bushel.",
-            "C": "February futures contract price is at least $5.50/bushel and the May futures contract price\nis at least $5.70/bushel.",
-            "D": "February futures contract price is at least $5.50/bushel and the May futures contract price"
+            "A": "February futures contract price is at least $\\$5.48$/bushel and the May futures contract price\nis at least $\\$5.70$/bushel.",
+            "B": "February futures contract price is at least $\\$5.48$/bushel and the May futures contract price\nis at least $\\$5.73$/bushel.",
+            "C": "February futures contract price is at least $\\$5.50$/bushel and the May futures contract price\nis at least $\\$5.70$/bushel.",
+            "D": "February futures contract price is at least $\\$5.50$/bushel and the May futures contract price\nis at least $\\$5.73$/bushel."
         },
         "Answer": "D",
-        "Explanation": "Calculate the price of the February (6-month) and May (9-month) forward prices using the following pricing formula which accounts for storage costs:\n\n$$ \\text{storage costs}(\\lambda) = \\frac{0.45}{5.05} = 8.91\\% $$ \n$$ \\text{forward prices}(F_{0,T}) = S_0 e^{(R_f+\\lambda)T} $$ \n$$ F_{0,0.50} = 5.05 e^{(0.08 + 0.0891) \\times 0.50} = 5.50 $$ \n$$ F_{0,0.75} = 5.05 e^{(0.08 + 0.0891) \\times 0.75} = 5.73 $$ \nThe soybean farmer would only be willing to store half the crop until February if the February futures contract price is at least $5.50/bushel. Similarly, the soybean farmer would only be willing to store the other half of the crop until May if the May futures contract price is at least $5.73/bushel.",
+        "Explanation": "Calculate the price of the February (6-month) and May (9-month) forward prices using the following pricing formula which accounts for storage costs:\n\n$$ \\text{storage costs}(\\lambda) = \\frac{0.45}{5.05} = 8.91\\% $$ \n$$ \\text{forward prices}(F_{0,T}) = S_0 e^{(R_f+\\lambda)T} $$ \n$$ F_{0,0.50} = 5.05 e^{(0.08 + 0.0891) \\times 0.50} = 5.50 $$ \n$$ F_{0,0.75} = 5.05 e^{(0.08 + 0.0891) \\times 0.75} = 5.73 $$ \nThe soybean farmer would only be willing to store half the crop until February if the February futures contract price is at least $\\$5.50$/bushel. Similarly, the soybean farmer would only be willing to store the other half of the crop until May if the May futures contract price is at least $\\$5.73$/bushel.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -35855,7 +35853,7 @@ test_data = [
             "D": "R$ 4.07"
         },
         "Answer": "C",
-        "Explanation": "The interest rate parity theorem requires that the forward rate preclude an\narbitrage suchthat: (1 + US rate) = Spot rate (R$ per 1.0 dollar) * (1 + Brazilian rate) / Forward rate (R$ per 1.0 dollar), and therefore: Forward rate (R$ per 1.0 dollar) = Spot rate (R$ per 1.0 dollar) * (1 + Brazilian rate) / (1 +US rate). In this case, Forward rate (R$ per 1.0 dollar) = R$ 3.500 * 1.09 / 1.01 = R$ 3.7772 ",
+        "Explanation": "The interest rate parity theorem requires that the forward rate preclude an\narbitrage such that: $(1 + US rate) = Spot rate (R\\$ per 1.0 dollar) * (1 + Brazilian rate) / Forward rate (R\\$ per 1.0 dollar)$, and therefore: $Forward rate (R\\$ per 1.0 dollar) = Spot rate (R\\$ per 1.0 dollar) * (1 + Brazilian rate) / (1 +US rate)$. In this case, $Forward rate (R\\$ per 1.0 dollar) = R\\$ 3.500 * 1.09 / 1.01 = R\\$ 3.7772$ ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -36098,7 +36096,7 @@ test_data = [
         "ID": 1732,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "To equalize the cash portion of assets under management, a portfolio manager enters into a\nlong futures position on the S&P 500 Index with a multiplier of 250. The cash position is\n$5,000,000, which at the current futures value of 1,000 requires the manager to be long 20\ncontracts. If the current initial margin is $12,500 per contract, and the current maintenance\nmargin is $10,000 per contract, the variation margin the portfolio manager needs to advance if\nthe futures contract value falls to 985 at the end of the first day of the position is closest\nto:",
+        "Question Text": "To equalize the cash portion of assets under management, a portfolio manager enters into a\nlong futures position on the S&P 500 Index with a multiplier of 250. The cash position is\n$\\$5,000,000$, which at the current futures value of 1,000 requires the manager to be long 20\ncontracts. If the current initial margin is $\\$12,500$ per contract, and the current maintenance\nmargin is $\\$10,000$ per contract, the variation margin the portfolio manager needs to advance if\nthe futures contract value falls to 985 at the end of the first day of the position is closest\nto:",
         "Image": "images/image_add/1732.png",
         "Options": {
             "A": "$25,000",
@@ -36107,7 +36105,7 @@ test_data = [
             "D": "$75,000"
         },
         "Answer": "D",
-        "Explanation": "The futures contract ended at 985 on the first day. This represents a decrease in\nvalue in the position of (1000-985)×$250×20=$75,000. The initial margin placed by the manager was $12,500×20=$250,000. The maintenance margin for this position requires $10,000×20=$200,000. Since the value of the position declined $75,000 on the first day, the margin account is now worth $175,000 (below the $200,000 maintenance margin) and will require a variation margin of $75,000 to bring the position back to the initial margin. It is not\nsufficient just to bring the position back to the maintenance margin.",
+        "Explanation": "The futures contract ended at 985 on the first day. This represents a decrease in\nvalue in the position of $(1000-985)×\\$250×20=\\$75,000$. The initial margin placed by the manager was $\\$12,500×20=\\$250,000$. The maintenance margin for this position requires $\\$10,000×20=\\$200,000$. Since the value of the position declined $\\$75,000$ on the first day, the margin account is now worth $\\$175,000$ (below the $\\$200,000$ maintenance margin) and will require a variation margin of $\\$75,000$ to bring the position back to the initial margin. It is not\nsufficient just to bring the position back to the maintenance margin.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -36308,7 +36306,7 @@ test_data = [
         "ID": 1742,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The settlement price of a U.S. Treasury bond futures contract is $98.50 (98-16). The two\nbonds eligible for delivery are: Bond A: Quoted Price of $97.00 and conversion factor (CF) of\n0.96; Bond B: Quoted Price of $102.00 and conversion factor (CF) of 1.03 Which bond is\ncheapest-to-deliver (CTD)?",
+        "Question Text": "The settlement price of a U.S. Treasury bond futures contract is $\\$98.50$ (98-16). The two\nbonds eligible for delivery are: Bond A: Quoted Price of $\\$97.00$ and conversion factor (CF) of\n0.96; Bond B: Quoted Price of $\\$102.00$ and conversion factor (CF) of 1.03 Which bond is\ncheapest-to-deliver (CTD)?",
         "Image": "images/image_add/1742.png",
         "Options": {
             "A": "Bond A is the CTD because it cost the short $2,440 per contract to deliver",
@@ -36317,7 +36315,7 @@ test_data = [
             "D": "Bond B is the CTD because it profits the short $1,316 per contract to deliver"
         },
         "Answer": "C",
-        "Explanation": "Bond B is the CTD because it costs the short $545 per contract to deliver Bond A: 98.50×0.96-$97 = -2.44 (-$2,440 per contract) Bond B: 98.50×1.03-$102=-0.545 (-$545 per\ncontract) ",
+        "Explanation": "Bond B is the CTD because it costs the short $\\$545$ per contract to deliver Bond A: 98.50×0.96-$\\$97$ = -2.44 (-$\\$2,440$ per contract) Bond B: 98.50×1.03-$\\$102$=-0.545 ($-\\$545$ per\ncontract) ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -36392,7 +36390,7 @@ test_data = [
         "ID": 1746,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider an eight-month forward contract on a stock with a price of $98/share. The delivery\ndate is eight months hence. The firm is expected to pay a $1.80/share dividend in four months\ntime. Riskless zero coupon interest rates (continuously compounded) for different maturities\nare as follows: 4 months 4%, 8 months 4.5%. The theoretical forward price (to the nearest cent)\nis:",
+        "Question Text": "Consider an eight-month forward contract on a stock with a price of $\\$98$/share. The delivery\ndate is eight months hence. The firm is expected to pay a $\\$1.80$/share dividend in four months\ntime. Riskless zero coupon interest rates (continuously compounded) for different maturities\nare as follows: 4 months 4%, 8 months 4.5%. The theoretical forward price (to the nearest cent)\nis:",
         "Image": "images/image_add/1746.png",
         "Options": {
             "A": "99.15",
@@ -36581,7 +36579,7 @@ test_data = [
         "ID": 1755,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The spot price of silver is $20.00 per ounce. The storage cost is $3.00 per ounce per year\npayable quarterly in arrears. The risk-free interest rate is flat at 3.0% per annum with\ncontinuous compounding. Further, you have determined that the owning silver confers a\nconvenience yield of 0.20% (20 basis points) per month with continuous compounding. Which is\nnearest to the theoretical futures price of silver for delivery in six months?",
+        "Question Text": "The spot price of silver is $\\$20.00$ per ounce. The storage cost is $\\$3.00$ per ounce per year\npayable quarterly in arrears. The risk-free interest rate is flat at 3.0% per annum with\ncontinuous compounding. Further, you have determined that the owning silver confers a\nconvenience yield of 0.20% (20 basis points) per month with continuous compounding. Which is\nnearest to the theoretical futures price of silver for delivery in six months?",
         "Image": "images/image_add/1755.png",
         "Options": {
             "A": "$19.83",
@@ -36728,7 +36726,7 @@ test_data = [
         "ID": 1762,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The spot price of gold is $1,822 and the six-month forward price is $1,830; S = 1822,\nF(0,0.5) = 1830. The riskless rate is 2.0%. What is the implied per annum lease rate under,\nrespectively, an assumption of i. continuous compounding and ii. annual (discrete) compounding?",
+        "Question Text": "The spot price of gold is $\\$1,822$ and the six-month forward price is $\\$1,830$; S = 1822,\nF(0,0.5) = 1830. The riskless rate is 2.0%. What is the implied per annum lease rate under,\nrespectively, an assumption of i. continuous compounding and ii. annual (discrete) compounding?",
         "Image": "images/image_add/1762.png",
         "Options": {
             "A": "1.124% (continuous) and 1.110% (annual)",
@@ -36758,7 +36756,7 @@ test_data = [
             "D": "USD 1,710"
         },
         "Answer": "D",
-        "Explanation": "\nDate | Daily Price | Gain/Loss | Cumulative Gain/Loss | Margin Balance | Margin Call\n--- | --- | --- | --- | --- | ---\nJune 1 | 497.30 | (270) | (270) | 1,730 |\nJune 2 | 492.70 | (460) | (730) | 1,270 |\nJune 3 | 484.20 | (850) | (1,580) | 420 | 1,580\nJune 4 | 471.70 | (1,250) | (2,830) | 750 | 1,250\nJune 5 | 468.80 | (290) | (3,120) | 1,710 |\n\nThe margin balance at the end of June is USD 1,710. There is a margin call each time the margin account drops below the maintenance margin amount of USD 1,000. Each time there is a margin call, the balance has to be brought back to the initial margin level of USD 2,000.",
+        "Explanation": "\n$ \\begin{array}{|c|c|c|c|c|c|} \\hline \\text{Date} & \\text{Daily Price} & \\text{Gain/Loss} & \\text{Cumulative Gain/Loss} & \\text{Margin Balance} & \\text{Margin Call} \\\\ \\hline \\text{June 1} & 497.30 & (270) & (270) & 1,730 &  \\\\ \\text{June 2} & 492.70 & (460) & (730) & 1,270 &  \\\\ \\text{June 3} & 484.20 & (850) & (1,580) & 420 & 1,580 \\\\ \\text{June 4} & 471.70 & (1,250) & (2,830) & 750 & 1,250 \\\\ \\text{June 5} & 468.80 & (290) & (3,120) & 1,710 &  \\\\ \\hline \\end{array} $          \n\nThe margin balance at the end of June is USD 1,710. There is a margin call each time the margin account drops below the maintenance margin amount of USD 1,000. Each time there is a margin call, the balance has to be brought back to the initial margin level of USD 2,000.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -37010,7 +37008,7 @@ test_data = [
             "D": "$636.50"
         },
         "Answer": "B",
-        "Explanation": "As the monthly payment is $636.50 and the interest component is $420.00=$140,000×0.0360/12, the principal component is $216.50=$636.50-$420.00. ",
+        "Explanation": "As the monthly payment is $\\$636.50$ and the interest component is $\\$420.00=\\$140,000×0.0360/12$, the principal component is $\\$216.50=\\$636.50-\\$420.00$. ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -37190,7 +37188,7 @@ test_data = [
         "ID": 1784,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Below is an extract from a mortality table (ages 30 to 34 for males and females):\nSuppose a woman aged 30 years old buys a $1.0 million whole life insurance policy and she pays\nan annual premium of $6,000. What is approximately the surplus premium in the first year of the\npolicy?",
+        "Question Text": "Below is an extract from a mortality table (ages 30 to 34 for males and females):\nSuppose a woman aged 30 years old buys a $\\$1.0$ million whole life insurance policy and she pays\nan annual premium of $\\$6,000$. What is approximately the surplus premium in the first year of the\npolicy?",
         "Image": "images/FinancialMarketsandProducts1_images/152u.png",
         "Options": {
             "A": "There is no surplus premium; i.e., zero",
@@ -37199,7 +37197,7 @@ test_data = [
             "D": "$5,919.00"
         },
         "Answer": "B",
-        "Explanation": "The annual premium for whole life insurance can be compared with the cost of term life insurance for the same year. For example, assume a 40-year-old male has a face value of $1,000,000 in whole life insurance, with an annual premium of $20,000. If the probability of death within one year for a 40-year-old male is 0.0022, this indicates that the fair value of the insurance for one year is $220, meaning there is a surplus premium of $17,800 available for investment from the first year's premium.  \nFor a 41-year-old male, the probability of death within one year is 0.0024, indicating that the fair value of the insurance for the second year is $240, which means there is a surplus premium of $17,600 available for investment in the second year's insurance.  \nThe cost of insurance increases gradually with the policyholder's age. At some point, the cost of insurance will exceed the premium. In this case, for a 30-year-old female, the conditional probability of death is 0.000664, leading to a surplus amount calculated as:\n\n$\n\\$6,000 - (\\$1,000,000 \\times 0.000664) = \\$6,000 - \\$664 = \\$5,336.00. $\"",
+        "Explanation": "The annual premium for whole life insurance can be compared with the cost of term life insurance for the same year. For example, assume a 40-year-old male has a face value of $\\$1,000,000$ in whole life insurance, with an annual premium of $\\$20,000$. If the probability of death within one year for a 40-year-old male is 0.0022, this indicates that the fair value of the insurance for one year is $\\$220$, meaning there is a surplus premium of $\\$17,800$ available for investment from the first year's premium.  \nFor a 41-year-old male, the probability of death within one year is 0.0024, indicating that the fair value of the insurance for the second year is $\\$240$, which means there is a surplus premium of $\\$17,600$ available for investment in the second year's insurance.  \nThe cost of insurance increases gradually with the policyholder's age. At some point, the cost of insurance will exceed the premium. In this case, for a 30-year-old female, the conditional probability of death is 0.000664, leading to a surplus amount calculated as:\n\n$$\n\\$6,000 - (\\$1,000,000 \\times 0.000664) = \\$6,000 - \\$664 = \\$5,336.00$$",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -37325,7 +37323,7 @@ test_data = [
             "D": "GE pays AUD 6.10% and QA pays USD 5.90%"
         },
         "Answer": "B",
-        "Explanation": "GE pays AUD 5.70% and QA pays USD 5.50%. The financial institution (FI) receives a net USD amount of $240,000 = (5.50% - 4.0%) × $16 million; and the FI pays a net amount of AUD 260,000 = (7.0% - 5.70%) × $20 million. The value of the AUD 260,000 is approximately USD $210,000, so the FI collects $240,000 - $210,000 = $30,000, which is 0.0020 × $16 million.  \nIn regard to statement B, this swap improves GE and QA each by 50 basis points but leaves nothing for the FI. GE pays AUD 5.70%, QA pays USD 5.50%. The FI receives a net USD amount of $240,000 = (5.50% - 4.0%) × $16 million; while the FI pays a net amount of AUD 260,000 = (7.0% - 5.70%) × $20 million. The value of 260,000 AUD is approximately USD 210,000, so the FI receives $240,000 - $210,000 = $30,000, which is 0.0020 × $16 million. Regarding B, this swap improves GE and QA by 50 basis points each but leaves nothing for the FI",
+        "Explanation": "GE pays AUD 5.70% and QA pays USD 5.50%. The financial institution (FI) receives a net USD amount of $\\$240,000 = (5.50% - 4.0%) × \\$16$ million; and the FI pays a net amount of AUD $260,000 = (7.0% - 5.70%) × \\$20$ million. The value of the AUD 260,000 is approximately USD $\\$210,000$, so the FI collects $\\$240,000 - \\$210,000 = \\$30,000$, which is 0.0020 × $\\$16$ million.  \nIn regard to statement B, this swap improves GE and QA each by 50 basis points but leaves nothing for the FI. GE pays AUD 5.70%, QA pays USD 5.50%. The FI receives a net USD amount of $\\$240,000 = (5.50% - 4.0%) × \\$16$ million; while the FI pays a net amount of AUD $260,000 = (7.0% - 5.70%) × \\$20$ million. The value of 260,000 AUD is approximately USD 210,000, so the FI receives $\\$240,000 - \\$210,000 = \\$30,000$, which is $0.0020 × \\$16$ million. Regarding B, this swap improves GE and QA by 50 basis points each but leaves nothing for the FI",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -37610,7 +37608,7 @@ test_data = [
         "ID": 1804,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Suppose that the term structure of risk-free interest rates is flat in both Japan and the\nUnited States. The Japanese interest rate is 2.0% per annum and the U.S. interest rate is 3.0%\nper annum (both with continuous compounding). A financial institution has entered into a\ncurrency swap in which it receives 15.0% per annum in yen (￥) and pays 10.0% per annum in\ndollars ($) once a year. The principals in the two currencies are $10.0 million and ￥1,000.0\nmillion yen. The swap will last only for another two years (i.e., there are only two remaining\ncash exchanges, although the final principal must be exchanged) and the current exchange rate\nis ￥110 yen per dollar.\nWhich is nearest to the current value of the swap to the financial institution, in U.S.\ndollars?",
+        "Question Text": "Suppose that the term structure of risk-free interest rates is flat in both Japan and the\nUnited States. The Japanese interest rate is 2.0% per annum and the U.S. interest rate is 3.0%\nper annum (both with continuous compounding). A financial institution has entered into a\ncurrency swap in which it receives 15.0% per annum in yen (￥) and pays 10.0% per annum in\ndollars ($\\$$) once a year. The principals in the two currencies are $\\$10.0$ million and ￥1,000.0\nmillion yen. The swap will last only for another two years (i.e., there are only two remaining\ncash exchanges, although the final principal must be exchanged) and the current exchange rate\nis ￥110 yen per dollar.\nWhich is nearest to the current value of the swap to the financial institution, in U.S.\ndollars?",
         "Image": "images/image_add/1804.png",
         "Options": {
             "A": "$51,400",
@@ -37619,7 +37617,7 @@ test_data = [
             "D": "$5.65 million"
         },
         "Answer": "A",
-        "Explanation": "\n\n| Assumptions           | US       | Yen       |\n|-----------------------|----------|-----------|\n| Principal             | $10.00   | ¥1,000.0  | | Swap (fixed) rates    | 10.0%    | 15.0%     |\n| Interest rate         | 3.0%     | 2.0%      |\n| FX exchange rate, USD/JPY | $0.00909 | ¥110.0 |\n| Base/Quote            | JPYUSD   | USDJPY    |\n\nYen value $ B_Y = 150e^{-2\\% \\times 1} + 1150e^{-2\\% \\times 2} = 1251.937656 $ million   US value $ B_D = 1e^{-3\\% \\times 1} + 11e^{-3\\% \\times 2} = 11.32985540 $ million   \nswap value $ V_{\\text{swap}} = \\frac{1251.937656}{110} - 11.32985540 = 0.05139602 $ million",
+        "Explanation": "\n\n$ \\begin{array}{|l|c|c|} \\hline \\text{Assumptions} & \\text{US} & \\text{Yen} \\\\ \\hline \\text{Principal} & 10.00 & 1,000.0 \\\\ \\text{Swap (fixed) rates} & 10.0\\% & 15.0\\% \\\\ \\text{Interest rate} & 3.0\\% & 2.0\\% \\\\ \\text{FX exchange rate, USD/JPY} & 0.00909 & 110.0 \\\\ \\text{Base/Quote} & \\text{JPYUSD} & \\text{USDJPY} \\\\ \\hline \\end{array} $        \n\n$$\\text{Yen value}$$ $ B_Y = 150e^{-2\\% \\times 1} + 1150e^{-2\\% \\times 2} = 1251.937656 $ million   $$\\text{US value}$$ $ B_D = 1e^{-3\\% \\times 1} + 11e^{-3\\% \\times 2} = 11.32985540 $ million   \n$$\\text{Swap value}$$ $ V_{\\text{swap}} = \\frac{1251.937656}{110} - 11.32985540 = 0.05139602 $ million",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -37997,7 +37995,7 @@ test_data = [
             "D": "$105,000"
         },
         "Answer": "D",
-        "Explanation": "Step1.calculate value of fixed bond Party A = 25,000,000×8.49%/2 = $1,061, 250Step2.calculate value of floating bond Party B = 25,000,000×7.65%/2 = $956, 250net payment\n= 1,061,250-956,250 = $105,000",
+        "Explanation": "Step1.calculate value of fixed bond Party $A = 25,000,000×8.49%/2 = \\$1,061$, 250 Step2.calculate value of floating bond Party $B = 25,000,000×7.65%/2 = \\$956, 250$ net payment\n= $1,061,250-956,250 = \\$105,000$",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -38051,16 +38049,16 @@ test_data = [
         "ID": 1825,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider a one-year barrier call option on a non-dividend-paying stock with a volatility of\n30.0% per annum when the stock's price is $25.00 and the option's strike price is $20.00. The\nrisk-free rate is 3.0%. The price of a regular call (i.e., without the barrier) in this case is\n$6.32. This barrier option has a barrier at $18.00 such that, if it is a knock-in (aka, down-\nand-in) its price is only $0.22. Each of the following statements is true (or at least\nplausible!) EXCEPT which statement must be false?",
+        "Question Text": "Consider a one-year barrier call option on a non-dividend-paying stock with a volatility of\n30.0% per annum when the stock's price is $\\$25.00$ and the option's strike price is $\\$20.00$. The\nrisk-free rate is 3.0%. The price of a regular call (i.e., without the barrier) in this case is\n$\\$6.32$. This barrier option has a barrier at $\\$18.00$ such that, if it is a knock-in (aka, down-\nand-in) its price is only $\\$0.22$. Each of the following statements is true (or at least\nplausible!) EXCEPT which statement must be false?",
         "Image": "images/image_add/1825.png",
         "Options": {
-            "A": "The corresponding knock-out (aka, down-and-in) must have a price of about $6.10",
-            "B": "If the barrier is increased to $22.00, then the price of this knock-in must be higher than\n$0.22",
-            "C": "If the barrier is increased to $22.00, then the price of the corresponding knock-out must be\nlower than $6.10",
-            "D": "If the barrier is increased to $28.00, then the price of this knock-in will be $6.32 and the"
+            "A": "The corresponding knock-out (aka, down-and-in) must have a price of about $\\$6.10$",
+            "B": "If the barrier is increased to $\\$22.00$, then the price of this knock-in must be higher than\n$\\$0.22$",
+            "C": "If the barrier is increased to $\\$22.00$, then the price of the corresponding knock-out must be\nlower than $\\$6.10$",
+            "D": "If the barrier is increased to $\\$28.00$, then the price of this knock-in will be $\\$6.32$"
         },
         "Answer": "D",
-        "Explanation": "When S = $25.00, K = $20.00 and H = $28.00, the up-and-in call option price is about $5.96 and the corresponding up-and-out call option price is $6.32 - $5.96 =$0.36.",
+        "Explanation": "When $S = \\$25.00$, $K = \\$20.00$ and $H = \\$28.00$, the up-and-in call option price is about $\\$5.96$ and the corresponding up-and-out call option price is $\\$6.32 - \\$5.96 = \\$0.36$.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -38093,7 +38091,7 @@ test_data = [
         "ID": 1827,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The price of a dividend-paying stock is $44.00 while the risk-free rate is 3.0%. Consider a\nEuropean call option and a European put option with identical strike prices, K = $40.00, and\nidentical times to expiration of nine months, T = 0.75 years. The call has a price of $8.95 and\nthe put has a price of $5.36. What is the present value of the dividends expected during the\nlife of the option?",
+        "Question Text": "The price of a dividend-paying stock is $\\$44.00$ while the risk-free rate is 3.0%. Consider a\nEuropean call option and a European put option with identical strike prices, K = $\\$40.00$, and\nidentical times to expiration of nine months, T = 0.75 years. The call has a price of $\\$8.95$ and\nthe put has a price of $\\$5.36$. What is the present value of the dividends expected during the\nlife of the option?",
         "Image": "images/image_add/1827.png",
         "Options": {
             "A": "Zero",
@@ -38177,7 +38175,7 @@ test_data = [
         "ID": 1831,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The price of a non-dividend-paying stock is $20.00. The price of a one-year European call\noption on the stock with a strike price of $21.00 is $4.00. The price of a one-year European\nput option on the stock with a strike price of $21.00 is $5.00. The risk-free rate is 4.0%.\nWhat is the future net profit collected by the arbitrage trade, assuming no transaction costs?",
+        "Question Text": "The price of a non-dividend-paying stock is $\\$20.00$. The price of a one-year European call\noption on the stock with a strike price of $\\$21.00$ is $\\$4.00$. The price of a one-year European\nput option on the stock with a strike price of $\\$21.00$ is $\\$5.00$. The risk-free rate is 4.0%.\nWhat is the future net profit collected by the arbitrage trade, assuming no transaction costs?",
         "Image": "images/image_add/1831.png",
         "Options": {
             "A": "Zero",
@@ -38186,7 +38184,7 @@ test_data = [
             "D": "$0.86"
         },
         "Answer": "D",
-        "Explanation": "c＋Ke^(-rT)= 4＋21e^(-4%×1)=$24.17568 p＋S= 5＋20=$25.00; i.e., put-call parity is violated PV(profit) = $25 - $24.17568 = $0.8234, such that: FV(profit) = $0.8234×e^(4%×1) = $0.8570 In regard to (C), $0.82 is correct but for the present value of the future payoff. ",
+        "Explanation": "c＋Ke^(-rT)= 4＋21e^(-4%×1)=$\\$24.17568$ $$p＋S= 5＋20=\\$25.00$$; i.e., put-call parity is violated $PV(profit) = \\$25 - \\$24.17568 = \\$0.8234$, such that: FV(profit) = $\\$0.8234$×e^(4%×1) = $\\$0.8570$ In regard to (C), $\\$0.82$ is correct but for the present value of the future payoff. ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -38198,7 +38196,7 @@ test_data = [
         "ID": 1832,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume that the current price of a stock is $100. A call option on that stock with an\nexercise price of $97 costs $7. A call option on the stock with the same expiration and an\nexercise price of $103 costs $3. Using these options what is the expiration profit of a bear\ncall spread if the stock price is equal to $110?",
+        "Question Text": "Assume that the current price of a stock is $\\$100$. A call option on that stock with an\nexercise price of $\\$97$ costs $\\$7$. A call option on the stock with the same expiration and an\nexercise price of $\\$103$ costs $\\$3$. Using these options what is the expiration profit of a bear\ncall spread if the stock price is equal to $\\$110$?",
         "Image": "images/image_add/1832.png",
         "Options": {
             "A": "$2",
@@ -38207,7 +38205,7 @@ test_data = [
             "D": "-$6"
         },
         "Answer": "C",
-        "Explanation": "The trader of a bear call spread sells the call with an exercise price below the\ncurrent stock price and buys the call option with an exercise price above the stock price.\nTherefore, for a stock price of $110 at expiration of the options, the buyer realizes a payoff of -$13 from his short position and a positive payoff of $7 from his long position for a net payoff of -$6. The revenue of the strategy is $4. Hence the profit is equal to -$2.=",
+        "Explanation": "The trader of a bear call spread sells the call with an exercise price below the\ncurrent stock price and buys the call option with an exercise price above the stock price.\nTherefore, for a stock price of $\\$110$ at expiration of the options, the buyer realizes a payoff of $-\\$13$ from his short position and a positive payoff of $\\$7$ from his long position for a net payoff of $-\\$6$. The revenue of the strategy is $\\$4$. Hence the profit is equal to $-\\$2$.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -38345,7 +38343,7 @@ test_data = [
         "ID": 1839,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A six-month call option sells for $30, with a strike price of $120. If the stock price is\n$100 per share and the risk-free interest rate is 5%, what is the price of a 6-month put option\nwith a strike price of $120?",
+        "Question Text": "A six-month call option sells for $\\$30$, with a strike price of $\\$120$. If the stock price is\n$\\$100$ per share and the risk-free interest rate is 5%, what is the price of a 6-month put option\nwith a strike price of $\\$120$?",
         "Image": "images/image_add/1839.png",
         "Options": {
             "A": "$39.20",
@@ -38555,7 +38553,7 @@ test_data = [
         "ID": 1849,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume that the current price of a stock is $100. A call option on that stock with an\nexercise price of $97 costs $7. A call option on the stock with the same expiration and an\nexercise price of $103 costs $3. Using these options what is the cost of entering into a long\nbull spread on this stock?",
+        "Question Text": "Assume that the current price of a stock is $\\$100$. A call option on that stock with an\nexercise price of $\\$97$ costs $\\$7$. A call option on the stock with the same expiration and an\nexercise price of $\\$103$ costs $\\$3$. Using these options what is the cost of entering into a long\nbull spread on this stock?",
         "Image": "images/image_add/1849.png",
         "Options": {
             "A": "$7",
@@ -38681,7 +38679,7 @@ test_data = [
         "ID": 1855,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The current price of stock ABC is $42 and the call option with a strike at $44 is trading\nat $3. Expiration is in one year. The corresponding put is priced at $2. Which of the following \ntrading strategies will result in arbitrage profits? Assume that the risk-free rate is 10% and\nthat the risk-free bond can be shorted costlessly. There are no transaction costs.",
+        "Question Text": "The current price of stock ABC is $\\$42$ and the call option with a strike at $\\$44$ is trading\nat $\\$3$. Expiration is in one year. The corresponding put is priced at $\\$2$. Which of the following \ntrading strategies will result in arbitrage profits? Assume that the risk-free rate is 10% and\nthat the risk-free bond can be shorted costlessly. There are no transaction costs.",
         "Image": "images/image_add/1855.png",
         "Options": {
             "A": "Long position in both the call option and the stock, and short position in the put option and \nrisk-free bond.",
@@ -38786,7 +38784,7 @@ test_data = [
         "ID": 1860,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An investor buys a stock for $40 per share and simultaneously sells a call option on the\nstock with an exercise price of $42 for a premium of $3 per share. Ignoring dividends and\ntransaction costs, which of the following amounts represents the maximum profit the holder of\nthis covered call can earn if the position is held to expiration?",
+        "Question Text": "An investor buys a stock for $\\$40$ per share and simultaneously sells a call option on the\nstock with an exercise price of $\\$42$ for a premium of $\\$3$ per share. Ignoring dividends and\ntransaction costs, which of the following amounts represents the maximum profit the holder of\nthis covered call can earn if the position is held to expiration?",
         "Image": "images/image_add/1860.png",
         "Options": {
             "A": "$1",
@@ -38795,7 +38793,7 @@ test_data = [
             "D": "$5"
         },
         "Answer": "D",
-        "Explanation": "This is an out-of-the-money covered call. The stock can go up $2 to the strike price, and then the writer will get $3 for the premium. Thus, the maximum profit is $5.",
+        "Explanation": "This is an out-of-the-money covered call. The stock can go up $\\$2$ to the strike price, and then the writer will get $\\$3$ for the premium. Thus, the maximum profit is $\\$5$.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -38870,7 +38868,7 @@ test_data = [
         "ID": 1864,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Suppose you believe that Company A's stock price is going to decline from its current level\nof $82.50 sometime during the next 5 months. For $510.25 you could buy a 5-month put option\ngiving you the right to sell 100 shares at a price of $83.00 per share. If you bought the put\noption contract for $510.25 and Company A's stock price actually dropped to $63.00, your profit\nnet of the premium paid would be:",
+        "Question Text": "Suppose you believe that Company A's stock price is going to decline from its current level\nof $\\$82.50$ sometime during the next 5 months. For $\\$510.25$ you could buy a 5-month put option\ngiving you the right to sell 100 shares at a price of $\\$83.00$ per share. If you bought the put\noption contract for $\\$510.25$ and Company A's stock price actually dropped to $\\$63.00$, your profit\nnet of the premium paid would be:",
         "Image": "images/image_add/1864.png",
         "Options": {
             "A": "$1,950.00",
@@ -38912,16 +38910,16 @@ test_data = [
         "ID": 1866,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Joe Brocato is currently following two stocks in the pharmaceutical industry: ABC and XYZ.\nHe is bullish on ABC, but bearish on XYZ. ABC is currently priced at $53.60 and XYZ is\ncurrently priced at $9.80. He is considering an options strategy to capitalize on his\nexpectations. Brocato gathers the following three months of data on put and call options for\nboth stocks:\nIn three months, assume ABC has increased in price by $1.00 while XYZ has dropped by $1.67.\nWhich of the following strategies would have been the most profitable in three months?",
+        "Question Text": "Joe Brocato is currently following two stocks in the pharmaceutical industry: ABC and XYZ.\nHe is bullish on ABC, but bearish on XYZ. ABC is currently priced at $\\$53.60$ and XYZ is\ncurrently priced at $\\$9.80$. He is considering an options strategy to capitalize on his\nexpectations. Brocato gathers the following three months of data on put and call options for\nboth stocks:\nIn three months, assume ABC has increased in price by $\\$1.00$ while XYZ has dropped by $\\$1.67$.\nWhich of the following strategies would have been the most profitable in three months?",
         "Image": "images/FinancialMarketsandProducts1_images/234u.png",
         "Options": {
-            "A": "Short the ABC put option with the $45 strike price, and short the XYZ call option with the\n$7.50 strike price.",
-            "B": "Go long the ABC put option with the $45 strike price, and go long the XYZ call option with\nthe $7.50 strike price.",
-            "C": "Go long the ABC call option with the $55 strike price, and go short the XYZ put option with\nthe $10 strike price.",
-            "D": "Short the ABC call option with the $55 strike price, and go long the XYZ put option with the"
+            "A": "Short the ABC put option with the $\\$45$ strike price, and short the XYZ call option with the\n$\\$7.50$ strike price.",
+            "B": "Go long the ABC put option with the $\\$45$ strike price, and go long the XYZ call option with\nthe $\\$7.50$ strike price.",
+            "C": "Go long the ABC call option with the $\\$55$ strike price, and go short the XYZ put option with\nthe $\\$10$ strike price.",
+            "D": "Short the ABC call option with the $\\$55$ strike price, and go long the XYZ put option with the $\\$10$ strike price."
         },
         "Answer": "D",
-        "Explanation": "Shorting the ABC call with the $55 strike price will be out-of-the-money, thus the profit will be the option premium ($1.10). Going long the XYZ put option with the $10 strike price will be in-the-money, and the profit will be: $10 - 8.13 - 0.75 = 1.12$.  \nAssuming ABC stock rises by $1 and XYZ stock falls by $1.67, which strategy will yield the largest profit? \nA: Short ABC put (45) and short XYZ call (7.5); profit = $0.2 + 2.5 - (8.13 - 7.5) = 2.07$.   B: Long ABC put (45) and long XYZ call (7.5); profit = $-0.2 - 2.5 + (8.13 - 7.5) = -2.07$.   C: Long ABC call (55) and short XYZ put (10); profit = $-1.1 + 0.75 - (10 - 8.13) = -2.22$.   D: Short ABC call (55) and long XYZ put (10); profit = $1.1 - 0.75 + (10 - 8.13) = 2.22$.  \n\nOption D yields the highest profit",
+        "Explanation": "Shorting the ABC call with the $\\$55$ strike price will be out-of-the-money, thus the profit will be the option premium ($\\$1.10$). Going long the XYZ put option with the $\\$10$ strike price will be in-the-money, and the profit will be: $\\$10$ - 8.13 - 0.75 = 1.12$\\$$.  \nAssuming ABC stock rises by $\\$1$ and XYZ stock falls by $\\$1.67$, which strategy will yield the largest profit? \nA: Short ABC put (45) and short XYZ call (7.5); profit = $\\$0.2$ + 2.5 - (8.13 - 7.5) = 2.07$\\$$.   B: Long ABC put (45) and long XYZ call (7.5); profit = $\\$$-0.2 - 2.5 + (8.13 - 7.5) = -2.07$\\$$.   C: Long ABC call (55) and short XYZ put (10); profit = $\\$$-1.1 + 0.75 - (10 - 8.13) = -2.22$\\$$.   D: Short ABC call (55) and long XYZ put (10); profit = $\\$$1.1 - 0.75 + (10 - 8.13) = 2.22$\\$$.  \n\nOption D yields the highest profit",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -38954,7 +38952,7 @@ test_data = [
         "ID": 1868,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "SCU stock is currently priced at $106 per share, and the risk-free interest rate is 3.25%.\nAssuming that SCU does not pay any dividends, what is the lower bound of an American put option\non SCU that expires in three months and has an exercise price of $110?",
+        "Question Text": "SCU stock is currently priced at $\\$106$ per share, and the risk-free interest rate is 3.25%.\nAssuming that SCU does not pay any dividends, what is the lower bound of an American put option\non SCU that expires in three months and has an exercise price of $\\$110$?",
         "Image": "images/image_add/1868.png",
         "Options": {
             "A": "$0",
@@ -39164,7 +39162,7 @@ test_data = [
         "ID": 1878,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "What are the minimum values of an American-style and a European-style 3-month call option\nwith a strike price of $80 on a non-dividend-paying stock trading at $86 if the risk-free rate\nis 3%? American European",
+        "Question Text": "What are the minimum values of an American-style and a European-style 3-month call option\nwith a strike price of $\\$80$ on a non-dividend-paying stock trading at $\\$86$ if the risk-free rate\nis 3%? American European",
         "Image": "images/image_add/1878.png",
         "Options": {
             "A": "$6.00 $6.00",
@@ -39227,7 +39225,7 @@ test_data = [
         "ID": 1881,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A 1-year American put option with an exercise price of $40 will be worth $10.00 at maturity\nwith a probability of 0.25 and $0.00 with a probability of 0.75. The current stock price is\n$36. The discount rate is 5%. The optimal strategy is to:",
+        "Question Text": "A 1-year American put option with an exercise price of $\\$40$ will be worth $\\$10.00$ at maturity\nwith a probability of 0.25 and $\\$0.00$ with a probability of 0.75. The current stock price is\n$\\$36$. The discount rate is 5%. The optimal strategy is to:",
         "Image": "images/image_add/1881.png",
         "Options": {
             "A": "Exercise the option because the payoff from exercise exceeds the present value of the\nexpected future payoff.",
@@ -39236,8 +39234,8 @@ test_data = [
             "D": "Not exercise the option because it is out-of-the-money."
         },
         "Answer": "A",
-        "Explanation": "The payoff from exercising the option is the exercise price minus the current stock price: $40 - $36 = $4. The discounted value of the expected future payoff is:   $$ \\frac{( \\$0.00 \\times 0.75 ) + ( \\$10.00 \\times 0.25 )}{ e^{0.05 \\times 1} } = \\$2.38 $$   It is optimal to exercise the option early because it is worth more exercised ($4.00) than if not exercised ($2.38).",
-        "General Topics": "Financial Markets and Products",
+        "Explanation": "The payoff from exercising the option is the exercise price minus the current stock price: $\\$40 - \\$36 = \\$4$. The discounted value of the expected future payoff is:   $$ \\frac{( \\$0.00 \\times 0.75 ) + ( \\$10.00 \\times 0.25 )}{ e^{0.05 \\times 1} } = \\$2.38 $$   It is optimal to exercise the option early because it is worth more exercised ($\\$4.00$) than if not exercised ($\\$2.38$).",
+        "General Topics": "Financial Markets and Productsd",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
         "shared_description": "",
@@ -39416,7 +39414,7 @@ test_data = [
         "ID": 1890,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume that the current price of a stock is $100. A call option on that stock with an\nexercise price of $97 costs $7. A call option on the stock with the same expiration and an\nexercise price of $103 costs $3. Using these options what is the profit for a long bull spread\nif the stock price at expiration of the options is equal to $110?",
+        "Question Text": "Assume that the current price of a stock is $\\$100$. A call option on that stock with an\nexercise price of $\\$97$ costs $\\$7$. A call option on the stock with the same expiration and an\nexercise price of $\\$103$ costs $\\$3$. Using these options what is the profit for a long bull spread\nif the stock price at expiration of the options is equal to $\\$110$?",
         "Image": "images/image_add/1890.png",
         "Options": {
             "A": "$6",
@@ -39425,7 +39423,7 @@ test_data = [
             "D": "$2"
         },
         "Answer": "D",
-        "Explanation": "The buyer of a bull spread buys the call option with an exercise price below the current stock price and sells the call option with an exercise price above the stock price. Therefore, for a stock price of $110 at expiration of the options, he receives a payoff of $13 from his long position and a payoff of -$7 from his short position, resulting in a net payoff of $6. The cost of the strategy is $4. Hence, the profit is equal to $2. \nBuy call: $4  \nSell put: $(30 - 27) - 3 = 0$   Total profit: $4\"",
+        "Explanation": "The buyer of a bull spread buys the call option with an exercise price below the current stock price and sells the call option with an exercise price above the stock price. Therefore, for a stock price of $\\$110$ at expiration of the options, he receives a payoff of $\\$13$ from his long position and a payoff of $-\\$7$ from his short position, resulting in a net payoff of $\\$6$. The cost of the strategy is $\\$4$. Hence, the profit is equal to $\\$2$. \nBuy call: $\\$4$  \nSell put: $\\$(30 - 27) - 3 = 0\\$$   Total profit: $\\$4$",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -39521,7 +39519,7 @@ test_data = [
         "ID": 1895,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A 3 month European call option on DEF stock with a strike price of $50 is trading for\n$2.25. The risk free rate is 10%. The current stock price of DEF stock is $48. Calculate the\nvalue of a corresponding put with the same strike and maturity.",
+        "Question Text": "A 3 month European call option on DEF stock with a strike price of $\\$50$ is trading for\n$\\$2.25$. The risk free rate is 10%. The current stock price of DEF stock is $\\$48$. Calculate the\nvalue of a corresponding put with the same strike and maturity.",
         "Image": "images/image_add/1895.png",
         "Options": {
             "A": "$2.00",
@@ -39647,7 +39645,7 @@ test_data = [
         "ID": 1901,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A trader writes ten (10) naked put option contracts, with each contract being on 100\nshares. The strike price is $50.00 and the stock price is currently $55.00. The option price is\n$3.40. The time to maturity is six months and the implied volatility is 40.0%. What is the\nmargin requirement?",
+        "Question Text": "A trader writes ten (10) naked put option contracts, with each contract being on 100\nshares. The strike price is $\\$50.00$ and the stock price is currently $\\$55.00$. The option price is\n$\\$3.40$. The time to maturity is six months and the implied volatility is 40.0%. What is the\nmargin requirement?",
         "Image": "images/image_add/1901.png",
         "Options": {
             "A": "$3,400",
@@ -39752,7 +39750,7 @@ test_data = [
         "ID": 1906,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider a bullish spread option strategy of buying one call option with a $30 exercise\nprice at a premium of $3 and writing a call option with a $40 exercise price at a premium of\n$1.50. If the price of the stock increases to $42 at expiration and the option is exercised on\nthe expiration date, the net profit per share at expiration (ignoring transaction costs) will\nbe:",
+        "Question Text": "Consider a bullish spread option strategy of buying one call option with a $\\$30$ exercise\nprice at a premium of $\\$3$ and writing a call option with a $\\$40$ exercise price at a premium of\n$\\$1.50$. If the price of the stock increases to $\\$42$ at expiration and the option is exercised on\nthe expiration date, the net profit per share at expiration (ignoring transaction costs) will\nbe:",
         "Image": "images/image_add/1906.png",
         "Options": {
             "A": "$8.50",
@@ -39794,7 +39792,7 @@ test_data = [
         "ID": 1908,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A non-dividend-paying stock with a current price of $40.00 and a volatility of 30.0% per\nannum when the risk-free rate is 4.0%. Consider a one-year barrier option with a barrier, H\n=$43.00, and a strike price, K = $45.00. Please note that the corresponding regular (i.e.,\nwithout the barrier) put option price is $6.75. Which of the following instances of this\nbarrier option has the LOWEST price?",
+        "Question Text": "A non-dividend-paying stock with a current price of $\\$40.00$ and a volatility of 30.0% per\nannum when the risk-free rate is 4.0%. Consider a one-year barrier option with a barrier, H\n=$\\$43.00$, and a strike price, K = $\\$45.00$. Please note that the corresponding regular (i.e.,\nwithout the barrier) put option price is $\\$6.75$. Which of the following instances of this\nbarrier option has the LOWEST price?",
         "Image": "images/image_add/1908.png",
         "Options": {
             "A": "Knock-in call",
@@ -39815,7 +39813,7 @@ test_data = [
         "ID": 1909,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Assume an underlying non-dividend-paying stock has a current price of $40.00 with\nvolatility of 25.0% per annum while the risk-free rate is 4.0% per annum. The price of a six-\nmonth, at-the-money (maturity = 0.5 years, strike = $40.00) call option on the stock is $3.20\nwhere N(d1) = 0.580 and N(d2) = 0.510. Which is NEAREST to the price of a binary asset-or-\nnothing call option with the same strike price and maturity?",
+        "Question Text": "Assume an underlying non-dividend-paying stock has a current price of $\\$40.00$ with\nvolatility of 25.0% per annum while the risk-free rate is 4.0% per annum. The price of a six-\nmonth, at-the-money (maturity = 0.5 years, strike = $\\$40.00$) call option on the stock is $\\$3.20$\nwhere N(d1) = 0.580 and N(d2) = 0.510. Which is NEAREST to the price of a binary asset-or-\nnothing call option with the same strike price and maturity?",
         "Image": "images/image_add/1909.png",
         "Options": {
             "A": "$3.20",
@@ -39836,7 +39834,7 @@ test_data = [
         "ID": 1910,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider the following call option with 6-months till expiry. The strike price is $50, the\ncurrent stock price is $55 and the value of the option is $5. What does this imply about the\nlevel of 6-month interest rates?",
+        "Question Text": "Consider the following call option with 6-months till expiry. The strike price is $\\$50$, the\ncurrent stock price is $\\$55$ and the value of the option is $\\$5$. What does this imply about the\nlevel of 6-month interest rates?",
         "Image": "images/image_add/1910.png",
         "Options": {
             "A": "Interest rates are positively sloped around the 6-month period.",
@@ -39845,7 +39843,7 @@ test_data = [
             "D": "Cannot be determined from the information given."
         },
         "Answer": "C",
-        "Explanation": "If the call is currently trading at $5 and its intrinsic value is $5, then the time value of the call is $0, so the six-month interest rate must be zero.",
+        "Explanation": "If the call is currently trading at $\\$5$ and its intrinsic value is $\\$5$, then the time value of the call is $\\$0$, so the six-month interest rate must be zero.",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -39878,7 +39876,7 @@ test_data = [
         "ID": 1912,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "What is the lower bound for the price of a nine (9)-month American PUT option on a non-\ndividend-paying stock when the stock price is $14.00, the strike price is $20.00, and the risk-\nfree interest rate is 4.0% per annum?",
+        "Question Text": "What is the lower bound for the price of a nine (9)-month American PUT option on a non-\ndividend-paying stock when the stock price is $\\$14.00$, the strike price is $\\$20.00$, and the risk-\nfree interest rate is 4.0% per annum?",
         "Image": "images/image_add/1912.png",
         "Options": {
             "A": "zero ",
@@ -39899,7 +39897,7 @@ test_data = [
         "ID": 1913,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Consider the following option strategy of buying one at-the-money put with a strike price\nof $43 for $6, selling two puts with a strike price of $37 for $4 each and buying one put with\na strike price of $32 for $1. If the stock price plummets to $19 at expiration, calculate the\nnet profit/loss per share of the strategy.",
+        "Question Text": "Consider the following option strategy of buying one at-the-money put with a strike price\nof $\\$43$ for $\\$6$, selling two puts with a strike price of $\\$37$ for $\\$4$ each and buying one put with\na strike price of $\\$32$ for $\\$1$. If the stock price plummets to $\\$19$ at expiration, calculate the\nnet profit/loss per share of the strategy.",
         "Image": "images/image_add/1913.png",
         "Options": {
             "A": "-2.00 per share",
@@ -39908,7 +39906,7 @@ test_data = [
             "D": "2.00 per share"
         },
         "Answer": "D",
-        "Explanation": "1、The easiest thing to do is to find the net profit or loss for each position and\nthen add them together, recognizing whether a position is short or long. 2.Net profit of the\nlong $43 strike put position: Max(0,43-19)-6=18 3.Net profit of the short $37 strike puts position: -2×Max(0,37-19)+(2×4)=-28 4. Net profit of the long $32 strike put position:\nMax(0,32-19)-1=12 5. Total net profit is:18-28+12=2. ",
+        "Explanation": "1、The easiest thing to do is to find the net profit or loss for each position and\nthen add them together, recognizing whether a position is short or long. 2.Net profit of the\nlong $\\$43$ strike put position: Max(0,43-19)-6=18 3.Net profit of the short $\\$37$ strike puts position: -2×Max(0,37-19)+(2×4)=-28 4. Net profit of the long $\\$32$ strike put position:\nMax(0,32-19)-1=12 5. Total net profit is:18-28+12=2. ",
         "General Topics": "Financial Markets and Products",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -75224,7 +75222,7 @@ test_data = [
         "ID": 3587,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "The current price of a non-dividend paying stock is $75. The annual volatility of the stock\nis 18.25%, and the current continuously compounded risk-free interest rate is 5%. A 3-year\nEuropean call option exists that has a strike price of $90. Assuming that the price of the\nstock will rise or fall by a proportional amount each year, and that the probability that the\nstock will rise in any one year is 60%, what is the value of the European call option?",
+        "Question Text": "The current price of a non-dividend paying stock is $\\$75$. The annual volatility of the stock\nis 18.25%, and the current continuously compounded risk-free interest rate is 5%. A 3-year\nEuropean call option exists that has a strike price of $\\$90$. Assuming that the price of the\nstock will rise or fall by a proportional amount each year, and that the probability that the\nstock will rise in any one year is 60%, what is the value of the European call option?",
         "Image": "images/image_add/3587.png",
         "Options": {
             "A": "$22.16",
