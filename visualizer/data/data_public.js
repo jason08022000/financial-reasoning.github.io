@@ -12903,6 +12903,7 @@ test_data = [
             "A": "February futures contract price is more than $\\$5.50$/bushel and the May futures contract price\nis more than $\\$5.73$/bushel.",
             "B": "February futures contract price is more than $\\$5.73$/bushel and the May futures contract price\nis more than $\\$5.50$/bushel.",
             "C": "February futures contract price is less than $\\$5.73$/bushel and the May futures contract price\nis less than $\\$5.50$/bushel.",
+            "D": "February futures contract price is less than $\\$5.50$/bushel and the May futures contract price\nis less than $\\$5.73$/bushel."
         },
         "Answer": "D",
         "Explanation": "Here's the translation:\n\n$$ u = 0.45 $$ \n$$ 8.91\\% = \\frac{5.05}{5.05} $$ \n\"The fair price of the February 2011 futures contract is:\n\n$$ F = 5.05 \\times (e^{(8.91\\%)} \\times 0.5) = 5.50 $$ \nThe fair price of the May 2011 futures contract is:\n\n$$ F = 5.05 \\times (e^{(8.91\\%)} \\times 0.75) = 5.73 $$\n\nTherefore, when the market price of the February 2011 futures contract is below 5.50 per bushel, and the market price of the May 2011 futures contract is below 5.73 per bushel, soybean producers will store soybeans and avoid taking a loss on the forward contract. Thus, option D is correct",
