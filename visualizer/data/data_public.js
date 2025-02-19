@@ -17468,7 +17468,7 @@ test_data = [
             "C": "1,010,000."
         },
         "Answer": "A",
-        "Explanation": " With stock options, the treasury stock method must be used. Under\nthat method, the company would receive $100,000 (10,000 × $10) and would repurchase 6,667 shares ($100,000/$15). The shares for the denominator would be:\n | Shares outstanding          | 1,000,000  |\n|------------------------------|------------|\n| Options exercises            | 10,000     |\n| Treasury shares purchased    | (6,667)    |\n| Denominator                  | 1,003,333  |",
+        "Explanation": " With stock options, the treasury stock method must be used. Under\nthat method, the company would receive $\\$100,000$ ($10,000 × \\$10$) and would repurchase 6,667 shares ($\\$100,000/\\$15$). The shares for the denominator would be:\n $$ \\begin{array}{|l|r|} \\hline \\text{Shares outstanding} & 1,000,000 \\\\ \\hline \\text{Options exercises} & 10,000 \\\\ \\hline \\text{Treasury shares purchased} & 6,667 \\\\ \\hline \\text{Denominator} & 1,003,333 \\\\ \\hline \\end{array} $$",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18220,7 +18220,7 @@ test_data = [
         "ID": 870,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Mabel Corporation (MC) reported accounts receivable of $66 million at the end of its second\nfiscal quarter. MC had revenues of $72 million for its third fiscal quarter and reported\naccounts receivable of $55 million at the end of its third fiscal quarter. Based on this\ninformation, the amount of cash MC collected from customers during the third fiscal quarter is:",
+        "Question Text": "Mabel Corporation (MC) reported accounts receivable of $\\$66$ million at the end of its second\nfiscal quarter. MC had revenues of $\\$72$ million for its third fiscal quarter and reported\naccounts receivable of $\\$55$ million at the end of its third fiscal quarter. Based on this\ninformation, the amount of cash MC collected from customers during the third fiscal quarter is:",
         "Image": "images/image_add/870.png",
         "Options": {
             "A": "$61 million.",
@@ -18228,7 +18228,7 @@ test_data = [
             "C": "$83 million."
         },
         "Answer": "C",
-        "Explanation": "The amount of cash collected from customers during the quarter is\nequal to beginning accounts receivable plus revenues minus ending accounts receivable: $66 million + $72 million – $55 million = $83 million. A reduction in accounts receivable\nindicates that cash collected during the quarter was greater than revenue on an accrual basis.",
+        "Explanation": "The amount of cash collected from customers during the quarter is\nequal to beginning accounts receivable plus revenues minus ending accounts receivable: $\\$66$ million + $\\$72$ million – $\\$55$ million = $\\$83$ million. A reduction in accounts receivable\nindicates that cash collected during the quarter was greater than revenue on an accrual basis.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
