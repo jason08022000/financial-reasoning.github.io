@@ -8683,8 +8683,8 @@ test_data = [
             "C": "NER1,434,783."
         },
         "Answer": "B",
-        "Explanation": "Using the temporal method, monetary assets (i.e., cash) are translated using the current exchange rate (as of 31 December 2016) of BRD1.20/NER (or NERO.8333/BRD), and non-monetary assets are translated using the historical exchange rate when acquired. Inventory is translated at its 2016 weighted-average rate of BRD1.19/NER (or NERO.8403/BRD). Therefore, the total assets for Triofind-B translated into Norvolt euros (Triofind’s presentation currency) as of 31 December 2016 are calculated as follows:\n\n| Assets                   | 31 December 2016 (BRD) | Applicable Exchange Rate (NER/BRD) | Rate Used | NER    |\n|--------------------------|------------------------|------------------------------------|-----------|--------|\n| Cash                     | 900,000                | 0.8333                             | Current   | 750,000|\n| Inventory                | 750,000                | 0.8403                             | Average   | 630,252|\n| **Total**                | 1,650,000              |                                    |           | 1,380,252|",
-        "General Topics": "Financial Reporting and Analysis",
+        "Explanation": "Using the temporal method, monetary assets (i.e., cash) are translated using the current exchange rate (as of 31 December 2016) of BRD1.20/NER (or NERO.8333/BRD), and non-monetary assets are translated using the historical exchange rate when acquired. Inventory is translated at its 2016 weighted-average rate of BRD1.19/NER (or NERO.8403/BRD). Therefore, the total assets for Triofind-B translated into Norvolt euros (Triofind’s presentation currency) as of 31 December 2016 are calculated as follows:\n\n    $ \\begin{array}{|l|r|r|c|r|} \\hline \\text{Assets} & \\text{31 Dec 2016 (BRD)} & \\text{Exchange Rate (NER/BRD)} & \\text{Rate Used} & \\text{NER} \\\\ \\hline \\text{Cash} & 900,000 & 0.8333 & \\text{Current} & 750,000 \\\\ \\text{Inventory} & 750,000 & 0.8403 & \\text{Average} & 630,252 \\\\ \\text{Total} & 1,650,000 & & & 1,380,252 \\\\ \\hline \\end{array} $        ",
+        "General Topics": "Financial Reporting and Analysisd",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
         "shared_description": "### Description of Image Contents\n\n#### Image 1: Exchange Rates and Balance Sheets\n\n**Exhibit 1: Spot BRD/NER Exchange Rates**\n- **Layout:** Two columns under a single header.\n- **Headers:** \n  - Date\n  - BRD per NER\n- **Data:**\n  - 30 June 2016 | 1.15\n  - Weighted-average rate when inventory was acquired (2016) | 1.19\n  - 31 December 2016 | 1.20\n  - Weighted-average rate when inventory was acquired (2017) | 1.18\n  - 30 June 2017 | 1.17\n\n**Exhibit 2: Triofind-B Balance Sheet for 2016 and 2017 (BRD)**\n- **Layout:** Two main sections labeled as \"Assets\" and \"Liabilities and Stockholders' Equity.\"\n- **Headers:**\n  - Date for Assets: 31 December 2016, 30 June 2017\n  - Liabilities and Stockholders’ Equity: 31 December 2016, 30 June 2017\n- **Assets Data:**\n  - Cash | 900,000 | 1,350,000\n  - Inventory | 750,000 | 500,000\n  - Total | 1,650,000 | 1,850,000\n- **Liabilities and Stockholders' Equity Data:**\n  - Notes payable | 500,000 | 500,000\n  - Common stock | 1,150,000 | 1,150,000\n  - Retained earnings |  | 200,000\n  - Total | 1,650,000 | 1,850,000\n\n#### Image 2: Exchange Rates and Inflation Data\n\n**Exhibit 3: Spot Exchange Rates and Inflation Data for Triofind-A**\n- **Headers:**\n  - Date\n  - NER per CRD\n  - NER per ABP\n  - Abuelio Monthly Inflation Rate (%)\n- **Data:**\n  - 31 May 2017 | 0.2667 | 0.0496 | —\n  - 30 June 2017 | 0.2703 | 0.0388 | 25\n  - 31 July 2017 | 0.2632 | ",
@@ -8933,12 +8933,12 @@ test_data = [
         "Question Text": "After translating Consol-Can's inventory and long-term debt into the parent company's currency (US$), the amounts reported on Consolidated Motor's financial statements on 31 December 20X2 would be closest to (in millions):",
         "Image": "",
         "Options": {
-            "A": "$71 for inventory and $161 for long-term debt.",
-            "B": "$71 for inventory and $166 for long-term debt.",
-            "C": "$73 for inventory and $166 for long-term debt."
+            "A": "$\\$71$ for inventory and $\\$161$ for long-term debt.",
+            "B": "$\\$71$ for inventory and $\\$166$ for long-term debt.",
+            "C": "$\\$73$ for inventory and $\\$166$ for long-term debt."
         },
         "Answer": "B",
-        "Explanation": "When the parent company's currency is used as the functional currency, the temporal\nmethod must be used to translate the subsidiary's accounts. Under the temporal method, monetary\nassets and liabilities (e.g., debt) are translated at the current (year-end) rate, non-monetary\nassets and liabilities measured at historical cost (e.g., inventory) are translated at\nhistorical exchange rates, and non-monetary assets and liabilities measured at current value\nare translated at the exchange rate at the date when the current value was determined. Because\nbeginning inventory was sold first and sales and purchases were evenly acquired, the average\nrate is most appropriate for translating inventory and C$77 million × 0.92 = $71 million. Long-term debt is translated at the year-end rate of 0.95. C$175 million × 0.95 = $166\nmillion.",
+        "Explanation": "When the parent company's currency is used as the functional currency, the temporal\nmethod must be used to translate the subsidiary's accounts. Under the temporal method, monetary\nassets and liabilities (e.g., debt) are translated at the current (year-end) rate, non-monetary\nassets and liabilities measured at historical cost (e.g., inventory) are translated at\nhistorical exchange rates, and non-monetary assets and liabilities measured at current value\nare translated at the exchange rate at the date when the current value was determined. Because\nbeginning inventory was sold first and sales and purchases were evenly acquired, the average\nrate is most appropriate for translating inventory and C$\\$77$ million × 0.92 = $\\$71$ million. Long-term debt is translated at the year-end rate of 0.95. C$\\$175$ million × 0.95 = $\\$166$\nmillion.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -8961,7 +8961,7 @@ test_data = [
             "C": "$46 million."
         },
         "Answer": "B",
-        "Explanation": "Translating the 20X2 balance sheet using the temporal method, as is required in\nthis instance, results in assets of US$369 million. The translated liabilities and common stock are equal to US$325 million, meaning that the value for 20X2 retained earnings is US$369 million – US$325 million = US$44 million.",
+        "Explanation": "Translating the 20X2 balance sheet using the temporal method, as is required in\nthis instance, results in assets of US$\\$369$ million. The translated liabilities and common stock are equal to US$\\$325$ million, meaning that the value for 20X2 retained earnings is US$\\$369$ million – US$\\$325$ million = US$\\$44$ million.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -17460,7 +17460,7 @@ test_data = [
         "ID": 832,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Cell Services Inc. (CSI) had 1,000,000 average shares outstanding during all of 2009. During\n2009, CSI also had 10,000 options outstanding with exercise prices of $10 each. The average\nstock price of CSI during 2009 was $15. For purposes of computing diluted earnings per share,\nhow many shares would be used in the denominator?",
+        "Question Text": "Cell Services Inc. (CSI) had 1,000,000 average shares outstanding during all of 2009. During\n2009, CSI also had 10,000 options outstanding with exercise prices of $\\$10$ each. The average\nstock price of CSI during 2009 was $\\$15$. For purposes of computing diluted earnings per share,\nhow many shares would be used in the denominator?",
         "Image": "images/image_add/832.png",
         "Options": {
             "A": "1,003,333.",
@@ -17820,15 +17820,15 @@ test_data = [
         "ID": 850,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Golden Cumulus Corp., a commodities trading company, reported interest expense of $19\nmillion and taxes of $6 million. Interest payable increased by $3 million, and taxes payable\ndecreased by $4 million over the period. How much cash did the company pay for interest and\ntaxes?",
+        "Question Text": "Golden Cumulus Corp., a commodities trading company, reported interest expense of $\\$19$\nmillion and taxes of $\\$6$ million. Interest payable increased by $\\$3$ million, and taxes payable\ndecreased by $\\$4$ million over the period. How much cash did the company pay for interest and\ntaxes?",
         "Image": "images/image_add/850.png",
         "Options": {
-            "A": "$22 million for interest and $10 million for taxes.",
-            "B": "$16 million for interest and $2 million for taxes.",
-            "C": "$16 million for interest and $10 million for taxes."
+            "A": "$\\$22$ million for interest and $\\$10$ million for taxes.",
+            "B": "$\\$16$ million for interest and $\\$2$ million for taxes.",
+            "C": "$\\$16$ million for interest and $\\$10$ million for taxes."
         },
         "Answer": "C",
-        "Explanation": "Interest expense of $19 million less the increase in interest payable of $3 million equals interest paid of $16 million. Tax expense of $6 million plus the decrease in taxes payable of $4 million equals taxes paid of $10 million.",
+        "Explanation": "Interest expense of $\\$19$ million less the increase in interest payable of $\\$3$ million equals interest paid of $\\$16$ million. Tax expense of $\\$6$ million plus the decrease in taxes payable of $\\$4$ million equals taxes paid of $\\$10$ million.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18160,7 +18160,7 @@ test_data = [
         "ID": 867,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An analyst gathered the following information from a company’s 2018 financial statements\n(in $ millions):\n Based only on the information above, the company’s 2018 statement of cash flows in the direct\nformat would include amounts (in $ millions) for cash received from customers and cash paid to\nsuppliers, respectively, that are closest to:",
+        "Question Text": "An analyst gathered the following information from a company’s 2018 financial statements\n(in $\\$$ millions):\n Based only on the information above, the company’s 2018 statement of cash flows in the direct\nformat would include amounts (in $\\$$ millions) for cash received from customers and cash paid to\nsuppliers, respectively, that are closest to:",
         "Image": "images/level1_cai_bao_images/37u.png",
         "Options": {
             "A": "cash received from customers ：249.7， cash paid to suppliers ：169.7",
@@ -18280,7 +18280,7 @@ test_data = [
         "ID": 873,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "For its fiscal year-end, Sublyme Corporation reported net income of $200 million and a\nweighted average of 50,000,000 common shares outstanding. There are 2,000,000 convertible\npreferred shares outstanding that paid an annual dividend of $5. Each preferred share is\nconvertible into two shares of the common stock. The diluted EPS is closest to:",
+        "Question Text": "For its fiscal year-end, Sublyme Corporation reported net income of $\\$200$ million and a\nweighted average of 50,000,000 common shares outstanding. There are 2,000,000 convertible\npreferred shares outstanding that paid an annual dividend of $\\$5$. Each preferred share is\nconvertible into two shares of the common stock. The diluted EPS is closest to:",
         "Image": "images/image_add/873.png",
         "Options": {
             "A": "$3.52.",
@@ -18400,7 +18400,7 @@ test_data = [
         "ID": 879,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "For its fiscal year-end, Calvan Water Corporation (CWC) reported net income of $12 million\nand a weighted average of 2,000,000 common shares outstanding. The company paid $800,000 in\npreferred dividends and had 100,000 options outstanding with an average exercise price of $20.\nCWC’s market price over the year averaged $25 per share. CWC’s diluted EPS is closest to:",
+        "Question Text": "For its fiscal year-end, Calvan Water Corporation (CWC) reported net income of $\\$12$ million\nand a weighted average of 2,000,000 common shares outstanding. The company paid $\\$800,000$ in\npreferred dividends and had 100,000 options outstanding with an average exercise price of $\\$20$.\nCWC’s market price over the year averaged $25 per share. CWC’s diluted EPS is closest to:",
         "Image": "images/image_add/879.png",
         "Options": {
             "A": "$5.33.",
@@ -18428,7 +18428,7 @@ test_data = [
             "C": "$14 million."
         },
         "Answer": "A",
-        "Explanation": "Operating cash flows = Cash received from customers – (Cash paid\nto suppliers + Cash paid to employees + Cash paid for other operating expenses + Cash paid for\ninterest + Cash paid for income taxes) Cash received from customers = Revenue + Decrease in\naccounts receivable= $37 + $3 = $40 million Cash paid to suppliers = Cost of goods sold + Increase in inventory + Decrease in accounts payable = $16 + $4 + $2 = $22 million Therefore, the company’s operating cash flow = $40 – $22 – Cash paid for salaries – Cash paid for interest – Cash paid for taxes = $40 – $22 – $6 – $2 – $4 = $6 million.",
+        "Explanation": "Operating cash flows = Cash received from customers – (Cash paid\nto suppliers + Cash paid to employees + Cash paid for other operating expenses + Cash paid for\ninterest + Cash paid for income taxes) Cash received from customers = Revenue + Decrease in\naccounts receivable= $\\$37 + \\$3 = \\$40$ million Cash paid to suppliers = Cost of goods sold + Increase in inventory + Decrease in accounts payable = $\\$16 + \\$4 + \\$2 = \\$22$ million Therefore, the company’s operating cash flow = $\\$40 – \\$22$ – Cash paid for salaries – Cash paid for interest – Cash paid for taxes = $\\$40 – \\$22 – \\$6 – \\$2 – \\$4 = \\$6$ million.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18660,15 +18660,15 @@ test_data = [
         "ID": 892,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Purple Fleur S.A., a retailer of floral products, reported cost of goods sold for the year\nof $75 million. Total assets increased by $55 million, but inventory declined by $6 million.\nTotal liabilities increased by $45 million, and accounts payable increased by $2 million. The\ncash paid by the company to its suppliers is most likely closest to:",
+        "Question Text": "Purple Fleur S.A., a retailer of floral products, reported cost of goods sold for the year\nof $\\$75$ million. Total assets increased by $\\$55$ million, but inventory declined by $\\$6$ million.\nTotal liabilities increased by $\\$45$ million, and accounts payable increased by $\\$2$ million. The\ncash paid by the company to its suppliers is most likely closest to:",
         "Image": "images/image_add/892.png",
         "Options": {
-            "A": ", a retailer of floral products, reported cost of goods sold for the year\nof $75 million. Total assets increased by $55 million, but inventory declined by $6 million.\nTotal liabilities increased by $45 million, and accounts payable increased by $2 million. The\ncash paid by the company to its suppliers is most likely closest to:\nA.$67 million.",
-            "B": "$79 million.",
-            "C": "$83 million."
+            "A": "$\\$67$ million.",
+            "B": "$\\$79$ million.",
+            "C": "$\\$83$ million."
         },
         "Answer": "A",
-        "Explanation": "Cost of goods sold of $75 million less the decrease in inventory of $6 million equals purchases from suppliers of $69 million. The increase in accounts payable of $2 million means that the company paid $67 million in cash ($69 million minus $2 million).",
+        "Explanation": "Cost of goods sold of $\\$75$ million less the decrease in inventory of $\\$6$ million equals purchases from suppliers of $\\$69$ million. The increase in accounts payable of $\\$2$ million means that the company paid $\\$67$ million in cash ($\\$69$ million minus $\\$2$ million).",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -19980,7 +19980,7 @@ test_data = [
         "ID": 958,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Galambos Corporation had an average receivables collection period of 19 days in 2003.\nGalambos has stated that it wants to decrease its collection period in 2004 to match the\nindustry average of 15 days. Credit sales in 2003 were $300 million, and analysts expect credit\nsales to increase to $400 million in 2004. To achieve the company’s goal of decreasing the\ncollection period, the change in the average accounts receivable balance from 2003 to 2004 that\nmust occur is closest to:",
+        "Question Text": "Galambos Corporation had an average receivables collection period of 19 days in 2003.\nGalambos has stated that it wants to decrease its collection period in 2004 to match the\nindustry average of 15 days. Credit sales in 2003 were $\\$300$ million, and analysts expect credit\nsales to increase to $\\$400$ million in 2004. To achieve the company’s goal of decreasing the\ncollection period, the change in the average accounts receivable balance from 2003 to 2004 that\nmust occur is closest to:",
         "Image": "images/image_add/958.png",
         "Options": {
             "A": "–$420,000.",
@@ -20880,7 +20880,7 @@ test_data = [
         "ID": 1003,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "At the beginning of 2009, Glass Manufacturing purchased a new machine for its assembly line\nat a cost of $600,000. The machine has an estimated useful life of 10 years and estimated\nresidual value of $50,000. Under the straight-line method, how much depreciation would Glass\ntake in 2010 for financial reporting purposes?",
+        "Question Text": "At the beginning of 2009, Glass Manufacturing purchased a new machine for its assembly line\nat a cost of $\\$600,000$. The machine has an estimated useful life of 10 years and estimated\nresidual value of $\\$50,000$. Under the straight-line method, how much depreciation would Glass\ntake in 2010 for financial reporting purposes?",
         "Image": "images/image_add/1003.png",
         "Options": {
             "A": "$55,000.",
@@ -20888,7 +20888,7 @@ test_data = [
             "C": "$65,000."
         },
         "Answer": "A",
-        "Explanation": "Straight-line depreciation would be ($600,000 – $50,000)/10, or $55,000. ：",
+        "Explanation": "Straight-line depreciation would be $(\\$600,000 – \\$50,000)/10$, or $\\$55,000$. ：",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -21088,7 +21088,7 @@ test_data = [
             "C": "￡107,919."
         },
         "Answer": "B",
-        "Explanation": "There are two ways to determine the value of the bonds on 31 December 2014.\n| **Year** | **Carrying Amount at Start of Year** | **Interest Expense at EAI(6%)** | **Interest Payment at Coupon Rate(7%)** | **Amortization of Premium** | **Carrying Amount at End of Year** |\n|----------|--------------------------------------|---------------------------------|----------------------------------------|-----------------------------|----------------------------------|\n| 2013     | 107,360                              | 6,441                           | 7,000                                  | 559                         | 106,801                          |",
+        "Explanation": "There are two ways to determine the value of the bonds on 31 December 2014.\n$ \\begin{array}{|c|r|r|r|r|r|} \\hline \\text{Year} & \\text{Carrying Amount at Start} & \\text{Interest Expense (6\\%)} & \\text{Interest Payment (7\\%)} & \\text{Amortization of Premium} & \\text{Carrying Amount at End} \\\\ \\hline 2013 & 107,360 & 6,441 & 7,000 & 559 & 106,801 \\\\ \\hline \\end{array} $        ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -21328,7 +21328,7 @@ test_data = [
             "C": "$28,936,215."
         },
         "Answer": "C",
-        "Explanation": " The following illustrates the keystrokes for many financial\ncalculators to calculate sales proceeds of $28,701,157.00: The following table illustrates interest expense, premium amortization, and carrying amount\n(amortized cost) for 2015.\n\n| **Calculator Notation** | **Numerical Value for This Problem** |\n|-------------------------|--------------------------------------|\n| N                       | 5                                    |\n| % i or I/Y              | 5                                    |\n| FV                      | $30,000,000.00                       |\n| PMT                     | $1,200,000.00                        | | PV compute              | X                                    |\n\n\n| **Year** | **Carrying Amount (beginning of year)** | **Interest Expense (at effective interest rate of 5%)** | **Interest Payment (at coupon rate of 4%)** | **Amortization of Discount** | **Carrying Amount (end of year)** |\n|----------|-----------------------------------------|--------------------------------------------------------|--------------------------------------------|------------------------------|----------------------------------|\n| 2015     | $28,701,157.00                          | $1,435,057.85                                          | $1,200,000.00                              | $235,057.85                  | $28,936,214.85                  | \n\nThe carrying amount at the end of the year is found by adding the amortization of the discount\nto the carrying amount at the beginning of the year. As a result, the carrying amount on 31\nDecember 2015 is $28,936,215. Alternatively, the following illustrates the keystrokes for many\nfinancial calculators to calculate the carrying value at the end of first year of $28,936, 215: \n| **Calculator Notation** | **Numerical Value for This Problem** |\n|-------------------------|--------------------------------------|\n| N                       | 4                                    |\n| % i or I/Y              | 5                                    |\n| FV                      | $30,000,000.00                       |\n| PMT                     | $1,200,000.00                        |\n| PV compute              | X                                    |\n",
+        "Explanation": " The following illustrates the keystrokes for many financial\ncalculators to calculate sales proceeds of $\\$28,701,157.00$: The following table illustrates interest expense, premium amortization, and carrying amount\n(amortized cost) for 2015.\n\n    $$ \\begin{array}{|l|r|} \\hline \\text{Calculator Notation} & \\text{Numerical Value for This Problem} \\\\ \\hline N & 5 \\\\ \\hline \\% i \\text{ or } I/Y & 5 \\\\ \\hline FV & 30,000,000.00 \\\\ \\hline PMT & 1,200,000.00 \\\\ \\hline PV \\text{ compute} & X \\\\ \\hline \\end{array}$$ $$\\begin{array}{|c|r|r|r|r|r|} \\hline \\text{Year} & \\text{Carrying Amount (beginning)} & \\text{Interest Expense (5\\%)} & \\text{Interest Payment (4\\%)} & \\text{Amortization of Discount} & \\text{Carrying Amount (end)} \\\\ \\hline 2015 & 28,701,157.00 & 1,435,057.85 & 1,200,000.00 & 235,057.85 & 28,936,214.85 \\\\ \\hline \\end{array}$$ $$\\begin{array}{|l|r|} \\hline \\text{Calculator Notation} & \\text{Numerical Value for This Problem} \\\\ \\hline N & 4 \\\\ \\hline \\% i \\text{ or } I/Y & 5 \\\\ \\hline FV & 30,000,000.00 \\\\ \\hline PMT & 1,200,000.00 \\\\ \\hline PV \text{ compute} & X \\\\ \\hline \\end{array} $$        \n",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -21740,7 +21740,7 @@ test_data = [
         "ID": 1046,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "At the beginning of 2009, Glass Manufacturing purchased a new machine for its assembly line\nat a cost of $600,000. The machine has an estimated useful life of 10 years and estimated\nresidual value of $50,000. How much depreciation would Glass take in 2009 for financial\nreporting purposes under the double-declining balance method?",
+        "Question Text": "At the beginning of 2009, Glass Manufacturing purchased a new machine for its assembly line\nat a cost of $\\$600,000$. The machine has an estimated useful life of 10 years and estimated\nresidual value of $\\$50,000$. How much depreciation would Glass take in 2009 for financial\nreporting purposes under the double-declining balance method?",
         "Image": "images/image_add/1046.png",
         "Options": {
             "A": "$60,000.",
