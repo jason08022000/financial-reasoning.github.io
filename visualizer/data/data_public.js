@@ -10398,7 +10398,7 @@ test_data = [
             "C": "Money-weighted rate of return"
         },
         "Answer": "C",
-        "Explanation": " The money-weighted rate of return considers both the timing and\namounts of investments into the fund. To calculate the money-weighted rate of return, tabulate\nthe annual returns and investment amounts to determine the cash flows.\nCF0 = –$1,000, CF1 = –$2,850, CF2 = –$40,440, CF3 = $43,200Each cash inflow or outflow occurs at the end of each year. Thus, CF0 refers to the cash flow at the end of Year 0 or\nbeginning of Year 1, and CF3 refers to the cash flow at end of Year 3 or beginning of Year 4.\nBecause cash flows are being discounted to the present—that is, end of Year 0 or beginning of\nYear 1—the period of discounting CF0 is zero whereas the period of discounting for CF3 is 3\nyears. Solving for r,\nresults in a value of r = –2.22%Note that B is incorrect because the time-weighted rate of\nreturn (TWR) of the fund is the same as the geometric mean return of the fund and is thus\npositive:\n\n Year | 1 | 2 | 3\n----|---|---|---\nBalance from previous year | 0 | \\$1,150 | \\$4,560 New investment | \\$1,000 | \\$2,850 | \\$40,440 Net balance at the beginning of year | \\$1,000 | \\$4,000 | \\$45,000 Investment return for the year | 15% | 14% | -4%\nInvestment gain (loss) | \\$150 | \\$560 | -\\$1,800 Balance at the end of year | \\$1,150 | \\$4,560 | \\$43,200 \n$$ CF_0 = -1,000 $$ \n$$ CF_1 = -2,850 $$ \n$$ CF_2 = -40,440 $$ \n$$ CF_3 = +43,200 $$ \n$$ \\frac{CF_0}{(1 + IRR)^0} + \\frac{CF_1}{(1 + IRR)^1} + \\frac{CF_2}{(1 + IRR)^2} + \\frac{CF_3}{(1 + IRR)^3} = 0 $$ \n$$ \\frac{-1,000}{1} + \\frac{-2,850}{(1 + IRR)^1} + \\frac{-40,440}{(1 + IRR)^2} + \\frac{43,200}{(1 + IRR)^3} = 0 $$ \n$$ TWR = \\sqrt[3]{(1.15)(1.14)(0.96)} - 1 = 7.97\\% $$",
+        "Explanation": " The money-weighted rate of return considers both the timing and\namounts of investments into the fund. To calculate the money-weighted rate of return, tabulate\nthe annual returns and investment amounts to determine the cash flows.\nCF0 = –$1,000, CF1 = –$2,850, CF2 = –$40,440, CF3 = $43,200Each cash inflow or outflow occurs at the end of each year. Thus, CF0 refers to the cash flow at the end of Year 0 or\nbeginning of Year 1, and CF3 refers to the cash flow at end of Year 3 or beginning of Year 4.\nBecause cash flows are being discounted to the present—that is, end of Year 0 or beginning of\nYear 1—the period of discounting CF0 is zero whereas the period of discounting for CF3 is 3\nyears. Solving for r,\nresults in a value of r = –2.22%Note that B is incorrect because the time-weighted rate of\nreturn (TWR) of the fund is the same as the geometric mean return of the fund and is thus\npositive:\n\n $$ \\begin{array}{|c|c|c|c|} \\hline \\text{Year} & 1 & 2 & 3 \\\\ \\hline \\text{Balance from previous year} & 0 & 1,150 & 4,560 \\\\ \\text{New investment} & 1,000 & 2,850 & 40,440 \\\\ \\text{Net balance at the beginning of year} & 1,000 & 4,000 & 45,000 \\\\ \\text{Investment return for the year} & 15\\% & 14\\% & -4\\% \\\\ \\text{Investment gain (loss)} & 150 & 560 & -1,800 \\\\ \\text{Balance at the end of year} & 1,150 & 4,560 & 43,200 \\\\ \\hline \\end{array} $$        \n$$ CF_0 = -1,000 $$ \n$$ CF_1 = -2,850 $$ \n$$ CF_2 = -40,440 $$ \n$$ CF_3 = +43,200 $$ \n$$ \\frac{CF_0}{(1 + IRR)^0} + \\frac{CF_1}{(1 + IRR)^1} + \\frac{CF_2}{(1 + IRR)^2} + \\frac{CF_3}{(1 + IRR)^3} = 0 $$ \n$$ \\frac{-1,000}{1} + \\frac{-2,850}{(1 + IRR)^1} + \\frac{-40,440}{(1 + IRR)^2} + \\frac{43,200}{(1 + IRR)^3} = 0 $$ \n$$ TWR = \\sqrt[3]{(1.15)(1.14)(0.96)} - 1 = 7.97\\% $$",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -10570,7 +10570,7 @@ test_data = [
         "ID": 500,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An investor performs the following transactions on the shares of a firm.  At t = 0, she\npurchases a share for $1,000.  At t = 1, she receives a dividend of $25 and then purchases\nthree additional shares for $1,055 each.  At t = 2, she receives a total dividend of $100 and\nthen sells the four shares for $1,100 each. The money-weighted rate of return is closest to:",
+        "Question Text": "An investor performs the following transactions on the shares of a firm.  At t = 0, she\npurchases a share for $\\$1,000$.  At t = 1, she receives a dividend of $\\$25$ and then purchases\nthree additional shares for $\\$1,055$ each.  At t = 2, she receives a total dividend of $\\$100$ and\nthen sells the four shares for $\\$1,100$ each. The money-weighted rate of return is closest to:",
         "Image": "images/image_add/500.png",
         "Options": {
             "A": "4.5%.",
@@ -10578,7 +10578,7 @@ test_data = [
             "C": "7.3%."
         },
         "Answer": "B",
-        "Explanation": "Computation of the money-weighted return, r, requires finding the\ndiscount rate that sums the present value of cash flows to zero. The first step is to group net\ncash flows by time. For this example, we have -$1,000 for the t = 0 net cash flow, -$3,140 = - $3,165 + $25 for the t = 1 net cash flow, and $4,500 = $4,400 + $100 for the t = 2 net cash\nflowSolving for r,results in a value of r = 6.91%。",
+        "Explanation": "Computation of the money-weighted return, r, requires finding the\ndiscount rate that sums the present value of cash flows to zero. The first step is to group net\ncash flows by time. For this example, we have $-\\$1,000$ for the t = 0 net cash flow, $-\\$3,140$ = $-\\$3,165$ + $\\$25$ for the t = 1 net cash flow, and $\\$4,500$ = $\\$4,400$ + $\\$100$ for the t = 2 net cash\nflowSolving for r,results in a value of r = 6.91%。",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -10890,7 +10890,7 @@ test_data = [
         "ID": 516,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "At the beginning of Year 1, a fund has $10 million under management; it earns a return of\n14% for the year. The fund attracts another $100 million at the start of Year 2 and earns a\nreturn of 8% for that year. The money-weighted rate of return is most likely:",
+        "Question Text": "At the beginning of Year 1, a fund has $\\$10$ million under management; it earns a return of\n14% for the year. The fund attracts another $\\$100$ million at the start of Year 2 and earns a\nreturn of 8% for that year. The money-weighted rate of return is most likely:",
         "Image": "images/image_add/516.png",
         "Options": {
             "A": "less than the time-weighted rate of return.",
@@ -11018,7 +11018,7 @@ test_data = [
             "C": "Yields on 10-year US Treasuries for the past 5 years."
         },
         "Answer": "A",
-        "Explanation": "The price of gold in nominal dollars was several orders of\nmagnitude cheaper 100 years ago than it is today (roughly US$20 then versus US$1,100 today).\nSuch a wide range of prices lends itself well to being graphically displayed on a logarithmic\nscale. ",
+        "Explanation": "The price of gold in nominal dollars was several orders of\nmagnitude cheaper 100 years ago than it is today (roughly US$\\$20$ then versus US$\\$1,100$ today).\nSuch a wide range of prices lends itself well to being graphically displayed on a logarithmic\nscale. ",
         "General Topics": "Portfolio Management",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -11178,7 +11178,7 @@ test_data = [
             "C": "For real-time risk monitoring, data may be aggregated for reporting and used as model inputs."
         },
         "Answer": "C",
-        "Explanation": "There is increasing interest in monitoring risk in real-time. To\ndo so, relevant data must be taken by a firm, mapped to known risks, and identified while\nmoving within the firm. Data may be aggregated for reporting pur?poses or used as inputs to\nrisk models. ",
+        "Explanation": "There is increasing interest in monitoring risk in real-time. To\ndo so, relevant data must be taken by a firm, mapped to known risks, and identified while\nmoving within the firm. Data may be aggregated for reporting purposes or used as inputs to\nrisk models. ",
         "General Topics": "Portfolio Management",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -11858,7 +11858,7 @@ test_data = [
             "C": "Head and shoulders."
         },
         "Answer": "C",
-        "Explanation": " The left shoulder formed at around US$18.50, the head formed at around US$20.50, and the second shoulder formed at around US$19.\n ",
+        "Explanation": " The left shoulder formed at around US$\\$18.50$, the head formed at around US$\\$20.50$, and the second shoulder formed at around US$\\$19$.\n ",
         "General Topics": "Portfolio Management",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -23500,7 +23500,7 @@ test_data = [
             "C": "increase."
         },
         "Answer": "A",
-        "Explanation": "The original funding ratio is the market value of assets divided by the present\nvalue of liabilities. This plan’s ratio is $205 million/$241 million = 0.8506. When the assets and liabilities both decrease by $25 million, the funding ratio will decrease to $180 million/$216 million = 0.8333.",
+        "Explanation": "The original funding ratio is the market value of assets divided by the present\nvalue of liabilities. This plan’s ratio is $\\$205$ million/$\\$241$ million = 0.8506. When the assets and liabilities both decrease by $\\$25$ million, the funding ratio will decrease to $\\$180$ million/$\\$216$ million = 0.8333.",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -23524,7 +23524,7 @@ test_data = [
             "C": "Portfolio 3"
         },
         "Answer": "B",
-        "Explanation": "The objective function expected value is $U_m^{LR} = E(R_{s,m}) -0.005\\lambda \\sigma^2 (R_{s,m})$. $\\lambda$ is equal to 1.5, and the expected value of the objective function is shown in the rightmost column below. \n| Portfolio | $E(R_{s,m})$ | $\\sigma^2 (R_{s,m})$ | $U_m^{LR} = E(R_{s,m}) -0.005\\lambda \\sigma^2 (R_{s,m})$ |\n| --------- | ------------ | -------------------- | ----------------------------------------------------- |\n| 1         | 13.00        | 576                  | 8.68                                                  |\n| 2         | 12.00        | 324                  | 9.57                                                  |\n| 3         | 11.00        | 361                  | 8.29                                                  |\n\nPortfolio 2 generates the highest value, or utility, in the objective function.",
+        "Explanation": "The objective function expected value is $U_m^{LR} = E(R_{s,m}) -0.005\\lambda \\sigma^2 (R_{s,m})$. $\\lambda$ is equal to 1.5, and the expected value of the objective function is shown in the rightmost column below. \n    $$ \\begin{array}{|c|c|c|c|} \\hline \\text{Portfolio} & E(R_{s,m}) & \\sigma^2 (R_{s,m}) & U_m^{LR} = E(R_{s,m}) - 0.005\\lambda \\sigma^2 (R_{s,m}) \\\\ \\hline 1 & 13.00 & 576 & 8.68 \\\\ 2 & 12.00 & 324 & 9.57 \\\\ 3 & 11.00 & 361 & 8.29 \\\\ \\hline \\end{array} $$\n\nPortfolio 2 generates the highest value, or utility, in the objective function.",
         "General Topics": "Portfolio Management",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -23642,7 +23642,7 @@ test_data = [
             "C": "$1,675,000."
         },
         "Answer": "A",
-        "Explanation": "| Assets                  | Liabilities and Net Worth |                                      \n| ----------------------- | --------------------------| \n| **Financial Assets**    | **Financial Liabilities** |\n| 450,000                 | Mortgage debt             | 225,000 \n| 400,000                 |                           | \n| **Equity**              |                           | 800,000\n| **Extended Assets**     | **Extended Liabilities**  |\n| Human capital           | 1,025,000                 | Children's education   | 275,000\n|                         |                           | Endowment funding      | 500,000\n|                         |                           | Present value of consumption | 750,000\n| **Total Economic Assets** | 2,675,000              | **Total Economic Liabilities** | 1,750,000\n|                         | **Economic Net Worth**    | 925,000",
+        "Explanation": "    $$ \\begin{array}{|l|l|} \\hline \\textbf{Assets} & \\text{Liabilities and Net Worth} \\\\ \\hline \\text{Financial Assets} & \\text{Financial Liabilities} \\\\ \\hline 450,000 & \\text{Mortgage debt} & 225,000 \\\\ 400,000 & & \\\\ \\hline \\text{Equity} & & 800,000 \\\\ \\hline \\text{Extended Assets} & \\text{Extended Liabilities} \\\\ \\hline \\text{Human capital} & 1,025,000 & \\text{Children's education} & 275,000 \\\\ & & \\text{Endowment funding} & 500,000 \\\\ & & \\text{Present value of consumption} & 750,000 \\\\ \\hline \\text{Total Economic Assets} & 2,675,000 & \\text{Total Economic Liabilities} & 1,750,000 \\\\ & & \\text{Economic Net Worth} & 925,000 \\\\ \\hline \\end{array}$$        ",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -23998,7 +23998,7 @@ test_data = [
             "C": "Index weight"
         },
         "Answer": "A",
-        "Explanation": " The maximum position size in shares of Pasliant Corporation (PC) is\ndetermined by the constraint with the lowest dollar amount. The maximum position size for PC\nunder each constraint is calculated as follows:Liquidity ConstraintDollar value of PC traded\ndaily = PC market cap × Average daily trading volumeDollar value of PC traded daily = $3 billion × 1.0% = $30 millionLiquidity constraint = Dollar value of PC traded daily ×\nLiquidity % thresholdLiquidity constraint = $30 million × 10% = $3 millionAllocation ConstraintAllocation constraint = AUM × Maximum position size thresholdAllocation constraint =\n$250 million × 3.0% = $7.5 millionIndex Weight ConstraintIndex weight constraint = AUM × (Index weight × 10)Index weight constraint = $250 million × (0.20% × 10) = $5.0 millionThe liquidity constraint of $3.0 million is less than both the $5.0 million index weight constraint and the $7.5 million allocation constraint. Therefore, the maximum allowable position size that\nManager A may take in PC is $3.0 million.",
+        "Explanation": " The maximum position size in shares of Pasliant Corporation (PC) is\ndetermined by the constraint with the lowest dollar amount. The maximum position size for PC\nunder each constraint is calculated as follows:Liquidity ConstraintDollar value of PC traded\ndaily = PC market cap × Average daily trading volumeDollar value of PC traded daily = $\\$3$ billion × 1.0% = $\\$30$ millionLiquidity constraint = Dollar value of PC traded daily ×\nLiquidity % thresholdLiquidity constraint = $\\$30$ million × 10% = $\\$3$ millionAllocation ConstraintAllocation constraint = AUM × Maximum position size thresholdAllocation constraint =\n$\\$250$ million × 3.0% = $\\$7.5$ millionIndex Weight ConstraintIndex weight constraint = AUM × (Index weight × 10)Index weight constraint = $\\$250$ million × (0.20% × 10) = $\\$5.0$ millionThe liquidity constraint of $\\$3.0$ million is less than both the $\\$5.0$ million index weight constraint and the $\\$7.5$ million allocation constraint. Therefore, the maximum allowable position size that\nManager A may take in PC is $\\$3.0$ million.",
         "General Topics": "Portfolio Management",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -24046,7 +24046,7 @@ test_data = [
             "C": "0.0088."
         },
         "Answer": "B",
-        "Explanation": "Contribution of each asset to portfolio variance = $CV_i = \\sum_{j=1}^{n} x_i x_j C_{ij}$\n\n|                                                                                  | Result          |\n|----------------------------------------------------------------------------------|-----------------|\n| Weight of Asset 2 × Weight of Asset 1 × Covariance of asset 2 with Asset 1, plus | 0.45 × 0.30 × 0.01050 |\n| Weight of Asset 2 × Weight of Asset 2 × Covariance of Asset 2 with Asset 2, plus | 0.45 × 0.45 × 0.01960 |\n| Weight of Asset 2 × Weight of Asset 3 × Covariance of Asset 2 with Asset 3       | 0.45 × 0.25 × 0.00224 |\n| = Asset 2’s contribution to total portfolio variance                             | 0.005639        |",
+        "Explanation": "Contribution of each asset to portfolio variance = $CV_i = \\sum_{j=1}^{n} x_i x_j C_{ij}$\n\n    $$ \\begin{array}{|c|c|} \\hline \\text{} & \\text{Result} \\\\ \\hline \\text{Weight of Asset 2} \\times \\text{Weight of Asset 1} \\times \\text{Covariance of asset 2 with Asset 1, plus} & 0.45 \\times 0.30 \\times 0.01050 \\\\ \\text{Weight of Asset 2} \\times \\text{Weight of Asset 2} \\times \\text{Covariance of Asset 2 with Asset 2, plus} & 0.45 \\times 0.45 \\times 0.01960 \\\\ \\text{Weight of Asset 2} \\times \\text{Weight of Asset 3} \\times \\text{Covariance of Asset 2 with Asset 3} & 0.45 \\times 0.25 \\times 0.00224 \\\\ \\text{= Asset 2’s contribution to total portfolio variance} & 0.005639 \\\\ \\hline \\end{array} $$        ",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -57101,7 +57101,7 @@ test_data = [
             "C": "6.1%."
         },
         "Answer": "B",
-        "Explanation": "Based on the differences in returns for the portfolio and benchmark in Exhibit 1, the value added by each asset class within the portfolio is shown in the following table:\nThe value added from security selection is calculated as the sum of the actual portfolio weights multiplied by each sub-portfolio’s value added measure. Thus, the value added from security selection is calculated as: Value added from security selection = $0.63(5.3\\%) 0.28(0.2\\%) 0.09(5.1\\%) = 3.9\\%$.\nA is incorrect. It represents the value added from asset allocation (2.3\\%).\nC is incorrect. It represents the total value added (2.3\\% 3.9\\% = 6.1\\%, with rounding).\n\n|                           | Sub-Portfolio Return (\\%) | Benchmark Return (\\%) | Value Added (\\%) | Portfolio Allocation (\\%) |\n|---------------------------|---------------------------|-----------------------|------------------|----------------------------|\n| Equities sub-portfolio    | 36.9                      | 31.6                  | 5.3              | 63                         |\n| Bond sub-portfolio        | -2.4                      | -2.6                  | 0.2              | 28                         |\n| Real estate sub-portfolio | 33.4                      | 28.3                  | 5.1              | 9                          |",
+        "Explanation": "Based on the differences in returns for the portfolio and benchmark in Exhibit 1, the value added by each asset class within the portfolio is shown in the following table:\nThe value added from security selection is calculated as the sum of the actual portfolio weights multiplied by each sub-portfolio’s value added measure. Thus, the value added from security selection is calculated as: Value added from security selection = $0.63(5.3\\%) 0.28(0.2\\%) 0.09(5.1\\%) = 3.9\\%$.\nA is incorrect. It represents the value added from asset allocation (2.3\\%).\nC is incorrect. It represents the total value added (2.3\\% 3.9\\% = 6.1\\%, with rounding).\n\n$$ \\begin{array}{|l|c|c|c|c|} \\hline \\text{} & \\text{Sub-Portfolio Return (\\%)} & \\text{Benchmark Return (\\%)} & \\text{Value Added (\\%)} & \\text{Portfolio Allocation (\\%)} \\\\ \\hline \\text{Equities sub-portfolio} & 36.9 & 31.6 & 5.3 & 63 \\\\ \\hline \\text{Bond sub-portfolio} & -2.4 & -2.6 & 0.2 & 28 \\\\ \\hline \\text{Real estate sub-portfolio} & 33.4 & 28.3 & 5.1 & 9 \\\\ \\hline \\end{array}$$        ",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -57124,7 +57124,7 @@ test_data = [
             "C": "6.1%."
         },
         "Answer": "A",
-        "Explanation": "The value added from asset allocation is calculated as the sum of the differences in the weights between the strategic (benchmark) allocation and the actual subportfolio allocation multiplied by each subportfolio's benchmark return.\n\n| Subportfolio | Benchmark Return (%) | Actual Asset Allocation (%) | Strategic Asset Allocation (%) | Actual - Strategic Asset Allocation (%) |\n|--------------|------------------------|-----------------------------|--------------------------------|-----------------------------------------|\n| Equities subportfolio | 31.6 | 63 | 60 | +3 |\n| Bond subportfolio     | -2.6 | 28 | 35 | -7 |\n| Real estate subportfolio | 28.3 | 9 | 5 | +4 |\n\nThus, the value added by the active asset allocation decision is calculated as: Value added from asset allocation decision $= 0.03(31.6\\%) - 0.07(-2.6\\%) + 0.04(28.3\\%) = 2.3\\%$. B is incorrect. It is the value added from security selection. C is incorrect. It is the total value added.",
+        "Explanation": "The value added from asset allocation is calculated as the sum of the differences in the weights between the strategic (benchmark) allocation and the actual subportfolio allocation multiplied by each subportfolio's benchmark return.\n\n    $$ \\begin{array}{|c|c|c|c|c|} \\hline \\text{Subportfolio} & \\text{Benchmark Return (\\%)} & \\text{Actual Asset Allocation (\\%)} & \\text{Strategic Asset Allocation (\\%)} & \\text{Actual - Strategic Asset Allocation (\\%)} \\\\ \\hline \\text{Equities subportfolio} & 31.6 & 63 & 60 & +3 \\\\ \\text{Bond subportfolio} & -2.6 & 28 & 35 & -7 \\\\ \\text{Real estate subportfolio} & 28.3 & 9 & 5 & +4 \\\\ \\hline \\end{array} $$        \n\nThus, the value added by the active asset allocation decision is calculated as: Value added from asset allocation decision $= 0.03(31.6\\%) - 0.07(-2.6\\%) + 0.04(28.3\\%) = 2.3\\%$. B is incorrect. It is the value added from security selection. C is incorrect. It is the total value added.",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -57147,7 +57147,7 @@ test_data = [
             "C": "The real estate subportfolio."
         },
         "Answer": "B",
-        "Explanation": "The information ratio for a portfolio can be expressed as follows:\n\n$$ IR = (TC)(IC)\\sqrt{BR} $$ \nThe information ratios for the three subportfolios are calculated as follows:\n\n| Subportfolio           | Information Ratio                   |\n|------------------------|-------------------------------------|\n| Equities subportfolio  | $0.90 \\times 0.091 \\times (21)^{0.5} = 0.38$       | | Bond subportfolio      | $0.79 \\times 0.087 \\times (23)^{0.5} = 0.33$       | | Real estate subportfolio | $0.86 \\times 0.093 \\times (19)^{0.5} = 0.35$  |\n\nBased on the information ratio, the equities subportfolio outperformed the real estate subportfolio. The information ratio for the equities subportfolio of 0.38 was higher than the information ratio for the real estate subportfolio of 0.35 and the bond subportfolio of 0.33.",
+        "Explanation": "The information ratio for a portfolio can be expressed as follows:\n\n$$ IR = (TC)(IC)\\sqrt{BR} $$ \nThe information ratios for the three subportfolios are calculated as follows:\n\n $$ \\begin{array}{|l|l|} \\hline \\text{Subportfolio} & \\text{Information Ratio} \\\\ \\hline \\text{Equities subportfolio} & 0.90 \\times 0.091 \\times (21)^{0.5} = 0.38 \\\\ \\text{Bond subportfolio} & 0.79 \\times 0.087 \\times (23)^{0.5} = 0.33 \\\\ \\text{Real estate subportfolio} & 0.86 \\times 0.093 \\times (19)^{0.5} = 0.35 \\\\ \\hline \\end{array} $$        \n\nBased on the information ratio, the equities subportfolio outperformed the real estate subportfolio. The information ratio for the equities subportfolio of 0.38 was higher than the information ratio for the real estate subportfolio of 0.35 and the bond subportfolio of 0.33.",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -57561,7 +57561,7 @@ test_data = [
             "C": "GDP growth on Fund C"
         },
         "Answer": "C",
-        "Explanation": "Surprise in a macroeconomic model is defined as actual factor minus predicted factor. For inflation, the surprise factor is $2.2\\% - 2.0\\% = 0.2\\%$; for GDP growth, the surprise factor is $1.0\\% - 1.5\\% = -0.5\\%$. The effect on returns is the product of the surprise and the factor sensitivity. \n| Fund | Inflation | GDP Growth |\n|------|-----------|------------|\n| A    | $0.5 \\times 0.2\\% = 0.10\\%$ | $1.0 \\times -0.5\\% = -0.50\\%$ | | B    | $1.6 \\times 0.2\\% = 0.32\\%$ | $0.0 \\times -0.5\\% = 0.00\\%$  | | C    | $1.0 \\times 0.2\\% = 0.20\\%$ | $1.1 \\times -0.5\\% = -0.55\\%$ | \nThe effect of the GDP growth surprise on Fund C was the largest single-factor effect on Fund returns ($-0.55\\%$).",
+        "Explanation": "Surprise in a macroeconomic model is defined as actual factor minus predicted factor. For inflation, the surprise factor is $2.2\\% - 2.0\\% = 0.2\\%$; for GDP growth, the surprise factor is $1.0\\% - 1.5\\% = -0.5\\%$. The effect on returns is the product of the surprise and the factor sensitivity. \n$$ \\begin{array}{|c|c|c|} \\hline \\text{Fund} & \\text{Inflation} & \\text{GDP Growth} \\\\ \\hline A & 0.5 \\times 0.2\\% = 0.10\\% & 1.0 \\times -0.5\\% = -0.50\\% \\\\ B & 1.6 \\times 0.2\\% = 0.32\\% & 0.0 \\times -0.5\\% = 0.00\\% \\\\ C & 1.0 \\times 0.2\\% = 0.20\\% & 1.1 \\times -0.5\\% = -0.55\\% \\\\ \\hline \\end{array} $$        \nThe effect of the GDP growth surprise on Fund C was the largest single-factor effect on Fund returns ($-0.55\\%$).",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -57585,7 +57585,7 @@ test_data = [
             "C": "Fund C"
         },
         "Answer": "A",
-        "Explanation": "The effect of the surprises in inflation and GDP growth on the returns of the three funds is calculated as the following.\n\n| Fund | Inflation | GDP Growth |\n|------|-----------|------------|\n| A    | $0.5 \\times 0.2\\% = 0.10\\%$ | $1.0 \\times -0.5\\% = -0.50\\%$ | | B    | $1.6 \\times 0.2\\% = 0.32\\%$ | $0.0 \\times -0.5\\% = 0.00\\%$  | | C    | $1.0 \\times 0.2\\% = 0.20\\%$ | $1.1 \\times -0.5\\% = -0.55\\%$ | \n The combined effects for the three funds are the following. Fund A: $0.10\\% (-0.50\\%) = -0.40\\%$ Fund B: $0.32\\% (0.00\\%) = 0.32\\%$ Fund C: $0.20\\% (-0.55\\%) = -0.35\\%$ Therefore, Fund A is the most sensitive to the surprises in inflation and GDP growth in Exhibit 3.",
+        "Explanation": "The effect of the surprises in inflation and GDP growth on the returns of the three funds is calculated as the following.\n\n$$ \\begin{array}{|c|c|c|} \\hline \\text{Fund} & \\text{Inflation} & \\text{GDP Growth} \\\\ \\hline A & 0.5 \\times 0.2\\% = 0.10\\% & 1.0 \\times -0.5\\% = -0.50\\% \\\\ B & 1.6 \\times 0.2\\% = 0.32\\% & 0.0 \\times -0.5\\% = 0.00\\% \\\\ C & 1.0 \\times 0.2\\% = 0.20\\% & 1.1 \\times -0.5\\% = -0.55\\% \\\\ \\hline \\end{array} $$        \n The combined effects for the three funds are the following. Fund A: $0.10\\% (-0.50\\%) = -0.40\\%$ Fund B: $0.32\\% (0.00\\%) = 0.32\\%$ Fund C: $0.20\\% (-0.55\\%) = -0.35\\%$ Therefore, Fund A is the most sensitive to the surprises in inflation and GDP growth in Exhibit 3.",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -58327,7 +58327,7 @@ test_data = [
             "C": "$0.070."
         },
         "Answer": "B",
-        "Explanation": "The effective spread is calculated as follows:\nEffective spread = 2 × (Trade price - Midpoint of market at time of order entry)\nEffective spread of Trade 1 = 2 × ($41.50 - $41.475) = $0.05 Effective spread of Trade 2 = 2 × ($41.75 - $41.74) = $0.02 Average Effective Spread = ($0.05 + $0.02) / 2 = $0.035",
+        "Explanation": "The effective spread is calculated as follows:\nEffective spread = 2 × (Trade price - Midpoint of market at time of order entry)\nEffective spread of Trade 1 = 2 × ($\\$41.50$ - $\\$41.475$) = $\\$0.05$ Effective spread of Trade 2 = 2 × ($\\$41.75$ - $\\$41.74$) = $\\$0.02$ Average Effective Spread = ($\\$0.05$ + $\\$0.02$) / 2 = $\\$0.035$",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -58415,7 +58415,7 @@ test_data = [
             "C": "an average daily loss of $1.10 million 5% of the time during the next 250 trading days."
         },
         "Answer": "B",
-        "Explanation": "VaR is the minimum loss that would be expected a certain percentage of the time\nover a specified period of time given the assumed market conditions. A 5% VaR is often\nexpressed as its complement--a 95% level of confidence. Therefore, the monthly VaR in Exhibit 1\nindicates that $5.37 million is the minimum loss that would be expected to occur over one month 5% of the time. Alternatively, 95% of the time, a loss of more than $5.37 million would not be\nexpected.",
+        "Explanation": "VaR is the minimum loss that would be expected a certain percentage of the time\nover a specified period of time given the assumed market conditions. A 5% VaR is often\nexpressed as its complement--a 95% level of confidence. Therefore, the monthly VaR in Exhibit 1\nindicates that $\\$5.37$ million is the minimum loss that would be expected to occur over one month 5% of the time. Alternatively, 95% of the time, a loss of more than $\\$5.37$ million would not be\nexpected.",
         "General Topics": "Portfolio Management",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -58592,7 +58592,7 @@ test_data = [
             "C": "$0.10."
         },
         "Answer": "A",
-        "Explanation": "The inside bid–ask spread, or market bid–ask spread, is the dif-ference between\nthe highest bid price and the lowest ask price. The highest bid price for Light Systems is\n$17.15, and the lowest ask price is $17.19. Therefore, the inside bid–ask spread = $17.19–$17.15 = $0.04.",
+        "Explanation": "The inside bid–ask spread, or market bid–ask spread, is the dif-ference between\nthe highest bid price and the lowest ask price. The highest bid price for Light Systems is\n$\\$17.15$, and the lowest ask price is $\\$17.19$. Therefore, the inside bid–ask spread = $\\$17.19–\\$17.15$ = $\\$0.04$.",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -58615,7 +58615,7 @@ test_data = [
             "C": "$17.22."
         },
         "Answer": "B",
-        "Explanation": "SAMN's trading desk executes a market sell order for 1,100 shares. Based on the\nlimit order book, the trader would first sell 900 shares at $17.15 (highest bid, Dealer B) and then sell the remaining 200 shares at $17.14 (second highest bid, Dealer C). Therefore, the\napproximate price per share received by SAMN for selling the 1,100 shares is equal to [(900 ×\n$17.15) + (200 × $17.14)] / 1,100 = $17.1482 per share ($17.15 rounded).",
+        "Explanation": "SAMN's trading desk executes a market sell order for 1,100 shares. Based on the\nlimit order book, the trader would first sell 900 shares at $\\$17.15$ (highest bid, Dealer B) and then sell the remaining 200 shares at $\\$17.14$ (second highest bid, Dealer C). Therefore, the\napproximate price per share received by SAMN for selling the 1,100 shares is equal to [(900 ×\n$\\$17.15$) + (200 × $\\$17.14$)] / 1,100 = $\\$17.1482$ per share ($\\$17.15$ rounded).",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -58638,7 +58638,7 @@ test_data = [
             "C": "$0.07."
         },
         "Answer": "A",
-        "Explanation": "Market impact, or price impact, is the effect of a trade on trans-action prices.\nAfter the first trade (Trade 1) was executed at $25.20, Trade 2 was executed at $25.22, which is $0.02 per share higher than the trade price of Trade 1. So, the execution of Trade 1 led to\na price impact of $0.02 per share on Trade 2.",
+        "Explanation": "Market impact, or price impact, is the effect of a trade on trans-action prices.\nAfter the first trade (Trade 1) was executed at $\\$25.20$, Trade 2 was executed at $\\$25.22$, which is $\\$0.02$ per share higher than the trade price of Trade 1. So, the execution of Trade 1 led to\na price impact of $\\$0.02$ per share on Trade 2.",
         "General Topics": "Portfolio Management",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
