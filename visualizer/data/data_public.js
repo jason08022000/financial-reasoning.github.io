@@ -8684,7 +8684,7 @@ test_data = [
         },
         "Answer": "B",
         "Explanation": "Using the temporal method, monetary assets (i.e., cash) are translated using the current exchange rate (as of 31 December 2016) of BRD1.20/NER (or NERO.8333/BRD), and non-monetary assets are translated using the historical exchange rate when acquired. Inventory is translated at its 2016 weighted-average rate of BRD1.19/NER (or NERO.8403/BRD). Therefore, the total assets for Triofind-B translated into Norvolt euros (Triofind’s presentation currency) as of 31 December 2016 are calculated as follows:\n\n    $ \\begin{array}{|l|r|r|c|r|} \\hline \\text{Assets} & \\text{31 Dec 2016 (BRD)} & \\text{Exchange Rate (NER/BRD)} & \\text{Rate Used} & \\text{NER} \\\\ \\hline \\text{Cash} & 900,000 & 0.8333 & \\text{Current} & 750,000 \\\\ \\text{Inventory} & 750,000 & 0.8403 & \\text{Average} & 630,252 \\\\ \\text{Total} & 1,650,000 & & & 1,380,252 \\\\ \\hline \\end{array} $        ",
-        "General Topics": "Financial Reporting and Analysisd",
+        "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Hard",
         "shared_description": "### Description of Image Contents\n\n#### Image 1: Exchange Rates and Balance Sheets\n\n**Exhibit 1: Spot BRD/NER Exchange Rates**\n- **Layout:** Two columns under a single header.\n- **Headers:** \n  - Date\n  - BRD per NER\n- **Data:**\n  - 30 June 2016 | 1.15\n  - Weighted-average rate when inventory was acquired (2016) | 1.19\n  - 31 December 2016 | 1.20\n  - Weighted-average rate when inventory was acquired (2017) | 1.18\n  - 30 June 2017 | 1.17\n\n**Exhibit 2: Triofind-B Balance Sheet for 2016 and 2017 (BRD)**\n- **Layout:** Two main sections labeled as \"Assets\" and \"Liabilities and Stockholders' Equity.\"\n- **Headers:**\n  - Date for Assets: 31 December 2016, 30 June 2017\n  - Liabilities and Stockholders’ Equity: 31 December 2016, 30 June 2017\n- **Assets Data:**\n  - Cash | 900,000 | 1,350,000\n  - Inventory | 750,000 | 500,000\n  - Total | 1,650,000 | 1,850,000\n- **Liabilities and Stockholders' Equity Data:**\n  - Notes payable | 500,000 | 500,000\n  - Common stock | 1,150,000 | 1,150,000\n  - Retained earnings |  | 200,000\n  - Total | 1,650,000 | 1,850,000\n\n#### Image 2: Exchange Rates and Inflation Data\n\n**Exhibit 3: Spot Exchange Rates and Inflation Data for Triofind-A**\n- **Headers:**\n  - Date\n  - NER per CRD\n  - NER per ABP\n  - Abuelio Monthly Inflation Rate (%)\n- **Data:**\n  - 31 May 2017 | 0.2667 | 0.0496 | —\n  - 30 June 2017 | 0.2703 | 0.0388 | 25\n  - 31 July 2017 | 0.2632 | ",
@@ -9523,7 +9523,7 @@ test_data = [
             "C": "NVK9.12 million."
         },
         "Answer": "B",
-        "Explanation": "IAS 29 indicates that a cumulative inflation rate approaching or exceeding 100\\% over three years would be an indicator of hyperinflation. Because the cumulative inflation rate for 2016 and 2017 in Crenland was 128.2\\%, Cendaro’s accounts must first be restated for local inflation. Then, the inflation-restated Crenland guinea financial statements can be translated into Ambleu’s presentation currency, the Norvoltian krone, using the current exchange rate. Using this approach, the cumulative translation loss on 31 December 2017 for the CRG85.17 million patent purchase is -NVK1.58 million, as shown in the following table.\n\n| Date               | Inflation Rate (\\%) | Restated Carrying Value (CRG/MM) | Current Exchange Rate (CRG/NVK) | Translated Amount (NVK/MM) | Annual Translation Gain/Loss (NVK/MM) | Cumulative Translation Gain/Loss (NVK/MM) |\n|--------------------|---------------------|----------------------------------|---------------------------------|----------------------------|---------------------------------------|---------------------------------------------|\n| 1 Jan 2016         | ---                 | 85.17                            | 5.6780                          | 15.00                      | N/A                                   | N/A                                         |\n| 31 Dec 2016        | 40.6                | 119.75                           | 8.6702                          | 13.81                      | -1.19                                 | -1.19                                       |\n| 31 Dec 2017        | 62.3                | 194.35                           | 14.4810                         | 13.42                      | -0.39                                 | -1.58                                       |",
+        "Explanation": "IAS 29 indicates that a cumulative inflation rate approaching or exceeding 100\\% over three years would be an indicator of hyperinflation. Because the cumulative inflation rate for 2016 and 2017 in Crenland was 128.2\\%, Cendaro’s accounts must first be restated for local inflation. Then, the inflation-restated Crenland guinea financial statements can be translated into Ambleu’s presentation currency, the Norvoltian krone, using the current exchange rate. Using this approach, the cumulative translation loss on 31 December 2017 for the CRG85.17 million patent purchase is -NVK1.58 million, as shown in the following table.\n\n$$ \\begin{array}{|l|r|r|r|r|r|r|} \\hline \\text{Date} & \\text{Inflation Rate (\\%)} & \\text{Restated Carrying Value (CRG/MM)} & \\text{Current Exchange Rate (CRG/NVK)} & \\text{Translated Amount (NVK/MM)} & \\text{Annual Translation Gain/Loss (NVK/MM)} & \\text{Cumulative Translation Gain/Loss (NVK/MM)} \\\\ \\hline 1 \\text{ Jan 2016} & --- & 85.17 & 5.6780 & 15.00 & \\text{N/A} & \\text{N/A} \\\\ 31 \\text{ Dec 2016} & 40.6 & 119.75 & 8.6702 & 13.81 & -1.19 & -1.19 \\\\ 31 \\text{ Dec 2017} & 62.3 & 194.35 & 14.4810 & 13.42 & -0.39 & -1.58 \\\\ \\hline \\end{array} $$        ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Hard",
@@ -18080,7 +18080,7 @@ test_data = [
         "ID": 863,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Silverago Incorporated, an international metals company, reported a loss on the sale of\nequipment of $2 million in 2018. In addition, the company’s income statement shows\ndepreciation expense of $8 million and the cash flow statement shows capital expenditure of $10\nmillion, all of which was for the purchase of new equipment. Using the following information\nfrom the comparative balance sheets, how much cash did the company receive from the equipment\nsale?",
+        "Question Text": "Silverago Incorporated, an international metals company, reported a loss on the sale of\nequipment of $\\$2$ million in 2018. In addition, the company’s income statement shows\ndepreciation expense of $\\$8$ million and the cash flow statement shows capital expenditure of $\\$10$\nmillion, all of which was for the purchase of new equipment. Using the following information\nfrom the comparative balance sheets, how much cash did the company receive from the equipment\nsale?",
         "Image": "images/level1_cai_bao_images/33u.png",
         "Options": {
             "A": "$1 million.",
@@ -18088,7 +18088,7 @@ test_data = [
             "C": "$3 million."
         },
         "Answer": "A",
-        "Explanation": "Selling price (cash inflow) minus book value equals gain or loss\non sale; therefore, gain or loss on sale plus book value equals selling price (cash inflow).\nThe amount of loss is given—$2 million. To calculate the book value of the equipment sold, find the historical cost of the equipment and the accumulated depreciation on the equipment.\nBeginning balance of equipment of $100 million plus equipment purchased of $10 million minus ending balance of equipment of $105 million equals the historical cost of equipment sold, or $5 million. Beginning accumulated depreciation of $40 million plus depreciation expense for the\nyear of $8 million minus ending balance of accumulated depreciation of $46 million equals accumulated depreciation on the equipment sold, or $2 million. Therefore, the book value of the\nequipment sold was $5 million minus $2 million, or $3 million. Because the loss on the sale of equipment was $2 million, the amount of cash received must have been $1 million.",
+        "Explanation": "Selling price (cash inflow) minus book value equals gain or loss\non sale; therefore, gain or loss on sale plus book value equals selling price (cash inflow).\nThe amount of loss is given — $\\$2$ million. To calculate the book value of the equipment sold, find the historical cost of the equipment and the accumulated depreciation on the equipment.\nBeginning balance of equipment of $\\$100$ million plus equipment purchased of $\\$10$ million minus ending balance of equipment of $\\$105$ million equals the historical cost of equipment sold, or $\\$5$ million. Beginning accumulated depreciation of $\\$40$ million plus depreciation expense for the\nyear of $\\$8$ million minus ending balance of accumulated depreciation of $\\$46$ million equals accumulated depreciation on the equipment sold, or $\\$2$ million. Therefore, the book value of the\nequipment sold was $\\$5$ million minus $\\$2$ million, or $\\$3$ million. Because the loss on the sale of equipment was $\\$2$ million, the amount of cash received must have been $\\$1$ million.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18248,7 +18248,7 @@ test_data = [
             "C": "Subtract $6 million."
         },
         "Answer": "B",
-        "Explanation": "To derive operating cash flow, the company would make the\nfollowing adjustments to net income: Add depreciation (a non-cash expense) of $2 million; add the decrease in accounts receivable of $3 million; add the increase in accounts payable of $5 million; and subtract the increase in inventory of $4 million. Total additions would be $10 million, and total subtractions would be $4 million, which gives net additions of $6 million.",
+        "Explanation": "To derive operating cash flow, the company would make the\nfollowing adjustments to net income: Add depreciation (a non-cash expense) of $\\$2$ million; add the decrease in accounts receivable of $\\$3$ million; add the increase in accounts payable of $\\$5$ million; and subtract the increase in inventory of $\\$4$ million. Total additions would be $\\$10$ million, and total subtractions would be $\\$4$ million, which gives net additions of $\\$6$ million.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18260,7 +18260,7 @@ test_data = [
         "ID": 872,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Red Road Company, a consulting company, reported total revenues of $100 million, total\nexpenses of $80 million, and net income of $20 million in the most recent year. If accounts\nreceivable increased by $10 million, how much cash did the company receive from customers?",
+        "Question Text": "Red Road Company, a consulting company, reported total revenues of $\\$100$ million, total\nexpenses of $\\$80$ million, and net income of $\\$20$ million in the most recent year. If accounts\nreceivable increased by $10 million, how much cash did the company receive from customers?",
         "Image": "images/level1_cai_bao_images/42u.png",
         "Options": {
             "A": "$90 million.",
@@ -18268,7 +18268,7 @@ test_data = [
             "C": "$110 million."
         },
         "Answer": "A",
-        "Explanation": "Revenues of $100 million minus the increase in accounts receivable of $10 million equal $90 million cash received from customers. The increase in accounts\nreceivable means that the company received less in cash than it reported as revenue.",
+        "Explanation": "Revenues of $\\$100$ million minus the increase in accounts receivable of $\\$10$ million equal $\\$90$ million cash received from customers. The increase in accounts\nreceivable means that the company received less in cash than it reported as revenue.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18320,7 +18320,7 @@ test_data = [
         "ID": 875,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Green Glory Corp., a garden supply wholesaler, reported cost of goods sold for the year of\n$80 million. Total assets increased by $55 million, including an increase of $5 million in\ninventory. Total liabilities increased by $45 million, including an increase of $2 million in\naccounts payable. The cash paid by the company to its suppliers is most likely closest to:",
+        "Question Text": "Green Glory Corp., a garden supply wholesaler, reported cost of goods sold for the year of\n$\\$80$ million. Total assets increased by $\\$55$ million, including an increase of $\\$5$ million in\ninventory. Total liabilities increased by $\\$45$ million, including an increase of $\\$2$ million in\naccounts payable. The cash paid by the company to its suppliers is most likely closest to:",
         "Image": "images/image_add/875.png",
         "Options": {
             "A": "$73 million.",
@@ -18328,7 +18328,7 @@ test_data = [
             "C": "$83 million."
         },
         "Answer": "C",
-        "Explanation": "Cost of goods sold of $80 million plus the increase in inventory of $5 million equals purchases from suppliers of $85 million. The increase in accounts payable of $2 million means that the company paid $83 million in cash ($85 million minus $2 million) to\nits suppliers.",
+        "Explanation": "Cost of goods sold of $\\$80$ million plus the increase in inventory of $\\$5$ million equals purchases from suppliers of $\\$85$ million. The increase in accounts payable of $\\$2$ million means that the company paid $\\$83$ million in cash ($\\$85$ million minus $\\$2$ million) to\nits suppliers.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18640,7 +18640,7 @@ test_data = [
         "ID": 891,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "An analyst gathered the following information from a company’s 2018 financial statements\n(in $ millions):\n In 2018, the company declared and paid cash dividends of $10 million and recorded depreciation\nexpense in the amount of $25 million. The company considers dividends paid a financing\nactivity. The company’s 2018 cash flow from operations (in $ millions) was closest to",
+        "Question Text": "An analyst gathered the following information from a company’s 2018 financial statements\n(in $\\$$ millions):\n In 2018, the company declared and paid cash dividends of $\\$10$ million and recorded depreciation\nexpense in the amount of $\\$25$ million. The company considers dividends paid a financing\nactivity. The company’s 2018 cash flow from operations (in $\\$$ millions) was closest to",
         "Image": "images/level1_cai_bao_images/61u.png",
         "Options": {
             "A": "25.",
@@ -18648,7 +18648,7 @@ test_data = [
             "C": "75."
         },
         "Answer": "B",
-        "Explanation": "All dollar amounts are in millions. Net income (NI) for 2018 is\n$35. This amount is the increase in retained earnings, $25, plus the dividends paid, $10. Depreciation of $25 is added back to net income, and the increases in accounts receivable, $5, and in inventory, $3, are subtracted from net income because they are uses of cash. The\ndecrease in accounts payable is also a use of cash and, therefore, a subtraction from net\nincome. Thus, cash flow from operations is $25 + $10 + $25 – $5 – $3 – $7 = $45.",
+        "Explanation": "All dollar amounts are in millions. Net income (NI) for 2018 is\n$\\$35$. This amount is the increase in retained earnings, $\\$25$, plus the dividends paid, $\\$10$. Depreciation of $\\$25$ is added back to net income, and the increases in accounts receivable, $\\$5$, and in inventory, $\\$3$, are subtracted from net income because they are uses of cash. The\ndecrease in accounts payable is also a use of cash and, therefore, a subtraction from net\nincome. Thus, cash flow from operations is $\\$25 + \\$10 + \\$25 – \\$5 – \\$3 – \\$7 = \\$45$.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -18860,7 +18860,7 @@ test_data = [
         "ID": 902,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "White Flag, a women’s clothing manufacturer, reported salaries expense of $20 million. The\nbeginning balance of salaries payable was $3 million, and the ending balance of salaries\npayable was $1 million. How much cash did the company pay in salaries?",
+        "Question Text": "White Flag, a women’s clothing manufacturer, reported salaries expense of $\\$20$ million. The\nbeginning balance of salaries payable was $\\$3$ million, and the ending balance of salaries\npayable was $\\$1$ million. How much cash did the company pay in salaries?",
         "Image": "images/image_add/902.png",
         "Options": {
             "A": "$18 million.",
@@ -18868,7 +18868,7 @@ test_data = [
             "C": "$22 million."
         },
         "Answer": "C",
-        "Explanation": "Beginning salaries payable of $3 million plus salaries expense of $20 million minus ending salaries payable of $1 million equals $22 million. Alternatively, the expense of $20 million plus the $2 million decrease in salaries payable equals $22 million.",
+        "Explanation": "Beginning salaries payable of $\\$3$ million plus salaries expense of $\\$20$ million minus ending salaries payable of $\\$1$ million equals $\\$22$ million. Alternatively, the expense of $\\$20$ million plus the $\\$2$ million decrease in salaries payable equals $\\$22$ million.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -19120,7 +19120,7 @@ test_data = [
         "ID": 915,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "HVG, LLC paid $12,000 of cash to a real estate company upon signing a lease on 31 December\n2005. The payment represents a $4,000 security deposit and $4,000 of rent for each of January\n2006 and February 2006. Assuming that the correct accounting is to reflect both January and\nFebruary rent as prepaid, the most likely effect on HVG's accounting equation in December 2005\nis:",
+        "Question Text": "HVG, LLC paid $\\$12,000$ of cash to a real estate company upon signing a lease on 31 December\n2005. The payment represents a $\\$4,000$ security deposit and $\\$4,000$ of rent for each of January\n2006 and February 2006. Assuming that the correct accounting is to reflect both January and\nFebruary rent as prepaid, the most likely effect on HVG's accounting equation in December 2005\nis:",
         "Image": "images/image_add/915.png",
         "Options": {
             "A": "no net change in assets.",
@@ -19128,7 +19128,7 @@ test_data = [
             "C": "a decrease in assets of $12,000."
         },
         "Answer": "A",
-        "Explanation": "The payment of January rent represents prepaid rent (an asset), which will be\nadjusted at the end of January to record rent expense. Cash (an asset) decreases by $12,000. Deposits (an asset) increase by $4,000. Prepaid rent (an asset) increases by $8,000. There is\nno net change in assets.",
+        "Explanation": "The payment of January rent represents prepaid rent (an asset), which will be\nadjusted at the end of January to record rent expense. Cash (an asset) decreases by $\\$12,000$. Deposits (an asset) increase by $\\$4,000$. Prepaid rent (an asset) increases by $\\$8,000$. There is\nno net change in assets.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -19168,7 +19168,7 @@ test_data = [
             "C": "an increase in contributed capital."
         },
         "Answer": "C",
-        "Explanation": "This is a contribution of capital by the owners. Assets would increase by $500,000 and contributed capital would increase by $500,000, maintaining the balance of the accounting\nequation.",
+        "Explanation": "This is a contribution of capital by the owners. Assets would increase by $\\$500,000$ and contributed capital would increase by $\\$500,000$, maintaining the balance of the accounting\nequation.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -19700,7 +19700,7 @@ test_data = [
         "ID": 944,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Brown Corporation had average days of sales outstanding of 19 days in the most recent\nfiscal year. Brown wants to improve its credit policies and collection practices and decrease\nits collection period in the next fiscal year to match the industry average of 15 days. Credit\nsales in the most recent fiscal year were $300 million, and Brown expects credit sales to\nincrease to $390 million in the next fiscal year. To achieve Brown’s goal of decreasing the\ncollection period, the change in the average accounts receivable balance that must occur is\nclosest to:",
+        "Question Text": "Brown Corporation had average days of sales outstanding of 19 days in the most recent\nfiscal year. Brown wants to improve its credit policies and collection practices and decrease\nits collection period in the next fiscal year to match the industry average of 15 days. Credit\nsales in the most recent fiscal year were $\\$300$ million, and Brown expects credit sales to\nincrease to $\\$390$ million in the next fiscal year. To achieve Brown’s goal of decreasing the\ncollection period, the change in the average accounts receivable balance that must occur is\nclosest to:",
         "Image": "images/image_add/944.png",
         "Options": {
             "A": "+$0.41 million.",
@@ -19708,7 +19708,7 @@ test_data = [
             "C": "–$1.22 million."
         },
         "Answer": "A",
-        "Explanation": "The average accounts receivable balances (actual and desired) must\nbe calculated to determine the desired change. The average accounts receivable balance can be\ncalculated as an average day’s credit sales times the DSO. For the most recent fiscal year,\nthe average accounts receivable balance is $15.62 million [= ($300,000,000/365) × 19]. The desired average accounts receivable balance for the next fiscal year is $16.03 million (=\n($390,000,000/365) × 15). This is an increase of $0.41 million (= 16.03 million – 15.62 million). An alternative approach is to calculate the turnover and divide sales by turnover to\ndetermine the average accounts receivable balance. Turnover equals 365 divided by DSO. Turnover\nis 19.21 (= 365/19) for the most recent fiscal year and is targeted to be 24.33 (= 365/15) for\nthe next fiscal year. The average accounts receivable balances are $15.62 million (=\n$300,000,000/19.21), and $16.03 million (= $390,000,000/24.33). The change is an increase in receivables of $0.41 million ：",
+        "Explanation": "The average accounts receivable balances (actual and desired) must\nbe calculated to determine the desired change. The average accounts receivable balance can be\ncalculated as an average day’s credit sales times the DSO. For the most recent fiscal year,\nthe average accounts receivable balance is $\\$15.62$ million [= ($\\$300,000,000$/365) × 19]. The desired average accounts receivable balance for the next fiscal year is $\\$16.03$ million (=\n($\\$390,000,000$/365) × 15). This is an increase of $\\$0.41$ million (= 16.03 million – 15.62 million). An alternative approach is to calculate the turnover and divide sales by turnover to\ndetermine the average accounts receivable balance. Turnover equals 365 divided by DSO. Turnover\nis 19.21 (= 365/19) for the most recent fiscal year and is targeted to be 24.33 (= 365/15) for\nthe next fiscal year. The average accounts receivable balances are $\\$15.62$ million (=\n$\\$300,000,000$/19.21), and $\\$16.03$ million (= $\\$390,000,000$/24.33). The change is an increase in receivables of $\\$0.41$ million ：",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -19848,7 +19848,7 @@ test_data = [
             "C": "￥185,000."
         },
         "Answer": "A",
-        "Explanation": "The costs to include in inventories are all costs of purchase, costs of conversion,\nand other costs incurred in bringing the inventories to their present location and condition.\n\n\n| **Cost**                                      | **¥ millions** |\n|-----------------------------------------------|----------------|\n| Purchase price                                | 100,000        |\n| Less Trade discounts                          | (5,000)        |\n| Import duties                                 | 20,000         |\n| Shipping of raw materials to manufacturing facility | 10,000   |\n| Manufacturing conversion costs                | 50,000         |\n| **Total inventory costs**                     | **175,000**    |",
+        "Explanation": "The costs to include in inventories are all costs of purchase, costs of conversion,\nand other costs incurred in bringing the inventories to their present location and condition.\n\n\n    $ \\begin{array}{|l|r|} \\hline \\text{Cost} & \\text{¥ millions} \\\\ \\hline \\text{Purchase price} & 100,000 \\\\ \\text{Less Trade discounts} & (5,000) \\\\ \\text{Import duties} & 20,000 \\\\ \\text{Shipping of raw materials to manufacturing facility} & 10,000 \\\\ \\text{Manufacturing conversion costs} & 50,000 \\\\ \\text{Total inventory costs} & \\text{175,000} \\\\ \\hline \\end{array} $        ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -20148,7 +20148,7 @@ test_data = [
             "C": "2.00."
         },
         "Answer": "B",
-        "Explanation": " The financial leverage ratio (Total assets ÷ Total equity) is\n1.66 (= €42,497 ÷ €25,540). ：\n| **Description**                 | **2023** | **2024** |\n|----------------------------------|----------|----------|\n| Total non-current liabilities   | 6,747    | 8,205    |\n| Total liabilities               | 16,958   | 17,880   |\n| Total equity                    | 25,540   | 26,397   |\n| Total equity and liabilities    | 42,497   | 44,277   |",
+        "Explanation": " The financial leverage ratio (Total assets ÷ Total equity) is\n1.66 (= €42,497 ÷ €25,540). ：\n$$ \\begin{array}{|l|r|r|} \\hline \\text{Description} & \\text{2023} & \\text{2024} \\\\ \\hline \\text{Total non-current liabilities} & 6,747 & 8,205 \\\\ \\text{Total liabilities} & 16,958 & 17,880 \\\\ \\text{Total equity} & 25,540 & 26,397 \\\\ \\text{Total equity and liabilities} & 42,497 & 44,277 \\\\ \\hline \\end{array} $$",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -20368,7 +20368,7 @@ test_data = [
             "C": "Average Age：4.00 years，Average Depreciable Life：7 years"
         },
         "Answer": "C",
-        "Explanation": "The company made no additions to or deletions from the fixed asset\naccount during the year, so depreciation expense is equal to the difference in accumulated\ndepreciation at the beginning of the year and the end of the year, or $0.4 million. Average age is equal to accumulated depreciation/depreciation expense, or $1.6/$0.4 = 4 years. Average depreciable life is equal to ending gross investment/depreciation expense = $2.8/$0.4 = 7\nyears. ",
+        "Explanation": "The company made no additions to or deletions from the fixed asset\naccount during the year, so depreciation expense is equal to the difference in accumulated\ndepreciation at the beginning of the year and the end of the year, or $\\$0.4$ million. Average age is equal to accumulated depreciation/depreciation expense, or $\\$1.6/\\$0.4 = 4$ years. Average depreciable life is equal to ending gross investment/depreciation expense = $\\$2.8/\\$0.4 = 7$\nyears. ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -20408,7 +20408,7 @@ test_data = [
             "C": "€751,521."
         },
         "Answer": "A",
-        "Explanation": " The following illustrates the keystrokes for many financial\ncalculators to calculate sales proceeds of €10,736,008.71:\n\n| **Calculator Notation** | **Numerical Value for This Problem** |\n|-------------------------|--------------------------------------|\n| N                       | 10                                   |\n| % i or I/Y              | 6                                    |\n| FV                      | $10,000,000.00                       | | PMT                     | $700,000.00                          |\n| PV compute              | X                                    |\n\n\nThe interest expense is calculated by multiplying the carrying amount at the beginning of the\nyear by the effective interest rate at issuance. As a result, the interest expense at 31\nDecember 2015 is €644,161 (€10,736,008.71 × 6%). ",
+        "Explanation": " The following illustrates the keystrokes for many financial\ncalculators to calculate sales proceeds of €10,736,008.71:\n\n$$ \\begin{array}{|l|r|} \\hline \\text{Calculator Notation} & \\text{Numerical Value for This Problem} \\\\ \\hline N & 10 \\\\ \\% i \\text{ or } I/Y & 6 \\\\ FV & 10,000,000.00 \\\\ PMT & 700,000.00 \\\\ PV \\text{ compute} & X \\\\ \\hline \\end{array} $$        \n\n\nThe interest expense is calculated by multiplying the carrying amount at the beginning of the\nyear by the effective interest rate at issuance. As a result, the interest expense at 31\nDecember 2015 is €644,161 (€10,736,008.71 × 6%). ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -20420,7 +20420,7 @@ test_data = [
         "ID": 980,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Habel Inc. owns equipment with a tax base of $400,000 and a carrying value of $600,000.\nHabel also has a tax loss carry forward of $200,000 that is expected to be utilized in the\nforeseeable future. Deferred tax items on the balance sheet are valued based on a tax rate of\n30%. If the tax rate is expected to increase to 35%, the adjustments to the value of deferred\ntax items will most likely cause Habel’s total liabilities-to-equity ratio to:",
+        "Question Text": "Habel Inc. owns equipment with a tax base of $\\$400,000$ and a carrying value of $\\$600,000$.\nHabel also has a tax loss carry forward of $\\$200,000$ that is expected to be utilized in the\nforeseeable future. Deferred tax items on the balance sheet are valued based on a tax rate of\n30%. If the tax rate is expected to increase to 35%, the adjustments to the value of deferred\ntax items will most likely cause Habel’s total liabilities-to-equity ratio to:",
         "Image": "images/image_add/980.png",
         "Options": {
             "A": "decrease.",
@@ -20428,7 +20428,7 @@ test_data = [
             "C": "increase."
         },
         "Answer": "C",
-        "Explanation": "The $200,000 difference between the tax base and the carrying value of the equipment gives rise to a taxable temporary difference that leads to a deferred tax liability\nof $60,000 ($200,000 × 30%). The tax loss carry forward of $200,000 leads to a deferred tax asset of $60,000 ($200,000 × 30%). The increase in the tax rate from 30% to 35% will increase both the DTL and the DTA by $10,000 ($200,000 × 5%). Equity is unchanged. Therefore, the total\nliabilities-to-equity ratio will increase because of the increase in the deferred tax\nliability.",
+        "Explanation": "The $\\$200,000$ difference between the tax base and the carrying value of the equipment gives rise to a taxable temporary difference that leads to a deferred tax liability\nof $\\$60,000$ ($\\$200,000$ × 30%). The tax loss carry forward of $\\$200,000$ leads to a deferred tax asset of $\\$60,000$ ($\\$200,000$ × 30%). The increase in the tax rate from 30% to 35% will increase both the DTL and the DTA by $\\$10,000$ ($\\$200,000$ × 5%). Equity is unchanged. Therefore, the total\nliabilities-to-equity ratio will increase because of the increase in the deferred tax\nliability.",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Knowledge Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -20568,7 +20568,7 @@ test_data = [
             "C": "$5,071,401."
         },
         "Answer": "A",
-        "Explanation": "  The following illustrates the keystrokes for many financial\ncalculators to calculate sales proceeds of $4,929,284.72: \n | Calculator Notation | Numerical Value for This Problem |\n|---------------------|----------------------------------|\n| N                   | 3                                |\n| % i or I/Y          | 3.0                              |\n| FV                  | \\$5,000,000.00                    |\n| PMT                 | \\$125,000.00                     |\n| PV compute          | X                                |",
+        "Explanation": "  The following illustrates the keystrokes for many financial\ncalculators to calculate sales proceeds of $\\$4,929,284.72$: \n $$ \\begin{array}{|l|r|} \\hline \\text{Calculator Notation} & \\text{Numerical Value for This Problem} \\\\ \\hline N & 3 \\\\ \\% i \\text{ or } I/Y & 3.0 \\\\ FV & \\$5,000,000.00 \\\\ PMT & \\$125,000.00 \\\\ PV \\text{ compute} & X \\\\ \\hline \\end{array} $$        ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -20648,7 +20648,7 @@ test_data = [
             "C": "greater."
         },
         "Answer": "C",
-        "Explanation": "Shifting at the end of Year 2 from double-declining balance to\nstraight-line depreciation methodology results in depreciation expense being the same in each\nof Years 3, 4, and 5. Shifting to the straight-line methodology at the beginning of Year 3\nresults in a greater depreciation expense in Year 4 than would have been calculated using the\ndouble-declining balance method. Depreciation expense Year 4 (Using double-declining balance\nmethod all five years)= 2 × Annual depreciation % using straight-line method × carrying\namount at end of Year 3 = 40% × $43,200 Depreciation expense Year 4 with switch to straight- line method in Year 3 = 1/3 × Remaining depreciable cost at start of Year 3 = 1/3 × $72,000=\n$24,000 ",
+        "Explanation": "Shifting at the end of Year 2 from double-declining balance to\nstraight-line depreciation methodology results in depreciation expense being the same in each\nof Years 3, 4, and 5. Shifting to the straight-line methodology at the beginning of Year 3\nresults in a greater depreciation expense in Year 4 than would have been calculated using the\ndouble-declining balance method. Depreciation expense Year 4 (Using double-declining balance\nmethod all five years)= 2 × Annual depreciation % using straight-line method × carrying\namount at end of Year 3 = $40% × \\$43,200$ Depreciation expense Year 4 with switch to straight- line method in Year 3 = 1/3 × Remaining depreciable cost at start of Year 3 = $1/3 × \\$72,000=\n\\$24,000$ ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -21308,7 +21308,7 @@ test_data = [
             "C": "77,807."
         },
         "Answer": "B",
-        "Explanation": " The interest expense for a given year is equal to the carrying\namount at the beginning of the year times the effective interest of 4%. Under the effective\ninterest rate method, the difference between the interest expense and the interest payment\n(based on the coupon rate and face value) is the discount amortized in the period, which\nincreases the carrying amount annually. For 2017, the interest expense is the beginning\ncarrying amount ($1,944,499) times the effective interest of 4%. ： \n| **Year** | **Carrying Amount (beginning)** | **Interest Expense (at effective interest of 4%)** | **Interest Payment (at coupon rate of 3%)** | **Amortization of Discount** | **Carrying Amount (end of year)** |\n|----------|---------------------------------|--------------------------------------------------|--------------------------------------------|------------------------------|----------------------------------|\n| 2015     | $1,910,964                      | $76,439                                          | $60,000.00                                 | $16,439                      | $1,927,403                      | | 2016     | $1,927,403                      | $77,096                                          | $60,000.00                                 | $17,096                      | $1,944,499                      | | 2017     | $1,944,499                      | $77,780                                          | $60,000.00                                 | $17,780                      | $1,962,279                      |\n",
+        "Explanation": " The interest expense for a given year is equal to the carrying\namount at the beginning of the year times the effective interest of 4%. Under the effective\ninterest rate method, the difference between the interest expense and the interest payment\n(based on the coupon rate and face value) is the discount amortized in the period, which\nincreases the carrying amount annually. For 2017, the interest expense is the beginning\ncarrying amount ($\\$1,944,499$) times the effective interest of 4%. ： \n  $$ \\begin{array}{|c|r|r|r|r|r|} \\hline \\text{Year} & \\text{Carrying Amount (beginning)} & \\text{Interest Expense (at effective interest of 4\\%)} & \\text{Interest Payment (at coupon rate of 3\\%)} & \\text{Amortization of Discount} & \\text{Carrying Amount (end of year)} \\\\ \\hline 2015 & 1,910,964 & 76,439 & 60,000.00 & 16,439 & 1,927,403 \\\\ 2016 & 1,927,403 & 77,096 & 60,000.00 & 17,096 & 1,944,499 \\\\ 2017 & 1,944,499 & 77,780 & 60,000.00 & 17,780 & 1,962,279 \\\\ \\hline \\end{array} $$        \n",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -21560,7 +21560,7 @@ test_data = [
         "ID": 1037,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "Comte Industries issues $3,000,000 worth of three-year bonds dated 1 January 2015. The\nbonds pay interest of 5.5% annually on 31 December. The market interest rate on bonds of\ncomparable risk and term is 5%. The sales proceeds of the bonds are $3,040,849. Under the\nstraight-line method, the interest expense in the first year is closest to:",
+        "Question Text": "Comte Industries issues $\\$3,000,000$ worth of three-year bonds dated 1 January 2015. The\nbonds pay interest of 5.5% annually on 31 December. The market interest rate on bonds of\ncomparable risk and term is 5%. The sales proceeds of the bonds are $\\$3,040,849$. Under the\nstraight-line method, the interest expense in the first year is closest to:",
         "Image": "images/image_add/1037.png",
         "Options": {
             "A": "$150,000.",
@@ -21568,7 +21568,7 @@ test_data = [
             "C": "$152,042."
         },
         "Answer": "B",
-        "Explanation": "Under the straight-line method, the bond premium is amortized\nequally over the life of the bond. The annual interest payment is $165,000 ($3,000,000 × 5.5%) and annual amortization of the premium under the straight-line method is $13,616 [($3,040,849 – $3,000,000)/3)]. The interest expense is the interest payment less the amortization of the\npremium ($165,000 – $13,616 = $151,384). ",
+        "Explanation": "Under the straight-line method, the bond premium is amortized\nequally over the life of the bond. The annual interest payment is $\\$165,000$ ($\\$3,000,000$ × 5.5%) and annual amortization of the premium under the straight-line method is $13,616 [($\\$3,040,849$ – $\\$3,000,000$)/3)]. The interest expense is the interest payment less the amortization of the\npremium ($\\$165,000$ – $\\$13,616$ = $\\$151,384$). ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
@@ -21720,7 +21720,7 @@ test_data = [
         "ID": 1045,
         "Share Context": "",
         "Share Image": "",
-        "Question Text": "A company redeems $1,000,000 face value bonds with a carrying value of $990,000. If the\ncall price is 104 the company will:",
+        "Question Text": "A company redeems $\\$1,000,000$ face value bonds with a carrying value of $\\$990,000$. If the\ncall price is 104 the company will:",
         "Image": "images/image_add/1045.png",
         "Options": {
             "A": "reduce bonds payable by $1,000,000.",
@@ -21728,7 +21728,7 @@ test_data = [
             "C": "recognize a gain on the extinguishment of debt of $10,000."
         },
         "Answer": "B",
-        "Explanation": "If a company decides to redeem a bond before maturity, bonds\npayable is reduced by the carrying amount of the debt. The difference between the cash required\nto redeem the bonds and the carrying amount of the bonds is a gain or loss on the\nextinguishment of debt. Because the call price is 104 and the face value is $1,000,000, the redemption cost is 104% of $1,000,000 or $1,040,000. The company’s loss on redemption would be $50,000 ($990,000 carrying amount of debt minus $1,040,000 cash paid to redeem the callable\nbonds). ",
+        "Explanation": "If a company decides to redeem a bond before maturity, bonds\npayable is reduced by the carrying amount of the debt. The difference between the cash required\nto redeem the bonds and the carrying amount of the bonds is a gain or loss on the\nextinguishment of debt. Because the call price is 104 and the face value is $\\$1,000,000$, the redemption cost is 104% of $\\$1,000,000$ or $\\$1,040,000$. The company’s loss on redemption would be $\\$50,000$ ($\\$990,000$ carrying amount of debt minus $\\$1,040,000$ cash paid to redeem the callable\nbonds). ",
         "General Topics": "Financial Reporting and Analysis",
         "QA Type": "Math Reasoning QA",
         "Level of Difficulty": "Easy",
