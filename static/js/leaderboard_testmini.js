@@ -47,16 +47,15 @@ function generateTable() {
           if (top_ranks.includes(key)) {
             table += `<td><b>${entry.Model}</b></td>`;
             table += `<td>${entry.Method}</td>`;
-            table += `<td><b>${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
           }
           else {
             table += `<td><b>${entry.Model}</b></td>`;
             table += `<td>${entry.Method}</td>`;
-            table += `<td><b>${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
-          }          
+                      }          
   
           // if entry.Math is a number
-          if (!isNaN(entry.Math)) {
+          if (!isNaN(entry.Inv)) {
+            table += `<td><b>${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
             table += `<td>${entry.Expertise.toFixed(2).toString()}</td>`;
             table += `<td>${entry.Math.toFixed(2).toString()}</td>`;
             table += `<td>${entry.Inv.toFixed(2).toString()}</td>`;
@@ -76,6 +75,7 @@ function generateTable() {
             table += `<td>${entry.LTR.toFixed(2).toString()}</td>`;
           }
           else {
+            table += `<td><b>${entry.Overall.toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
             table += `<td>${entry.Expertise.toString()}</td>`;
             table += `<td>${entry.Math.toString()}</td>`;
             table += `<td>${entry.Inv.toString()}</td>`;

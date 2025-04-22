@@ -394,5 +394,27 @@ score_table = {
     "MR": 40.00,
     "CF": 42.86,
     "LTR": 43.48
+  },
+  "19": {
+    "Model": "Human Evaluation",
+    "Method": "-",
+    "Overall": "88.50",
+    "Expertise": "91.00",
+    "Math": "86.00",
+    "Inv": "-",
+    "QM": "-",
+    "VRM": "-",
+    "FMP": "-",
+    "FRA": "-",
+    "PM": "-",
+    "FI": "-",
+    "FRM": "-",
+    "CR": "-",
+    "ECO": "-",
+    "OR": "-",
+    "Der": "-",
+    "MR": "-",
+    "CF": "-",
+    "LTR": "-"
   }
 }
