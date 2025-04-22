@@ -7,8 +7,8 @@ function generateTable() {
             <td class="js-sort"><strong>Model</strong></td>
             <td class="js-sort"><strong>Method</strong></td>
             <td class="js-sort-number"><strong><u>Overall</u></strong></td>
-            <td class="js-sort-number"><strong>Math</strong></td>
             <td class="js-sort-number"><strong>Expertise</strong></td>
+            <td class="js-sort-number"><strong>Math</strong></td>
             <td class="js-sort-number"><strong>Inv</strong></td>
             <td class="js-sort-number"><strong>QM</strong></td>
             <td class="js-sort-number"><strong>VRM</strong></td>
@@ -45,9 +45,9 @@ function generateTable() {
           // for key = "1", "2", "3"
           top_ranks = ["1", "2", "3"]
           if (top_ranks.includes(key)) {
-            table += `<td><b class="best-score-text">${entry.Model}</b></td>`;
+            table += `<td><b>${entry.Model}</b></td>`;
             table += `<td>${entry.Method}</td>`;
-            table += `<td><b class="best-score-text">${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
+            table += `<td><b>${entry.Overall.toFixed(2).toString()}</b></td>`; // .toFixed(2): round to 2 decimal place
           }
           else {
             table += `<td><b>${entry.Model}</b></td>`;
@@ -57,8 +57,8 @@ function generateTable() {
   
           // if entry.Math is a number
           if (!isNaN(entry.Math)) {
-            table += `<td>${entry.Math.toFixed(2).toString()}</td>`;
             table += `<td>${entry.Expertise.toFixed(2).toString()}</td>`;
+            table += `<td>${entry.Math.toFixed(2).toString()}</td>`;
             table += `<td>${entry.Inv.toFixed(2).toString()}</td>`;
             table += `<td>${entry.QM.toFixed(2).toString()}</td>`;
             table += `<td>${entry.VRM.toFixed(2).toString()}</td>`;
@@ -76,8 +76,8 @@ function generateTable() {
             table += `<td>${entry.LTR.toFixed(2).toString()}</td>`;
           }
           else {
-            table += `<td>${entry.Math.toString()}</td>`;
             table += `<td>${entry.Expertise.toString()}</td>`;
+            table += `<td>${entry.Math.toString()}</td>`;
             table += `<td>${entry.Inv.toString()}</td>`;
             table += `<td>${entry.QM.toString()}</td>`;
             table += `<td>${entry.VRM.toString()}</td>`;
