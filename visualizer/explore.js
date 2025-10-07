@@ -2,7 +2,7 @@
 DATA_FILE = "data_public.js";
 
 // Variables for the filters with the number of questions
-let number_options = [1, 20, 50, 100, 150, 200,10000];  
+let number_options = [1, 20, 50, 100, 150, 200];  
 let splits = ["All", "train (2560)", "test (640)"];    
 let topic = [
     "All",
