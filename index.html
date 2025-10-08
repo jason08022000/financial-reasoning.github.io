@@ -75,7 +75,30 @@
 
 
     <div class="content">
-        <p>We introduce <strong>FinMR</strong>, a novel multimodal benchmark designed to evaluate the reasoning capabilities of multimodal LLMs in financial problem-solving. Compared with prior works, this study features four key advancements. First, <strong>FinMR</strong> consists of 3200 college-level question-answer pairs—1049 involving financial math and 2151 probing financial expertise—each integrating textual and visual content, images ranging from financial tables to stock price trends. In particular, all answers have expert-annotated explanations, facilitating the analysis of reasoning errors and model underperformance. Second, to enhance financial reasoning in MLLMs, we propose Error Feedback Learning (<strong>EFL</strong>) by retrieving similar negative examples and error feedback for iterative self-improvement. Third, to enhance financial reasoning in MLLMs, we evaluate open-source and closed-source LLMs and MLLMs using Chain-of-Thought (CoT) and <strong>EFL</strong> strategies, demonstrating that MLLMs outperform standard LLMs, with <strong>EFL</strong> proving more effective than CoT. Finally, further error analysis highlights three primary challenges: image recognition failures, question misunderstanding, and incorrect formula adoption. By addressing these challenges, <strong>FinMR</strong> not only serves as a benchmark for future research but also provides a foundation for developing more advanced techniques to enhance financial reasoning capabilities.</p>
+        <p>Multimodal Large Language Models (MLLMs) have made substan
+            tial progress in recent years. However, their rigorous evaluation
+             withinspecializeddomainslikefinanceishinderedbytheabsenceof
+             datasets characterized byprofessional-level knowledgeintensity,de
+            tailed annotations, and advanced reasoning complexity. To address
+             this critical gap, we introduce FinMR, a high-quality, knowledge
+            intensive multimodal dataset explicitly designed to evaluate expert
+            level financial reasoning capabilities at a professional analyst’s
+             standard. FinMR comprises over 3,200 meticulously curated and ex
+            pertly annotated question-answer pairs across 15 diverse financial
+             topics, ensuring broad domain diversity and integrating sophisti
+            cated mathematical reasoning, advanced financial knowledge, and
+             nuanced visual interpretation tasks across multiple image types.
+             Through comprehensive benchmarking with leading closed-source
+             and open-source MLLMs, we highlight significant performance
+             disparities between these models and professional financial ana
+            lysts, uncovering key areas for model advancement, such as precise
+             image analysis, accurate application of complex financial formu
+            las, and deeper contextual financial understanding. By providing
+             richly varied visual content and thorough explanatory annotations,
+             FinMR establishes itself as an essential benchmark tool for assessing
+             and advancing multimodal financial reasoning toward professional
+             analyst-level competence.
+        </p>    
     </div>
 
     <div class="section-heading">
